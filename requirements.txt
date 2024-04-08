@@ -1,0 +1,16 @@
+pandas
+geopandas
+beautifulsoup4
+requests
+srai[osm,voronoi]
+ipykernel
+selenium
+geckodriver-autoinstaller
+lxml
+tqdm
+geocoder
+
+folium
+matplotlib
+mapclassify
+pydeck
