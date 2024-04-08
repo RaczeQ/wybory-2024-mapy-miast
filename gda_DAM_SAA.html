@@ -26,10 +26,14 @@
 
                     .deck-json-description-box {
                         z-index: 2 !important;
+                        overflow: visible !important;
                     }
                     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap')
                         </style>
-  </head>
+
+                    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' />
+                    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+                      </head>
   <body>
     <div id="deck-container">
     </div>
@@ -37,7 +41,7 @@
   <script>
     const container = document.getElementById('deck-container');
     const jsonInput = {
-  "description": "\n        <div style='font-family: \"Open Sans\", sans-serif;'>\n        <h3>Gda\u0144sk: DULKIEWICZ Aleksandra Maria vs SZCZEPA\u0143SKI Adam Aleksander</h3>\n        R\u00f3\u017cnica w % <br/>\n        <span style=\"font-size: 0.8em\">\n        Warto\u015bci ujemne - przewaga SZCZEPA\u0143SKI Adam Aleksander <br/> \n        Warto\u015bci dodatnie - przewaga DULKIEWICZ Aleksandra Maria <br/>\n        Obwody z oddanymi mniej ni\u017c 50 g\u0142osami zosta\u0142y pomini\u0119te. <br/>\n        </span> \n        <svg height=\"40\" width=\"450\"><line x1=\"0\" y1=\"15\" x2=\"0\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"1\" y1=\"15\" x2=\"1\" y2=\"27\" style=\"stroke:#3a938aff;stroke-width:2;\" /><line x1=\"2\" y1=\"15\" x2=\"2\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"3\" y1=\"15\" x2=\"3\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"4\" y1=\"15\" x2=\"4\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"5\" y1=\"15\" x2=\"5\" y2=\"27\" style=\"stroke:#daddb4ff;stroke-width:2;\" /><line x1=\"6\" y1=\"15\" x2=\"6\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"7\" y1=\"15\" x2=\"7\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"8\" y1=\"15\" x2=\"8\" y2=\"27\" style=\"stroke:#f6edbcff;stroke-width:2;\" /><line x1=\"9\" y1=\"15\" x2=\"9\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"11\" y1=\"15\" x2=\"11\" y2=\"27\" style=\"stroke:#f6ecbbff;stroke-width:2;\" /><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"13\" y1=\"15\" x2=\"13\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"27\" style=\"stroke:#f6ebbaff;stroke-width:2;\" /><line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"27\" style=\"stroke:#f6eabaff;stroke-width:2;\" /><line x1=\"16\" y1=\"15\" x2=\"16\" y2=\"27\" style=\"stroke:#f6eabaff;stroke-width:2;\" /><line x1=\"17\" y1=\"15\" x2=\"17\" y2=\"27\" style=\"stroke:#f6eab9ff;stroke-width:2;\" /><line x1=\"18\" y1=\"15\" x2=\"18\" y2=\"27\" style=\"stroke:#f6e9b9ff;stroke-width:2;\" /><line x1=\"19\" y1=\"15\" x2=\"19\" y2=\"27\" style=\"stroke:#f6e9b9ff;stroke-width:2;\" /><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"27\" style=\"stroke:#f6e9b8ff;stroke-width:2;\" /><line x1=\"21\" y1=\"15\" x2=\"21\" y2=\"27\" style=\"stroke:#f6e8b8ff;stroke-width:2;\" /><line x1=\"22\" y1=\"15\" x2=\"22\" y2=\"27\" style=\"stroke:#f5e8b8ff;stroke-width:2;\" /><line x1=\"23\" y1=\"15\" x2=\"23\" y2=\"27\" style=\"stroke:#f5e8b7ff;stroke-width:2;\" /><line x1=\"24\" y1=\"15\" x2=\"24\" y2=\"27\" style=\"stroke:#f5e7b7ff;stroke-width:2;\" /><line x1=\"25\" y1=\"15\" x2=\"25\" y2=\"27\" style=\"stroke:#f5e7b7ff;stroke-width:2;\" /><line x1=\"26\" y1=\"15\" x2=\"26\" y2=\"27\" style=\"stroke:#f5e7b6ff;stroke-width:2;\" /><line x1=\"27\" y1=\"15\" x2=\"27\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"28\" y1=\"15\" x2=\"28\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"29\" y1=\"15\" x2=\"29\" y2=\"27\" style=\"stroke:#f5e6b5ff;stroke-width:2;\" /><line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"27\" style=\"stroke:#f5e5b5ff;stroke-width:2;\" /><line x1=\"31\" y1=\"15\" x2=\"31\" y2=\"27\" style=\"stroke:#f5e5b5ff;stroke-width:2;\" /><line x1=\"32\" y1=\"15\" x2=\"32\" y2=\"27\" style=\"stroke:#f5e5b4ff;stroke-width:2;\" /><line x1=\"33\" y1=\"15\" x2=\"33\" y2=\"27\" style=\"stroke:#f5e4b4ff;stroke-width:2;\" /><line x1=\"34\" y1=\"15\" x2=\"34\" y2=\"27\" style=\"stroke:#f5e4b3ff;stroke-width:2;\" /><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"27\" style=\"stroke:#f5e4b3ff;stroke-width:2;\" /><line x1=\"36\" y1=\"15\" x2=\"36\" y2=\"27\" style=\"stroke:#f5e3b3ff;stroke-width:2;\" /><line x1=\"37\" y1=\"15\" x2=\"37\" y2=\"27\" style=\"stroke:#f5e3b2ff;stroke-width:2;\" /><line x1=\"38\" y1=\"15\" x2=\"38\" y2=\"27\" style=\"stroke:#f4e2b2ff;stroke-width:2;\" /><line x1=\"39\" y1=\"15\" x2=\"39\" y2=\"27\" style=\"stroke:#f4e2b2ff;stroke-width:2;\" /><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"27\" style=\"stroke:#f4e2b1ff;stroke-width:2;\" /><line x1=\"41\" y1=\"15\" x2=\"41\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"42\" y1=\"15\" x2=\"42\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"43\" y1=\"15\" x2=\"43\" y2=\"27\" style=\"stroke:#f4e1b0ff;stroke-width:2;\" /><line x1=\"44\" y1=\"15\" x2=\"44\" y2=\"27\" style=\"stroke:#f4e0b0ff;stroke-width:2;\" /><line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"27\" style=\"stroke:#f4e0b0ff;stroke-width:2;\" /><line x1=\"46\" y1=\"15\" x2=\"46\" y2=\"27\" style=\"stroke:#f4e0afff;stroke-width:2;\" /><line x1=\"47\" y1=\"15\" x2=\"47\" y2=\"27\" style=\"stroke:#f4dfafff;stroke-width:2;\" /><line x1=\"48\" y1=\"15\" x2=\"48\" y2=\"27\" style=\"stroke:#f4dfafff;stroke-width:2;\" /><line x1=\"49\" y1=\"15\" x2=\"49\" y2=\"27\" style=\"stroke:#f4dfaeff;stroke-width:2;\" /><line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"27\" style=\"stroke:#f4deaeff;stroke-width:2;\" /><line x1=\"51\" y1=\"15\" x2=\"51\" y2=\"27\" style=\"stroke:#f4deaeff;stroke-width:2;\" /><line x1=\"52\" y1=\"15\" x2=\"52\" y2=\"27\" style=\"stroke:#f4deadff;stroke-width:2;\" /><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"27\" style=\"stroke:#f4ddadff;stroke-width:2;\" /><line x1=\"54\" y1=\"15\" x2=\"54\" y2=\"27\" style=\"stroke:#f4ddadff;stroke-width:2;\" /><line x1=\"55\" y1=\"15\" x2=\"55\" y2=\"27\" style=\"stroke:#f3ddacff;stroke-width:2;\" /><line x1=\"56\" y1=\"15\" x2=\"56\" y2=\"27\" style=\"stroke:#f3dcacff;stroke-width:2;\" /><line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"27\" style=\"stroke:#f3dcacff;stroke-width:2;\" /><line x1=\"58\" y1=\"15\" x2=\"58\" y2=\"27\" style=\"stroke:#f3dcabff;stroke-width:2;\" /><line x1=\"59\" y1=\"15\" x2=\"59\" y2=\"27\" style=\"stroke:#f3dbabff;stroke-width:2;\" /><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"27\" style=\"stroke:#f3dbaaff;stroke-width:2;\" /><line x1=\"61\" y1=\"15\" x2=\"61\" y2=\"27\" style=\"stroke:#f3dbaaff;stroke-width:2;\" /><line x1=\"62\" y1=\"15\" x2=\"62\" y2=\"27\" style=\"stroke:#f3daaaff;stroke-width:2;\" /><line x1=\"63\" y1=\"15\" x2=\"63\" y2=\"27\" style=\"stroke:#f3daa9ff;stroke-width:2;\" /><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"27\" style=\"stroke:#f3daa9ff;stroke-width:2;\" /><line x1=\"65\" y1=\"15\" x2=\"65\" y2=\"27\" style=\"stroke:#f3d9a9ff;stroke-width:2;\" /><line x1=\"66\" y1=\"15\" x2=\"66\" y2=\"27\" style=\"stroke:#f3d9a8ff;stroke-width:2;\" /><line x1=\"67\" y1=\"15\" x2=\"67\" y2=\"27\" style=\"stroke:#f3d9a8ff;stroke-width:2;\" /><line x1=\"68\" y1=\"15\" x2=\"68\" y2=\"27\" style=\"stroke:#f3d8a8ff;stroke-width:2;\" /><line x1=\"69\" y1=\"15\" x2=\"69\" y2=\"27\" style=\"stroke:#f3d8a7ff;stroke-width:2;\" /><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"27\" style=\"stroke:#f3d8a7ff;stroke-width:2;\" /><line x1=\"71\" y1=\"15\" x2=\"71\" y2=\"27\" style=\"stroke:#f2d7a7ff;stroke-width:2;\" /><line x1=\"72\" y1=\"15\" x2=\"72\" y2=\"27\" style=\"stroke:#f2d7a6ff;stroke-width:2;\" /><line x1=\"73\" y1=\"15\" x2=\"73\" y2=\"27\" style=\"stroke:#f2d7a6ff;stroke-width:2;\" /><line x1=\"74\" y1=\"15\" x2=\"74\" y2=\"27\" style=\"stroke:#f2d6a6ff;stroke-width:2;\" /><line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"76\" y1=\"15\" x2=\"76\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"77\" y1=\"15\" x2=\"77\" y2=\"27\" style=\"stroke:#f2d5a5ff;stroke-width:2;\" /><line x1=\"78\" y1=\"15\" x2=\"78\" y2=\"27\" style=\"stroke:#f2d5a4ff;stroke-width:2;\" /><line x1=\"79\" y1=\"15\" x2=\"79\" y2=\"27\" style=\"stroke:#f2d5a4ff;stroke-width:2;\" /><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"27\" style=\"stroke:#f2d4a4ff;stroke-width:2;\" /><line x1=\"81\" y1=\"15\" x2=\"81\" y2=\"27\" style=\"stroke:#f2d4a3ff;stroke-width:2;\" /><line x1=\"82\" y1=\"15\" x2=\"82\" y2=\"27\" style=\"stroke:#f2d4a3ff;stroke-width:2;\" /><line x1=\"83\" y1=\"15\" x2=\"83\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"84\" y1=\"15\" x2=\"84\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"85\" y1=\"15\" x2=\"85\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"86\" y1=\"15\" x2=\"86\" y2=\"27\" style=\"stroke:#f2d2a1ff;stroke-width:2;\" /><line x1=\"87\" y1=\"15\" x2=\"87\" y2=\"27\" style=\"stroke:#f1d2a1ff;stroke-width:2;\" /><line x1=\"88\" y1=\"15\" x2=\"88\" y2=\"27\" style=\"stroke:#f1d2a1ff;stroke-width:2;\" /><line x1=\"89\" y1=\"15\" x2=\"89\" y2=\"27\" style=\"stroke:#f1d1a0ff;stroke-width:2;\" /><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"27\" style=\"stroke:#f1d1a0ff;stroke-width:2;\" /><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"27\" style=\"stroke:#f1d0a0ff;stroke-width:2;\" /><line x1=\"92\" y1=\"15\" x2=\"92\" y2=\"27\" style=\"stroke:#f1d09fff;stroke-width:2;\" /><line x1=\"93\" y1=\"15\" x2=\"93\" y2=\"27\" style=\"stroke:#f1d09fff;stroke-width:2;\" /><line x1=\"94\" y1=\"15\" x2=\"94\" y2=\"27\" style=\"stroke:#f1cf9fff;stroke-width:2;\" /><line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"96\" y1=\"15\" x2=\"96\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"97\" y1=\"15\" x2=\"97\" y2=\"27\" style=\"stroke:#f1ce9eff;stroke-width:2;\" /><line x1=\"98\" y1=\"15\" x2=\"98\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"99\" y1=\"15\" x2=\"99\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"27\" style=\"stroke:#f1cd9dff;stroke-width:2;\" /><line x1=\"101\" y1=\"15\" x2=\"101\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"102\" y1=\"15\" x2=\"102\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"103\" y1=\"15\" x2=\"103\" y2=\"27\" style=\"stroke:#f1cc9cff;stroke-width:2;\" /><line x1=\"104\" y1=\"15\" x2=\"104\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"106\" y1=\"15\" x2=\"106\" y2=\"27\" style=\"stroke:#f0cb9bff;stroke-width:2;\" /><line x1=\"107\" y1=\"15\" x2=\"107\" y2=\"27\" style=\"stroke:#f0cb9aff;stroke-width:2;\" /><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"27\" style=\"stroke:#f0cb9aff;stroke-width:2;\" /><line x1=\"109\" y1=\"15\" x2=\"109\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"111\" y1=\"15\" x2=\"111\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"112\" y1=\"15\" x2=\"112\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"113\" y1=\"15\" x2=\"113\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"114\" y1=\"15\" x2=\"114\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"116\" y1=\"15\" x2=\"116\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"117\" y1=\"15\" x2=\"117\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"118\" y1=\"15\" x2=\"118\" y2=\"27\" style=\"stroke:#f0c796ff;stroke-width:2;\" /><line x1=\"119\" y1=\"15\" x2=\"119\" y2=\"27\" style=\"stroke:#f0c796ff;stroke-width:2;\" /><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"27\" style=\"stroke:#efc796ff;stroke-width:2;\" /><line x1=\"121\" y1=\"15\" x2=\"121\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"122\" y1=\"15\" x2=\"122\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"123\" y1=\"15\" x2=\"123\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"124\" y1=\"15\" x2=\"124\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"125\" y1=\"15\" x2=\"125\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"126\" y1=\"15\" x2=\"126\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"127\" y1=\"15\" x2=\"127\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"128\" y1=\"15\" x2=\"128\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"131\" y1=\"15\" x2=\"131\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"132\" y1=\"15\" x2=\"132\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"133\" y1=\"15\" x2=\"133\" y2=\"27\" style=\"stroke:#efc291ff;stroke-width:2;\" /><line x1=\"134\" y1=\"15\" x2=\"134\" y2=\"27\" style=\"stroke:#efc291ff;stroke-width:2;\" /><line x1=\"135\" y1=\"15\" x2=\"135\" y2=\"27\" style=\"stroke:#efc290ff;stroke-width:2;\" /><line x1=\"136\" y1=\"15\" x2=\"136\" y2=\"27\" style=\"stroke:#efc190ff;stroke-width:2;\" /><line x1=\"137\" y1=\"15\" x2=\"137\" y2=\"27\" style=\"stroke:#eec190ff;stroke-width:2;\" /><line x1=\"138\" y1=\"15\" x2=\"138\" y2=\"27\" style=\"stroke:#eec18fff;stroke-width:2;\" /><line x1=\"139\" y1=\"15\" x2=\"139\" y2=\"27\" style=\"stroke:#eec08fff;stroke-width:2;\" /><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"27\" style=\"stroke:#eec08fff;stroke-width:2;\" /><line x1=\"141\" y1=\"15\" x2=\"141\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"142\" y1=\"15\" x2=\"142\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"143\" y1=\"15\" x2=\"143\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"144\" y1=\"15\" x2=\"144\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"145\" y1=\"15\" x2=\"145\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"146\" y1=\"15\" x2=\"146\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"147\" y1=\"15\" x2=\"147\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"148\" y1=\"15\" x2=\"148\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"149\" y1=\"15\" x2=\"149\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"151\" y1=\"15\" x2=\"151\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"153\" y1=\"15\" x2=\"153\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"154\" y1=\"15\" x2=\"154\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"155\" y1=\"15\" x2=\"155\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"156\" y1=\"15\" x2=\"156\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"157\" y1=\"15\" x2=\"157\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"158\" y1=\"15\" x2=\"158\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"159\" y1=\"15\" x2=\"159\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"161\" y1=\"15\" x2=\"161\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"162\" y1=\"15\" x2=\"162\" y2=\"27\" style=\"stroke:#edb887ff;stroke-width:2;\" /><line x1=\"163\" y1=\"15\" x2=\"163\" y2=\"27\" style=\"stroke:#ecb887ff;stroke-width:2;\" /><line x1=\"164\" y1=\"15\" x2=\"164\" y2=\"27\" style=\"stroke:#ecb887ff;stroke-width:2;\" /><line x1=\"165\" y1=\"15\" x2=\"165\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"166\" y1=\"15\" x2=\"166\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"168\" y1=\"15\" x2=\"168\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"169\" y1=\"15\" x2=\"169\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"171\" y1=\"15\" x2=\"171\" y2=\"27\" style=\"stroke:#ecb584ff;stroke-width:2;\" /><line x1=\"172\" y1=\"15\" x2=\"172\" y2=\"27\" style=\"stroke:#ecb584ff;stroke-width:2;\" /><line x1=\"173\" y1=\"15\" x2=\"173\" y2=\"27\" style=\"stroke:#ebb584ff;stroke-width:2;\" /><line x1=\"174\" y1=\"15\" x2=\"174\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"176\" y1=\"15\" x2=\"176\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"177\" y1=\"15\" x2=\"177\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"178\" y1=\"15\" x2=\"178\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"179\" y1=\"15\" x2=\"179\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"181\" y1=\"15\" x2=\"181\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"182\" y1=\"15\" x2=\"182\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"183\" y1=\"15\" x2=\"183\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"184\" y1=\"15\" x2=\"184\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"186\" y1=\"15\" x2=\"186\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"187\" y1=\"15\" x2=\"187\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"188\" y1=\"15\" x2=\"188\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"189\" y1=\"15\" x2=\"189\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"190\" y1=\"15\" x2=\"190\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"191\" y1=\"15\" x2=\"191\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"192\" y1=\"15\" x2=\"192\" y2=\"27\" style=\"stroke:#eaae7dff;stroke-width:2;\" /><line x1=\"193\" y1=\"15\" x2=\"193\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"194\" y1=\"15\" x2=\"194\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"195\" y1=\"15\" x2=\"195\" y2=\"27\" style=\"stroke:#e9ad7dff;stroke-width:2;\" /><line x1=\"196\" y1=\"15\" x2=\"196\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"197\" y1=\"15\" x2=\"197\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"198\" y1=\"15\" x2=\"198\" y2=\"27\" style=\"stroke:#e9ac7cff;stroke-width:2;\" /><line x1=\"199\" y1=\"15\" x2=\"199\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"201\" y1=\"15\" x2=\"201\" y2=\"27\" style=\"stroke:#e9ab7bff;stroke-width:2;\" /><line x1=\"202\" y1=\"15\" x2=\"202\" y2=\"27\" style=\"stroke:#e8ab7aff;stroke-width:2;\" /><line x1=\"203\" y1=\"15\" x2=\"203\" y2=\"27\" style=\"stroke:#e8ab7aff;stroke-width:2;\" /><line x1=\"204\" y1=\"15\" x2=\"204\" y2=\"27\" style=\"stroke:#e8aa7aff;stroke-width:2;\" /><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"206\" y1=\"15\" x2=\"206\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"207\" y1=\"15\" x2=\"207\" y2=\"27\" style=\"stroke:#e8a979ff;stroke-width:2;\" /><line x1=\"208\" y1=\"15\" x2=\"208\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"209\" y1=\"15\" x2=\"209\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"210\" y1=\"15\" x2=\"210\" y2=\"27\" style=\"stroke:#e8a878ff;stroke-width:2;\" /><line x1=\"211\" y1=\"15\" x2=\"211\" y2=\"27\" style=\"stroke:#e8a877ff;stroke-width:2;\" /><line x1=\"212\" y1=\"15\" x2=\"212\" y2=\"27\" style=\"stroke:#e7a877ff;stroke-width:2;\" /><line x1=\"213\" y1=\"15\" x2=\"213\" y2=\"27\" style=\"stroke:#e7a777ff;stroke-width:2;\" /><line x1=\"214\" y1=\"15\" x2=\"214\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"215\" y1=\"15\" x2=\"215\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"216\" y1=\"15\" x2=\"216\" y2=\"27\" style=\"stroke:#e7a676ff;stroke-width:2;\" /><line x1=\"217\" y1=\"15\" x2=\"217\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"218\" y1=\"15\" x2=\"218\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"219\" y1=\"15\" x2=\"219\" y2=\"27\" style=\"stroke:#e7a575ff;stroke-width:2;\" /><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"27\" style=\"stroke:#e7a574ff;stroke-width:2;\" /><line x1=\"221\" y1=\"15\" x2=\"221\" y2=\"27\" style=\"stroke:#e7a574ff;stroke-width:2;\" /><line x1=\"222\" y1=\"15\" x2=\"222\" y2=\"27\" style=\"stroke:#e6a474ff;stroke-width:2;\" /><line x1=\"223\" y1=\"15\" x2=\"223\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"224\" y1=\"15\" x2=\"224\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"225\" y1=\"15\" x2=\"225\" y2=\"27\" style=\"stroke:#e6a373ff;stroke-width:2;\" /><line x1=\"226\" y1=\"15\" x2=\"226\" y2=\"27\" style=\"stroke:#e6a372ff;stroke-width:2;\" /><line x1=\"227\" y1=\"15\" x2=\"227\" y2=\"27\" style=\"stroke:#e6a372ff;stroke-width:2;\" /><line x1=\"228\" y1=\"15\" x2=\"228\" y2=\"27\" style=\"stroke:#e6a272ff;stroke-width:2;\" /><line x1=\"229\" y1=\"15\" x2=\"229\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"231\" y1=\"15\" x2=\"231\" y2=\"27\" style=\"stroke:#e6a171ff;stroke-width:2;\" /><line x1=\"232\" y1=\"15\" x2=\"232\" y2=\"27\" style=\"stroke:#e5a170ff;stroke-width:2;\" /><line x1=\"233\" y1=\"15\" x2=\"233\" y2=\"27\" style=\"stroke:#e5a170ff;stroke-width:2;\" /><line x1=\"234\" y1=\"15\" x2=\"234\" y2=\"27\" style=\"stroke:#e5a070ff;stroke-width:2;\" /><line x1=\"235\" y1=\"15\" x2=\"235\" y2=\"27\" style=\"stroke:#e5a06fff;stroke-width:2;\" /><line x1=\"236\" y1=\"15\" x2=\"236\" y2=\"27\" style=\"stroke:#e5a06fff;stroke-width:2;\" /><line x1=\"237\" y1=\"15\" x2=\"237\" y2=\"27\" style=\"stroke:#e59f6fff;stroke-width:2;\" /><line x1=\"238\" y1=\"15\" x2=\"238\" y2=\"27\" style=\"stroke:#e59f6eff;stroke-width:2;\" /><line x1=\"239\" y1=\"15\" x2=\"239\" y2=\"27\" style=\"stroke:#e59f6eff;stroke-width:2;\" /><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"241\" y1=\"15\" x2=\"241\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"242\" y1=\"15\" x2=\"242\" y2=\"27\" style=\"stroke:#e49e6dff;stroke-width:2;\" /><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"27\" style=\"stroke:#e49d6dff;stroke-width:2;\" /><line x1=\"244\" y1=\"15\" x2=\"244\" y2=\"27\" style=\"stroke:#e49d6dff;stroke-width:2;\" /><line x1=\"245\" y1=\"15\" x2=\"245\" y2=\"27\" style=\"stroke:#e49d6cff;stroke-width:2;\" /><line x1=\"246\" y1=\"15\" x2=\"246\" y2=\"27\" style=\"stroke:#e49c6cff;stroke-width:2;\" /><line x1=\"247\" y1=\"15\" x2=\"247\" y2=\"27\" style=\"stroke:#e49c6cff;stroke-width:2;\" /><line x1=\"248\" y1=\"15\" x2=\"248\" y2=\"27\" style=\"stroke:#e49c6bff;stroke-width:2;\" /><line x1=\"249\" y1=\"15\" x2=\"249\" y2=\"27\" style=\"stroke:#e49b6bff;stroke-width:2;\" /><line x1=\"250\" y1=\"15\" x2=\"250\" y2=\"27\" style=\"stroke:#e49b6bff;stroke-width:2;\" /><line x1=\"251\" y1=\"15\" x2=\"251\" y2=\"27\" style=\"stroke:#e39b6aff;stroke-width:2;\" /><line x1=\"252\" y1=\"15\" x2=\"252\" y2=\"27\" style=\"stroke:#e39a6aff;stroke-width:2;\" /><line x1=\"253\" y1=\"15\" x2=\"253\" y2=\"27\" style=\"stroke:#e39a6aff;stroke-width:2;\" /><line x1=\"254\" y1=\"15\" x2=\"254\" y2=\"27\" style=\"stroke:#e39a69ff;stroke-width:2;\" /><line x1=\"255\" y1=\"15\" x2=\"255\" y2=\"27\" style=\"stroke:#e39969ff;stroke-width:2;\" /><line x1=\"256\" y1=\"15\" x2=\"256\" y2=\"27\" style=\"stroke:#e39969ff;stroke-width:2;\" /><line x1=\"257\" y1=\"15\" x2=\"257\" y2=\"27\" style=\"stroke:#e39968ff;stroke-width:2;\" /><line x1=\"258\" y1=\"15\" x2=\"258\" y2=\"27\" style=\"stroke:#e39868ff;stroke-width:2;\" /><line x1=\"259\" y1=\"15\" x2=\"259\" y2=\"27\" style=\"stroke:#e39868ff;stroke-width:2;\" /><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"27\" style=\"stroke:#e39867ff;stroke-width:2;\" /><line x1=\"261\" y1=\"15\" x2=\"261\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"262\" y1=\"15\" x2=\"262\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"263\" y1=\"15\" x2=\"263\" y2=\"27\" style=\"stroke:#e29766ff;stroke-width:2;\" /><line x1=\"264\" y1=\"15\" x2=\"264\" y2=\"27\" style=\"stroke:#e29666ff;stroke-width:2;\" /><line x1=\"265\" y1=\"15\" x2=\"265\" y2=\"27\" style=\"stroke:#e29666ff;stroke-width:2;\" /><line x1=\"266\" y1=\"15\" x2=\"266\" y2=\"27\" style=\"stroke:#e29665ff;stroke-width:2;\" /><line x1=\"267\" y1=\"15\" x2=\"267\" y2=\"27\" style=\"stroke:#e29565ff;stroke-width:2;\" /><line x1=\"268\" y1=\"15\" x2=\"268\" y2=\"27\" style=\"stroke:#e29565ff;stroke-width:2;\" /><line x1=\"269\" y1=\"15\" x2=\"269\" y2=\"27\" style=\"stroke:#e29564ff;stroke-width:2;\" /><line x1=\"270\" y1=\"15\" x2=\"270\" y2=\"27\" style=\"stroke:#e29464ff;stroke-width:2;\" /><line x1=\"271\" y1=\"15\" x2=\"271\" y2=\"27\" style=\"stroke:#e19464ff;stroke-width:2;\" /><line x1=\"272\" y1=\"15\" x2=\"272\" y2=\"27\" style=\"stroke:#e19463ff;stroke-width:2;\" /><line x1=\"273\" y1=\"15\" x2=\"273\" y2=\"27\" style=\"stroke:#e19363ff;stroke-width:2;\" /><line x1=\"274\" y1=\"15\" x2=\"274\" y2=\"27\" style=\"stroke:#e19363ff;stroke-width:2;\" /><line x1=\"275\" y1=\"15\" x2=\"275\" y2=\"27\" style=\"stroke:#e19362ff;stroke-width:2;\" /><line x1=\"276\" y1=\"15\" x2=\"276\" y2=\"27\" style=\"stroke:#e19262ff;stroke-width:2;\" /><line x1=\"277\" y1=\"15\" x2=\"277\" y2=\"27\" style=\"stroke:#e19262ff;stroke-width:2;\" /><line x1=\"278\" y1=\"15\" x2=\"278\" y2=\"27\" style=\"stroke:#e19261ff;stroke-width:2;\" /><line x1=\"279\" y1=\"15\" x2=\"279\" y2=\"27\" style=\"stroke:#e19161ff;stroke-width:2;\" /><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"27\" style=\"stroke:#e19161ff;stroke-width:2;\" /><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"27\" style=\"stroke:#e09160ff;stroke-width:2;\" /><line x1=\"282\" y1=\"15\" x2=\"282\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"283\" y1=\"15\" x2=\"283\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"284\" y1=\"15\" x2=\"284\" y2=\"27\" style=\"stroke:#e0905fff;stroke-width:2;\" /><line x1=\"285\" y1=\"15\" x2=\"285\" y2=\"27\" style=\"stroke:#e08f5fff;stroke-width:2;\" /><line x1=\"286\" y1=\"15\" x2=\"286\" y2=\"27\" style=\"stroke:#e08f5fff;stroke-width:2;\" /><line x1=\"287\" y1=\"15\" x2=\"287\" y2=\"27\" style=\"stroke:#e08f5eff;stroke-width:2;\" /><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"289\" y1=\"15\" x2=\"289\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"290\" y1=\"15\" x2=\"290\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"291\" y1=\"15\" x2=\"291\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"292\" y1=\"15\" x2=\"292\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"293\" y1=\"15\" x2=\"293\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"294\" y1=\"15\" x2=\"294\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"295\" y1=\"15\" x2=\"295\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"296\" y1=\"15\" x2=\"296\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"297\" y1=\"15\" x2=\"297\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"298\" y1=\"15\" x2=\"298\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"299\" y1=\"15\" x2=\"299\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"301\" y1=\"15\" x2=\"301\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"302\" y1=\"15\" x2=\"302\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"303\" y1=\"15\" x2=\"303\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"304\" y1=\"15\" x2=\"304\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"305\" y1=\"15\" x2=\"305\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"306\" y1=\"15\" x2=\"306\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"307\" y1=\"15\" x2=\"307\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"308\" y1=\"15\" x2=\"308\" y2=\"27\" style=\"stroke:#dd8858ff;stroke-width:2;\" /><line x1=\"309\" y1=\"15\" x2=\"309\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"310\" y1=\"15\" x2=\"310\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"311\" y1=\"15\" x2=\"311\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"312\" y1=\"15\" x2=\"312\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"313\" y1=\"15\" x2=\"313\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"314\" y1=\"15\" x2=\"314\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"315\" y1=\"15\" x2=\"315\" y2=\"27\" style=\"stroke:#dd8556ff;stroke-width:2;\" /><line x1=\"316\" y1=\"15\" x2=\"316\" y2=\"27\" style=\"stroke:#dc8555ff;stroke-width:2;\" /><line x1=\"317\" y1=\"15\" x2=\"317\" y2=\"27\" style=\"stroke:#dc8455ff;stroke-width:2;\" /><line x1=\"318\" y1=\"15\" x2=\"318\" y2=\"27\" style=\"stroke:#dc8455ff;stroke-width:2;\" /><line x1=\"319\" y1=\"15\" x2=\"319\" y2=\"27\" style=\"stroke:#dc8454ff;stroke-width:2;\" /><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"27\" style=\"stroke:#dc8354ff;stroke-width:2;\" /><line x1=\"321\" y1=\"15\" x2=\"321\" y2=\"27\" style=\"stroke:#dc8354ff;stroke-width:2;\" /><line x1=\"322\" y1=\"15\" x2=\"322\" y2=\"27\" style=\"stroke:#dc8353ff;stroke-width:2;\" /><line x1=\"323\" y1=\"15\" x2=\"323\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"324\" y1=\"15\" x2=\"324\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"325\" y1=\"15\" x2=\"325\" y2=\"27\" style=\"stroke:#db8252ff;stroke-width:2;\" /><line x1=\"326\" y1=\"15\" x2=\"326\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"327\" y1=\"15\" x2=\"327\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"328\" y1=\"15\" x2=\"328\" y2=\"27\" style=\"stroke:#db8151ff;stroke-width:2;\" /><line x1=\"329\" y1=\"15\" x2=\"329\" y2=\"27\" style=\"stroke:#db8051ff;stroke-width:2;\" /><line x1=\"330\" y1=\"15\" x2=\"330\" y2=\"27\" style=\"stroke:#da8051ff;stroke-width:2;\" /><line x1=\"331\" y1=\"15\" x2=\"331\" y2=\"27\" style=\"stroke:#da8051ff;stroke-width:2;\" /><line x1=\"332\" y1=\"15\" x2=\"332\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"333\" y1=\"15\" x2=\"333\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"334\" y1=\"15\" x2=\"334\" y2=\"27\" style=\"stroke:#da7e50ff;stroke-width:2;\" /><line x1=\"335\" y1=\"15\" x2=\"335\" y2=\"27\" style=\"stroke:#da7e4fff;stroke-width:2;\" /><line x1=\"336\" y1=\"15\" x2=\"336\" y2=\"27\" style=\"stroke:#da7e4fff;stroke-width:2;\" /><line x1=\"337\" y1=\"15\" x2=\"337\" y2=\"27\" style=\"stroke:#da7d4fff;stroke-width:2;\" /><line x1=\"338\" y1=\"15\" x2=\"338\" y2=\"27\" style=\"stroke:#d97d4eff;stroke-width:2;\" /><line x1=\"339\" y1=\"15\" x2=\"339\" y2=\"27\" style=\"stroke:#d97d4eff;stroke-width:2;\" /><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"27\" style=\"stroke:#d97c4eff;stroke-width:2;\" /><line x1=\"341\" y1=\"15\" x2=\"341\" y2=\"27\" style=\"stroke:#d97c4dff;stroke-width:2;\" /><line x1=\"342\" y1=\"15\" x2=\"342\" y2=\"27\" style=\"stroke:#d97c4dff;stroke-width:2;\" /><line x1=\"343\" y1=\"15\" x2=\"343\" y2=\"27\" style=\"stroke:#d97b4dff;stroke-width:2;\" /><line x1=\"344\" y1=\"15\" x2=\"344\" y2=\"27\" style=\"stroke:#d97b4cff;stroke-width:2;\" /><line x1=\"345\" y1=\"15\" x2=\"345\" y2=\"27\" style=\"stroke:#d87b4cff;stroke-width:2;\" /><line x1=\"346\" y1=\"15\" x2=\"346\" y2=\"27\" style=\"stroke:#d87a4cff;stroke-width:2;\" /><line x1=\"347\" y1=\"15\" x2=\"347\" y2=\"27\" style=\"stroke:#d87a4cff;stroke-width:2;\" /><line x1=\"348\" y1=\"15\" x2=\"348\" y2=\"27\" style=\"stroke:#d87a4bff;stroke-width:2;\" /><line x1=\"349\" y1=\"15\" x2=\"349\" y2=\"27\" style=\"stroke:#d8794bff;stroke-width:2;\" /><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"27\" style=\"stroke:#d8794bff;stroke-width:2;\" /><line x1=\"351\" y1=\"15\" x2=\"351\" y2=\"27\" style=\"stroke:#d8784aff;stroke-width:2;\" /><line x1=\"352\" y1=\"15\" x2=\"352\" y2=\"27\" style=\"stroke:#d7784aff;stroke-width:2;\" /><line x1=\"353\" y1=\"15\" x2=\"353\" y2=\"27\" style=\"stroke:#d7784aff;stroke-width:2;\" /><line x1=\"354\" y1=\"15\" x2=\"354\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"355\" y1=\"15\" x2=\"355\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"356\" y1=\"15\" x2=\"356\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"357\" y1=\"15\" x2=\"357\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"358\" y1=\"15\" x2=\"358\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"359\" y1=\"15\" x2=\"359\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"361\" y1=\"15\" x2=\"361\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"362\" y1=\"15\" x2=\"362\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"363\" y1=\"15\" x2=\"363\" y2=\"27\" style=\"stroke:#d67447ff;stroke-width:2;\" /><line x1=\"364\" y1=\"15\" x2=\"364\" y2=\"27\" style=\"stroke:#d67446ff;stroke-width:2;\" /><line x1=\"365\" y1=\"15\" x2=\"365\" y2=\"27\" style=\"stroke:#d67446ff;stroke-width:2;\" /><line x1=\"366\" y1=\"15\" x2=\"366\" y2=\"27\" style=\"stroke:#d67346ff;stroke-width:2;\" /><line x1=\"367\" y1=\"15\" x2=\"367\" y2=\"27\" style=\"stroke:#d57345ff;stroke-width:2;\" /><line x1=\"368\" y1=\"15\" x2=\"368\" y2=\"27\" style=\"stroke:#d57245ff;stroke-width:2;\" /><line x1=\"369\" y1=\"15\" x2=\"369\" y2=\"27\" style=\"stroke:#d57245ff;stroke-width:2;\" /><line x1=\"370\" y1=\"15\" x2=\"370\" y2=\"27\" style=\"stroke:#d57244ff;stroke-width:2;\" /><line x1=\"371\" y1=\"15\" x2=\"371\" y2=\"27\" style=\"stroke:#d57144ff;stroke-width:2;\" /><line x1=\"372\" y1=\"15\" x2=\"372\" y2=\"27\" style=\"stroke:#d57144ff;stroke-width:2;\" /><line x1=\"373\" y1=\"15\" x2=\"373\" y2=\"27\" style=\"stroke:#d57143ff;stroke-width:2;\" /><line x1=\"374\" y1=\"15\" x2=\"374\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"375\" y1=\"15\" x2=\"375\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"376\" y1=\"15\" x2=\"376\" y2=\"27\" style=\"stroke:#d47042ff;stroke-width:2;\" /><line x1=\"377\" y1=\"15\" x2=\"377\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"378\" y1=\"15\" x2=\"378\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"379\" y1=\"15\" x2=\"379\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"27\" style=\"stroke:#d46e41ff;stroke-width:2;\" /><line x1=\"381\" y1=\"15\" x2=\"381\" y2=\"27\" style=\"stroke:#d46e41ff;stroke-width:2;\" /><line x1=\"382\" y1=\"15\" x2=\"382\" y2=\"27\" style=\"stroke:#d36e41ff;stroke-width:2;\" /><line x1=\"383\" y1=\"15\" x2=\"383\" y2=\"27\" style=\"stroke:#d36d40ff;stroke-width:2;\" /><line x1=\"384\" y1=\"15\" x2=\"384\" y2=\"27\" style=\"stroke:#d36d40ff;stroke-width:2;\" /><line x1=\"385\" y1=\"15\" x2=\"385\" y2=\"27\" style=\"stroke:#d36c40ff;stroke-width:2;\" /><line x1=\"386\" y1=\"15\" x2=\"386\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"387\" y1=\"15\" x2=\"387\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"388\" y1=\"15\" x2=\"388\" y2=\"27\" style=\"stroke:#d36b3fff;stroke-width:2;\" /><line x1=\"389\" y1=\"15\" x2=\"389\" y2=\"27\" style=\"stroke:#d26b3eff;stroke-width:2;\" /><line x1=\"390\" y1=\"15\" x2=\"390\" y2=\"27\" style=\"stroke:#d26b3eff;stroke-width:2;\" /><line x1=\"391\" y1=\"15\" x2=\"391\" y2=\"27\" style=\"stroke:#d26a3eff;stroke-width:2;\" /><line x1=\"392\" y1=\"15\" x2=\"392\" y2=\"27\" style=\"stroke:#d26a3dff;stroke-width:2;\" /><line x1=\"393\" y1=\"15\" x2=\"393\" y2=\"27\" style=\"stroke:#d26a3dff;stroke-width:2;\" /><line x1=\"394\" y1=\"15\" x2=\"394\" y2=\"27\" style=\"stroke:#d2693dff;stroke-width:2;\" /><line x1=\"395\" y1=\"15\" x2=\"395\" y2=\"27\" style=\"stroke:#d2693dff;stroke-width:2;\" /><line x1=\"396\" y1=\"15\" x2=\"396\" y2=\"27\" style=\"stroke:#d1693cff;stroke-width:2;\" /><line x1=\"397\" y1=\"15\" x2=\"397\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"398\" y1=\"15\" x2=\"398\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"399\" y1=\"15\" x2=\"399\" y2=\"27\" style=\"stroke:#d1683bff;stroke-width:2;\" /><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"401\" y1=\"15\" x2=\"401\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"402\" y1=\"15\" x2=\"402\" y2=\"27\" style=\"stroke:#d1663aff;stroke-width:2;\" /><line x1=\"403\" y1=\"15\" x2=\"403\" y2=\"27\" style=\"stroke:#d1663aff;stroke-width:2;\" /><line x1=\"404\" y1=\"15\" x2=\"404\" y2=\"27\" style=\"stroke:#d0663aff;stroke-width:2;\" /><line x1=\"405\" y1=\"15\" x2=\"405\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"406\" y1=\"15\" x2=\"406\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"407\" y1=\"15\" x2=\"407\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"408\" y1=\"15\" x2=\"408\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"409\" y1=\"15\" x2=\"409\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"410\" y1=\"15\" x2=\"410\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"411\" y1=\"15\" x2=\"411\" y2=\"27\" style=\"stroke:#cf6338ff;stroke-width:2;\" /><line x1=\"412\" y1=\"15\" x2=\"412\" y2=\"27\" style=\"stroke:#cf6337ff;stroke-width:2;\" /><line x1=\"413\" y1=\"15\" x2=\"413\" y2=\"27\" style=\"stroke:#cf6337ff;stroke-width:2;\" /><line x1=\"414\" y1=\"15\" x2=\"414\" y2=\"27\" style=\"stroke:#cf6237ff;stroke-width:2;\" /><line x1=\"415\" y1=\"15\" x2=\"415\" y2=\"27\" style=\"stroke:#cf6236ff;stroke-width:2;\" /><line x1=\"416\" y1=\"15\" x2=\"416\" y2=\"27\" style=\"stroke:#cf6136ff;stroke-width:2;\" /><line x1=\"417\" y1=\"15\" x2=\"417\" y2=\"27\" style=\"stroke:#cf6136ff;stroke-width:2;\" /><line x1=\"418\" y1=\"15\" x2=\"418\" y2=\"27\" style=\"stroke:#cf6135ff;stroke-width:2;\" /><line x1=\"419\" y1=\"15\" x2=\"419\" y2=\"27\" style=\"stroke:#ce6035ff;stroke-width:2;\" /><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"27\" style=\"stroke:#ce6035ff;stroke-width:2;\" /><line x1=\"421\" y1=\"15\" x2=\"421\" y2=\"27\" style=\"stroke:#ce6034ff;stroke-width:2;\" /><line x1=\"422\" y1=\"15\" x2=\"422\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"423\" y1=\"15\" x2=\"423\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"424\" y1=\"15\" x2=\"424\" y2=\"27\" style=\"stroke:#ce5f33ff;stroke-width:2;\" /><line x1=\"425\" y1=\"15\" x2=\"425\" y2=\"27\" style=\"stroke:#ce5e33ff;stroke-width:2;\" /><line x1=\"426\" y1=\"15\" x2=\"426\" y2=\"27\" style=\"stroke:#cd5e33ff;stroke-width:2;\" /><line x1=\"427\" y1=\"15\" x2=\"427\" y2=\"27\" style=\"stroke:#cd5e33ff;stroke-width:2;\" /><line x1=\"428\" y1=\"15\" x2=\"428\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"429\" y1=\"15\" x2=\"429\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"430\" y1=\"15\" x2=\"430\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"431\" y1=\"15\" x2=\"431\" y2=\"27\" style=\"stroke:#cd5c31ff;stroke-width:2;\" /><line x1=\"432\" y1=\"15\" x2=\"432\" y2=\"27\" style=\"stroke:#cd5c31ff;stroke-width:2;\" /><line x1=\"433\" y1=\"15\" x2=\"433\" y2=\"27\" style=\"stroke:#cc5b31ff;stroke-width:2;\" /><line x1=\"434\" y1=\"15\" x2=\"434\" y2=\"27\" style=\"stroke:#cc5b30ff;stroke-width:2;\" /><line x1=\"435\" y1=\"15\" x2=\"435\" y2=\"27\" style=\"stroke:#cc5b30ff;stroke-width:2;\" /><line x1=\"436\" y1=\"15\" x2=\"436\" y2=\"27\" style=\"stroke:#cc5a30ff;stroke-width:2;\" /><line x1=\"437\" y1=\"15\" x2=\"437\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"438\" y1=\"15\" x2=\"438\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"439\" y1=\"15\" x2=\"439\" y2=\"27\" style=\"stroke:#cc592fff;stroke-width:2;\" /><line x1=\"440\" y1=\"15\" x2=\"440\" y2=\"27\" style=\"stroke:#cc592eff;stroke-width:2;\" /><line x1=\"441\" y1=\"15\" x2=\"441\" y2=\"27\" style=\"stroke:#cb592eff;stroke-width:2;\" /><line x1=\"442\" y1=\"15\" x2=\"442\" y2=\"27\" style=\"stroke:#cb582eff;stroke-width:2;\" /><line x1=\"443\" y1=\"15\" x2=\"443\" y2=\"27\" style=\"stroke:#cb582eff;stroke-width:2;\" /><line x1=\"444\" y1=\"15\" x2=\"444\" y2=\"27\" style=\"stroke:#cb582dff;stroke-width:2;\" /><line x1=\"445\" y1=\"15\" x2=\"445\" y2=\"27\" style=\"stroke:#cb572dff;stroke-width:2;\" /><line x1=\"446\" y1=\"15\" x2=\"446\" y2=\"27\" style=\"stroke:#cb572dff;stroke-width:2;\" /><line x1=\"447\" y1=\"15\" x2=\"447\" y2=\"27\" style=\"stroke:#cb572cff;stroke-width:2;\" /><line x1=\"448\" y1=\"15\" x2=\"448\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><line x1=\"449\" y1=\"15\" x2=\"449\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><text x=\"0\" y=\"38\" style=\"text-anchor:start; font-size:11px; font:Arial\">-1.0</text><text x=\"75\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">11.8</text><text x=\"150\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">24.7</text><text x=\"225\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">37.5</text><text x=\"300\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">50.4</text><text x=\"375\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">63.2</text><text x=\"450\" y=\"38\" style=\"text-anchor:end; font-size:11px; font:Arial\">76.06</text><text x=\"0\" y=\"12\" style=\"font-size:11px; font:Arial\"></text></svg> <br/>\n        <span style=\"font-size: 0.8em\">(Obszary obwod\u00f3w s\u0105 przybli\u017cone z wykorzystaniem diagramu Voronoia)</span>\n        </div>\n        ",
+  "description": "\n        <div style='font-family: \"Open Sans\", sans-serif;'>\n        <h3>Gda\u0144sk: DULKIEWICZ Aleksandra Maria vs SZCZEPA\u0143SKI Adam Aleksander</h3>\n        R\u00f3\u017cnica w % <br/>\n        <span style=\"font-size: 0.8em\">\n        Warto\u015bci ujemne - przewaga SZCZEPA\u0143SKI Adam Aleksander <br/> \n        Warto\u015bci dodatnie - przewaga DULKIEWICZ Aleksandra Maria <br/>\n        Obwody z oddanymi mniej ni\u017c 50 g\u0142osami zosta\u0142y pomini\u0119te. <br/>\n        </span> \n        <svg height=\"40\" width=\"450\"><line x1=\"0\" y1=\"15\" x2=\"0\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"1\" y1=\"15\" x2=\"1\" y2=\"27\" style=\"stroke:#3a938aff;stroke-width:2;\" /><line x1=\"2\" y1=\"15\" x2=\"2\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"3\" y1=\"15\" x2=\"3\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"4\" y1=\"15\" x2=\"4\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"5\" y1=\"15\" x2=\"5\" y2=\"27\" style=\"stroke:#daddb4ff;stroke-width:2;\" /><line x1=\"6\" y1=\"15\" x2=\"6\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"7\" y1=\"15\" x2=\"7\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"8\" y1=\"15\" x2=\"8\" y2=\"27\" style=\"stroke:#f6edbcff;stroke-width:2;\" /><line x1=\"9\" y1=\"15\" x2=\"9\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"11\" y1=\"15\" x2=\"11\" y2=\"27\" style=\"stroke:#f6ecbbff;stroke-width:2;\" /><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"13\" y1=\"15\" x2=\"13\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"27\" style=\"stroke:#f6ebbaff;stroke-width:2;\" /><line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"27\" style=\"stroke:#f6eabaff;stroke-width:2;\" /><line x1=\"16\" y1=\"15\" x2=\"16\" y2=\"27\" style=\"stroke:#f6eabaff;stroke-width:2;\" /><line x1=\"17\" y1=\"15\" x2=\"17\" y2=\"27\" style=\"stroke:#f6eab9ff;stroke-width:2;\" /><line x1=\"18\" y1=\"15\" x2=\"18\" y2=\"27\" style=\"stroke:#f6e9b9ff;stroke-width:2;\" /><line x1=\"19\" y1=\"15\" x2=\"19\" y2=\"27\" style=\"stroke:#f6e9b9ff;stroke-width:2;\" /><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"27\" style=\"stroke:#f6e9b8ff;stroke-width:2;\" /><line x1=\"21\" y1=\"15\" x2=\"21\" y2=\"27\" style=\"stroke:#f6e8b8ff;stroke-width:2;\" /><line x1=\"22\" y1=\"15\" x2=\"22\" y2=\"27\" style=\"stroke:#f5e8b8ff;stroke-width:2;\" /><line x1=\"23\" y1=\"15\" x2=\"23\" y2=\"27\" style=\"stroke:#f5e8b7ff;stroke-width:2;\" /><line x1=\"24\" y1=\"15\" x2=\"24\" y2=\"27\" style=\"stroke:#f5e7b7ff;stroke-width:2;\" /><line x1=\"25\" y1=\"15\" x2=\"25\" y2=\"27\" style=\"stroke:#f5e7b7ff;stroke-width:2;\" /><line x1=\"26\" y1=\"15\" x2=\"26\" y2=\"27\" style=\"stroke:#f5e7b6ff;stroke-width:2;\" /><line x1=\"27\" y1=\"15\" x2=\"27\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"28\" y1=\"15\" x2=\"28\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"29\" y1=\"15\" x2=\"29\" y2=\"27\" style=\"stroke:#f5e6b5ff;stroke-width:2;\" /><line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"27\" style=\"stroke:#f5e5b5ff;stroke-width:2;\" /><line x1=\"31\" y1=\"15\" x2=\"31\" y2=\"27\" style=\"stroke:#f5e5b5ff;stroke-width:2;\" /><line x1=\"32\" y1=\"15\" x2=\"32\" y2=\"27\" style=\"stroke:#f5e5b4ff;stroke-width:2;\" /><line x1=\"33\" y1=\"15\" x2=\"33\" y2=\"27\" style=\"stroke:#f5e4b4ff;stroke-width:2;\" /><line x1=\"34\" y1=\"15\" x2=\"34\" y2=\"27\" style=\"stroke:#f5e4b3ff;stroke-width:2;\" /><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"27\" style=\"stroke:#f5e4b3ff;stroke-width:2;\" /><line x1=\"36\" y1=\"15\" x2=\"36\" y2=\"27\" style=\"stroke:#f5e3b3ff;stroke-width:2;\" /><line x1=\"37\" y1=\"15\" x2=\"37\" y2=\"27\" style=\"stroke:#f5e3b2ff;stroke-width:2;\" /><line x1=\"38\" y1=\"15\" x2=\"38\" y2=\"27\" style=\"stroke:#f4e2b2ff;stroke-width:2;\" /><line x1=\"39\" y1=\"15\" x2=\"39\" y2=\"27\" style=\"stroke:#f4e2b2ff;stroke-width:2;\" /><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"27\" style=\"stroke:#f4e2b1ff;stroke-width:2;\" /><line x1=\"41\" y1=\"15\" x2=\"41\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"42\" y1=\"15\" x2=\"42\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"43\" y1=\"15\" x2=\"43\" y2=\"27\" style=\"stroke:#f4e1b0ff;stroke-width:2;\" /><line x1=\"44\" y1=\"15\" x2=\"44\" y2=\"27\" style=\"stroke:#f4e0b0ff;stroke-width:2;\" /><line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"27\" style=\"stroke:#f4e0b0ff;stroke-width:2;\" /><line x1=\"46\" y1=\"15\" x2=\"46\" y2=\"27\" style=\"stroke:#f4e0afff;stroke-width:2;\" /><line x1=\"47\" y1=\"15\" x2=\"47\" y2=\"27\" style=\"stroke:#f4dfafff;stroke-width:2;\" /><line x1=\"48\" y1=\"15\" x2=\"48\" y2=\"27\" style=\"stroke:#f4dfafff;stroke-width:2;\" /><line x1=\"49\" y1=\"15\" x2=\"49\" y2=\"27\" style=\"stroke:#f4dfaeff;stroke-width:2;\" /><line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"27\" style=\"stroke:#f4deaeff;stroke-width:2;\" /><line x1=\"51\" y1=\"15\" x2=\"51\" y2=\"27\" style=\"stroke:#f4deaeff;stroke-width:2;\" /><line x1=\"52\" y1=\"15\" x2=\"52\" y2=\"27\" style=\"stroke:#f4deadff;stroke-width:2;\" /><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"27\" style=\"stroke:#f4ddadff;stroke-width:2;\" /><line x1=\"54\" y1=\"15\" x2=\"54\" y2=\"27\" style=\"stroke:#f4ddadff;stroke-width:2;\" /><line x1=\"55\" y1=\"15\" x2=\"55\" y2=\"27\" style=\"stroke:#f3ddacff;stroke-width:2;\" /><line x1=\"56\" y1=\"15\" x2=\"56\" y2=\"27\" style=\"stroke:#f3dcacff;stroke-width:2;\" /><line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"27\" style=\"stroke:#f3dcacff;stroke-width:2;\" /><line x1=\"58\" y1=\"15\" x2=\"58\" y2=\"27\" style=\"stroke:#f3dcabff;stroke-width:2;\" /><line x1=\"59\" y1=\"15\" x2=\"59\" y2=\"27\" style=\"stroke:#f3dbabff;stroke-width:2;\" /><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"27\" style=\"stroke:#f3dbaaff;stroke-width:2;\" /><line x1=\"61\" y1=\"15\" x2=\"61\" y2=\"27\" style=\"stroke:#f3dbaaff;stroke-width:2;\" /><line x1=\"62\" y1=\"15\" x2=\"62\" y2=\"27\" style=\"stroke:#f3daaaff;stroke-width:2;\" /><line x1=\"63\" y1=\"15\" x2=\"63\" y2=\"27\" style=\"stroke:#f3daa9ff;stroke-width:2;\" /><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"27\" style=\"stroke:#f3daa9ff;stroke-width:2;\" /><line x1=\"65\" y1=\"15\" x2=\"65\" y2=\"27\" style=\"stroke:#f3d9a9ff;stroke-width:2;\" /><line x1=\"66\" y1=\"15\" x2=\"66\" y2=\"27\" style=\"stroke:#f3d9a8ff;stroke-width:2;\" /><line x1=\"67\" y1=\"15\" x2=\"67\" y2=\"27\" style=\"stroke:#f3d9a8ff;stroke-width:2;\" /><line x1=\"68\" y1=\"15\" x2=\"68\" y2=\"27\" style=\"stroke:#f3d8a8ff;stroke-width:2;\" /><line x1=\"69\" y1=\"15\" x2=\"69\" y2=\"27\" style=\"stroke:#f3d8a7ff;stroke-width:2;\" /><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"27\" style=\"stroke:#f3d8a7ff;stroke-width:2;\" /><line x1=\"71\" y1=\"15\" x2=\"71\" y2=\"27\" style=\"stroke:#f2d7a7ff;stroke-width:2;\" /><line x1=\"72\" y1=\"15\" x2=\"72\" y2=\"27\" style=\"stroke:#f2d7a6ff;stroke-width:2;\" /><line x1=\"73\" y1=\"15\" x2=\"73\" y2=\"27\" style=\"stroke:#f2d7a6ff;stroke-width:2;\" /><line x1=\"74\" y1=\"15\" x2=\"74\" y2=\"27\" style=\"stroke:#f2d6a6ff;stroke-width:2;\" /><line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"76\" y1=\"15\" x2=\"76\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"77\" y1=\"15\" x2=\"77\" y2=\"27\" style=\"stroke:#f2d5a5ff;stroke-width:2;\" /><line x1=\"78\" y1=\"15\" x2=\"78\" y2=\"27\" style=\"stroke:#f2d5a4ff;stroke-width:2;\" /><line x1=\"79\" y1=\"15\" x2=\"79\" y2=\"27\" style=\"stroke:#f2d5a4ff;stroke-width:2;\" /><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"27\" style=\"stroke:#f2d4a4ff;stroke-width:2;\" /><line x1=\"81\" y1=\"15\" x2=\"81\" y2=\"27\" style=\"stroke:#f2d4a3ff;stroke-width:2;\" /><line x1=\"82\" y1=\"15\" x2=\"82\" y2=\"27\" style=\"stroke:#f2d4a3ff;stroke-width:2;\" /><line x1=\"83\" y1=\"15\" x2=\"83\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"84\" y1=\"15\" x2=\"84\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"85\" y1=\"15\" x2=\"85\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"86\" y1=\"15\" x2=\"86\" y2=\"27\" style=\"stroke:#f2d2a1ff;stroke-width:2;\" /><line x1=\"87\" y1=\"15\" x2=\"87\" y2=\"27\" style=\"stroke:#f1d2a1ff;stroke-width:2;\" /><line x1=\"88\" y1=\"15\" x2=\"88\" y2=\"27\" style=\"stroke:#f1d2a1ff;stroke-width:2;\" /><line x1=\"89\" y1=\"15\" x2=\"89\" y2=\"27\" style=\"stroke:#f1d1a0ff;stroke-width:2;\" /><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"27\" style=\"stroke:#f1d1a0ff;stroke-width:2;\" /><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"27\" style=\"stroke:#f1d0a0ff;stroke-width:2;\" /><line x1=\"92\" y1=\"15\" x2=\"92\" y2=\"27\" style=\"stroke:#f1d09fff;stroke-width:2;\" /><line x1=\"93\" y1=\"15\" x2=\"93\" y2=\"27\" style=\"stroke:#f1d09fff;stroke-width:2;\" /><line x1=\"94\" y1=\"15\" x2=\"94\" y2=\"27\" style=\"stroke:#f1cf9fff;stroke-width:2;\" /><line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"96\" y1=\"15\" x2=\"96\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"97\" y1=\"15\" x2=\"97\" y2=\"27\" style=\"stroke:#f1ce9eff;stroke-width:2;\" /><line x1=\"98\" y1=\"15\" x2=\"98\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"99\" y1=\"15\" x2=\"99\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"27\" style=\"stroke:#f1cd9dff;stroke-width:2;\" /><line x1=\"101\" y1=\"15\" x2=\"101\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"102\" y1=\"15\" x2=\"102\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"103\" y1=\"15\" x2=\"103\" y2=\"27\" style=\"stroke:#f1cc9cff;stroke-width:2;\" /><line x1=\"104\" y1=\"15\" x2=\"104\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"106\" y1=\"15\" x2=\"106\" y2=\"27\" style=\"stroke:#f0cb9bff;stroke-width:2;\" /><line x1=\"107\" y1=\"15\" x2=\"107\" y2=\"27\" style=\"stroke:#f0cb9aff;stroke-width:2;\" /><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"27\" style=\"stroke:#f0cb9aff;stroke-width:2;\" /><line x1=\"109\" y1=\"15\" x2=\"109\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"111\" y1=\"15\" x2=\"111\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"112\" y1=\"15\" x2=\"112\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"113\" y1=\"15\" x2=\"113\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"114\" y1=\"15\" x2=\"114\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"116\" y1=\"15\" x2=\"116\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"117\" y1=\"15\" x2=\"117\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"118\" y1=\"15\" x2=\"118\" y2=\"27\" style=\"stroke:#f0c796ff;stroke-width:2;\" /><line x1=\"119\" y1=\"15\" x2=\"119\" y2=\"27\" style=\"stroke:#f0c796ff;stroke-width:2;\" /><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"27\" style=\"stroke:#efc796ff;stroke-width:2;\" /><line x1=\"121\" y1=\"15\" x2=\"121\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"122\" y1=\"15\" x2=\"122\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"123\" y1=\"15\" x2=\"123\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"124\" y1=\"15\" x2=\"124\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"125\" y1=\"15\" x2=\"125\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"126\" y1=\"15\" x2=\"126\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"127\" y1=\"15\" x2=\"127\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"128\" y1=\"15\" x2=\"128\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"131\" y1=\"15\" x2=\"131\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"132\" y1=\"15\" x2=\"132\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"133\" y1=\"15\" x2=\"133\" y2=\"27\" style=\"stroke:#efc291ff;stroke-width:2;\" /><line x1=\"134\" y1=\"15\" x2=\"134\" y2=\"27\" style=\"stroke:#efc291ff;stroke-width:2;\" /><line x1=\"135\" y1=\"15\" x2=\"135\" y2=\"27\" style=\"stroke:#efc290ff;stroke-width:2;\" /><line x1=\"136\" y1=\"15\" x2=\"136\" y2=\"27\" style=\"stroke:#efc190ff;stroke-width:2;\" /><line x1=\"137\" y1=\"15\" x2=\"137\" y2=\"27\" style=\"stroke:#eec190ff;stroke-width:2;\" /><line x1=\"138\" y1=\"15\" x2=\"138\" y2=\"27\" style=\"stroke:#eec18fff;stroke-width:2;\" /><line x1=\"139\" y1=\"15\" x2=\"139\" y2=\"27\" style=\"stroke:#eec08fff;stroke-width:2;\" /><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"27\" style=\"stroke:#eec08fff;stroke-width:2;\" /><line x1=\"141\" y1=\"15\" x2=\"141\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"142\" y1=\"15\" x2=\"142\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"143\" y1=\"15\" x2=\"143\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"144\" y1=\"15\" x2=\"144\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"145\" y1=\"15\" x2=\"145\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"146\" y1=\"15\" x2=\"146\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"147\" y1=\"15\" x2=\"147\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"148\" y1=\"15\" x2=\"148\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"149\" y1=\"15\" x2=\"149\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"151\" y1=\"15\" x2=\"151\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"153\" y1=\"15\" x2=\"153\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"154\" y1=\"15\" x2=\"154\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"155\" y1=\"15\" x2=\"155\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"156\" y1=\"15\" x2=\"156\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"157\" y1=\"15\" x2=\"157\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"158\" y1=\"15\" x2=\"158\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"159\" y1=\"15\" x2=\"159\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"161\" y1=\"15\" x2=\"161\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"162\" y1=\"15\" x2=\"162\" y2=\"27\" style=\"stroke:#edb887ff;stroke-width:2;\" /><line x1=\"163\" y1=\"15\" x2=\"163\" y2=\"27\" style=\"stroke:#ecb887ff;stroke-width:2;\" /><line x1=\"164\" y1=\"15\" x2=\"164\" y2=\"27\" style=\"stroke:#ecb887ff;stroke-width:2;\" /><line x1=\"165\" y1=\"15\" x2=\"165\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"166\" y1=\"15\" x2=\"166\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"168\" y1=\"15\" x2=\"168\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"169\" y1=\"15\" x2=\"169\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"171\" y1=\"15\" x2=\"171\" y2=\"27\" style=\"stroke:#ecb584ff;stroke-width:2;\" /><line x1=\"172\" y1=\"15\" x2=\"172\" y2=\"27\" style=\"stroke:#ecb584ff;stroke-width:2;\" /><line x1=\"173\" y1=\"15\" x2=\"173\" y2=\"27\" style=\"stroke:#ebb584ff;stroke-width:2;\" /><line x1=\"174\" y1=\"15\" x2=\"174\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"176\" y1=\"15\" x2=\"176\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"177\" y1=\"15\" x2=\"177\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"178\" y1=\"15\" x2=\"178\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"179\" y1=\"15\" x2=\"179\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"181\" y1=\"15\" x2=\"181\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"182\" y1=\"15\" x2=\"182\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"183\" y1=\"15\" x2=\"183\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"184\" y1=\"15\" x2=\"184\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"186\" y1=\"15\" x2=\"186\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"187\" y1=\"15\" x2=\"187\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"188\" y1=\"15\" x2=\"188\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"189\" y1=\"15\" x2=\"189\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"190\" y1=\"15\" x2=\"190\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"191\" y1=\"15\" x2=\"191\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"192\" y1=\"15\" x2=\"192\" y2=\"27\" style=\"stroke:#eaae7dff;stroke-width:2;\" /><line x1=\"193\" y1=\"15\" x2=\"193\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"194\" y1=\"15\" x2=\"194\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"195\" y1=\"15\" x2=\"195\" y2=\"27\" style=\"stroke:#e9ad7dff;stroke-width:2;\" /><line x1=\"196\" y1=\"15\" x2=\"196\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"197\" y1=\"15\" x2=\"197\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"198\" y1=\"15\" x2=\"198\" y2=\"27\" style=\"stroke:#e9ac7cff;stroke-width:2;\" /><line x1=\"199\" y1=\"15\" x2=\"199\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"201\" y1=\"15\" x2=\"201\" y2=\"27\" style=\"stroke:#e9ab7bff;stroke-width:2;\" /><line x1=\"202\" y1=\"15\" x2=\"202\" y2=\"27\" style=\"stroke:#e8ab7aff;stroke-width:2;\" /><line x1=\"203\" y1=\"15\" x2=\"203\" y2=\"27\" style=\"stroke:#e8ab7aff;stroke-width:2;\" /><line x1=\"204\" y1=\"15\" x2=\"204\" y2=\"27\" style=\"stroke:#e8aa7aff;stroke-width:2;\" /><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"206\" y1=\"15\" x2=\"206\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"207\" y1=\"15\" x2=\"207\" y2=\"27\" style=\"stroke:#e8a979ff;stroke-width:2;\" /><line x1=\"208\" y1=\"15\" x2=\"208\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"209\" y1=\"15\" x2=\"209\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"210\" y1=\"15\" x2=\"210\" y2=\"27\" style=\"stroke:#e8a878ff;stroke-width:2;\" /><line x1=\"211\" y1=\"15\" x2=\"211\" y2=\"27\" style=\"stroke:#e8a877ff;stroke-width:2;\" /><line x1=\"212\" y1=\"15\" x2=\"212\" y2=\"27\" style=\"stroke:#e7a877ff;stroke-width:2;\" /><line x1=\"213\" y1=\"15\" x2=\"213\" y2=\"27\" style=\"stroke:#e7a777ff;stroke-width:2;\" /><line x1=\"214\" y1=\"15\" x2=\"214\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"215\" y1=\"15\" x2=\"215\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"216\" y1=\"15\" x2=\"216\" y2=\"27\" style=\"stroke:#e7a676ff;stroke-width:2;\" /><line x1=\"217\" y1=\"15\" x2=\"217\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"218\" y1=\"15\" x2=\"218\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"219\" y1=\"15\" x2=\"219\" y2=\"27\" style=\"stroke:#e7a575ff;stroke-width:2;\" /><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"27\" style=\"stroke:#e7a574ff;stroke-width:2;\" /><line x1=\"221\" y1=\"15\" x2=\"221\" y2=\"27\" style=\"stroke:#e7a574ff;stroke-width:2;\" /><line x1=\"222\" y1=\"15\" x2=\"222\" y2=\"27\" style=\"stroke:#e6a474ff;stroke-width:2;\" /><line x1=\"223\" y1=\"15\" x2=\"223\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"224\" y1=\"15\" x2=\"224\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"225\" y1=\"15\" x2=\"225\" y2=\"27\" style=\"stroke:#e6a373ff;stroke-width:2;\" /><line x1=\"226\" y1=\"15\" x2=\"226\" y2=\"27\" style=\"stroke:#e6a372ff;stroke-width:2;\" /><line x1=\"227\" y1=\"15\" x2=\"227\" y2=\"27\" style=\"stroke:#e6a372ff;stroke-width:2;\" /><line x1=\"228\" y1=\"15\" x2=\"228\" y2=\"27\" style=\"stroke:#e6a272ff;stroke-width:2;\" /><line x1=\"229\" y1=\"15\" x2=\"229\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"231\" y1=\"15\" x2=\"231\" y2=\"27\" style=\"stroke:#e6a171ff;stroke-width:2;\" /><line x1=\"232\" y1=\"15\" x2=\"232\" y2=\"27\" style=\"stroke:#e5a170ff;stroke-width:2;\" /><line x1=\"233\" y1=\"15\" x2=\"233\" y2=\"27\" style=\"stroke:#e5a170ff;stroke-width:2;\" /><line x1=\"234\" y1=\"15\" x2=\"234\" y2=\"27\" style=\"stroke:#e5a070ff;stroke-width:2;\" /><line x1=\"235\" y1=\"15\" x2=\"235\" y2=\"27\" style=\"stroke:#e5a06fff;stroke-width:2;\" /><line x1=\"236\" y1=\"15\" x2=\"236\" y2=\"27\" style=\"stroke:#e5a06fff;stroke-width:2;\" /><line x1=\"237\" y1=\"15\" x2=\"237\" y2=\"27\" style=\"stroke:#e59f6fff;stroke-width:2;\" /><line x1=\"238\" y1=\"15\" x2=\"238\" y2=\"27\" style=\"stroke:#e59f6eff;stroke-width:2;\" /><line x1=\"239\" y1=\"15\" x2=\"239\" y2=\"27\" style=\"stroke:#e59f6eff;stroke-width:2;\" /><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"241\" y1=\"15\" x2=\"241\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"242\" y1=\"15\" x2=\"242\" y2=\"27\" style=\"stroke:#e49e6dff;stroke-width:2;\" /><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"27\" style=\"stroke:#e49d6dff;stroke-width:2;\" /><line x1=\"244\" y1=\"15\" x2=\"244\" y2=\"27\" style=\"stroke:#e49d6dff;stroke-width:2;\" /><line x1=\"245\" y1=\"15\" x2=\"245\" y2=\"27\" style=\"stroke:#e49d6cff;stroke-width:2;\" /><line x1=\"246\" y1=\"15\" x2=\"246\" y2=\"27\" style=\"stroke:#e49c6cff;stroke-width:2;\" /><line x1=\"247\" y1=\"15\" x2=\"247\" y2=\"27\" style=\"stroke:#e49c6cff;stroke-width:2;\" /><line x1=\"248\" y1=\"15\" x2=\"248\" y2=\"27\" style=\"stroke:#e49c6bff;stroke-width:2;\" /><line x1=\"249\" y1=\"15\" x2=\"249\" y2=\"27\" style=\"stroke:#e49b6bff;stroke-width:2;\" /><line x1=\"250\" y1=\"15\" x2=\"250\" y2=\"27\" style=\"stroke:#e49b6bff;stroke-width:2;\" /><line x1=\"251\" y1=\"15\" x2=\"251\" y2=\"27\" style=\"stroke:#e39b6aff;stroke-width:2;\" /><line x1=\"252\" y1=\"15\" x2=\"252\" y2=\"27\" style=\"stroke:#e39a6aff;stroke-width:2;\" /><line x1=\"253\" y1=\"15\" x2=\"253\" y2=\"27\" style=\"stroke:#e39a6aff;stroke-width:2;\" /><line x1=\"254\" y1=\"15\" x2=\"254\" y2=\"27\" style=\"stroke:#e39a69ff;stroke-width:2;\" /><line x1=\"255\" y1=\"15\" x2=\"255\" y2=\"27\" style=\"stroke:#e39969ff;stroke-width:2;\" /><line x1=\"256\" y1=\"15\" x2=\"256\" y2=\"27\" style=\"stroke:#e39969ff;stroke-width:2;\" /><line x1=\"257\" y1=\"15\" x2=\"257\" y2=\"27\" style=\"stroke:#e39968ff;stroke-width:2;\" /><line x1=\"258\" y1=\"15\" x2=\"258\" y2=\"27\" style=\"stroke:#e39868ff;stroke-width:2;\" /><line x1=\"259\" y1=\"15\" x2=\"259\" y2=\"27\" style=\"stroke:#e39868ff;stroke-width:2;\" /><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"27\" style=\"stroke:#e39867ff;stroke-width:2;\" /><line x1=\"261\" y1=\"15\" x2=\"261\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"262\" y1=\"15\" x2=\"262\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"263\" y1=\"15\" x2=\"263\" y2=\"27\" style=\"stroke:#e29766ff;stroke-width:2;\" /><line x1=\"264\" y1=\"15\" x2=\"264\" y2=\"27\" style=\"stroke:#e29666ff;stroke-width:2;\" /><line x1=\"265\" y1=\"15\" x2=\"265\" y2=\"27\" style=\"stroke:#e29666ff;stroke-width:2;\" /><line x1=\"266\" y1=\"15\" x2=\"266\" y2=\"27\" style=\"stroke:#e29665ff;stroke-width:2;\" /><line x1=\"267\" y1=\"15\" x2=\"267\" y2=\"27\" style=\"stroke:#e29565ff;stroke-width:2;\" /><line x1=\"268\" y1=\"15\" x2=\"268\" y2=\"27\" style=\"stroke:#e29565ff;stroke-width:2;\" /><line x1=\"269\" y1=\"15\" x2=\"269\" y2=\"27\" style=\"stroke:#e29564ff;stroke-width:2;\" /><line x1=\"270\" y1=\"15\" x2=\"270\" y2=\"27\" style=\"stroke:#e29464ff;stroke-width:2;\" /><line x1=\"271\" y1=\"15\" x2=\"271\" y2=\"27\" style=\"stroke:#e19464ff;stroke-width:2;\" /><line x1=\"272\" y1=\"15\" x2=\"272\" y2=\"27\" style=\"stroke:#e19463ff;stroke-width:2;\" /><line x1=\"273\" y1=\"15\" x2=\"273\" y2=\"27\" style=\"stroke:#e19363ff;stroke-width:2;\" /><line x1=\"274\" y1=\"15\" x2=\"274\" y2=\"27\" style=\"stroke:#e19363ff;stroke-width:2;\" /><line x1=\"275\" y1=\"15\" x2=\"275\" y2=\"27\" style=\"stroke:#e19362ff;stroke-width:2;\" /><line x1=\"276\" y1=\"15\" x2=\"276\" y2=\"27\" style=\"stroke:#e19262ff;stroke-width:2;\" /><line x1=\"277\" y1=\"15\" x2=\"277\" y2=\"27\" style=\"stroke:#e19262ff;stroke-width:2;\" /><line x1=\"278\" y1=\"15\" x2=\"278\" y2=\"27\" style=\"stroke:#e19261ff;stroke-width:2;\" /><line x1=\"279\" y1=\"15\" x2=\"279\" y2=\"27\" style=\"stroke:#e19161ff;stroke-width:2;\" /><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"27\" style=\"stroke:#e19161ff;stroke-width:2;\" /><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"27\" style=\"stroke:#e09160ff;stroke-width:2;\" /><line x1=\"282\" y1=\"15\" x2=\"282\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"283\" y1=\"15\" x2=\"283\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"284\" y1=\"15\" x2=\"284\" y2=\"27\" style=\"stroke:#e0905fff;stroke-width:2;\" /><line x1=\"285\" y1=\"15\" x2=\"285\" y2=\"27\" style=\"stroke:#e08f5fff;stroke-width:2;\" /><line x1=\"286\" y1=\"15\" x2=\"286\" y2=\"27\" style=\"stroke:#e08f5fff;stroke-width:2;\" /><line x1=\"287\" y1=\"15\" x2=\"287\" y2=\"27\" style=\"stroke:#e08f5eff;stroke-width:2;\" /><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"289\" y1=\"15\" x2=\"289\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"290\" y1=\"15\" x2=\"290\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"291\" y1=\"15\" x2=\"291\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"292\" y1=\"15\" x2=\"292\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"293\" y1=\"15\" x2=\"293\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"294\" y1=\"15\" x2=\"294\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"295\" y1=\"15\" x2=\"295\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"296\" y1=\"15\" x2=\"296\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"297\" y1=\"15\" x2=\"297\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"298\" y1=\"15\" x2=\"298\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"299\" y1=\"15\" x2=\"299\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"301\" y1=\"15\" x2=\"301\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"302\" y1=\"15\" x2=\"302\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"303\" y1=\"15\" x2=\"303\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"304\" y1=\"15\" x2=\"304\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"305\" y1=\"15\" x2=\"305\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"306\" y1=\"15\" x2=\"306\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"307\" y1=\"15\" x2=\"307\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"308\" y1=\"15\" x2=\"308\" y2=\"27\" style=\"stroke:#dd8858ff;stroke-width:2;\" /><line x1=\"309\" y1=\"15\" x2=\"309\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"310\" y1=\"15\" x2=\"310\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"311\" y1=\"15\" x2=\"311\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"312\" y1=\"15\" x2=\"312\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"313\" y1=\"15\" x2=\"313\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"314\" y1=\"15\" x2=\"314\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"315\" y1=\"15\" x2=\"315\" y2=\"27\" style=\"stroke:#dd8556ff;stroke-width:2;\" /><line x1=\"316\" y1=\"15\" x2=\"316\" y2=\"27\" style=\"stroke:#dc8555ff;stroke-width:2;\" /><line x1=\"317\" y1=\"15\" x2=\"317\" y2=\"27\" style=\"stroke:#dc8455ff;stroke-width:2;\" /><line x1=\"318\" y1=\"15\" x2=\"318\" y2=\"27\" style=\"stroke:#dc8455ff;stroke-width:2;\" /><line x1=\"319\" y1=\"15\" x2=\"319\" y2=\"27\" style=\"stroke:#dc8454ff;stroke-width:2;\" /><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"27\" style=\"stroke:#dc8354ff;stroke-width:2;\" /><line x1=\"321\" y1=\"15\" x2=\"321\" y2=\"27\" style=\"stroke:#dc8354ff;stroke-width:2;\" /><line x1=\"322\" y1=\"15\" x2=\"322\" y2=\"27\" style=\"stroke:#dc8353ff;stroke-width:2;\" /><line x1=\"323\" y1=\"15\" x2=\"323\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"324\" y1=\"15\" x2=\"324\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"325\" y1=\"15\" x2=\"325\" y2=\"27\" style=\"stroke:#db8252ff;stroke-width:2;\" /><line x1=\"326\" y1=\"15\" x2=\"326\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"327\" y1=\"15\" x2=\"327\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"328\" y1=\"15\" x2=\"328\" y2=\"27\" style=\"stroke:#db8151ff;stroke-width:2;\" /><line x1=\"329\" y1=\"15\" x2=\"329\" y2=\"27\" style=\"stroke:#db8051ff;stroke-width:2;\" /><line x1=\"330\" y1=\"15\" x2=\"330\" y2=\"27\" style=\"stroke:#da8051ff;stroke-width:2;\" /><line x1=\"331\" y1=\"15\" x2=\"331\" y2=\"27\" style=\"stroke:#da8051ff;stroke-width:2;\" /><line x1=\"332\" y1=\"15\" x2=\"332\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"333\" y1=\"15\" x2=\"333\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"334\" y1=\"15\" x2=\"334\" y2=\"27\" style=\"stroke:#da7e50ff;stroke-width:2;\" /><line x1=\"335\" y1=\"15\" x2=\"335\" y2=\"27\" style=\"stroke:#da7e4fff;stroke-width:2;\" /><line x1=\"336\" y1=\"15\" x2=\"336\" y2=\"27\" style=\"stroke:#da7e4fff;stroke-width:2;\" /><line x1=\"337\" y1=\"15\" x2=\"337\" y2=\"27\" style=\"stroke:#da7d4fff;stroke-width:2;\" /><line x1=\"338\" y1=\"15\" x2=\"338\" y2=\"27\" style=\"stroke:#d97d4eff;stroke-width:2;\" /><line x1=\"339\" y1=\"15\" x2=\"339\" y2=\"27\" style=\"stroke:#d97d4eff;stroke-width:2;\" /><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"27\" style=\"stroke:#d97c4eff;stroke-width:2;\" /><line x1=\"341\" y1=\"15\" x2=\"341\" y2=\"27\" style=\"stroke:#d97c4dff;stroke-width:2;\" /><line x1=\"342\" y1=\"15\" x2=\"342\" y2=\"27\" style=\"stroke:#d97c4dff;stroke-width:2;\" /><line x1=\"343\" y1=\"15\" x2=\"343\" y2=\"27\" style=\"stroke:#d97b4dff;stroke-width:2;\" /><line x1=\"344\" y1=\"15\" x2=\"344\" y2=\"27\" style=\"stroke:#d97b4cff;stroke-width:2;\" /><line x1=\"345\" y1=\"15\" x2=\"345\" y2=\"27\" style=\"stroke:#d87b4cff;stroke-width:2;\" /><line x1=\"346\" y1=\"15\" x2=\"346\" y2=\"27\" style=\"stroke:#d87a4cff;stroke-width:2;\" /><line x1=\"347\" y1=\"15\" x2=\"347\" y2=\"27\" style=\"stroke:#d87a4cff;stroke-width:2;\" /><line x1=\"348\" y1=\"15\" x2=\"348\" y2=\"27\" style=\"stroke:#d87a4bff;stroke-width:2;\" /><line x1=\"349\" y1=\"15\" x2=\"349\" y2=\"27\" style=\"stroke:#d8794bff;stroke-width:2;\" /><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"27\" style=\"stroke:#d8794bff;stroke-width:2;\" /><line x1=\"351\" y1=\"15\" x2=\"351\" y2=\"27\" style=\"stroke:#d8784aff;stroke-width:2;\" /><line x1=\"352\" y1=\"15\" x2=\"352\" y2=\"27\" style=\"stroke:#d7784aff;stroke-width:2;\" /><line x1=\"353\" y1=\"15\" x2=\"353\" y2=\"27\" style=\"stroke:#d7784aff;stroke-width:2;\" /><line x1=\"354\" y1=\"15\" x2=\"354\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"355\" y1=\"15\" x2=\"355\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"356\" y1=\"15\" x2=\"356\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"357\" y1=\"15\" x2=\"357\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"358\" y1=\"15\" x2=\"358\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"359\" y1=\"15\" x2=\"359\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"361\" y1=\"15\" x2=\"361\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"362\" y1=\"15\" x2=\"362\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"363\" y1=\"15\" x2=\"363\" y2=\"27\" style=\"stroke:#d67447ff;stroke-width:2;\" /><line x1=\"364\" y1=\"15\" x2=\"364\" y2=\"27\" style=\"stroke:#d67446ff;stroke-width:2;\" /><line x1=\"365\" y1=\"15\" x2=\"365\" y2=\"27\" style=\"stroke:#d67446ff;stroke-width:2;\" /><line x1=\"366\" y1=\"15\" x2=\"366\" y2=\"27\" style=\"stroke:#d67346ff;stroke-width:2;\" /><line x1=\"367\" y1=\"15\" x2=\"367\" y2=\"27\" style=\"stroke:#d57345ff;stroke-width:2;\" /><line x1=\"368\" y1=\"15\" x2=\"368\" y2=\"27\" style=\"stroke:#d57245ff;stroke-width:2;\" /><line x1=\"369\" y1=\"15\" x2=\"369\" y2=\"27\" style=\"stroke:#d57245ff;stroke-width:2;\" /><line x1=\"370\" y1=\"15\" x2=\"370\" y2=\"27\" style=\"stroke:#d57244ff;stroke-width:2;\" /><line x1=\"371\" y1=\"15\" x2=\"371\" y2=\"27\" style=\"stroke:#d57144ff;stroke-width:2;\" /><line x1=\"372\" y1=\"15\" x2=\"372\" y2=\"27\" style=\"stroke:#d57144ff;stroke-width:2;\" /><line x1=\"373\" y1=\"15\" x2=\"373\" y2=\"27\" style=\"stroke:#d57143ff;stroke-width:2;\" /><line x1=\"374\" y1=\"15\" x2=\"374\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"375\" y1=\"15\" x2=\"375\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"376\" y1=\"15\" x2=\"376\" y2=\"27\" style=\"stroke:#d47042ff;stroke-width:2;\" /><line x1=\"377\" y1=\"15\" x2=\"377\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"378\" y1=\"15\" x2=\"378\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"379\" y1=\"15\" x2=\"379\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"27\" style=\"stroke:#d46e41ff;stroke-width:2;\" /><line x1=\"381\" y1=\"15\" x2=\"381\" y2=\"27\" style=\"stroke:#d46e41ff;stroke-width:2;\" /><line x1=\"382\" y1=\"15\" x2=\"382\" y2=\"27\" style=\"stroke:#d36e41ff;stroke-width:2;\" /><line x1=\"383\" y1=\"15\" x2=\"383\" y2=\"27\" style=\"stroke:#d36d40ff;stroke-width:2;\" /><line x1=\"384\" y1=\"15\" x2=\"384\" y2=\"27\" style=\"stroke:#d36d40ff;stroke-width:2;\" /><line x1=\"385\" y1=\"15\" x2=\"385\" y2=\"27\" style=\"stroke:#d36c40ff;stroke-width:2;\" /><line x1=\"386\" y1=\"15\" x2=\"386\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"387\" y1=\"15\" x2=\"387\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"388\" y1=\"15\" x2=\"388\" y2=\"27\" style=\"stroke:#d36b3fff;stroke-width:2;\" /><line x1=\"389\" y1=\"15\" x2=\"389\" y2=\"27\" style=\"stroke:#d26b3eff;stroke-width:2;\" /><line x1=\"390\" y1=\"15\" x2=\"390\" y2=\"27\" style=\"stroke:#d26b3eff;stroke-width:2;\" /><line x1=\"391\" y1=\"15\" x2=\"391\" y2=\"27\" style=\"stroke:#d26a3eff;stroke-width:2;\" /><line x1=\"392\" y1=\"15\" x2=\"392\" y2=\"27\" style=\"stroke:#d26a3dff;stroke-width:2;\" /><line x1=\"393\" y1=\"15\" x2=\"393\" y2=\"27\" style=\"stroke:#d26a3dff;stroke-width:2;\" /><line x1=\"394\" y1=\"15\" x2=\"394\" y2=\"27\" style=\"stroke:#d2693dff;stroke-width:2;\" /><line x1=\"395\" y1=\"15\" x2=\"395\" y2=\"27\" style=\"stroke:#d2693dff;stroke-width:2;\" /><line x1=\"396\" y1=\"15\" x2=\"396\" y2=\"27\" style=\"stroke:#d1693cff;stroke-width:2;\" /><line x1=\"397\" y1=\"15\" x2=\"397\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"398\" y1=\"15\" x2=\"398\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"399\" y1=\"15\" x2=\"399\" y2=\"27\" style=\"stroke:#d1683bff;stroke-width:2;\" /><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"401\" y1=\"15\" x2=\"401\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"402\" y1=\"15\" x2=\"402\" y2=\"27\" style=\"stroke:#d1663aff;stroke-width:2;\" /><line x1=\"403\" y1=\"15\" x2=\"403\" y2=\"27\" style=\"stroke:#d1663aff;stroke-width:2;\" /><line x1=\"404\" y1=\"15\" x2=\"404\" y2=\"27\" style=\"stroke:#d0663aff;stroke-width:2;\" /><line x1=\"405\" y1=\"15\" x2=\"405\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"406\" y1=\"15\" x2=\"406\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"407\" y1=\"15\" x2=\"407\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"408\" y1=\"15\" x2=\"408\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"409\" y1=\"15\" x2=\"409\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"410\" y1=\"15\" x2=\"410\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"411\" y1=\"15\" x2=\"411\" y2=\"27\" style=\"stroke:#cf6338ff;stroke-width:2;\" /><line x1=\"412\" y1=\"15\" x2=\"412\" y2=\"27\" style=\"stroke:#cf6337ff;stroke-width:2;\" /><line x1=\"413\" y1=\"15\" x2=\"413\" y2=\"27\" style=\"stroke:#cf6337ff;stroke-width:2;\" /><line x1=\"414\" y1=\"15\" x2=\"414\" y2=\"27\" style=\"stroke:#cf6237ff;stroke-width:2;\" /><line x1=\"415\" y1=\"15\" x2=\"415\" y2=\"27\" style=\"stroke:#cf6236ff;stroke-width:2;\" /><line x1=\"416\" y1=\"15\" x2=\"416\" y2=\"27\" style=\"stroke:#cf6136ff;stroke-width:2;\" /><line x1=\"417\" y1=\"15\" x2=\"417\" y2=\"27\" style=\"stroke:#cf6136ff;stroke-width:2;\" /><line x1=\"418\" y1=\"15\" x2=\"418\" y2=\"27\" style=\"stroke:#cf6135ff;stroke-width:2;\" /><line x1=\"419\" y1=\"15\" x2=\"419\" y2=\"27\" style=\"stroke:#ce6035ff;stroke-width:2;\" /><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"27\" style=\"stroke:#ce6035ff;stroke-width:2;\" /><line x1=\"421\" y1=\"15\" x2=\"421\" y2=\"27\" style=\"stroke:#ce6034ff;stroke-width:2;\" /><line x1=\"422\" y1=\"15\" x2=\"422\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"423\" y1=\"15\" x2=\"423\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"424\" y1=\"15\" x2=\"424\" y2=\"27\" style=\"stroke:#ce5f33ff;stroke-width:2;\" /><line x1=\"425\" y1=\"15\" x2=\"425\" y2=\"27\" style=\"stroke:#ce5e33ff;stroke-width:2;\" /><line x1=\"426\" y1=\"15\" x2=\"426\" y2=\"27\" style=\"stroke:#cd5e33ff;stroke-width:2;\" /><line x1=\"427\" y1=\"15\" x2=\"427\" y2=\"27\" style=\"stroke:#cd5e33ff;stroke-width:2;\" /><line x1=\"428\" y1=\"15\" x2=\"428\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"429\" y1=\"15\" x2=\"429\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"430\" y1=\"15\" x2=\"430\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"431\" y1=\"15\" x2=\"431\" y2=\"27\" style=\"stroke:#cd5c31ff;stroke-width:2;\" /><line x1=\"432\" y1=\"15\" x2=\"432\" y2=\"27\" style=\"stroke:#cd5c31ff;stroke-width:2;\" /><line x1=\"433\" y1=\"15\" x2=\"433\" y2=\"27\" style=\"stroke:#cc5b31ff;stroke-width:2;\" /><line x1=\"434\" y1=\"15\" x2=\"434\" y2=\"27\" style=\"stroke:#cc5b30ff;stroke-width:2;\" /><line x1=\"435\" y1=\"15\" x2=\"435\" y2=\"27\" style=\"stroke:#cc5b30ff;stroke-width:2;\" /><line x1=\"436\" y1=\"15\" x2=\"436\" y2=\"27\" style=\"stroke:#cc5a30ff;stroke-width:2;\" /><line x1=\"437\" y1=\"15\" x2=\"437\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"438\" y1=\"15\" x2=\"438\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"439\" y1=\"15\" x2=\"439\" y2=\"27\" style=\"stroke:#cc592fff;stroke-width:2;\" /><line x1=\"440\" y1=\"15\" x2=\"440\" y2=\"27\" style=\"stroke:#cc592eff;stroke-width:2;\" /><line x1=\"441\" y1=\"15\" x2=\"441\" y2=\"27\" style=\"stroke:#cb592eff;stroke-width:2;\" /><line x1=\"442\" y1=\"15\" x2=\"442\" y2=\"27\" style=\"stroke:#cb582eff;stroke-width:2;\" /><line x1=\"443\" y1=\"15\" x2=\"443\" y2=\"27\" style=\"stroke:#cb582eff;stroke-width:2;\" /><line x1=\"444\" y1=\"15\" x2=\"444\" y2=\"27\" style=\"stroke:#cb582dff;stroke-width:2;\" /><line x1=\"445\" y1=\"15\" x2=\"445\" y2=\"27\" style=\"stroke:#cb572dff;stroke-width:2;\" /><line x1=\"446\" y1=\"15\" x2=\"446\" y2=\"27\" style=\"stroke:#cb572dff;stroke-width:2;\" /><line x1=\"447\" y1=\"15\" x2=\"447\" y2=\"27\" style=\"stroke:#cb572cff;stroke-width:2;\" /><line x1=\"448\" y1=\"15\" x2=\"448\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><line x1=\"449\" y1=\"15\" x2=\"449\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><text x=\"0\" y=\"38\" style=\"text-anchor:start; font-size:11px; font:Arial\">-1.0</text><text x=\"75\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">11.8</text><text x=\"150\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">24.7</text><text x=\"225\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">37.5</text><text x=\"300\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">50.4</text><text x=\"375\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">63.2</text><text x=\"450\" y=\"38\" style=\"text-anchor:end; font-size:11px; font:Arial\">76.06</text><text x=\"0\" y=\"12\" style=\"font-size:11px; font:Arial\"></text></svg> <br/>\n        <span style=\"font-size: 0.8em\">(Obszary obwod\u00f3w s\u0105 przybli\u017cone z wykorzystaniem diagramu Voronoia)</span><br/>\n        \n<div class=\"dropdown\">\n  <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n    Zmie\u0144 map\u0119\n  </button>\n  <ul class=\"dropdown-menu\" style=\"max-height: 25vw; overflow: auto;\">\n    <li><a class=\"dropdown-item\" href=\"./gda_turnout.html\">Gda\u0144sk - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_RTJ.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs RAKOWSKI Tomasz J\u0119drzej</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_PAL.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs PECKA Andrzej Leszek</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_UMP.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_SA.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_SAA.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_DAM.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_RTJ.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs PECKA Andrzej Leszek</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_UMP.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_SA.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_SAA.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_RTJ.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_UMP.html\">Gda\u0144sk - PECKA Andrzej Leszek vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_SA.html\">Gda\u0144sk - PECKA Andrzej Leszek vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_SAA.html\">Gda\u0144sk - PECKA Andrzej Leszek vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_PAL.html\">Gda\u0144sk - PECKA Andrzej Leszek vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_SA_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_SAA_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_SA_SAA.html\">Gda\u0144sk - SZOSTAK Artur vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_SA.html\">Gda\u0144sk - SZOSTAK Artur vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_SAA.html\">Gda\u0144sk - SZCZEPA\u0143SKI Adam Aleksander vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./kra_turnout.html\">Krak\u00f3w - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs GIBA\u0141A \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KMITA \u0141ukasz Marek</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MAJ_MS.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MAJ_MJS.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_K\u0141M.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KMITA \u0141ukasz Marek</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_KAA.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_G\u0141.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_KRP.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_HAW.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MS.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MJS.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MS.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MJS.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_KAA.html\">Krak\u00f3w - KULIG Andrzej Adam vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_KRP.html\">Krak\u00f3w - KULIG Andrzej Adam vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_KAA.html\">Krak\u00f3w - KULIG Andrzej Adam vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MS.html\">Krak\u00f3w - KULIG Andrzej Adam vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MJS.html\">Krak\u00f3w - KULIG Andrzej Adam vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_KRP.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_HAW.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MS.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MJS.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_KRP.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MS.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MJS.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MS.html\">Krak\u00f3w - HARE\u0143CZYK Adam Wies\u0142aw vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MJS.html\">Krak\u00f3w - HARE\u0143CZYK Adam Wies\u0142aw vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MJS_MS.html\">Krak\u00f3w - MAZUR Stanis\u0142aw vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./poz_turnout.html\">Pozna\u0144 - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_JJ.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs CZERWI\u0143SKI Zbigniew</a></li><li><a class=\"dropdown-item\" href=\"./poz_JJ_PPM.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs PLEWI\u0143SKI Przemys\u0142aw Marcin</a></li><li><a class=\"dropdown-item\" href=\"./poz_JJ_UBK.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_JJ.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_PPM.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs PLEWI\u0143SKI Przemys\u0142aw Marcin</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_UBK.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_G\u0141.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_PPM_UBK.html\">Pozna\u0144 - PLEWI\u0143SKI Przemys\u0142aw Marcin vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_PPM.html\">Pozna\u0144 - PLEWI\u0143SKI Przemys\u0142aw Marcin vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_UBK.html\">Pozna\u0144 - URBA\u0143SKA Beata Kinga vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./waw_turnout.html\">Warszawa - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs BOCHE\u0143SKI Tobiasz Adam</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs BIEJAT Magdalena Agnieszka</a></li><li><a class=\"dropdown-item\" href=\"./waw_TRK_WPJ.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_SRT_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_BTA.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs BIEJAT Magdalena Agnieszka</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_WPJ.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_KJR.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_SRT.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_WPJ.html\">Warszawa - BIEJAT Magdalena Agnieszka vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_KJR.html\">Warszawa - BIEJAT Magdalena Agnieszka vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_SRT.html\">Warszawa - BIEJAT Magdalena Agnieszka vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_WPJ.html\">Warszawa - WIPLER Przemys\u0142aw Janusz vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_SRT_WPJ.html\">Warszawa - WIPLER Przemys\u0142aw Janusz vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_SRT.html\">Warszawa - KORWIN-MIKKE Janusz Ryszard vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./wro_turnout.html\">Wroc\u0142aw - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs BODNAR Izabela Anna</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs KASZTELOWICZ \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_MJA_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_PGT_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_K\u0141.html\">Wroc\u0142aw - BODNAR Izabela Anna vs KASZTELOWICZ \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_MJA.html\">Wroc\u0142aw - BODNAR Izabela Anna vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_GRS.html\">Wroc\u0142aw - BODNAR Izabela Anna vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_PGT.html\">Wroc\u0142aw - BODNAR Izabela Anna vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_MJA.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_K\u0141.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_PGT.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_MJA.html\">Wroc\u0142aw - MICHALAK Jerzy Andrzej vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_MJA_PGT.html\">Wroc\u0142aw - MICHALAK Jerzy Andrzej vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_PGT.html\">Wroc\u0142aw - GRZECHNIK Robert Sebastian vs PRIGAN Grzegorz Tomasz</a></li>\n  </ul>\n</div>\n\n        </div>\n        ",
   "initialViewState": {
     "latitude": 54.37228788093385,
     "longitude": 18.61167066546081,
@@ -7745,7 +7749,7 @@
         128
       ],
       "getLineWidth": 15,
-      "id": "9af4896b-bba4-48b7-8130-56d815b0c01d",
+      "id": "50f280c5-1451-45e0-9e3c-7e62dc7efe87",
       "lineWidthMinPixels": 1,
       "opacity": 0.8,
       "pickable": true,
@@ -7757,7 +7761,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.74",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "1.79",
-          "diff_abs_scale": 0.7751249872461994,
+          "diff_abs_scale": 0.7751249871739322,
           "diff_str": "58.95",
           "geometry": {
             "coordinates": [
@@ -8329,7 +8333,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "52.07",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.41",
-          "diff_abs_scale": 0.6135802469135803,
+          "diff_abs_scale": 0.6135802468111545,
           "diff_str": "46.67",
           "geometry": {
             "coordinates": [
@@ -8369,7 +8373,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.76",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.27",
-          "diff_abs_scale": 0.7163701840985998,
+          "diff_abs_scale": 0.716370184145717,
           "diff_str": "54.48",
           "geometry": {
             "coordinates": [
@@ -8421,7 +8425,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.34",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.89",
-          "diff_abs_scale": 0.7026779773785762,
+          "diff_abs_scale": 0.70267797732938,
           "diff_str": "53.44",
           "geometry": {
             "coordinates": [
@@ -8465,7 +8469,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "50.54",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.12",
-          "diff_abs_scale": 0.6102814283817868,
+          "diff_abs_scale": 0.6102814283760487,
           "diff_str": "46.42",
           "geometry": {
             "coordinates": [
@@ -8517,7 +8521,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "53.50",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "1.65",
-          "diff_abs_scale": 0.681755829903978,
+          "diff_abs_scale": 0.6817558299946984,
           "diff_str": "51.85",
           "geometry": {
             "coordinates": [
@@ -8557,7 +8561,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "53.49",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.49",
-          "diff_abs_scale": 0.6574074074074073,
+          "diff_abs_scale": 0.6574074073915809,
           "diff_str": "50.00",
           "geometry": {
             "coordinates": [
@@ -8601,7 +8605,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "47.05",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.31",
-          "diff_abs_scale": 0.5882953466286799,
+          "diff_abs_scale": 0.5882953465673189,
           "diff_str": "44.74",
           "geometry": {
             "coordinates": [
@@ -8849,7 +8853,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "53.22",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.86",
-          "diff_abs_scale": 0.6226740669584089,
+          "diff_abs_scale": 0.6226740669701948,
           "diff_str": "47.36",
           "geometry": {
             "coordinates": [
@@ -8893,7 +8897,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.91",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "1.79",
-          "diff_abs_scale": 0.7116022832868711,
+          "diff_abs_scale": 0.7116022831476836,
           "diff_str": "54.12",
           "geometry": {
             "coordinates": [
@@ -9197,7 +9201,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.43",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.71",
-          "diff_abs_scale": 0.7063348869844133,
+          "diff_abs_scale": 0.7063348868941067,
           "diff_str": "53.72",
           "geometry": {
             "coordinates": [
@@ -9241,7 +9245,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "49.74",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.55",
-          "diff_abs_scale": 0.6073649248831731,
+          "diff_abs_scale": 0.6073649248242672,
           "diff_str": "46.19",
           "geometry": {
             "coordinates": [
@@ -9305,7 +9309,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "64.22",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.05",
-          "diff_abs_scale": 0.804218568344129,
+          "diff_abs_scale": 0.8042185684232318,
           "diff_str": "61.17",
           "geometry": {
             "coordinates": [
@@ -9349,7 +9353,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "50.22",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.24",
-          "diff_abs_scale": 0.617711231113293,
+          "diff_abs_scale": 0.6177112311332773,
           "diff_str": "46.98",
           "geometry": {
             "coordinates": [
@@ -9393,7 +9397,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.75",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.54",
-          "diff_abs_scale": 0.6732301012192315,
+          "diff_abs_scale": 0.6732301010837926,
           "diff_str": "51.20",
           "geometry": {
             "coordinates": [
@@ -9445,7 +9449,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "51.29",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.51",
-          "diff_abs_scale": 0.6150850421236688,
+          "diff_abs_scale": 0.6150850421111184,
           "diff_str": "46.78",
           "geometry": {
             "coordinates": [
@@ -9489,7 +9493,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.14",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.57",
-          "diff_abs_scale": 0.7043650793650793,
+          "diff_abs_scale": 0.7043650793293393,
           "diff_str": "53.57",
           "geometry": {
             "coordinates": [
@@ -9537,7 +9541,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.07",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.18",
-          "diff_abs_scale": 0.721710778672804,
+          "diff_abs_scale": 0.721710778638181,
           "diff_str": "54.89",
           "geometry": {
             "coordinates": [
@@ -9589,7 +9593,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.35",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.64",
-          "diff_abs_scale": 0.6797958949661735,
+          "diff_abs_scale": 0.6797958949799308,
           "diff_str": "51.70",
           "geometry": {
             "coordinates": [
@@ -9637,7 +9641,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "53.53",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.04",
-          "diff_abs_scale": 0.6638315840270238,
+          "diff_abs_scale": 0.6638315840303153,
           "diff_str": "50.49",
           "geometry": {
             "coordinates": [
@@ -9685,7 +9689,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.53",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.94",
-          "diff_abs_scale": 0.678343949044586,
+          "diff_abs_scale": 0.6783439490558917,
           "diff_str": "51.59",
           "geometry": {
             "coordinates": [
@@ -9733,7 +9737,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.60",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.73",
-          "diff_abs_scale": 0.6819438486105153,
+          "diff_abs_scale": 0.681943848644694,
           "diff_str": "51.87",
           "geometry": {
             "coordinates": [
@@ -9785,7 +9789,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "49.74",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "1.06",
-          "diff_abs_scale": 0.6400156770527141,
+          "diff_abs_scale": 0.6400156770734811,
           "diff_str": "48.68",
           "geometry": {
             "coordinates": [
@@ -9829,7 +9833,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "47.23",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.06",
-          "diff_abs_scale": 0.5544399821508255,
+          "diff_abs_scale": 0.554439982153319,
           "diff_str": "42.17",
           "geometry": {
             "coordinates": [
@@ -9873,7 +9877,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "49.33",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.03",
-          "diff_abs_scale": 0.5955783038316628,
+          "diff_abs_scale": 0.5955783038375139,
           "diff_str": "45.30",
           "geometry": {
             "coordinates": [
@@ -9965,7 +9969,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "53.98",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.24",
-          "diff_abs_scale": 0.6539216841443777,
+          "diff_abs_scale": 0.6539216840861092,
           "diff_str": "49.73",
           "geometry": {
             "coordinates": [
@@ -10009,7 +10013,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.69",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.24",
-          "diff_abs_scale": 0.7290377544614833,
+          "diff_abs_scale": 0.7290377543305973,
           "diff_str": "55.45",
           "geometry": {
             "coordinates": [
@@ -10073,7 +10077,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.59",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.31",
-          "diff_abs_scale": 0.7137112987535184,
+          "diff_abs_scale": 0.7137112987031885,
           "diff_str": "54.28",
           "geometry": {
             "coordinates": [
@@ -10121,7 +10125,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.10",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "1.70",
-          "diff_abs_scale": 0.7283775252525252,
+          "diff_abs_scale": 0.7283775253306132,
           "diff_str": "55.40",
           "geometry": {
             "coordinates": [
@@ -10725,7 +10729,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.80",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "1.52",
-          "diff_abs_scale": 0.8057249322493225,
+          "diff_abs_scale": 0.8057249322972696,
           "diff_str": "61.28",
           "geometry": {
             "coordinates": [
@@ -11013,7 +11017,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.50",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.52",
-          "diff_abs_scale": 0.6965865443106175,
+          "diff_abs_scale": 0.6965865442943413,
           "diff_str": "52.98",
           "geometry": {
             "coordinates": [
@@ -11069,7 +11073,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.97",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.01",
-          "diff_abs_scale": 0.7226111759367302,
+          "diff_abs_scale": 0.7226111759196409,
           "diff_str": "54.96",
           "geometry": {
             "coordinates": [
@@ -11117,7 +11121,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.53",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.92",
-          "diff_abs_scale": 0.7180316352978223,
+          "diff_abs_scale": 0.7180316352919733,
           "diff_str": "54.61",
           "geometry": {
             "coordinates": [
@@ -11173,7 +11177,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.56",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.73",
-          "diff_abs_scale": 0.6945387517146777,
+          "diff_abs_scale": 0.6945387517758722,
           "diff_str": "52.82",
           "geometry": {
             "coordinates": [
@@ -11217,7 +11221,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "51.95",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.57",
-          "diff_abs_scale": 0.6361619241192412,
+          "diff_abs_scale": 0.636161924084685,
           "diff_str": "48.38",
           "geometry": {
             "coordinates": [
@@ -11509,7 +11513,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.14",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.10",
-          "diff_abs_scale": 0.7236061267093566,
+          "diff_abs_scale": 0.7236061266622095,
           "diff_str": "55.03",
           "geometry": {
             "coordinates": [
@@ -11557,7 +11561,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "54.83",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.28",
-          "diff_abs_scale": 0.6777642852324091,
+          "diff_abs_scale": 0.6777642853336835,
           "diff_str": "51.55",
           "geometry": {
             "coordinates": [
@@ -11609,7 +11613,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.08",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.03",
-          "diff_abs_scale": 0.7764837238853385,
+          "diff_abs_scale": 0.7764837237720477,
           "diff_str": "59.06",
           "geometry": {
             "coordinates": [
@@ -11649,7 +11653,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "50.05",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.84",
-          "diff_abs_scale": 0.6207176984853106,
+          "diff_abs_scale": 0.6207176983906124,
           "diff_str": "47.21",
           "geometry": {
             "coordinates": [
@@ -11789,7 +11793,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "48.94",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.31",
-          "diff_abs_scale": 0.5999036861921022,
+          "diff_abs_scale": 0.5999036861596319,
           "diff_str": "45.63",
           "geometry": {
             "coordinates": [
@@ -11841,7 +11845,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.76",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.82",
-          "diff_abs_scale": 0.7091334777952127,
+          "diff_abs_scale": 0.7091334777218171,
           "diff_str": "53.93",
           "geometry": {
             "coordinates": [
@@ -11893,7 +11897,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "52.50",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.22",
-          "diff_abs_scale": 0.6611592569106836,
+          "diff_abs_scale": 0.6611592569729721,
           "diff_str": "50.29",
           "geometry": {
             "coordinates": [
@@ -11937,7 +11941,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.29",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.74",
-          "diff_abs_scale": 0.7172718808193669,
+          "diff_abs_scale": 0.7172718807271767,
           "diff_str": "54.55",
           "geometry": {
             "coordinates": [
@@ -11977,7 +11981,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "48.62",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.67",
-          "diff_abs_scale": 0.6042264295276344,
+          "diff_abs_scale": 0.6042264295169353,
           "diff_str": "45.96",
           "geometry": {
             "coordinates": [
@@ -12017,7 +12021,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "49.56",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.64",
-          "diff_abs_scale": 0.6169219072444879,
+          "diff_abs_scale": 0.6169219071721852,
           "diff_str": "46.92",
           "geometry": {
             "coordinates": [
@@ -12077,7 +12081,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "50.75",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.78",
-          "diff_abs_scale": 0.6306606392259497,
+          "diff_abs_scale": 0.6306606392366693,
           "diff_str": "47.97",
           "geometry": {
             "coordinates": [
@@ -12513,7 +12517,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "48.42",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.93",
-          "diff_abs_scale": 0.5981951928834146,
+          "diff_abs_scale": 0.598195192911525,
           "diff_str": "45.50",
           "geometry": {
             "coordinates": [
@@ -12565,7 +12569,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "50.19",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.52",
-          "diff_abs_scale": 0.6267511034350413,
+          "diff_abs_scale": 0.6267511033886152,
           "diff_str": "47.67",
           "geometry": {
             "coordinates": [
@@ -12605,7 +12609,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.24",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.09",
-          "diff_abs_scale": 0.7251769169037717,
+          "diff_abs_scale": 0.7251769168566161,
           "diff_str": "55.15",
           "geometry": {
             "coordinates": [
@@ -12653,7 +12657,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "61.43",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.84",
-          "diff_abs_scale": 0.7703824937867491,
+          "diff_abs_scale": 0.7703824937888613,
           "diff_str": "58.59",
           "geometry": {
             "coordinates": [
@@ -12701,7 +12705,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.77",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.84",
-          "diff_abs_scale": 0.7222329638222911,
+          "diff_abs_scale": 0.7222329637844648,
           "diff_str": "54.93",
           "geometry": {
             "coordinates": [
@@ -12749,7 +12753,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "63.58",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.58",
-          "diff_abs_scale": 0.8020302631327876,
+          "diff_abs_scale": 0.802030263091803,
           "diff_str": "61.00",
           "geometry": {
             "coordinates": [
@@ -12797,7 +12801,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.24",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.08",
-          "diff_abs_scale": 0.7384193683768756,
+          "diff_abs_scale": 0.7384193683877788,
           "diff_str": "56.16",
           "geometry": {
             "coordinates": [
@@ -12841,7 +12845,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "54.04",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.07",
-          "diff_abs_scale": 0.6701427546450927,
+          "diff_abs_scale": 0.6701427547023854,
           "diff_str": "50.97",
           "geometry": {
             "coordinates": [
@@ -12885,7 +12889,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.07",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.00",
-          "diff_abs_scale": 0.7502780867630702,
+          "diff_abs_scale": 0.7502780867189748,
           "diff_str": "57.06",
           "geometry": {
             "coordinates": [
@@ -12929,7 +12933,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.52",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.27",
-          "diff_abs_scale": 0.7526292659271382,
+          "diff_abs_scale": 0.7526292659189181,
           "diff_str": "57.24",
           "geometry": {
             "coordinates": [
@@ -12977,7 +12981,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.54",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.37",
-          "diff_abs_scale": 0.712247317116231,
+          "diff_abs_scale": 0.7122473170958162,
           "diff_str": "54.17",
           "geometry": {
             "coordinates": [
@@ -13021,7 +13025,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.41",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.32",
-          "diff_abs_scale": 0.7637963559949376,
+          "diff_abs_scale": 0.7637963560260567,
           "diff_str": "58.09",
           "geometry": {
             "coordinates": [
@@ -13069,7 +13073,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.38",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.05",
-          "diff_abs_scale": 0.7538271604938273,
+          "diff_abs_scale": 0.7538271604318522,
           "diff_str": "57.33",
           "geometry": {
             "coordinates": [
@@ -13121,7 +13125,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "50.69",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.06",
-          "diff_abs_scale": 0.6263631687242798,
+          "diff_abs_scale": 0.6263631685923282,
           "diff_str": "47.64",
           "geometry": {
             "coordinates": [
@@ -13177,7 +13181,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.39",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.24",
-          "diff_abs_scale": 0.6988226459623998,
+          "diff_abs_scale": 0.6988226459053987,
           "diff_str": "53.15",
           "geometry": {
             "coordinates": [
@@ -13233,7 +13237,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.91",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.70",
-          "diff_abs_scale": 0.7127503779289494,
+          "diff_abs_scale": 0.7127503779976561,
           "diff_str": "54.21",
           "geometry": {
             "coordinates": [
@@ -13273,7 +13277,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "54.30",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "6.20",
-          "diff_abs_scale": 0.6324425691514299,
+          "diff_abs_scale": 0.6324425690995894,
           "diff_str": "48.10",
           "geometry": {
             "coordinates": [
@@ -13313,7 +13317,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "53.76",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.97",
-          "diff_abs_scale": 0.6414956357631517,
+          "diff_abs_scale": 0.6414956356530751,
           "diff_str": "48.79",
           "geometry": {
             "coordinates": [
@@ -13357,7 +13361,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.23",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.49",
-          "diff_abs_scale": 0.6933773121200362,
+          "diff_abs_scale": 0.6933773120814557,
           "diff_str": "52.74",
           "geometry": {
             "coordinates": [
@@ -13401,7 +13405,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "52.86",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "6.81",
-          "diff_abs_scale": 0.6054596831163589,
+          "diff_abs_scale": 0.6054596830817204,
           "diff_str": "46.05",
           "geometry": {
             "coordinates": [
@@ -13445,7 +13449,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.48",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.38",
-          "diff_abs_scale": 0.7375564429827995,
+          "diff_abs_scale": 0.7375564429340957,
           "diff_str": "56.10",
           "geometry": {
             "coordinates": [
@@ -13489,7 +13493,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.33",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.25",
-          "diff_abs_scale": 0.7374164225077003,
+          "diff_abs_scale": 0.737416422387803,
           "diff_str": "56.09",
           "geometry": {
             "coordinates": [
@@ -13545,7 +13549,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.29",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.71",
-          "diff_abs_scale": 0.6780891257425553,
+          "diff_abs_scale": 0.6780891258484905,
           "diff_str": "51.57",
           "geometry": {
             "coordinates": [
@@ -13585,7 +13589,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.50",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.72",
-          "diff_abs_scale": 0.7202069058175466,
+          "diff_abs_scale": 0.7202069058122914,
           "diff_str": "54.78",
           "geometry": {
             "coordinates": [
@@ -13629,7 +13633,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "50.63",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.20",
-          "diff_abs_scale": 0.6236124582390343,
+          "diff_abs_scale": 0.6236124581923945,
           "diff_str": "47.43",
           "geometry": {
             "coordinates": [
@@ -13665,7 +13669,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "50.00",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.55",
-          "diff_abs_scale": 0.6107275914968222,
+          "diff_abs_scale": 0.6107275914556676,
           "diff_str": "46.45",
           "geometry": {
             "coordinates": [
@@ -13733,7 +13737,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "51.00",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.37",
-          "diff_abs_scale": 0.6394126791024601,
+          "diff_abs_scale": 0.6394126792012734,
           "diff_str": "48.63",
           "geometry": {
             "coordinates": [
@@ -13785,7 +13789,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.91",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.00",
-          "diff_abs_scale": 0.7745454545454545,
+          "diff_abs_scale": 0.774545454538761,
           "diff_str": "58.91",
           "geometry": {
             "coordinates": [
@@ -14301,7 +14305,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "61.42",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.08",
-          "diff_abs_scale": 0.7670690365301145,
+          "diff_abs_scale": 0.7670690364685705,
           "diff_str": "58.34",
           "geometry": {
             "coordinates": [
@@ -14357,7 +14361,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.96",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.03",
-          "diff_abs_scale": 0.7616305329719965,
+          "diff_abs_scale": 0.7616305328446273,
           "diff_str": "57.93",
           "geometry": {
             "coordinates": [
@@ -14397,7 +14401,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.42",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.40",
-          "diff_abs_scale": 0.7628713519172883,
+          "diff_abs_scale": 0.7628713518538569,
           "diff_str": "58.02",
           "geometry": {
             "coordinates": [
@@ -14885,7 +14889,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.70",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "1.58",
-          "diff_abs_scale": 0.7509799945931332,
+          "diff_abs_scale": 0.7509799945596985,
           "diff_str": "57.12",
           "geometry": {
             "coordinates": [
@@ -15575,7 +15579,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "52.88",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.27",
-          "diff_abs_scale": 0.6653759820426488,
+          "diff_abs_scale": 0.6653759820784262,
           "diff_str": "50.61",
           "geometry": {
             "coordinates": [
@@ -16047,7 +16051,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "61.73",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.27",
-          "diff_abs_scale": 0.7817817817817818,
+          "diff_abs_scale": 0.7817817817700683,
           "diff_str": "59.46",
           "geometry": {
             "coordinates": [
@@ -16087,7 +16091,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.96",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.67",
-          "diff_abs_scale": 0.7269949107555945,
+          "diff_abs_scale": 0.7269949107750908,
           "diff_str": "55.29",
           "geometry": {
             "coordinates": [
@@ -16135,7 +16139,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.92",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.75",
-          "diff_abs_scale": 0.738451433527191,
+          "diff_abs_scale": 0.7384514334340743,
           "diff_str": "56.16",
           "geometry": {
             "coordinates": [
@@ -16183,7 +16187,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "65.05",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.37",
-          "diff_abs_scale": 0.8108911880841706,
+          "diff_abs_scale": 0.8108911881304784,
           "diff_str": "61.67",
           "geometry": {
             "coordinates": [
@@ -16227,7 +16231,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.85",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.54",
-          "diff_abs_scale": 0.7798129646449355,
+          "diff_abs_scale": 0.7798129646553007,
           "diff_str": "59.31",
           "geometry": {
             "coordinates": [
@@ -16267,7 +16271,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.29",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.17",
-          "diff_abs_scale": 0.6852047607861562,
+          "diff_abs_scale": 0.6852047607057266,
           "diff_str": "52.11",
           "geometry": {
             "coordinates": [
@@ -16327,7 +16331,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "63.92",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.81",
-          "diff_abs_scale": 0.7771414025709558,
+          "diff_abs_scale": 0.777141402557217,
           "diff_str": "59.11",
           "geometry": {
             "coordinates": [
@@ -16375,7 +16379,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.62",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.67",
-          "diff_abs_scale": 0.7487380514755716,
+          "diff_abs_scale": 0.7487380514893822,
           "diff_str": "56.95",
           "geometry": {
             "coordinates": [
@@ -16427,7 +16431,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.64",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.04",
-          "diff_abs_scale": 0.7310775274847131,
+          "diff_abs_scale": 0.7310775273990666,
           "diff_str": "55.60",
           "geometry": {
             "coordinates": [
@@ -16479,7 +16483,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "64.95",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "1.56",
-          "diff_abs_scale": 0.8334415233149409,
+          "diff_abs_scale": 0.8334415232428986,
           "diff_str": "63.39",
           "geometry": {
             "coordinates": [
@@ -16523,7 +16527,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "61.05",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.79",
-          "diff_abs_scale": 0.726608187134503,
+          "diff_abs_scale": 0.7266081871862113,
           "diff_str": "55.26",
           "geometry": {
             "coordinates": [
@@ -16575,7 +16579,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.71",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.19",
-          "diff_abs_scale": 0.7300045444217224,
+          "diff_abs_scale": 0.7300045445009443,
           "diff_str": "55.52",
           "geometry": {
             "coordinates": [
@@ -16623,7 +16627,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.96",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.50",
-          "diff_abs_scale": 0.7292013641050044,
+          "diff_abs_scale": 0.7292013641009637,
           "diff_str": "55.46",
           "geometry": {
             "coordinates": [
@@ -16671,7 +16675,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.26",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.24",
-          "diff_abs_scale": 0.7498331063579803,
+          "diff_abs_scale": 0.7498331064467632,
           "diff_str": "57.03",
           "geometry": {
             "coordinates": [
@@ -16715,7 +16719,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.30",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.04",
-          "diff_abs_scale": 0.6739807033924681,
+          "diff_abs_scale": 0.6739807033541448,
           "diff_str": "51.26",
           "geometry": {
             "coordinates": [
@@ -16759,7 +16763,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.40",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.67",
-          "diff_abs_scale": 0.732727722160425,
+          "diff_abs_scale": 0.7327277221527306,
           "diff_str": "55.73",
           "geometry": {
             "coordinates": [
@@ -16815,7 +16819,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.94",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.54",
-          "diff_abs_scale": 0.7809244048977109,
+          "diff_abs_scale": 0.7809244048349037,
           "diff_str": "59.39",
           "geometry": {
             "coordinates": [
@@ -16871,7 +16875,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.12",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.14",
-          "diff_abs_scale": 0.7623043262507331,
+          "diff_abs_scale": 0.7623043262631297,
           "diff_str": "57.98",
           "geometry": {
             "coordinates": [
@@ -16911,7 +16915,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.96",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.24",
-          "diff_abs_scale": 0.6800766283524905,
+          "diff_abs_scale": 0.6800766283225167,
           "diff_str": "51.72",
           "geometry": {
             "coordinates": [
@@ -16959,7 +16963,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.11",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.95",
-          "diff_abs_scale": 0.7646287143815975,
+          "diff_abs_scale": 0.7646287144019627,
           "diff_str": "58.15",
           "geometry": {
             "coordinates": [
@@ -17015,7 +17019,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.84",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "6.38",
-          "diff_abs_scale": 0.7160831140794711,
+          "diff_abs_scale": 0.7160831140531314,
           "diff_str": "54.46",
           "geometry": {
             "coordinates": [
@@ -17059,7 +17063,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "64.98",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.74",
-          "diff_abs_scale": 0.8182919206125957,
+          "diff_abs_scale": 0.8182919205951152,
           "diff_str": "62.24",
           "geometry": {
             "coordinates": [
@@ -17107,7 +17111,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.78",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.12",
-          "diff_abs_scale": 0.74494099241574,
+          "diff_abs_scale": 0.7449409925265106,
           "diff_str": "56.66",
           "geometry": {
             "coordinates": [
@@ -17155,7 +17159,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.21",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.57",
-          "diff_abs_scale": 0.6921065145030907,
+          "diff_abs_scale": 0.6921065145055604,
           "diff_str": "52.64",
           "geometry": {
             "coordinates": [
@@ -17203,7 +17207,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.18",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.19",
-          "diff_abs_scale": 0.7625056147658131,
+          "diff_abs_scale": 0.7625056148131248,
           "diff_str": "57.99",
           "geometry": {
             "coordinates": [
@@ -17243,7 +17247,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.60",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.79",
-          "diff_abs_scale": 0.7337414428646656,
+          "diff_abs_scale": 0.7337414429286323,
           "diff_str": "55.81",
           "geometry": {
             "coordinates": [
@@ -17403,7 +17407,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.56",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.74",
-          "diff_abs_scale": 0.6681845780206436,
+          "diff_abs_scale": 0.6681845781209511,
           "diff_str": "50.82",
           "geometry": {
             "coordinates": [
@@ -17451,7 +17455,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "63.92",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.03",
-          "diff_abs_scale": 0.7875072971395213,
+          "diff_abs_scale": 0.7875072971088192,
           "diff_str": "59.89",
           "geometry": {
             "coordinates": [
@@ -17491,7 +17495,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.63",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.18",
-          "diff_abs_scale": 0.7421602787456446,
+          "diff_abs_scale": 0.7421602787099109,
           "diff_str": "56.45",
           "geometry": {
             "coordinates": [
@@ -17543,7 +17547,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "51.01",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.10",
-          "diff_abs_scale": 0.6035794183445191,
+          "diff_abs_scale": 0.6035794183502842,
           "diff_str": "45.91",
           "geometry": {
             "coordinates": [
@@ -17579,7 +17583,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.37",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.58",
-          "diff_abs_scale": 0.7072537487415885,
+          "diff_abs_scale": 0.7072537486459365,
           "diff_str": "53.79",
           "geometry": {
             "coordinates": [
@@ -17879,7 +17883,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.54",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.58",
-          "diff_abs_scale": 0.6701141629931051,
+          "diff_abs_scale": 0.6701141630023861,
           "diff_str": "50.97",
           "geometry": {
             "coordinates": [
@@ -17919,7 +17923,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.07",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.93",
-          "diff_abs_scale": 0.6855820105820106,
+          "diff_abs_scale": 0.6855820105279397,
           "diff_str": "52.14",
           "geometry": {
             "coordinates": [
@@ -17971,7 +17975,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "55.96",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.16",
-          "diff_abs_scale": 0.6810445276737411,
+          "diff_abs_scale": 0.6810445276706416,
           "diff_str": "51.80",
           "geometry": {
             "coordinates": [
@@ -18027,7 +18031,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "61.67",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.86",
-          "diff_abs_scale": 0.7601273148148149,
+          "diff_abs_scale": 0.7601273147965154,
           "diff_str": "57.81",
           "geometry": {
             "coordinates": [
@@ -18067,7 +18071,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "57.76",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "5.45",
-          "diff_abs_scale": 0.6878832474858965,
+          "diff_abs_scale": 0.6878832474075138,
           "diff_str": "52.32",
           "geometry": {
             "coordinates": [
@@ -18119,7 +18123,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.88",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.19",
-          "diff_abs_scale": 0.7584902523174128,
+          "diff_abs_scale": 0.7584902522817399,
           "diff_str": "57.69",
           "geometry": {
             "coordinates": [
@@ -18183,7 +18187,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.68",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.04",
-          "diff_abs_scale": 0.7447408182240818,
+          "diff_abs_scale": 0.7447408182820712,
           "diff_str": "56.64",
           "geometry": {
             "coordinates": [
@@ -18271,7 +18275,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "56.32",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.67",
-          "diff_abs_scale": 0.705348308597406,
+          "diff_abs_scale": 0.7053483086293156,
           "diff_str": "53.65",
           "geometry": {
             "coordinates": [
@@ -18475,7 +18479,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "59.71",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.92",
-          "diff_abs_scale": 0.7334215785512213,
+          "diff_abs_scale": 0.7334215784619732,
           "diff_str": "55.78",
           "geometry": {
             "coordinates": [
@@ -18519,7 +18523,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.65",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.85",
-          "diff_abs_scale": 0.7336164189667375,
+          "diff_abs_scale": 0.7336164190286351,
           "diff_str": "55.80",
           "geometry": {
             "coordinates": [
@@ -19143,7 +19147,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.65",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "4.01",
-          "diff_abs_scale": 0.7710042085214881,
+          "diff_abs_scale": 0.7710042085758833,
           "diff_str": "58.64",
           "geometry": {
             "coordinates": [
@@ -19191,7 +19195,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "60.31",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "3.09",
-          "diff_abs_scale": 0.752277698112661,
+          "diff_abs_scale": 0.7522776979800377,
           "diff_str": "57.22",
           "geometry": {
             "coordinates": [
@@ -19239,7 +19243,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.85",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.78",
-          "diff_abs_scale": 0.7371596694078608,
+          "diff_abs_scale": 0.7371596692952165,
           "diff_str": "56.07",
           "geometry": {
             "coordinates": [
@@ -19867,7 +19871,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "58.50",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.58",
-          "diff_abs_scale": 0.7352448527720267,
+          "diff_abs_scale": 0.7352448528082255,
           "diff_str": "55.92",
           "geometry": {
             "coordinates": [
@@ -19907,7 +19911,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.49",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.40",
-          "diff_abs_scale": 0.7899722794435543,
+          "diff_abs_scale": 0.7899722794476489,
           "diff_str": "60.08",
           "geometry": {
             "coordinates": [
@@ -20867,7 +20871,7 @@
         {
           "DULKIEWICZ Aleksandra Maria_%": "62.62",
           "SZCZEPA\u0143SKI Adam Aleksander_%": "2.90",
-          "diff_abs_scale": 0.7851577672675761,
+          "diff_abs_scale": 0.7851577672125795,
           "diff_str": "59.72",
           "geometry": {
             "coordinates": [
@@ -21496,7 +21500,7 @@
         25
       ],
       "getLineWidth": 5,
-      "id": "50ce7d56-aa4e-45fd-85b1-4aa7ccdc6941",
+      "id": "0935f33a-8263-4a51-8bf7-2a82ea3c1f84",
       "lineWidthMinPixels": 1,
       "opacity": 0.8,
       "pickable": true,
@@ -22779,7 +22783,7 @@
       "getIcon": "@@=icon_data",
       "getPosition": "@@=[lon, lat]",
       "getSize": 1,
-      "id": "4264a271-0035-4316-95e6-a3226b45566a",
+      "id": "c78b700a-2183-4bc7-8153-be55c5d83def",
       "opacity": 0.8,
       "pickable": false,
       "sizeMaxPixels": 120,

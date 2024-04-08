@@ -26,10 +26,14 @@
 
                     .deck-json-description-box {
                         z-index: 2 !important;
+                        overflow: visible !important;
                     }
                     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap')
                         </style>
-  </head>
+
+                    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' />
+                    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+                      </head>
   <body>
     <div id="deck-container">
     </div>
@@ -37,7 +41,7 @@
   <script>
     const container = document.getElementById('deck-container');
     const jsonInput = {
-  "description": "\n        <div style='font-family: \"Open Sans\", sans-serif;'>\n        <h3>Krak\u00f3w: KOMAREWICZ Rafa\u0142 Pawe\u0142 vs KULIG Andrzej Adam</h3>\n        R\u00f3\u017cnica w % <br/>\n        <span style=\"font-size: 0.8em\">\n        Warto\u015bci ujemne - przewaga KULIG Andrzej Adam <br/> \n        Warto\u015bci dodatnie - przewaga KOMAREWICZ Rafa\u0142 Pawe\u0142 <br/>\n        Obwody z oddanymi mniej ni\u017c 50 g\u0142osami zosta\u0142y pomini\u0119te. <br/>\n        </span> \n        <svg height=\"40\" width=\"450\"><line x1=\"0\" y1=\"15\" x2=\"0\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"1\" y1=\"15\" x2=\"1\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"2\" y1=\"15\" x2=\"2\" y2=\"27\" style=\"stroke:#018180ff;stroke-width:2;\" /><line x1=\"3\" y1=\"15\" x2=\"3\" y2=\"27\" style=\"stroke:#028180ff;stroke-width:2;\" /><line x1=\"4\" y1=\"15\" x2=\"4\" y2=\"27\" style=\"stroke:#038181ff;stroke-width:2;\" /><line x1=\"5\" y1=\"15\" x2=\"5\" y2=\"27\" style=\"stroke:#048181ff;stroke-width:2;\" /><line x1=\"6\" y1=\"15\" x2=\"6\" y2=\"27\" style=\"stroke:#048281ff;stroke-width:2;\" /><line x1=\"7\" y1=\"15\" x2=\"7\" y2=\"27\" style=\"stroke:#058281ff;stroke-width:2;\" /><line x1=\"8\" y1=\"15\" x2=\"8\" y2=\"27\" style=\"stroke:#068281ff;stroke-width:2;\" /><line x1=\"9\" y1=\"15\" x2=\"9\" y2=\"27\" style=\"stroke:#078281ff;stroke-width:2;\" /><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"27\" style=\"stroke:#088381ff;stroke-width:2;\" /><line x1=\"11\" y1=\"15\" x2=\"11\" y2=\"27\" style=\"stroke:#098382ff;stroke-width:2;\" /><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"27\" style=\"stroke:#098382ff;stroke-width:2;\" /><line x1=\"13\" y1=\"15\" x2=\"13\" y2=\"27\" style=\"stroke:#0a8382ff;stroke-width:2;\" /><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"27\" style=\"stroke:#0b8482ff;stroke-width:2;\" /><line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"27\" style=\"stroke:#0c8482ff;stroke-width:2;\" /><line x1=\"16\" y1=\"15\" x2=\"16\" y2=\"27\" style=\"stroke:#0d8482ff;stroke-width:2;\" /><line x1=\"17\" y1=\"15\" x2=\"17\" y2=\"27\" style=\"stroke:#0e8583ff;stroke-width:2;\" /><line x1=\"18\" y1=\"15\" x2=\"18\" y2=\"27\" style=\"stroke:#0e8583ff;stroke-width:2;\" /><line x1=\"19\" y1=\"15\" x2=\"19\" y2=\"27\" style=\"stroke:#0f8583ff;stroke-width:2;\" /><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"27\" style=\"stroke:#108583ff;stroke-width:2;\" /><line x1=\"21\" y1=\"15\" x2=\"21\" y2=\"27\" style=\"stroke:#118683ff;stroke-width:2;\" /><line x1=\"22\" y1=\"15\" x2=\"22\" y2=\"27\" style=\"stroke:#128683ff;stroke-width:2;\" /><line x1=\"23\" y1=\"15\" x2=\"23\" y2=\"27\" style=\"stroke:#138683ff;stroke-width:2;\" /><line x1=\"24\" y1=\"15\" x2=\"24\" y2=\"27\" style=\"stroke:#138684ff;stroke-width:2;\" /><line x1=\"25\" y1=\"15\" x2=\"25\" y2=\"27\" style=\"stroke:#148784ff;stroke-width:2;\" /><line x1=\"26\" y1=\"15\" x2=\"26\" y2=\"27\" style=\"stroke:#158784ff;stroke-width:2;\" /><line x1=\"27\" y1=\"15\" x2=\"27\" y2=\"27\" style=\"stroke:#168784ff;stroke-width:2;\" /><line x1=\"28\" y1=\"15\" x2=\"28\" y2=\"27\" style=\"stroke:#178784ff;stroke-width:2;\" /><line x1=\"29\" y1=\"15\" x2=\"29\" y2=\"27\" style=\"stroke:#188884ff;stroke-width:2;\" /><line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"27\" style=\"stroke:#188884ff;stroke-width:2;\" /><line x1=\"31\" y1=\"15\" x2=\"31\" y2=\"27\" style=\"stroke:#198885ff;stroke-width:2;\" /><line x1=\"32\" y1=\"15\" x2=\"32\" y2=\"27\" style=\"stroke:#1a8985ff;stroke-width:2;\" /><line x1=\"33\" y1=\"15\" x2=\"33\" y2=\"27\" style=\"stroke:#1b8985ff;stroke-width:2;\" /><line x1=\"34\" y1=\"15\" x2=\"34\" y2=\"27\" style=\"stroke:#1c8985ff;stroke-width:2;\" /><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"27\" style=\"stroke:#1d8985ff;stroke-width:2;\" /><line x1=\"36\" y1=\"15\" x2=\"36\" y2=\"27\" style=\"stroke:#1d8a85ff;stroke-width:2;\" /><line x1=\"37\" y1=\"15\" x2=\"37\" y2=\"27\" style=\"stroke:#1e8a85ff;stroke-width:2;\" /><line x1=\"38\" y1=\"15\" x2=\"38\" y2=\"27\" style=\"stroke:#1f8a86ff;stroke-width:2;\" /><line x1=\"39\" y1=\"15\" x2=\"39\" y2=\"27\" style=\"stroke:#208a86ff;stroke-width:2;\" /><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"27\" style=\"stroke:#218b86ff;stroke-width:2;\" /><line x1=\"41\" y1=\"15\" x2=\"41\" y2=\"27\" style=\"stroke:#228b86ff;stroke-width:2;\" /><line x1=\"42\" y1=\"15\" x2=\"42\" y2=\"27\" style=\"stroke:#228b86ff;stroke-width:2;\" /><line x1=\"43\" y1=\"15\" x2=\"43\" y2=\"27\" style=\"stroke:#238b86ff;stroke-width:2;\" /><line x1=\"44\" y1=\"15\" x2=\"44\" y2=\"27\" style=\"stroke:#248c87ff;stroke-width:2;\" /><line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"27\" style=\"stroke:#258c87ff;stroke-width:2;\" /><line x1=\"46\" y1=\"15\" x2=\"46\" y2=\"27\" style=\"stroke:#268c87ff;stroke-width:2;\" /><line x1=\"47\" y1=\"15\" x2=\"47\" y2=\"27\" style=\"stroke:#268d87ff;stroke-width:2;\" /><line x1=\"48\" y1=\"15\" x2=\"48\" y2=\"27\" style=\"stroke:#278d87ff;stroke-width:2;\" /><line x1=\"49\" y1=\"15\" x2=\"49\" y2=\"27\" style=\"stroke:#288d87ff;stroke-width:2;\" /><line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"27\" style=\"stroke:#298d87ff;stroke-width:2;\" /><line x1=\"51\" y1=\"15\" x2=\"51\" y2=\"27\" style=\"stroke:#2a8e88ff;stroke-width:2;\" /><line x1=\"52\" y1=\"15\" x2=\"52\" y2=\"27\" style=\"stroke:#2b8e88ff;stroke-width:2;\" /><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"27\" style=\"stroke:#2b8e88ff;stroke-width:2;\" /><line x1=\"54\" y1=\"15\" x2=\"54\" y2=\"27\" style=\"stroke:#2c8e88ff;stroke-width:2;\" /><line x1=\"55\" y1=\"15\" x2=\"55\" y2=\"27\" style=\"stroke:#2d8f88ff;stroke-width:2;\" /><line x1=\"56\" y1=\"15\" x2=\"56\" y2=\"27\" style=\"stroke:#2e8f88ff;stroke-width:2;\" /><line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"27\" style=\"stroke:#2f8f88ff;stroke-width:2;\" /><line x1=\"58\" y1=\"15\" x2=\"58\" y2=\"27\" style=\"stroke:#308f89ff;stroke-width:2;\" /><line x1=\"59\" y1=\"15\" x2=\"59\" y2=\"27\" style=\"stroke:#309089ff;stroke-width:2;\" /><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"27\" style=\"stroke:#319089ff;stroke-width:2;\" /><line x1=\"61\" y1=\"15\" x2=\"61\" y2=\"27\" style=\"stroke:#329089ff;stroke-width:2;\" /><line x1=\"62\" y1=\"15\" x2=\"62\" y2=\"27\" style=\"stroke:#339189ff;stroke-width:2;\" /><line x1=\"63\" y1=\"15\" x2=\"63\" y2=\"27\" style=\"stroke:#349189ff;stroke-width:2;\" /><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"27\" style=\"stroke:#359189ff;stroke-width:2;\" /><line x1=\"65\" y1=\"15\" x2=\"65\" y2=\"27\" style=\"stroke:#35918aff;stroke-width:2;\" /><line x1=\"66\" y1=\"15\" x2=\"66\" y2=\"27\" style=\"stroke:#36928aff;stroke-width:2;\" /><line x1=\"67\" y1=\"15\" x2=\"67\" y2=\"27\" style=\"stroke:#37928aff;stroke-width:2;\" /><line x1=\"68\" y1=\"15\" x2=\"68\" y2=\"27\" style=\"stroke:#38928aff;stroke-width:2;\" /><line x1=\"69\" y1=\"15\" x2=\"69\" y2=\"27\" style=\"stroke:#39928aff;stroke-width:2;\" /><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"27\" style=\"stroke:#3a938aff;stroke-width:2;\" /><line x1=\"71\" y1=\"15\" x2=\"71\" y2=\"27\" style=\"stroke:#3a938bff;stroke-width:2;\" /><line x1=\"72\" y1=\"15\" x2=\"72\" y2=\"27\" style=\"stroke:#3b938bff;stroke-width:2;\" /><line x1=\"73\" y1=\"15\" x2=\"73\" y2=\"27\" style=\"stroke:#3c938bff;stroke-width:2;\" /><line x1=\"74\" y1=\"15\" x2=\"74\" y2=\"27\" style=\"stroke:#3d948bff;stroke-width:2;\" /><line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"27\" style=\"stroke:#3e948bff;stroke-width:2;\" /><line x1=\"76\" y1=\"15\" x2=\"76\" y2=\"27\" style=\"stroke:#3f948bff;stroke-width:2;\" /><line x1=\"77\" y1=\"15\" x2=\"77\" y2=\"27\" style=\"stroke:#3f958bff;stroke-width:2;\" /><line x1=\"78\" y1=\"15\" x2=\"78\" y2=\"27\" style=\"stroke:#40958cff;stroke-width:2;\" /><line x1=\"79\" y1=\"15\" x2=\"79\" y2=\"27\" style=\"stroke:#41958cff;stroke-width:2;\" /><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"27\" style=\"stroke:#42958cff;stroke-width:2;\" /><line x1=\"81\" y1=\"15\" x2=\"81\" y2=\"27\" style=\"stroke:#43968cff;stroke-width:2;\" /><line x1=\"82\" y1=\"15\" x2=\"82\" y2=\"27\" style=\"stroke:#44968cff;stroke-width:2;\" /><line x1=\"83\" y1=\"15\" x2=\"83\" y2=\"27\" style=\"stroke:#44968cff;stroke-width:2;\" /><line x1=\"84\" y1=\"15\" x2=\"84\" y2=\"27\" style=\"stroke:#45968cff;stroke-width:2;\" /><line x1=\"85\" y1=\"15\" x2=\"85\" y2=\"27\" style=\"stroke:#46978dff;stroke-width:2;\" /><line x1=\"86\" y1=\"15\" x2=\"86\" y2=\"27\" style=\"stroke:#47978dff;stroke-width:2;\" /><line x1=\"87\" y1=\"15\" x2=\"87\" y2=\"27\" style=\"stroke:#48978dff;stroke-width:2;\" /><line x1=\"88\" y1=\"15\" x2=\"88\" y2=\"27\" style=\"stroke:#49978dff;stroke-width:2;\" /><line x1=\"89\" y1=\"15\" x2=\"89\" y2=\"27\" style=\"stroke:#49988dff;stroke-width:2;\" /><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"27\" style=\"stroke:#4a988dff;stroke-width:2;\" /><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"27\" style=\"stroke:#4b988dff;stroke-width:2;\" /><line x1=\"92\" y1=\"15\" x2=\"92\" y2=\"27\" style=\"stroke:#4c998eff;stroke-width:2;\" /><line x1=\"93\" y1=\"15\" x2=\"93\" y2=\"27\" style=\"stroke:#4d998eff;stroke-width:2;\" /><line x1=\"94\" y1=\"15\" x2=\"94\" y2=\"27\" style=\"stroke:#4d998eff;stroke-width:2;\" /><line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"27\" style=\"stroke:#4e998eff;stroke-width:2;\" /><line x1=\"96\" y1=\"15\" x2=\"96\" y2=\"27\" style=\"stroke:#4f9a8eff;stroke-width:2;\" /><line x1=\"97\" y1=\"15\" x2=\"97\" y2=\"27\" style=\"stroke:#509a8eff;stroke-width:2;\" /><line x1=\"98\" y1=\"15\" x2=\"98\" y2=\"27\" style=\"stroke:#519a8fff;stroke-width:2;\" /><line x1=\"99\" y1=\"15\" x2=\"99\" y2=\"27\" style=\"stroke:#529a8fff;stroke-width:2;\" /><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"27\" style=\"stroke:#529b8fff;stroke-width:2;\" /><line x1=\"101\" y1=\"15\" x2=\"101\" y2=\"27\" style=\"stroke:#539b8fff;stroke-width:2;\" /><line x1=\"102\" y1=\"15\" x2=\"102\" y2=\"27\" style=\"stroke:#549b8fff;stroke-width:2;\" /><line x1=\"103\" y1=\"15\" x2=\"103\" y2=\"27\" style=\"stroke:#559b8fff;stroke-width:2;\" /><line x1=\"104\" y1=\"15\" x2=\"104\" y2=\"27\" style=\"stroke:#569c8fff;stroke-width:2;\" /><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"27\" style=\"stroke:#579c90ff;stroke-width:2;\" /><line x1=\"106\" y1=\"15\" x2=\"106\" y2=\"27\" style=\"stroke:#579c90ff;stroke-width:2;\" /><line x1=\"107\" y1=\"15\" x2=\"107\" y2=\"27\" style=\"stroke:#589d90ff;stroke-width:2;\" /><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"27\" style=\"stroke:#599d90ff;stroke-width:2;\" /><line x1=\"109\" y1=\"15\" x2=\"109\" y2=\"27\" style=\"stroke:#5a9d90ff;stroke-width:2;\" /><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"27\" style=\"stroke:#5b9d90ff;stroke-width:2;\" /><line x1=\"111\" y1=\"15\" x2=\"111\" y2=\"27\" style=\"stroke:#5c9e90ff;stroke-width:2;\" /><line x1=\"112\" y1=\"15\" x2=\"112\" y2=\"27\" style=\"stroke:#5c9e91ff;stroke-width:2;\" /><line x1=\"113\" y1=\"15\" x2=\"113\" y2=\"27\" style=\"stroke:#5d9e91ff;stroke-width:2;\" /><line x1=\"114\" y1=\"15\" x2=\"114\" y2=\"27\" style=\"stroke:#5e9e91ff;stroke-width:2;\" /><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"27\" style=\"stroke:#5f9f91ff;stroke-width:2;\" /><line x1=\"116\" y1=\"15\" x2=\"116\" y2=\"27\" style=\"stroke:#609f91ff;stroke-width:2;\" /><line x1=\"117\" y1=\"15\" x2=\"117\" y2=\"27\" style=\"stroke:#619f91ff;stroke-width:2;\" /><line x1=\"118\" y1=\"15\" x2=\"118\" y2=\"27\" style=\"stroke:#619f91ff;stroke-width:2;\" /><line x1=\"119\" y1=\"15\" x2=\"119\" y2=\"27\" style=\"stroke:#62a092ff;stroke-width:2;\" /><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"27\" style=\"stroke:#63a092ff;stroke-width:2;\" /><line x1=\"121\" y1=\"15\" x2=\"121\" y2=\"27\" style=\"stroke:#64a092ff;stroke-width:2;\" /><line x1=\"122\" y1=\"15\" x2=\"122\" y2=\"27\" style=\"stroke:#65a192ff;stroke-width:2;\" /><line x1=\"123\" y1=\"15\" x2=\"123\" y2=\"27\" style=\"stroke:#66a192ff;stroke-width:2;\" /><line x1=\"124\" y1=\"15\" x2=\"124\" y2=\"27\" style=\"stroke:#66a192ff;stroke-width:2;\" /><line x1=\"125\" y1=\"15\" x2=\"125\" y2=\"27\" style=\"stroke:#67a193ff;stroke-width:2;\" /><line x1=\"126\" y1=\"15\" x2=\"126\" y2=\"27\" style=\"stroke:#68a293ff;stroke-width:2;\" /><line x1=\"127\" y1=\"15\" x2=\"127\" y2=\"27\" style=\"stroke:#69a293ff;stroke-width:2;\" /><line x1=\"128\" y1=\"15\" x2=\"128\" y2=\"27\" style=\"stroke:#6aa293ff;stroke-width:2;\" /><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"27\" style=\"stroke:#6ba293ff;stroke-width:2;\" /><line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"27\" style=\"stroke:#6ba393ff;stroke-width:2;\" /><line x1=\"131\" y1=\"15\" x2=\"131\" y2=\"27\" style=\"stroke:#6ca393ff;stroke-width:2;\" /><line x1=\"132\" y1=\"15\" x2=\"132\" y2=\"27\" style=\"stroke:#6da394ff;stroke-width:2;\" /><line x1=\"133\" y1=\"15\" x2=\"133\" y2=\"27\" style=\"stroke:#6ea394ff;stroke-width:2;\" /><line x1=\"134\" y1=\"15\" x2=\"134\" y2=\"27\" style=\"stroke:#6fa494ff;stroke-width:2;\" /><line x1=\"135\" y1=\"15\" x2=\"135\" y2=\"27\" style=\"stroke:#70a494ff;stroke-width:2;\" /><line x1=\"136\" y1=\"15\" x2=\"136\" y2=\"27\" style=\"stroke:#70a494ff;stroke-width:2;\" /><line x1=\"137\" y1=\"15\" x2=\"137\" y2=\"27\" style=\"stroke:#71a594ff;stroke-width:2;\" /><line x1=\"138\" y1=\"15\" x2=\"138\" y2=\"27\" style=\"stroke:#71a594ff;stroke-width:2;\" /><line x1=\"139\" y1=\"15\" x2=\"139\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"141\" y1=\"15\" x2=\"141\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"142\" y1=\"15\" x2=\"142\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"143\" y1=\"15\" x2=\"143\" y2=\"27\" style=\"stroke:#74a695ff;stroke-width:2;\" /><line x1=\"144\" y1=\"15\" x2=\"144\" y2=\"27\" style=\"stroke:#74a695ff;stroke-width:2;\" /><line x1=\"145\" y1=\"15\" x2=\"145\" y2=\"27\" style=\"stroke:#75a795ff;stroke-width:2;\" /><line x1=\"146\" y1=\"15\" x2=\"146\" y2=\"27\" style=\"stroke:#75a796ff;stroke-width:2;\" /><line x1=\"147\" y1=\"15\" x2=\"147\" y2=\"27\" style=\"stroke:#76a796ff;stroke-width:2;\" /><line x1=\"148\" y1=\"15\" x2=\"148\" y2=\"27\" style=\"stroke:#76a796ff;stroke-width:2;\" /><line x1=\"149\" y1=\"15\" x2=\"149\" y2=\"27\" style=\"stroke:#77a896ff;stroke-width:2;\" /><line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"27\" style=\"stroke:#77a896ff;stroke-width:2;\" /><line x1=\"151\" y1=\"15\" x2=\"151\" y2=\"27\" style=\"stroke:#78a896ff;stroke-width:2;\" /><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"27\" style=\"stroke:#78a997ff;stroke-width:2;\" /><line x1=\"153\" y1=\"15\" x2=\"153\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"154\" y1=\"15\" x2=\"154\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"155\" y1=\"15\" x2=\"155\" y2=\"27\" style=\"stroke:#7aa997ff;stroke-width:2;\" /><line x1=\"156\" y1=\"15\" x2=\"156\" y2=\"27\" style=\"stroke:#7aaa97ff;stroke-width:2;\" /><line x1=\"157\" y1=\"15\" x2=\"157\" y2=\"27\" style=\"stroke:#7baa97ff;stroke-width:2;\" /><line x1=\"158\" y1=\"15\" x2=\"158\" y2=\"27\" style=\"stroke:#7baa97ff;stroke-width:2;\" /><line x1=\"159\" y1=\"15\" x2=\"159\" y2=\"27\" style=\"stroke:#7caa98ff;stroke-width:2;\" /><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"27\" style=\"stroke:#7cab98ff;stroke-width:2;\" /><line x1=\"161\" y1=\"15\" x2=\"161\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"162\" y1=\"15\" x2=\"162\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"163\" y1=\"15\" x2=\"163\" y2=\"27\" style=\"stroke:#7eab98ff;stroke-width:2;\" /><line x1=\"164\" y1=\"15\" x2=\"164\" y2=\"27\" style=\"stroke:#7eac98ff;stroke-width:2;\" /><line x1=\"165\" y1=\"15\" x2=\"165\" y2=\"27\" style=\"stroke:#7fac98ff;stroke-width:2;\" /><line x1=\"166\" y1=\"15\" x2=\"166\" y2=\"27\" style=\"stroke:#7fac99ff;stroke-width:2;\" /><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"27\" style=\"stroke:#80ad99ff;stroke-width:2;\" /><line x1=\"168\" y1=\"15\" x2=\"168\" y2=\"27\" style=\"stroke:#80ad99ff;stroke-width:2;\" /><line x1=\"169\" y1=\"15\" x2=\"169\" y2=\"27\" style=\"stroke:#81ad99ff;stroke-width:2;\" /><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"27\" style=\"stroke:#81ad99ff;stroke-width:2;\" /><line x1=\"171\" y1=\"15\" x2=\"171\" y2=\"27\" style=\"stroke:#82ae99ff;stroke-width:2;\" /><line x1=\"172\" y1=\"15\" x2=\"172\" y2=\"27\" style=\"stroke:#82ae99ff;stroke-width:2;\" /><line x1=\"173\" y1=\"15\" x2=\"173\" y2=\"27\" style=\"stroke:#83ae9aff;stroke-width:2;\" /><line x1=\"174\" y1=\"15\" x2=\"174\" y2=\"27\" style=\"stroke:#83ae9aff;stroke-width:2;\" /><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"27\" style=\"stroke:#84af9aff;stroke-width:2;\" /><line x1=\"176\" y1=\"15\" x2=\"176\" y2=\"27\" style=\"stroke:#84af9aff;stroke-width:2;\" /><line x1=\"177\" y1=\"15\" x2=\"177\" y2=\"27\" style=\"stroke:#85af9aff;stroke-width:2;\" /><line x1=\"178\" y1=\"15\" x2=\"178\" y2=\"27\" style=\"stroke:#85af9aff;stroke-width:2;\" /><line x1=\"179\" y1=\"15\" x2=\"179\" y2=\"27\" style=\"stroke:#86b09bff;stroke-width:2;\" /><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"27\" style=\"stroke:#86b09bff;stroke-width:2;\" /><line x1=\"181\" y1=\"15\" x2=\"181\" y2=\"27\" style=\"stroke:#87b09bff;stroke-width:2;\" /><line x1=\"182\" y1=\"15\" x2=\"182\" y2=\"27\" style=\"stroke:#87b19bff;stroke-width:2;\" /><line x1=\"183\" y1=\"15\" x2=\"183\" y2=\"27\" style=\"stroke:#88b19bff;stroke-width:2;\" /><line x1=\"184\" y1=\"15\" x2=\"184\" y2=\"27\" style=\"stroke:#88b19bff;stroke-width:2;\" /><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"27\" style=\"stroke:#89b19bff;stroke-width:2;\" /><line x1=\"186\" y1=\"15\" x2=\"186\" y2=\"27\" style=\"stroke:#89b29cff;stroke-width:2;\" /><line x1=\"187\" y1=\"15\" x2=\"187\" y2=\"27\" style=\"stroke:#8ab29cff;stroke-width:2;\" /><line x1=\"188\" y1=\"15\" x2=\"188\" y2=\"27\" style=\"stroke:#8ab29cff;stroke-width:2;\" /><line x1=\"189\" y1=\"15\" x2=\"189\" y2=\"27\" style=\"stroke:#8bb29cff;stroke-width:2;\" /><line x1=\"190\" y1=\"15\" x2=\"190\" y2=\"27\" style=\"stroke:#8bb39cff;stroke-width:2;\" /><line x1=\"191\" y1=\"15\" x2=\"191\" y2=\"27\" style=\"stroke:#8cb39cff;stroke-width:2;\" /><line x1=\"192\" y1=\"15\" x2=\"192\" y2=\"27\" style=\"stroke:#8cb39cff;stroke-width:2;\" /><line x1=\"193\" y1=\"15\" x2=\"193\" y2=\"27\" style=\"stroke:#8db39dff;stroke-width:2;\" /><line x1=\"194\" y1=\"15\" x2=\"194\" y2=\"27\" style=\"stroke:#8db49dff;stroke-width:2;\" /><line x1=\"195\" y1=\"15\" x2=\"195\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"196\" y1=\"15\" x2=\"196\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"197\" y1=\"15\" x2=\"197\" y2=\"27\" style=\"stroke:#8fb59dff;stroke-width:2;\" /><line x1=\"198\" y1=\"15\" x2=\"198\" y2=\"27\" style=\"stroke:#8fb59dff;stroke-width:2;\" /><line x1=\"199\" y1=\"15\" x2=\"199\" y2=\"27\" style=\"stroke:#90b59dff;stroke-width:2;\" /><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"27\" style=\"stroke:#90b59eff;stroke-width:2;\" /><line x1=\"201\" y1=\"15\" x2=\"201\" y2=\"27\" style=\"stroke:#91b69eff;stroke-width:2;\" /><line x1=\"202\" y1=\"15\" x2=\"202\" y2=\"27\" style=\"stroke:#91b69eff;stroke-width:2;\" /><line x1=\"203\" y1=\"15\" x2=\"203\" y2=\"27\" style=\"stroke:#92b69eff;stroke-width:2;\" /><line x1=\"204\" y1=\"15\" x2=\"204\" y2=\"27\" style=\"stroke:#92b69eff;stroke-width:2;\" /><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"27\" style=\"stroke:#93b79eff;stroke-width:2;\" /><line x1=\"206\" y1=\"15\" x2=\"206\" y2=\"27\" style=\"stroke:#93b79fff;stroke-width:2;\" /><line x1=\"207\" y1=\"15\" x2=\"207\" y2=\"27\" style=\"stroke:#94b79fff;stroke-width:2;\" /><line x1=\"208\" y1=\"15\" x2=\"208\" y2=\"27\" style=\"stroke:#94b79fff;stroke-width:2;\" /><line x1=\"209\" y1=\"15\" x2=\"209\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"210\" y1=\"15\" x2=\"210\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"211\" y1=\"15\" x2=\"211\" y2=\"27\" style=\"stroke:#96b89fff;stroke-width:2;\" /><line x1=\"212\" y1=\"15\" x2=\"212\" y2=\"27\" style=\"stroke:#96b99fff;stroke-width:2;\" /><line x1=\"213\" y1=\"15\" x2=\"213\" y2=\"27\" style=\"stroke:#97b9a0ff;stroke-width:2;\" /><line x1=\"214\" y1=\"15\" x2=\"214\" y2=\"27\" style=\"stroke:#97b9a0ff;stroke-width:2;\" /><line x1=\"215\" y1=\"15\" x2=\"215\" y2=\"27\" style=\"stroke:#98b9a0ff;stroke-width:2;\" /><line x1=\"216\" y1=\"15\" x2=\"216\" y2=\"27\" style=\"stroke:#98baa0ff;stroke-width:2;\" /><line x1=\"217\" y1=\"15\" x2=\"217\" y2=\"27\" style=\"stroke:#99baa0ff;stroke-width:2;\" /><line x1=\"218\" y1=\"15\" x2=\"218\" y2=\"27\" style=\"stroke:#99baa0ff;stroke-width:2;\" /><line x1=\"219\" y1=\"15\" x2=\"219\" y2=\"27\" style=\"stroke:#9abaa0ff;stroke-width:2;\" /><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"27\" style=\"stroke:#9abba1ff;stroke-width:2;\" /><line x1=\"221\" y1=\"15\" x2=\"221\" y2=\"27\" style=\"stroke:#9bbba1ff;stroke-width:2;\" /><line x1=\"222\" y1=\"15\" x2=\"222\" y2=\"27\" style=\"stroke:#9cbba1ff;stroke-width:2;\" /><line x1=\"223\" y1=\"15\" x2=\"223\" y2=\"27\" style=\"stroke:#9cbba1ff;stroke-width:2;\" /><line x1=\"224\" y1=\"15\" x2=\"224\" y2=\"27\" style=\"stroke:#9dbca1ff;stroke-width:2;\" /><line x1=\"225\" y1=\"15\" x2=\"225\" y2=\"27\" style=\"stroke:#9dbca1ff;stroke-width:2;\" /><line x1=\"226\" y1=\"15\" x2=\"226\" y2=\"27\" style=\"stroke:#9ebca1ff;stroke-width:2;\" /><line x1=\"227\" y1=\"15\" x2=\"227\" y2=\"27\" style=\"stroke:#9ebda2ff;stroke-width:2;\" /><line x1=\"228\" y1=\"15\" x2=\"228\" y2=\"27\" style=\"stroke:#9fbda2ff;stroke-width:2;\" /><line x1=\"229\" y1=\"15\" x2=\"229\" y2=\"27\" style=\"stroke:#9fbda2ff;stroke-width:2;\" /><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"27\" style=\"stroke:#a0bda2ff;stroke-width:2;\" /><line x1=\"231\" y1=\"15\" x2=\"231\" y2=\"27\" style=\"stroke:#a0bea2ff;stroke-width:2;\" /><line x1=\"232\" y1=\"15\" x2=\"232\" y2=\"27\" style=\"stroke:#a1bea2ff;stroke-width:2;\" /><line x1=\"233\" y1=\"15\" x2=\"233\" y2=\"27\" style=\"stroke:#a1bea3ff;stroke-width:2;\" /><line x1=\"234\" y1=\"15\" x2=\"234\" y2=\"27\" style=\"stroke:#a2bea3ff;stroke-width:2;\" /><line x1=\"235\" y1=\"15\" x2=\"235\" y2=\"27\" style=\"stroke:#a2bfa3ff;stroke-width:2;\" /><line x1=\"236\" y1=\"15\" x2=\"236\" y2=\"27\" style=\"stroke:#a3bfa3ff;stroke-width:2;\" /><line x1=\"237\" y1=\"15\" x2=\"237\" y2=\"27\" style=\"stroke:#a3bfa3ff;stroke-width:2;\" /><line x1=\"238\" y1=\"15\" x2=\"238\" y2=\"27\" style=\"stroke:#a4bfa3ff;stroke-width:2;\" /><line x1=\"239\" y1=\"15\" x2=\"239\" y2=\"27\" style=\"stroke:#a4c0a3ff;stroke-width:2;\" /><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"27\" style=\"stroke:#a5c0a4ff;stroke-width:2;\" /><line x1=\"241\" y1=\"15\" x2=\"241\" y2=\"27\" style=\"stroke:#a5c0a4ff;stroke-width:2;\" /><line x1=\"242\" y1=\"15\" x2=\"242\" y2=\"27\" style=\"stroke:#a6c1a4ff;stroke-width:2;\" /><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"27\" style=\"stroke:#a6c1a4ff;stroke-width:2;\" /><line x1=\"244\" y1=\"15\" x2=\"244\" y2=\"27\" style=\"stroke:#a7c1a4ff;stroke-width:2;\" /><line x1=\"245\" y1=\"15\" x2=\"245\" y2=\"27\" style=\"stroke:#a7c1a4ff;stroke-width:2;\" /><line x1=\"246\" y1=\"15\" x2=\"246\" y2=\"27\" style=\"stroke:#a8c2a4ff;stroke-width:2;\" /><line x1=\"247\" y1=\"15\" x2=\"247\" y2=\"27\" style=\"stroke:#a8c2a5ff;stroke-width:2;\" /><line x1=\"248\" y1=\"15\" x2=\"248\" y2=\"27\" style=\"stroke:#a9c2a5ff;stroke-width:2;\" /><line x1=\"249\" y1=\"15\" x2=\"249\" y2=\"27\" style=\"stroke:#a9c2a5ff;stroke-width:2;\" /><line x1=\"250\" y1=\"15\" x2=\"250\" y2=\"27\" style=\"stroke:#aac3a5ff;stroke-width:2;\" /><line x1=\"251\" y1=\"15\" x2=\"251\" y2=\"27\" style=\"stroke:#aac3a5ff;stroke-width:2;\" /><line x1=\"252\" y1=\"15\" x2=\"252\" y2=\"27\" style=\"stroke:#abc3a5ff;stroke-width:2;\" /><line x1=\"253\" y1=\"15\" x2=\"253\" y2=\"27\" style=\"stroke:#abc3a5ff;stroke-width:2;\" /><line x1=\"254\" y1=\"15\" x2=\"254\" y2=\"27\" style=\"stroke:#acc4a6ff;stroke-width:2;\" /><line x1=\"255\" y1=\"15\" x2=\"255\" y2=\"27\" style=\"stroke:#acc4a6ff;stroke-width:2;\" /><line x1=\"256\" y1=\"15\" x2=\"256\" y2=\"27\" style=\"stroke:#adc4a6ff;stroke-width:2;\" /><line x1=\"257\" y1=\"15\" x2=\"257\" y2=\"27\" style=\"stroke:#adc5a6ff;stroke-width:2;\" /><line x1=\"258\" y1=\"15\" x2=\"258\" y2=\"27\" style=\"stroke:#aec5a6ff;stroke-width:2;\" /><line x1=\"259\" y1=\"15\" x2=\"259\" y2=\"27\" style=\"stroke:#aec5a6ff;stroke-width:2;\" /><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"27\" style=\"stroke:#afc5a7ff;stroke-width:2;\" /><line x1=\"261\" y1=\"15\" x2=\"261\" y2=\"27\" style=\"stroke:#afc6a7ff;stroke-width:2;\" /><line x1=\"262\" y1=\"15\" x2=\"262\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"263\" y1=\"15\" x2=\"263\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"264\" y1=\"15\" x2=\"264\" y2=\"27\" style=\"stroke:#b1c6a7ff;stroke-width:2;\" /><line x1=\"265\" y1=\"15\" x2=\"265\" y2=\"27\" style=\"stroke:#b1c7a7ff;stroke-width:2;\" /><line x1=\"266\" y1=\"15\" x2=\"266\" y2=\"27\" style=\"stroke:#b2c7a7ff;stroke-width:2;\" /><line x1=\"267\" y1=\"15\" x2=\"267\" y2=\"27\" style=\"stroke:#b2c7a8ff;stroke-width:2;\" /><line x1=\"268\" y1=\"15\" x2=\"268\" y2=\"27\" style=\"stroke:#b3c7a8ff;stroke-width:2;\" /><line x1=\"269\" y1=\"15\" x2=\"269\" y2=\"27\" style=\"stroke:#b3c8a8ff;stroke-width:2;\" /><line x1=\"270\" y1=\"15\" x2=\"270\" y2=\"27\" style=\"stroke:#b4c8a8ff;stroke-width:2;\" /><line x1=\"271\" y1=\"15\" x2=\"271\" y2=\"27\" style=\"stroke:#b4c8a8ff;stroke-width:2;\" /><line x1=\"272\" y1=\"15\" x2=\"272\" y2=\"27\" style=\"stroke:#b5c9a8ff;stroke-width:2;\" /><line x1=\"273\" y1=\"15\" x2=\"273\" y2=\"27\" style=\"stroke:#b5c9a8ff;stroke-width:2;\" /><line x1=\"274\" y1=\"15\" x2=\"274\" y2=\"27\" style=\"stroke:#b6c9a9ff;stroke-width:2;\" /><line x1=\"275\" y1=\"15\" x2=\"275\" y2=\"27\" style=\"stroke:#b6c9a9ff;stroke-width:2;\" /><line x1=\"276\" y1=\"15\" x2=\"276\" y2=\"27\" style=\"stroke:#b7caa9ff;stroke-width:2;\" /><line x1=\"277\" y1=\"15\" x2=\"277\" y2=\"27\" style=\"stroke:#b7caa9ff;stroke-width:2;\" /><line x1=\"278\" y1=\"15\" x2=\"278\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"279\" y1=\"15\" x2=\"279\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"27\" style=\"stroke:#b9cbaaff;stroke-width:2;\" /><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"27\" style=\"stroke:#b9cbaaff;stroke-width:2;\" /><line x1=\"282\" y1=\"15\" x2=\"282\" y2=\"27\" style=\"stroke:#bacbaaff;stroke-width:2;\" /><line x1=\"283\" y1=\"15\" x2=\"283\" y2=\"27\" style=\"stroke:#baccaaff;stroke-width:2;\" /><line x1=\"284\" y1=\"15\" x2=\"284\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"285\" y1=\"15\" x2=\"285\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"286\" y1=\"15\" x2=\"286\" y2=\"27\" style=\"stroke:#bcccaaff;stroke-width:2;\" /><line x1=\"287\" y1=\"15\" x2=\"287\" y2=\"27\" style=\"stroke:#bccdabff;stroke-width:2;\" /><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"27\" style=\"stroke:#bccdabff;stroke-width:2;\" /><line x1=\"289\" y1=\"15\" x2=\"289\" y2=\"27\" style=\"stroke:#bdcdabff;stroke-width:2;\" /><line x1=\"290\" y1=\"15\" x2=\"290\" y2=\"27\" style=\"stroke:#bdcdabff;stroke-width:2;\" /><line x1=\"291\" y1=\"15\" x2=\"291\" y2=\"27\" style=\"stroke:#beceabff;stroke-width:2;\" /><line x1=\"292\" y1=\"15\" x2=\"292\" y2=\"27\" style=\"stroke:#beceabff;stroke-width:2;\" /><line x1=\"293\" y1=\"15\" x2=\"293\" y2=\"27\" style=\"stroke:#bfceacff;stroke-width:2;\" /><line x1=\"294\" y1=\"15\" x2=\"294\" y2=\"27\" style=\"stroke:#bfcfacff;stroke-width:2;\" /><line x1=\"295\" y1=\"15\" x2=\"295\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"296\" y1=\"15\" x2=\"296\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"297\" y1=\"15\" x2=\"297\" y2=\"27\" style=\"stroke:#c1cfacff;stroke-width:2;\" /><line x1=\"298\" y1=\"15\" x2=\"298\" y2=\"27\" style=\"stroke:#c1d0acff;stroke-width:2;\" /><line x1=\"299\" y1=\"15\" x2=\"299\" y2=\"27\" style=\"stroke:#c2d0adff;stroke-width:2;\" /><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"27\" style=\"stroke:#c2d0adff;stroke-width:2;\" /><line x1=\"301\" y1=\"15\" x2=\"301\" y2=\"27\" style=\"stroke:#c3d0adff;stroke-width:2;\" /><line x1=\"302\" y1=\"15\" x2=\"302\" y2=\"27\" style=\"stroke:#c3d1adff;stroke-width:2;\" /><line x1=\"303\" y1=\"15\" x2=\"303\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"304\" y1=\"15\" x2=\"304\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"305\" y1=\"15\" x2=\"305\" y2=\"27\" style=\"stroke:#c5d2adff;stroke-width:2;\" /><line x1=\"306\" y1=\"15\" x2=\"306\" y2=\"27\" style=\"stroke:#c5d2aeff;stroke-width:2;\" /><line x1=\"307\" y1=\"15\" x2=\"307\" y2=\"27\" style=\"stroke:#c6d2aeff;stroke-width:2;\" /><line x1=\"308\" y1=\"15\" x2=\"308\" y2=\"27\" style=\"stroke:#c6d2aeff;stroke-width:2;\" /><line x1=\"309\" y1=\"15\" x2=\"309\" y2=\"27\" style=\"stroke:#c7d3aeff;stroke-width:2;\" /><line x1=\"310\" y1=\"15\" x2=\"310\" y2=\"27\" style=\"stroke:#c7d3aeff;stroke-width:2;\" /><line x1=\"311\" y1=\"15\" x2=\"311\" y2=\"27\" style=\"stroke:#c8d3aeff;stroke-width:2;\" /><line x1=\"312\" y1=\"15\" x2=\"312\" y2=\"27\" style=\"stroke:#c8d4afff;stroke-width:2;\" /><line x1=\"313\" y1=\"15\" x2=\"313\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"314\" y1=\"15\" x2=\"314\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"315\" y1=\"15\" x2=\"315\" y2=\"27\" style=\"stroke:#cad4afff;stroke-width:2;\" /><line x1=\"316\" y1=\"15\" x2=\"316\" y2=\"27\" style=\"stroke:#cad5afff;stroke-width:2;\" /><line x1=\"317\" y1=\"15\" x2=\"317\" y2=\"27\" style=\"stroke:#cbd5afff;stroke-width:2;\" /><line x1=\"318\" y1=\"15\" x2=\"318\" y2=\"27\" style=\"stroke:#cbd5afff;stroke-width:2;\" /><line x1=\"319\" y1=\"15\" x2=\"319\" y2=\"27\" style=\"stroke:#ccd5b0ff;stroke-width:2;\" /><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"27\" style=\"stroke:#ccd6b0ff;stroke-width:2;\" /><line x1=\"321\" y1=\"15\" x2=\"321\" y2=\"27\" style=\"stroke:#cdd6b0ff;stroke-width:2;\" /><line x1=\"322\" y1=\"15\" x2=\"322\" y2=\"27\" style=\"stroke:#cdd6b0ff;stroke-width:2;\" /><line x1=\"323\" y1=\"15\" x2=\"323\" y2=\"27\" style=\"stroke:#ced7b0ff;stroke-width:2;\" /><line x1=\"324\" y1=\"15\" x2=\"324\" y2=\"27\" style=\"stroke:#ced7b0ff;stroke-width:2;\" /><line x1=\"325\" y1=\"15\" x2=\"325\" y2=\"27\" style=\"stroke:#cfd7b1ff;stroke-width:2;\" /><line x1=\"326\" y1=\"15\" x2=\"326\" y2=\"27\" style=\"stroke:#cfd7b1ff;stroke-width:2;\" /><line x1=\"327\" y1=\"15\" x2=\"327\" y2=\"27\" style=\"stroke:#d0d8b1ff;stroke-width:2;\" /><line x1=\"328\" y1=\"15\" x2=\"328\" y2=\"27\" style=\"stroke:#d0d8b1ff;stroke-width:2;\" /><line x1=\"329\" y1=\"15\" x2=\"329\" y2=\"27\" style=\"stroke:#d1d8b1ff;stroke-width:2;\" /><line x1=\"330\" y1=\"15\" x2=\"330\" y2=\"27\" style=\"stroke:#d1d8b1ff;stroke-width:2;\" /><line x1=\"331\" y1=\"15\" x2=\"331\" y2=\"27\" style=\"stroke:#d2d9b1ff;stroke-width:2;\" /><line x1=\"332\" y1=\"15\" x2=\"332\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"333\" y1=\"15\" x2=\"333\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"334\" y1=\"15\" x2=\"334\" y2=\"27\" style=\"stroke:#d3dab2ff;stroke-width:2;\" /><line x1=\"335\" y1=\"15\" x2=\"335\" y2=\"27\" style=\"stroke:#d3dab2ff;stroke-width:2;\" /><line x1=\"336\" y1=\"15\" x2=\"336\" y2=\"27\" style=\"stroke:#d4dab2ff;stroke-width:2;\" /><line x1=\"337\" y1=\"15\" x2=\"337\" y2=\"27\" style=\"stroke:#d4dab2ff;stroke-width:2;\" /><line x1=\"338\" y1=\"15\" x2=\"338\" y2=\"27\" style=\"stroke:#d5dbb3ff;stroke-width:2;\" /><line x1=\"339\" y1=\"15\" x2=\"339\" y2=\"27\" style=\"stroke:#d5dbb3ff;stroke-width:2;\" /><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"27\" style=\"stroke:#d6dbb3ff;stroke-width:2;\" /><line x1=\"341\" y1=\"15\" x2=\"341\" y2=\"27\" style=\"stroke:#d6dbb3ff;stroke-width:2;\" /><line x1=\"342\" y1=\"15\" x2=\"342\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"343\" y1=\"15\" x2=\"343\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"344\" y1=\"15\" x2=\"344\" y2=\"27\" style=\"stroke:#d8dcb4ff;stroke-width:2;\" /><line x1=\"345\" y1=\"15\" x2=\"345\" y2=\"27\" style=\"stroke:#d8ddb4ff;stroke-width:2;\" /><line x1=\"346\" y1=\"15\" x2=\"346\" y2=\"27\" style=\"stroke:#d9ddb4ff;stroke-width:2;\" /><line x1=\"347\" y1=\"15\" x2=\"347\" y2=\"27\" style=\"stroke:#d9ddb4ff;stroke-width:2;\" /><line x1=\"348\" y1=\"15\" x2=\"348\" y2=\"27\" style=\"stroke:#daddb4ff;stroke-width:2;\" /><line x1=\"349\" y1=\"15\" x2=\"349\" y2=\"27\" style=\"stroke:#dadeb4ff;stroke-width:2;\" /><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"27\" style=\"stroke:#dbdeb4ff;stroke-width:2;\" /><line x1=\"351\" y1=\"15\" x2=\"351\" y2=\"27\" style=\"stroke:#dbdeb5ff;stroke-width:2;\" /><line x1=\"352\" y1=\"15\" x2=\"352\" y2=\"27\" style=\"stroke:#dcdeb5ff;stroke-width:2;\" /><line x1=\"353\" y1=\"15\" x2=\"353\" y2=\"27\" style=\"stroke:#dcdfb5ff;stroke-width:2;\" /><line x1=\"354\" y1=\"15\" x2=\"354\" y2=\"27\" style=\"stroke:#dddfb5ff;stroke-width:2;\" /><line x1=\"355\" y1=\"15\" x2=\"355\" y2=\"27\" style=\"stroke:#dddfb5ff;stroke-width:2;\" /><line x1=\"356\" y1=\"15\" x2=\"356\" y2=\"27\" style=\"stroke:#dee0b5ff;stroke-width:2;\" /><line x1=\"357\" y1=\"15\" x2=\"357\" y2=\"27\" style=\"stroke:#dee0b6ff;stroke-width:2;\" /><line x1=\"358\" y1=\"15\" x2=\"358\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"359\" y1=\"15\" x2=\"359\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"27\" style=\"stroke:#e0e1b6ff;stroke-width:2;\" /><line x1=\"361\" y1=\"15\" x2=\"361\" y2=\"27\" style=\"stroke:#e0e1b6ff;stroke-width:2;\" /><line x1=\"362\" y1=\"15\" x2=\"362\" y2=\"27\" style=\"stroke:#e1e1b6ff;stroke-width:2;\" /><line x1=\"363\" y1=\"15\" x2=\"363\" y2=\"27\" style=\"stroke:#e1e1b6ff;stroke-width:2;\" /><line x1=\"364\" y1=\"15\" x2=\"364\" y2=\"27\" style=\"stroke:#e2e2b7ff;stroke-width:2;\" /><line x1=\"365\" y1=\"15\" x2=\"365\" y2=\"27\" style=\"stroke:#e2e2b7ff;stroke-width:2;\" /><line x1=\"366\" y1=\"15\" x2=\"366\" y2=\"27\" style=\"stroke:#e3e2b7ff;stroke-width:2;\" /><line x1=\"367\" y1=\"15\" x2=\"367\" y2=\"27\" style=\"stroke:#e3e3b7ff;stroke-width:2;\" /><line x1=\"368\" y1=\"15\" x2=\"368\" y2=\"27\" style=\"stroke:#e4e3b7ff;stroke-width:2;\" /><line x1=\"369\" y1=\"15\" x2=\"369\" y2=\"27\" style=\"stroke:#e4e3b7ff;stroke-width:2;\" /><line x1=\"370\" y1=\"15\" x2=\"370\" y2=\"27\" style=\"stroke:#e5e3b8ff;stroke-width:2;\" /><line x1=\"371\" y1=\"15\" x2=\"371\" y2=\"27\" style=\"stroke:#e5e4b8ff;stroke-width:2;\" /><line x1=\"372\" y1=\"15\" x2=\"372\" y2=\"27\" style=\"stroke:#e6e4b8ff;stroke-width:2;\" /><line x1=\"373\" y1=\"15\" x2=\"373\" y2=\"27\" style=\"stroke:#e6e4b8ff;stroke-width:2;\" /><line x1=\"374\" y1=\"15\" x2=\"374\" y2=\"27\" style=\"stroke:#e7e5b8ff;stroke-width:2;\" /><line x1=\"375\" y1=\"15\" x2=\"375\" y2=\"27\" style=\"stroke:#e7e5b8ff;stroke-width:2;\" /><line x1=\"376\" y1=\"15\" x2=\"376\" y2=\"27\" style=\"stroke:#e8e5b8ff;stroke-width:2;\" /><line x1=\"377\" y1=\"15\" x2=\"377\" y2=\"27\" style=\"stroke:#e8e5b9ff;stroke-width:2;\" /><line x1=\"378\" y1=\"15\" x2=\"378\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"379\" y1=\"15\" x2=\"379\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"381\" y1=\"15\" x2=\"381\" y2=\"27\" style=\"stroke:#eae6b9ff;stroke-width:2;\" /><line x1=\"382\" y1=\"15\" x2=\"382\" y2=\"27\" style=\"stroke:#eae7b9ff;stroke-width:2;\" /><line x1=\"383\" y1=\"15\" x2=\"383\" y2=\"27\" style=\"stroke:#ebe7baff;stroke-width:2;\" /><line x1=\"384\" y1=\"15\" x2=\"384\" y2=\"27\" style=\"stroke:#ebe7baff;stroke-width:2;\" /><line x1=\"385\" y1=\"15\" x2=\"385\" y2=\"27\" style=\"stroke:#ece8baff;stroke-width:2;\" /><line x1=\"386\" y1=\"15\" x2=\"386\" y2=\"27\" style=\"stroke:#ece8baff;stroke-width:2;\" /><line x1=\"387\" y1=\"15\" x2=\"387\" y2=\"27\" style=\"stroke:#ede8baff;stroke-width:2;\" /><line x1=\"388\" y1=\"15\" x2=\"388\" y2=\"27\" style=\"stroke:#ede8baff;stroke-width:2;\" /><line x1=\"389\" y1=\"15\" x2=\"389\" y2=\"27\" style=\"stroke:#eee9bbff;stroke-width:2;\" /><line x1=\"390\" y1=\"15\" x2=\"390\" y2=\"27\" style=\"stroke:#eee9bbff;stroke-width:2;\" /><line x1=\"391\" y1=\"15\" x2=\"391\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"392\" y1=\"15\" x2=\"392\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"393\" y1=\"15\" x2=\"393\" y2=\"27\" style=\"stroke:#f0eabbff;stroke-width:2;\" /><line x1=\"394\" y1=\"15\" x2=\"394\" y2=\"27\" style=\"stroke:#f0eabbff;stroke-width:2;\" /><line x1=\"395\" y1=\"15\" x2=\"395\" y2=\"27\" style=\"stroke:#f1eabbff;stroke-width:2;\" /><line x1=\"396\" y1=\"15\" x2=\"396\" y2=\"27\" style=\"stroke:#f1ebbcff;stroke-width:2;\" /><line x1=\"397\" y1=\"15\" x2=\"397\" y2=\"27\" style=\"stroke:#f2ebbcff;stroke-width:2;\" /><line x1=\"398\" y1=\"15\" x2=\"398\" y2=\"27\" style=\"stroke:#f2ebbcff;stroke-width:2;\" /><line x1=\"399\" y1=\"15\" x2=\"399\" y2=\"27\" style=\"stroke:#f3ebbcff;stroke-width:2;\" /><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"27\" style=\"stroke:#f3ecbcff;stroke-width:2;\" /><line x1=\"401\" y1=\"15\" x2=\"401\" y2=\"27\" style=\"stroke:#f4ecbcff;stroke-width:2;\" /><line x1=\"402\" y1=\"15\" x2=\"402\" y2=\"27\" style=\"stroke:#f4ecbdff;stroke-width:2;\" /><line x1=\"403\" y1=\"15\" x2=\"403\" y2=\"27\" style=\"stroke:#f5ecbdff;stroke-width:2;\" /><line x1=\"404\" y1=\"15\" x2=\"404\" y2=\"27\" style=\"stroke:#f5edbdff;stroke-width:2;\" /><line x1=\"405\" y1=\"15\" x2=\"405\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"406\" y1=\"15\" x2=\"406\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"407\" y1=\"15\" x2=\"407\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"408\" y1=\"15\" x2=\"408\" y2=\"27\" style=\"stroke:#f6e8b8ff;stroke-width:2;\" /><line x1=\"409\" y1=\"15\" x2=\"409\" y2=\"27\" style=\"stroke:#f5e5b4ff;stroke-width:2;\" /><line x1=\"410\" y1=\"15\" x2=\"410\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"411\" y1=\"15\" x2=\"411\" y2=\"27\" style=\"stroke:#f4deadff;stroke-width:2;\" /><line x1=\"412\" y1=\"15\" x2=\"412\" y2=\"27\" style=\"stroke:#f3daaaff;stroke-width:2;\" /><line x1=\"413\" y1=\"15\" x2=\"413\" y2=\"27\" style=\"stroke:#f2d7a6ff;stroke-width:2;\" /><line x1=\"414\" y1=\"15\" x2=\"414\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"415\" y1=\"15\" x2=\"415\" y2=\"27\" style=\"stroke:#f1cf9fff;stroke-width:2;\" /><line x1=\"416\" y1=\"15\" x2=\"416\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"417\" y1=\"15\" x2=\"417\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"418\" y1=\"15\" x2=\"418\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"419\" y1=\"15\" x2=\"419\" y2=\"27\" style=\"stroke:#efc190ff;stroke-width:2;\" /><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"421\" y1=\"15\" x2=\"421\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"422\" y1=\"15\" x2=\"422\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"423\" y1=\"15\" x2=\"423\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"424\" y1=\"15\" x2=\"424\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"425\" y1=\"15\" x2=\"425\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"426\" y1=\"15\" x2=\"426\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"427\" y1=\"15\" x2=\"427\" y2=\"27\" style=\"stroke:#e7a575ff;stroke-width:2;\" /><line x1=\"428\" y1=\"15\" x2=\"428\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"429\" y1=\"15\" x2=\"429\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"430\" y1=\"15\" x2=\"430\" y2=\"27\" style=\"stroke:#e49b6aff;stroke-width:2;\" /><line x1=\"431\" y1=\"15\" x2=\"431\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"432\" y1=\"15\" x2=\"432\" y2=\"27\" style=\"stroke:#e19464ff;stroke-width:2;\" /><line x1=\"433\" y1=\"15\" x2=\"433\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"434\" y1=\"15\" x2=\"434\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"435\" y1=\"15\" x2=\"435\" y2=\"27\" style=\"stroke:#de8a59ff;stroke-width:2;\" /><line x1=\"436\" y1=\"15\" x2=\"436\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"437\" y1=\"15\" x2=\"437\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"438\" y1=\"15\" x2=\"438\" y2=\"27\" style=\"stroke:#da7e50ff;stroke-width:2;\" /><line x1=\"439\" y1=\"15\" x2=\"439\" y2=\"27\" style=\"stroke:#d87b4cff;stroke-width:2;\" /><line x1=\"440\" y1=\"15\" x2=\"440\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"441\" y1=\"15\" x2=\"441\" y2=\"27\" style=\"stroke:#d67346ff;stroke-width:2;\" /><line x1=\"442\" y1=\"15\" x2=\"442\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"443\" y1=\"15\" x2=\"443\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"444\" y1=\"15\" x2=\"444\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"445\" y1=\"15\" x2=\"445\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"446\" y1=\"15\" x2=\"446\" y2=\"27\" style=\"stroke:#cf6135ff;stroke-width:2;\" /><line x1=\"447\" y1=\"15\" x2=\"447\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"448\" y1=\"15\" x2=\"448\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"449\" y1=\"15\" x2=\"449\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><text x=\"0\" y=\"38\" style=\"text-anchor:start; font-size:11px; font:Arial\">-48.57</text><text x=\"75\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-39.6</text><text x=\"150\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-30.7</text><text x=\"225\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-21.8</text><text x=\"300\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-12.8</text><text x=\"375\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-3.9</text><text x=\"450\" y=\"38\" style=\"text-anchor:end; font-size:11px; font:Arial\">5.07</text><text x=\"0\" y=\"12\" style=\"font-size:11px; font:Arial\"></text></svg> <br/>\n        <span style=\"font-size: 0.8em\">(Obszary obwod\u00f3w s\u0105 przybli\u017cone z wykorzystaniem diagramu Voronoia)</span>\n        </div>\n        ",
+  "description": "\n        <div style='font-family: \"Open Sans\", sans-serif;'>\n        <h3>Krak\u00f3w: KOMAREWICZ Rafa\u0142 Pawe\u0142 vs KULIG Andrzej Adam</h3>\n        R\u00f3\u017cnica w % <br/>\n        <span style=\"font-size: 0.8em\">\n        Warto\u015bci ujemne - przewaga KULIG Andrzej Adam <br/> \n        Warto\u015bci dodatnie - przewaga KOMAREWICZ Rafa\u0142 Pawe\u0142 <br/>\n        Obwody z oddanymi mniej ni\u017c 50 g\u0142osami zosta\u0142y pomini\u0119te. <br/>\n        </span> \n        <svg height=\"40\" width=\"450\"><line x1=\"0\" y1=\"15\" x2=\"0\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"1\" y1=\"15\" x2=\"1\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"2\" y1=\"15\" x2=\"2\" y2=\"27\" style=\"stroke:#018180ff;stroke-width:2;\" /><line x1=\"3\" y1=\"15\" x2=\"3\" y2=\"27\" style=\"stroke:#028180ff;stroke-width:2;\" /><line x1=\"4\" y1=\"15\" x2=\"4\" y2=\"27\" style=\"stroke:#038181ff;stroke-width:2;\" /><line x1=\"5\" y1=\"15\" x2=\"5\" y2=\"27\" style=\"stroke:#048181ff;stroke-width:2;\" /><line x1=\"6\" y1=\"15\" x2=\"6\" y2=\"27\" style=\"stroke:#048281ff;stroke-width:2;\" /><line x1=\"7\" y1=\"15\" x2=\"7\" y2=\"27\" style=\"stroke:#058281ff;stroke-width:2;\" /><line x1=\"8\" y1=\"15\" x2=\"8\" y2=\"27\" style=\"stroke:#068281ff;stroke-width:2;\" /><line x1=\"9\" y1=\"15\" x2=\"9\" y2=\"27\" style=\"stroke:#078281ff;stroke-width:2;\" /><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"27\" style=\"stroke:#088381ff;stroke-width:2;\" /><line x1=\"11\" y1=\"15\" x2=\"11\" y2=\"27\" style=\"stroke:#098382ff;stroke-width:2;\" /><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"27\" style=\"stroke:#098382ff;stroke-width:2;\" /><line x1=\"13\" y1=\"15\" x2=\"13\" y2=\"27\" style=\"stroke:#0a8382ff;stroke-width:2;\" /><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"27\" style=\"stroke:#0b8482ff;stroke-width:2;\" /><line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"27\" style=\"stroke:#0c8482ff;stroke-width:2;\" /><line x1=\"16\" y1=\"15\" x2=\"16\" y2=\"27\" style=\"stroke:#0d8482ff;stroke-width:2;\" /><line x1=\"17\" y1=\"15\" x2=\"17\" y2=\"27\" style=\"stroke:#0e8583ff;stroke-width:2;\" /><line x1=\"18\" y1=\"15\" x2=\"18\" y2=\"27\" style=\"stroke:#0e8583ff;stroke-width:2;\" /><line x1=\"19\" y1=\"15\" x2=\"19\" y2=\"27\" style=\"stroke:#0f8583ff;stroke-width:2;\" /><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"27\" style=\"stroke:#108583ff;stroke-width:2;\" /><line x1=\"21\" y1=\"15\" x2=\"21\" y2=\"27\" style=\"stroke:#118683ff;stroke-width:2;\" /><line x1=\"22\" y1=\"15\" x2=\"22\" y2=\"27\" style=\"stroke:#128683ff;stroke-width:2;\" /><line x1=\"23\" y1=\"15\" x2=\"23\" y2=\"27\" style=\"stroke:#138683ff;stroke-width:2;\" /><line x1=\"24\" y1=\"15\" x2=\"24\" y2=\"27\" style=\"stroke:#138684ff;stroke-width:2;\" /><line x1=\"25\" y1=\"15\" x2=\"25\" y2=\"27\" style=\"stroke:#148784ff;stroke-width:2;\" /><line x1=\"26\" y1=\"15\" x2=\"26\" y2=\"27\" style=\"stroke:#158784ff;stroke-width:2;\" /><line x1=\"27\" y1=\"15\" x2=\"27\" y2=\"27\" style=\"stroke:#168784ff;stroke-width:2;\" /><line x1=\"28\" y1=\"15\" x2=\"28\" y2=\"27\" style=\"stroke:#178784ff;stroke-width:2;\" /><line x1=\"29\" y1=\"15\" x2=\"29\" y2=\"27\" style=\"stroke:#188884ff;stroke-width:2;\" /><line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"27\" style=\"stroke:#188884ff;stroke-width:2;\" /><line x1=\"31\" y1=\"15\" x2=\"31\" y2=\"27\" style=\"stroke:#198885ff;stroke-width:2;\" /><line x1=\"32\" y1=\"15\" x2=\"32\" y2=\"27\" style=\"stroke:#1a8985ff;stroke-width:2;\" /><line x1=\"33\" y1=\"15\" x2=\"33\" y2=\"27\" style=\"stroke:#1b8985ff;stroke-width:2;\" /><line x1=\"34\" y1=\"15\" x2=\"34\" y2=\"27\" style=\"stroke:#1c8985ff;stroke-width:2;\" /><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"27\" style=\"stroke:#1d8985ff;stroke-width:2;\" /><line x1=\"36\" y1=\"15\" x2=\"36\" y2=\"27\" style=\"stroke:#1d8a85ff;stroke-width:2;\" /><line x1=\"37\" y1=\"15\" x2=\"37\" y2=\"27\" style=\"stroke:#1e8a85ff;stroke-width:2;\" /><line x1=\"38\" y1=\"15\" x2=\"38\" y2=\"27\" style=\"stroke:#1f8a86ff;stroke-width:2;\" /><line x1=\"39\" y1=\"15\" x2=\"39\" y2=\"27\" style=\"stroke:#208a86ff;stroke-width:2;\" /><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"27\" style=\"stroke:#218b86ff;stroke-width:2;\" /><line x1=\"41\" y1=\"15\" x2=\"41\" y2=\"27\" style=\"stroke:#228b86ff;stroke-width:2;\" /><line x1=\"42\" y1=\"15\" x2=\"42\" y2=\"27\" style=\"stroke:#228b86ff;stroke-width:2;\" /><line x1=\"43\" y1=\"15\" x2=\"43\" y2=\"27\" style=\"stroke:#238b86ff;stroke-width:2;\" /><line x1=\"44\" y1=\"15\" x2=\"44\" y2=\"27\" style=\"stroke:#248c87ff;stroke-width:2;\" /><line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"27\" style=\"stroke:#258c87ff;stroke-width:2;\" /><line x1=\"46\" y1=\"15\" x2=\"46\" y2=\"27\" style=\"stroke:#268c87ff;stroke-width:2;\" /><line x1=\"47\" y1=\"15\" x2=\"47\" y2=\"27\" style=\"stroke:#268d87ff;stroke-width:2;\" /><line x1=\"48\" y1=\"15\" x2=\"48\" y2=\"27\" style=\"stroke:#278d87ff;stroke-width:2;\" /><line x1=\"49\" y1=\"15\" x2=\"49\" y2=\"27\" style=\"stroke:#288d87ff;stroke-width:2;\" /><line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"27\" style=\"stroke:#298d87ff;stroke-width:2;\" /><line x1=\"51\" y1=\"15\" x2=\"51\" y2=\"27\" style=\"stroke:#2a8e88ff;stroke-width:2;\" /><line x1=\"52\" y1=\"15\" x2=\"52\" y2=\"27\" style=\"stroke:#2b8e88ff;stroke-width:2;\" /><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"27\" style=\"stroke:#2b8e88ff;stroke-width:2;\" /><line x1=\"54\" y1=\"15\" x2=\"54\" y2=\"27\" style=\"stroke:#2c8e88ff;stroke-width:2;\" /><line x1=\"55\" y1=\"15\" x2=\"55\" y2=\"27\" style=\"stroke:#2d8f88ff;stroke-width:2;\" /><line x1=\"56\" y1=\"15\" x2=\"56\" y2=\"27\" style=\"stroke:#2e8f88ff;stroke-width:2;\" /><line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"27\" style=\"stroke:#2f8f88ff;stroke-width:2;\" /><line x1=\"58\" y1=\"15\" x2=\"58\" y2=\"27\" style=\"stroke:#308f89ff;stroke-width:2;\" /><line x1=\"59\" y1=\"15\" x2=\"59\" y2=\"27\" style=\"stroke:#309089ff;stroke-width:2;\" /><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"27\" style=\"stroke:#319089ff;stroke-width:2;\" /><line x1=\"61\" y1=\"15\" x2=\"61\" y2=\"27\" style=\"stroke:#329089ff;stroke-width:2;\" /><line x1=\"62\" y1=\"15\" x2=\"62\" y2=\"27\" style=\"stroke:#339189ff;stroke-width:2;\" /><line x1=\"63\" y1=\"15\" x2=\"63\" y2=\"27\" style=\"stroke:#349189ff;stroke-width:2;\" /><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"27\" style=\"stroke:#359189ff;stroke-width:2;\" /><line x1=\"65\" y1=\"15\" x2=\"65\" y2=\"27\" style=\"stroke:#35918aff;stroke-width:2;\" /><line x1=\"66\" y1=\"15\" x2=\"66\" y2=\"27\" style=\"stroke:#36928aff;stroke-width:2;\" /><line x1=\"67\" y1=\"15\" x2=\"67\" y2=\"27\" style=\"stroke:#37928aff;stroke-width:2;\" /><line x1=\"68\" y1=\"15\" x2=\"68\" y2=\"27\" style=\"stroke:#38928aff;stroke-width:2;\" /><line x1=\"69\" y1=\"15\" x2=\"69\" y2=\"27\" style=\"stroke:#39928aff;stroke-width:2;\" /><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"27\" style=\"stroke:#3a938aff;stroke-width:2;\" /><line x1=\"71\" y1=\"15\" x2=\"71\" y2=\"27\" style=\"stroke:#3a938bff;stroke-width:2;\" /><line x1=\"72\" y1=\"15\" x2=\"72\" y2=\"27\" style=\"stroke:#3b938bff;stroke-width:2;\" /><line x1=\"73\" y1=\"15\" x2=\"73\" y2=\"27\" style=\"stroke:#3c938bff;stroke-width:2;\" /><line x1=\"74\" y1=\"15\" x2=\"74\" y2=\"27\" style=\"stroke:#3d948bff;stroke-width:2;\" /><line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"27\" style=\"stroke:#3e948bff;stroke-width:2;\" /><line x1=\"76\" y1=\"15\" x2=\"76\" y2=\"27\" style=\"stroke:#3f948bff;stroke-width:2;\" /><line x1=\"77\" y1=\"15\" x2=\"77\" y2=\"27\" style=\"stroke:#3f958bff;stroke-width:2;\" /><line x1=\"78\" y1=\"15\" x2=\"78\" y2=\"27\" style=\"stroke:#40958cff;stroke-width:2;\" /><line x1=\"79\" y1=\"15\" x2=\"79\" y2=\"27\" style=\"stroke:#41958cff;stroke-width:2;\" /><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"27\" style=\"stroke:#42958cff;stroke-width:2;\" /><line x1=\"81\" y1=\"15\" x2=\"81\" y2=\"27\" style=\"stroke:#43968cff;stroke-width:2;\" /><line x1=\"82\" y1=\"15\" x2=\"82\" y2=\"27\" style=\"stroke:#44968cff;stroke-width:2;\" /><line x1=\"83\" y1=\"15\" x2=\"83\" y2=\"27\" style=\"stroke:#44968cff;stroke-width:2;\" /><line x1=\"84\" y1=\"15\" x2=\"84\" y2=\"27\" style=\"stroke:#45968cff;stroke-width:2;\" /><line x1=\"85\" y1=\"15\" x2=\"85\" y2=\"27\" style=\"stroke:#46978dff;stroke-width:2;\" /><line x1=\"86\" y1=\"15\" x2=\"86\" y2=\"27\" style=\"stroke:#47978dff;stroke-width:2;\" /><line x1=\"87\" y1=\"15\" x2=\"87\" y2=\"27\" style=\"stroke:#48978dff;stroke-width:2;\" /><line x1=\"88\" y1=\"15\" x2=\"88\" y2=\"27\" style=\"stroke:#49978dff;stroke-width:2;\" /><line x1=\"89\" y1=\"15\" x2=\"89\" y2=\"27\" style=\"stroke:#49988dff;stroke-width:2;\" /><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"27\" style=\"stroke:#4a988dff;stroke-width:2;\" /><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"27\" style=\"stroke:#4b988dff;stroke-width:2;\" /><line x1=\"92\" y1=\"15\" x2=\"92\" y2=\"27\" style=\"stroke:#4c998eff;stroke-width:2;\" /><line x1=\"93\" y1=\"15\" x2=\"93\" y2=\"27\" style=\"stroke:#4d998eff;stroke-width:2;\" /><line x1=\"94\" y1=\"15\" x2=\"94\" y2=\"27\" style=\"stroke:#4d998eff;stroke-width:2;\" /><line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"27\" style=\"stroke:#4e998eff;stroke-width:2;\" /><line x1=\"96\" y1=\"15\" x2=\"96\" y2=\"27\" style=\"stroke:#4f9a8eff;stroke-width:2;\" /><line x1=\"97\" y1=\"15\" x2=\"97\" y2=\"27\" style=\"stroke:#509a8eff;stroke-width:2;\" /><line x1=\"98\" y1=\"15\" x2=\"98\" y2=\"27\" style=\"stroke:#519a8fff;stroke-width:2;\" /><line x1=\"99\" y1=\"15\" x2=\"99\" y2=\"27\" style=\"stroke:#529a8fff;stroke-width:2;\" /><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"27\" style=\"stroke:#529b8fff;stroke-width:2;\" /><line x1=\"101\" y1=\"15\" x2=\"101\" y2=\"27\" style=\"stroke:#539b8fff;stroke-width:2;\" /><line x1=\"102\" y1=\"15\" x2=\"102\" y2=\"27\" style=\"stroke:#549b8fff;stroke-width:2;\" /><line x1=\"103\" y1=\"15\" x2=\"103\" y2=\"27\" style=\"stroke:#559b8fff;stroke-width:2;\" /><line x1=\"104\" y1=\"15\" x2=\"104\" y2=\"27\" style=\"stroke:#569c8fff;stroke-width:2;\" /><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"27\" style=\"stroke:#579c90ff;stroke-width:2;\" /><line x1=\"106\" y1=\"15\" x2=\"106\" y2=\"27\" style=\"stroke:#579c90ff;stroke-width:2;\" /><line x1=\"107\" y1=\"15\" x2=\"107\" y2=\"27\" style=\"stroke:#589d90ff;stroke-width:2;\" /><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"27\" style=\"stroke:#599d90ff;stroke-width:2;\" /><line x1=\"109\" y1=\"15\" x2=\"109\" y2=\"27\" style=\"stroke:#5a9d90ff;stroke-width:2;\" /><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"27\" style=\"stroke:#5b9d90ff;stroke-width:2;\" /><line x1=\"111\" y1=\"15\" x2=\"111\" y2=\"27\" style=\"stroke:#5c9e90ff;stroke-width:2;\" /><line x1=\"112\" y1=\"15\" x2=\"112\" y2=\"27\" style=\"stroke:#5c9e91ff;stroke-width:2;\" /><line x1=\"113\" y1=\"15\" x2=\"113\" y2=\"27\" style=\"stroke:#5d9e91ff;stroke-width:2;\" /><line x1=\"114\" y1=\"15\" x2=\"114\" y2=\"27\" style=\"stroke:#5e9e91ff;stroke-width:2;\" /><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"27\" style=\"stroke:#5f9f91ff;stroke-width:2;\" /><line x1=\"116\" y1=\"15\" x2=\"116\" y2=\"27\" style=\"stroke:#609f91ff;stroke-width:2;\" /><line x1=\"117\" y1=\"15\" x2=\"117\" y2=\"27\" style=\"stroke:#619f91ff;stroke-width:2;\" /><line x1=\"118\" y1=\"15\" x2=\"118\" y2=\"27\" style=\"stroke:#619f91ff;stroke-width:2;\" /><line x1=\"119\" y1=\"15\" x2=\"119\" y2=\"27\" style=\"stroke:#62a092ff;stroke-width:2;\" /><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"27\" style=\"stroke:#63a092ff;stroke-width:2;\" /><line x1=\"121\" y1=\"15\" x2=\"121\" y2=\"27\" style=\"stroke:#64a092ff;stroke-width:2;\" /><line x1=\"122\" y1=\"15\" x2=\"122\" y2=\"27\" style=\"stroke:#65a192ff;stroke-width:2;\" /><line x1=\"123\" y1=\"15\" x2=\"123\" y2=\"27\" style=\"stroke:#66a192ff;stroke-width:2;\" /><line x1=\"124\" y1=\"15\" x2=\"124\" y2=\"27\" style=\"stroke:#66a192ff;stroke-width:2;\" /><line x1=\"125\" y1=\"15\" x2=\"125\" y2=\"27\" style=\"stroke:#67a193ff;stroke-width:2;\" /><line x1=\"126\" y1=\"15\" x2=\"126\" y2=\"27\" style=\"stroke:#68a293ff;stroke-width:2;\" /><line x1=\"127\" y1=\"15\" x2=\"127\" y2=\"27\" style=\"stroke:#69a293ff;stroke-width:2;\" /><line x1=\"128\" y1=\"15\" x2=\"128\" y2=\"27\" style=\"stroke:#6aa293ff;stroke-width:2;\" /><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"27\" style=\"stroke:#6ba293ff;stroke-width:2;\" /><line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"27\" style=\"stroke:#6ba393ff;stroke-width:2;\" /><line x1=\"131\" y1=\"15\" x2=\"131\" y2=\"27\" style=\"stroke:#6ca393ff;stroke-width:2;\" /><line x1=\"132\" y1=\"15\" x2=\"132\" y2=\"27\" style=\"stroke:#6da394ff;stroke-width:2;\" /><line x1=\"133\" y1=\"15\" x2=\"133\" y2=\"27\" style=\"stroke:#6ea394ff;stroke-width:2;\" /><line x1=\"134\" y1=\"15\" x2=\"134\" y2=\"27\" style=\"stroke:#6fa494ff;stroke-width:2;\" /><line x1=\"135\" y1=\"15\" x2=\"135\" y2=\"27\" style=\"stroke:#70a494ff;stroke-width:2;\" /><line x1=\"136\" y1=\"15\" x2=\"136\" y2=\"27\" style=\"stroke:#70a494ff;stroke-width:2;\" /><line x1=\"137\" y1=\"15\" x2=\"137\" y2=\"27\" style=\"stroke:#71a594ff;stroke-width:2;\" /><line x1=\"138\" y1=\"15\" x2=\"138\" y2=\"27\" style=\"stroke:#71a594ff;stroke-width:2;\" /><line x1=\"139\" y1=\"15\" x2=\"139\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"141\" y1=\"15\" x2=\"141\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"142\" y1=\"15\" x2=\"142\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"143\" y1=\"15\" x2=\"143\" y2=\"27\" style=\"stroke:#74a695ff;stroke-width:2;\" /><line x1=\"144\" y1=\"15\" x2=\"144\" y2=\"27\" style=\"stroke:#74a695ff;stroke-width:2;\" /><line x1=\"145\" y1=\"15\" x2=\"145\" y2=\"27\" style=\"stroke:#75a795ff;stroke-width:2;\" /><line x1=\"146\" y1=\"15\" x2=\"146\" y2=\"27\" style=\"stroke:#75a796ff;stroke-width:2;\" /><line x1=\"147\" y1=\"15\" x2=\"147\" y2=\"27\" style=\"stroke:#76a796ff;stroke-width:2;\" /><line x1=\"148\" y1=\"15\" x2=\"148\" y2=\"27\" style=\"stroke:#76a796ff;stroke-width:2;\" /><line x1=\"149\" y1=\"15\" x2=\"149\" y2=\"27\" style=\"stroke:#77a896ff;stroke-width:2;\" /><line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"27\" style=\"stroke:#77a896ff;stroke-width:2;\" /><line x1=\"151\" y1=\"15\" x2=\"151\" y2=\"27\" style=\"stroke:#78a896ff;stroke-width:2;\" /><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"27\" style=\"stroke:#78a997ff;stroke-width:2;\" /><line x1=\"153\" y1=\"15\" x2=\"153\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"154\" y1=\"15\" x2=\"154\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"155\" y1=\"15\" x2=\"155\" y2=\"27\" style=\"stroke:#7aa997ff;stroke-width:2;\" /><line x1=\"156\" y1=\"15\" x2=\"156\" y2=\"27\" style=\"stroke:#7aaa97ff;stroke-width:2;\" /><line x1=\"157\" y1=\"15\" x2=\"157\" y2=\"27\" style=\"stroke:#7baa97ff;stroke-width:2;\" /><line x1=\"158\" y1=\"15\" x2=\"158\" y2=\"27\" style=\"stroke:#7baa97ff;stroke-width:2;\" /><line x1=\"159\" y1=\"15\" x2=\"159\" y2=\"27\" style=\"stroke:#7caa98ff;stroke-width:2;\" /><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"27\" style=\"stroke:#7cab98ff;stroke-width:2;\" /><line x1=\"161\" y1=\"15\" x2=\"161\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"162\" y1=\"15\" x2=\"162\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"163\" y1=\"15\" x2=\"163\" y2=\"27\" style=\"stroke:#7eab98ff;stroke-width:2;\" /><line x1=\"164\" y1=\"15\" x2=\"164\" y2=\"27\" style=\"stroke:#7eac98ff;stroke-width:2;\" /><line x1=\"165\" y1=\"15\" x2=\"165\" y2=\"27\" style=\"stroke:#7fac98ff;stroke-width:2;\" /><line x1=\"166\" y1=\"15\" x2=\"166\" y2=\"27\" style=\"stroke:#7fac99ff;stroke-width:2;\" /><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"27\" style=\"stroke:#80ad99ff;stroke-width:2;\" /><line x1=\"168\" y1=\"15\" x2=\"168\" y2=\"27\" style=\"stroke:#80ad99ff;stroke-width:2;\" /><line x1=\"169\" y1=\"15\" x2=\"169\" y2=\"27\" style=\"stroke:#81ad99ff;stroke-width:2;\" /><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"27\" style=\"stroke:#81ad99ff;stroke-width:2;\" /><line x1=\"171\" y1=\"15\" x2=\"171\" y2=\"27\" style=\"stroke:#82ae99ff;stroke-width:2;\" /><line x1=\"172\" y1=\"15\" x2=\"172\" y2=\"27\" style=\"stroke:#82ae99ff;stroke-width:2;\" /><line x1=\"173\" y1=\"15\" x2=\"173\" y2=\"27\" style=\"stroke:#83ae9aff;stroke-width:2;\" /><line x1=\"174\" y1=\"15\" x2=\"174\" y2=\"27\" style=\"stroke:#83ae9aff;stroke-width:2;\" /><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"27\" style=\"stroke:#84af9aff;stroke-width:2;\" /><line x1=\"176\" y1=\"15\" x2=\"176\" y2=\"27\" style=\"stroke:#84af9aff;stroke-width:2;\" /><line x1=\"177\" y1=\"15\" x2=\"177\" y2=\"27\" style=\"stroke:#85af9aff;stroke-width:2;\" /><line x1=\"178\" y1=\"15\" x2=\"178\" y2=\"27\" style=\"stroke:#85af9aff;stroke-width:2;\" /><line x1=\"179\" y1=\"15\" x2=\"179\" y2=\"27\" style=\"stroke:#86b09bff;stroke-width:2;\" /><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"27\" style=\"stroke:#86b09bff;stroke-width:2;\" /><line x1=\"181\" y1=\"15\" x2=\"181\" y2=\"27\" style=\"stroke:#87b09bff;stroke-width:2;\" /><line x1=\"182\" y1=\"15\" x2=\"182\" y2=\"27\" style=\"stroke:#87b19bff;stroke-width:2;\" /><line x1=\"183\" y1=\"15\" x2=\"183\" y2=\"27\" style=\"stroke:#88b19bff;stroke-width:2;\" /><line x1=\"184\" y1=\"15\" x2=\"184\" y2=\"27\" style=\"stroke:#88b19bff;stroke-width:2;\" /><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"27\" style=\"stroke:#89b19bff;stroke-width:2;\" /><line x1=\"186\" y1=\"15\" x2=\"186\" y2=\"27\" style=\"stroke:#89b29cff;stroke-width:2;\" /><line x1=\"187\" y1=\"15\" x2=\"187\" y2=\"27\" style=\"stroke:#8ab29cff;stroke-width:2;\" /><line x1=\"188\" y1=\"15\" x2=\"188\" y2=\"27\" style=\"stroke:#8ab29cff;stroke-width:2;\" /><line x1=\"189\" y1=\"15\" x2=\"189\" y2=\"27\" style=\"stroke:#8bb29cff;stroke-width:2;\" /><line x1=\"190\" y1=\"15\" x2=\"190\" y2=\"27\" style=\"stroke:#8bb39cff;stroke-width:2;\" /><line x1=\"191\" y1=\"15\" x2=\"191\" y2=\"27\" style=\"stroke:#8cb39cff;stroke-width:2;\" /><line x1=\"192\" y1=\"15\" x2=\"192\" y2=\"27\" style=\"stroke:#8cb39cff;stroke-width:2;\" /><line x1=\"193\" y1=\"15\" x2=\"193\" y2=\"27\" style=\"stroke:#8db39dff;stroke-width:2;\" /><line x1=\"194\" y1=\"15\" x2=\"194\" y2=\"27\" style=\"stroke:#8db49dff;stroke-width:2;\" /><line x1=\"195\" y1=\"15\" x2=\"195\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"196\" y1=\"15\" x2=\"196\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"197\" y1=\"15\" x2=\"197\" y2=\"27\" style=\"stroke:#8fb59dff;stroke-width:2;\" /><line x1=\"198\" y1=\"15\" x2=\"198\" y2=\"27\" style=\"stroke:#8fb59dff;stroke-width:2;\" /><line x1=\"199\" y1=\"15\" x2=\"199\" y2=\"27\" style=\"stroke:#90b59dff;stroke-width:2;\" /><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"27\" style=\"stroke:#90b59eff;stroke-width:2;\" /><line x1=\"201\" y1=\"15\" x2=\"201\" y2=\"27\" style=\"stroke:#91b69eff;stroke-width:2;\" /><line x1=\"202\" y1=\"15\" x2=\"202\" y2=\"27\" style=\"stroke:#91b69eff;stroke-width:2;\" /><line x1=\"203\" y1=\"15\" x2=\"203\" y2=\"27\" style=\"stroke:#92b69eff;stroke-width:2;\" /><line x1=\"204\" y1=\"15\" x2=\"204\" y2=\"27\" style=\"stroke:#92b69eff;stroke-width:2;\" /><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"27\" style=\"stroke:#93b79eff;stroke-width:2;\" /><line x1=\"206\" y1=\"15\" x2=\"206\" y2=\"27\" style=\"stroke:#93b79fff;stroke-width:2;\" /><line x1=\"207\" y1=\"15\" x2=\"207\" y2=\"27\" style=\"stroke:#94b79fff;stroke-width:2;\" /><line x1=\"208\" y1=\"15\" x2=\"208\" y2=\"27\" style=\"stroke:#94b79fff;stroke-width:2;\" /><line x1=\"209\" y1=\"15\" x2=\"209\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"210\" y1=\"15\" x2=\"210\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"211\" y1=\"15\" x2=\"211\" y2=\"27\" style=\"stroke:#96b89fff;stroke-width:2;\" /><line x1=\"212\" y1=\"15\" x2=\"212\" y2=\"27\" style=\"stroke:#96b99fff;stroke-width:2;\" /><line x1=\"213\" y1=\"15\" x2=\"213\" y2=\"27\" style=\"stroke:#97b9a0ff;stroke-width:2;\" /><line x1=\"214\" y1=\"15\" x2=\"214\" y2=\"27\" style=\"stroke:#97b9a0ff;stroke-width:2;\" /><line x1=\"215\" y1=\"15\" x2=\"215\" y2=\"27\" style=\"stroke:#98b9a0ff;stroke-width:2;\" /><line x1=\"216\" y1=\"15\" x2=\"216\" y2=\"27\" style=\"stroke:#98baa0ff;stroke-width:2;\" /><line x1=\"217\" y1=\"15\" x2=\"217\" y2=\"27\" style=\"stroke:#99baa0ff;stroke-width:2;\" /><line x1=\"218\" y1=\"15\" x2=\"218\" y2=\"27\" style=\"stroke:#99baa0ff;stroke-width:2;\" /><line x1=\"219\" y1=\"15\" x2=\"219\" y2=\"27\" style=\"stroke:#9abaa0ff;stroke-width:2;\" /><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"27\" style=\"stroke:#9abba1ff;stroke-width:2;\" /><line x1=\"221\" y1=\"15\" x2=\"221\" y2=\"27\" style=\"stroke:#9bbba1ff;stroke-width:2;\" /><line x1=\"222\" y1=\"15\" x2=\"222\" y2=\"27\" style=\"stroke:#9cbba1ff;stroke-width:2;\" /><line x1=\"223\" y1=\"15\" x2=\"223\" y2=\"27\" style=\"stroke:#9cbba1ff;stroke-width:2;\" /><line x1=\"224\" y1=\"15\" x2=\"224\" y2=\"27\" style=\"stroke:#9dbca1ff;stroke-width:2;\" /><line x1=\"225\" y1=\"15\" x2=\"225\" y2=\"27\" style=\"stroke:#9dbca1ff;stroke-width:2;\" /><line x1=\"226\" y1=\"15\" x2=\"226\" y2=\"27\" style=\"stroke:#9ebca1ff;stroke-width:2;\" /><line x1=\"227\" y1=\"15\" x2=\"227\" y2=\"27\" style=\"stroke:#9ebda2ff;stroke-width:2;\" /><line x1=\"228\" y1=\"15\" x2=\"228\" y2=\"27\" style=\"stroke:#9fbda2ff;stroke-width:2;\" /><line x1=\"229\" y1=\"15\" x2=\"229\" y2=\"27\" style=\"stroke:#9fbda2ff;stroke-width:2;\" /><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"27\" style=\"stroke:#a0bda2ff;stroke-width:2;\" /><line x1=\"231\" y1=\"15\" x2=\"231\" y2=\"27\" style=\"stroke:#a0bea2ff;stroke-width:2;\" /><line x1=\"232\" y1=\"15\" x2=\"232\" y2=\"27\" style=\"stroke:#a1bea2ff;stroke-width:2;\" /><line x1=\"233\" y1=\"15\" x2=\"233\" y2=\"27\" style=\"stroke:#a1bea3ff;stroke-width:2;\" /><line x1=\"234\" y1=\"15\" x2=\"234\" y2=\"27\" style=\"stroke:#a2bea3ff;stroke-width:2;\" /><line x1=\"235\" y1=\"15\" x2=\"235\" y2=\"27\" style=\"stroke:#a2bfa3ff;stroke-width:2;\" /><line x1=\"236\" y1=\"15\" x2=\"236\" y2=\"27\" style=\"stroke:#a3bfa3ff;stroke-width:2;\" /><line x1=\"237\" y1=\"15\" x2=\"237\" y2=\"27\" style=\"stroke:#a3bfa3ff;stroke-width:2;\" /><line x1=\"238\" y1=\"15\" x2=\"238\" y2=\"27\" style=\"stroke:#a4bfa3ff;stroke-width:2;\" /><line x1=\"239\" y1=\"15\" x2=\"239\" y2=\"27\" style=\"stroke:#a4c0a3ff;stroke-width:2;\" /><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"27\" style=\"stroke:#a5c0a4ff;stroke-width:2;\" /><line x1=\"241\" y1=\"15\" x2=\"241\" y2=\"27\" style=\"stroke:#a5c0a4ff;stroke-width:2;\" /><line x1=\"242\" y1=\"15\" x2=\"242\" y2=\"27\" style=\"stroke:#a6c1a4ff;stroke-width:2;\" /><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"27\" style=\"stroke:#a6c1a4ff;stroke-width:2;\" /><line x1=\"244\" y1=\"15\" x2=\"244\" y2=\"27\" style=\"stroke:#a7c1a4ff;stroke-width:2;\" /><line x1=\"245\" y1=\"15\" x2=\"245\" y2=\"27\" style=\"stroke:#a7c1a4ff;stroke-width:2;\" /><line x1=\"246\" y1=\"15\" x2=\"246\" y2=\"27\" style=\"stroke:#a8c2a4ff;stroke-width:2;\" /><line x1=\"247\" y1=\"15\" x2=\"247\" y2=\"27\" style=\"stroke:#a8c2a5ff;stroke-width:2;\" /><line x1=\"248\" y1=\"15\" x2=\"248\" y2=\"27\" style=\"stroke:#a9c2a5ff;stroke-width:2;\" /><line x1=\"249\" y1=\"15\" x2=\"249\" y2=\"27\" style=\"stroke:#a9c2a5ff;stroke-width:2;\" /><line x1=\"250\" y1=\"15\" x2=\"250\" y2=\"27\" style=\"stroke:#aac3a5ff;stroke-width:2;\" /><line x1=\"251\" y1=\"15\" x2=\"251\" y2=\"27\" style=\"stroke:#aac3a5ff;stroke-width:2;\" /><line x1=\"252\" y1=\"15\" x2=\"252\" y2=\"27\" style=\"stroke:#abc3a5ff;stroke-width:2;\" /><line x1=\"253\" y1=\"15\" x2=\"253\" y2=\"27\" style=\"stroke:#abc3a5ff;stroke-width:2;\" /><line x1=\"254\" y1=\"15\" x2=\"254\" y2=\"27\" style=\"stroke:#acc4a6ff;stroke-width:2;\" /><line x1=\"255\" y1=\"15\" x2=\"255\" y2=\"27\" style=\"stroke:#acc4a6ff;stroke-width:2;\" /><line x1=\"256\" y1=\"15\" x2=\"256\" y2=\"27\" style=\"stroke:#adc4a6ff;stroke-width:2;\" /><line x1=\"257\" y1=\"15\" x2=\"257\" y2=\"27\" style=\"stroke:#adc5a6ff;stroke-width:2;\" /><line x1=\"258\" y1=\"15\" x2=\"258\" y2=\"27\" style=\"stroke:#aec5a6ff;stroke-width:2;\" /><line x1=\"259\" y1=\"15\" x2=\"259\" y2=\"27\" style=\"stroke:#aec5a6ff;stroke-width:2;\" /><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"27\" style=\"stroke:#afc5a7ff;stroke-width:2;\" /><line x1=\"261\" y1=\"15\" x2=\"261\" y2=\"27\" style=\"stroke:#afc6a7ff;stroke-width:2;\" /><line x1=\"262\" y1=\"15\" x2=\"262\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"263\" y1=\"15\" x2=\"263\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"264\" y1=\"15\" x2=\"264\" y2=\"27\" style=\"stroke:#b1c6a7ff;stroke-width:2;\" /><line x1=\"265\" y1=\"15\" x2=\"265\" y2=\"27\" style=\"stroke:#b1c7a7ff;stroke-width:2;\" /><line x1=\"266\" y1=\"15\" x2=\"266\" y2=\"27\" style=\"stroke:#b2c7a7ff;stroke-width:2;\" /><line x1=\"267\" y1=\"15\" x2=\"267\" y2=\"27\" style=\"stroke:#b2c7a8ff;stroke-width:2;\" /><line x1=\"268\" y1=\"15\" x2=\"268\" y2=\"27\" style=\"stroke:#b3c7a8ff;stroke-width:2;\" /><line x1=\"269\" y1=\"15\" x2=\"269\" y2=\"27\" style=\"stroke:#b3c8a8ff;stroke-width:2;\" /><line x1=\"270\" y1=\"15\" x2=\"270\" y2=\"27\" style=\"stroke:#b4c8a8ff;stroke-width:2;\" /><line x1=\"271\" y1=\"15\" x2=\"271\" y2=\"27\" style=\"stroke:#b4c8a8ff;stroke-width:2;\" /><line x1=\"272\" y1=\"15\" x2=\"272\" y2=\"27\" style=\"stroke:#b5c9a8ff;stroke-width:2;\" /><line x1=\"273\" y1=\"15\" x2=\"273\" y2=\"27\" style=\"stroke:#b5c9a8ff;stroke-width:2;\" /><line x1=\"274\" y1=\"15\" x2=\"274\" y2=\"27\" style=\"stroke:#b6c9a9ff;stroke-width:2;\" /><line x1=\"275\" y1=\"15\" x2=\"275\" y2=\"27\" style=\"stroke:#b6c9a9ff;stroke-width:2;\" /><line x1=\"276\" y1=\"15\" x2=\"276\" y2=\"27\" style=\"stroke:#b7caa9ff;stroke-width:2;\" /><line x1=\"277\" y1=\"15\" x2=\"277\" y2=\"27\" style=\"stroke:#b7caa9ff;stroke-width:2;\" /><line x1=\"278\" y1=\"15\" x2=\"278\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"279\" y1=\"15\" x2=\"279\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"27\" style=\"stroke:#b9cbaaff;stroke-width:2;\" /><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"27\" style=\"stroke:#b9cbaaff;stroke-width:2;\" /><line x1=\"282\" y1=\"15\" x2=\"282\" y2=\"27\" style=\"stroke:#bacbaaff;stroke-width:2;\" /><line x1=\"283\" y1=\"15\" x2=\"283\" y2=\"27\" style=\"stroke:#baccaaff;stroke-width:2;\" /><line x1=\"284\" y1=\"15\" x2=\"284\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"285\" y1=\"15\" x2=\"285\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"286\" y1=\"15\" x2=\"286\" y2=\"27\" style=\"stroke:#bcccaaff;stroke-width:2;\" /><line x1=\"287\" y1=\"15\" x2=\"287\" y2=\"27\" style=\"stroke:#bccdabff;stroke-width:2;\" /><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"27\" style=\"stroke:#bccdabff;stroke-width:2;\" /><line x1=\"289\" y1=\"15\" x2=\"289\" y2=\"27\" style=\"stroke:#bdcdabff;stroke-width:2;\" /><line x1=\"290\" y1=\"15\" x2=\"290\" y2=\"27\" style=\"stroke:#bdcdabff;stroke-width:2;\" /><line x1=\"291\" y1=\"15\" x2=\"291\" y2=\"27\" style=\"stroke:#beceabff;stroke-width:2;\" /><line x1=\"292\" y1=\"15\" x2=\"292\" y2=\"27\" style=\"stroke:#beceabff;stroke-width:2;\" /><line x1=\"293\" y1=\"15\" x2=\"293\" y2=\"27\" style=\"stroke:#bfceacff;stroke-width:2;\" /><line x1=\"294\" y1=\"15\" x2=\"294\" y2=\"27\" style=\"stroke:#bfcfacff;stroke-width:2;\" /><line x1=\"295\" y1=\"15\" x2=\"295\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"296\" y1=\"15\" x2=\"296\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"297\" y1=\"15\" x2=\"297\" y2=\"27\" style=\"stroke:#c1cfacff;stroke-width:2;\" /><line x1=\"298\" y1=\"15\" x2=\"298\" y2=\"27\" style=\"stroke:#c1d0acff;stroke-width:2;\" /><line x1=\"299\" y1=\"15\" x2=\"299\" y2=\"27\" style=\"stroke:#c2d0adff;stroke-width:2;\" /><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"27\" style=\"stroke:#c2d0adff;stroke-width:2;\" /><line x1=\"301\" y1=\"15\" x2=\"301\" y2=\"27\" style=\"stroke:#c3d0adff;stroke-width:2;\" /><line x1=\"302\" y1=\"15\" x2=\"302\" y2=\"27\" style=\"stroke:#c3d1adff;stroke-width:2;\" /><line x1=\"303\" y1=\"15\" x2=\"303\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"304\" y1=\"15\" x2=\"304\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"305\" y1=\"15\" x2=\"305\" y2=\"27\" style=\"stroke:#c5d2adff;stroke-width:2;\" /><line x1=\"306\" y1=\"15\" x2=\"306\" y2=\"27\" style=\"stroke:#c5d2aeff;stroke-width:2;\" /><line x1=\"307\" y1=\"15\" x2=\"307\" y2=\"27\" style=\"stroke:#c6d2aeff;stroke-width:2;\" /><line x1=\"308\" y1=\"15\" x2=\"308\" y2=\"27\" style=\"stroke:#c6d2aeff;stroke-width:2;\" /><line x1=\"309\" y1=\"15\" x2=\"309\" y2=\"27\" style=\"stroke:#c7d3aeff;stroke-width:2;\" /><line x1=\"310\" y1=\"15\" x2=\"310\" y2=\"27\" style=\"stroke:#c7d3aeff;stroke-width:2;\" /><line x1=\"311\" y1=\"15\" x2=\"311\" y2=\"27\" style=\"stroke:#c8d3aeff;stroke-width:2;\" /><line x1=\"312\" y1=\"15\" x2=\"312\" y2=\"27\" style=\"stroke:#c8d4afff;stroke-width:2;\" /><line x1=\"313\" y1=\"15\" x2=\"313\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"314\" y1=\"15\" x2=\"314\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"315\" y1=\"15\" x2=\"315\" y2=\"27\" style=\"stroke:#cad4afff;stroke-width:2;\" /><line x1=\"316\" y1=\"15\" x2=\"316\" y2=\"27\" style=\"stroke:#cad5afff;stroke-width:2;\" /><line x1=\"317\" y1=\"15\" x2=\"317\" y2=\"27\" style=\"stroke:#cbd5afff;stroke-width:2;\" /><line x1=\"318\" y1=\"15\" x2=\"318\" y2=\"27\" style=\"stroke:#cbd5afff;stroke-width:2;\" /><line x1=\"319\" y1=\"15\" x2=\"319\" y2=\"27\" style=\"stroke:#ccd5b0ff;stroke-width:2;\" /><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"27\" style=\"stroke:#ccd6b0ff;stroke-width:2;\" /><line x1=\"321\" y1=\"15\" x2=\"321\" y2=\"27\" style=\"stroke:#cdd6b0ff;stroke-width:2;\" /><line x1=\"322\" y1=\"15\" x2=\"322\" y2=\"27\" style=\"stroke:#cdd6b0ff;stroke-width:2;\" /><line x1=\"323\" y1=\"15\" x2=\"323\" y2=\"27\" style=\"stroke:#ced7b0ff;stroke-width:2;\" /><line x1=\"324\" y1=\"15\" x2=\"324\" y2=\"27\" style=\"stroke:#ced7b0ff;stroke-width:2;\" /><line x1=\"325\" y1=\"15\" x2=\"325\" y2=\"27\" style=\"stroke:#cfd7b1ff;stroke-width:2;\" /><line x1=\"326\" y1=\"15\" x2=\"326\" y2=\"27\" style=\"stroke:#cfd7b1ff;stroke-width:2;\" /><line x1=\"327\" y1=\"15\" x2=\"327\" y2=\"27\" style=\"stroke:#d0d8b1ff;stroke-width:2;\" /><line x1=\"328\" y1=\"15\" x2=\"328\" y2=\"27\" style=\"stroke:#d0d8b1ff;stroke-width:2;\" /><line x1=\"329\" y1=\"15\" x2=\"329\" y2=\"27\" style=\"stroke:#d1d8b1ff;stroke-width:2;\" /><line x1=\"330\" y1=\"15\" x2=\"330\" y2=\"27\" style=\"stroke:#d1d8b1ff;stroke-width:2;\" /><line x1=\"331\" y1=\"15\" x2=\"331\" y2=\"27\" style=\"stroke:#d2d9b1ff;stroke-width:2;\" /><line x1=\"332\" y1=\"15\" x2=\"332\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"333\" y1=\"15\" x2=\"333\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"334\" y1=\"15\" x2=\"334\" y2=\"27\" style=\"stroke:#d3dab2ff;stroke-width:2;\" /><line x1=\"335\" y1=\"15\" x2=\"335\" y2=\"27\" style=\"stroke:#d3dab2ff;stroke-width:2;\" /><line x1=\"336\" y1=\"15\" x2=\"336\" y2=\"27\" style=\"stroke:#d4dab2ff;stroke-width:2;\" /><line x1=\"337\" y1=\"15\" x2=\"337\" y2=\"27\" style=\"stroke:#d4dab2ff;stroke-width:2;\" /><line x1=\"338\" y1=\"15\" x2=\"338\" y2=\"27\" style=\"stroke:#d5dbb3ff;stroke-width:2;\" /><line x1=\"339\" y1=\"15\" x2=\"339\" y2=\"27\" style=\"stroke:#d5dbb3ff;stroke-width:2;\" /><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"27\" style=\"stroke:#d6dbb3ff;stroke-width:2;\" /><line x1=\"341\" y1=\"15\" x2=\"341\" y2=\"27\" style=\"stroke:#d6dbb3ff;stroke-width:2;\" /><line x1=\"342\" y1=\"15\" x2=\"342\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"343\" y1=\"15\" x2=\"343\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"344\" y1=\"15\" x2=\"344\" y2=\"27\" style=\"stroke:#d8dcb4ff;stroke-width:2;\" /><line x1=\"345\" y1=\"15\" x2=\"345\" y2=\"27\" style=\"stroke:#d8ddb4ff;stroke-width:2;\" /><line x1=\"346\" y1=\"15\" x2=\"346\" y2=\"27\" style=\"stroke:#d9ddb4ff;stroke-width:2;\" /><line x1=\"347\" y1=\"15\" x2=\"347\" y2=\"27\" style=\"stroke:#d9ddb4ff;stroke-width:2;\" /><line x1=\"348\" y1=\"15\" x2=\"348\" y2=\"27\" style=\"stroke:#daddb4ff;stroke-width:2;\" /><line x1=\"349\" y1=\"15\" x2=\"349\" y2=\"27\" style=\"stroke:#dadeb4ff;stroke-width:2;\" /><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"27\" style=\"stroke:#dbdeb4ff;stroke-width:2;\" /><line x1=\"351\" y1=\"15\" x2=\"351\" y2=\"27\" style=\"stroke:#dbdeb5ff;stroke-width:2;\" /><line x1=\"352\" y1=\"15\" x2=\"352\" y2=\"27\" style=\"stroke:#dcdeb5ff;stroke-width:2;\" /><line x1=\"353\" y1=\"15\" x2=\"353\" y2=\"27\" style=\"stroke:#dcdfb5ff;stroke-width:2;\" /><line x1=\"354\" y1=\"15\" x2=\"354\" y2=\"27\" style=\"stroke:#dddfb5ff;stroke-width:2;\" /><line x1=\"355\" y1=\"15\" x2=\"355\" y2=\"27\" style=\"stroke:#dddfb5ff;stroke-width:2;\" /><line x1=\"356\" y1=\"15\" x2=\"356\" y2=\"27\" style=\"stroke:#dee0b5ff;stroke-width:2;\" /><line x1=\"357\" y1=\"15\" x2=\"357\" y2=\"27\" style=\"stroke:#dee0b6ff;stroke-width:2;\" /><line x1=\"358\" y1=\"15\" x2=\"358\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"359\" y1=\"15\" x2=\"359\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"27\" style=\"stroke:#e0e1b6ff;stroke-width:2;\" /><line x1=\"361\" y1=\"15\" x2=\"361\" y2=\"27\" style=\"stroke:#e0e1b6ff;stroke-width:2;\" /><line x1=\"362\" y1=\"15\" x2=\"362\" y2=\"27\" style=\"stroke:#e1e1b6ff;stroke-width:2;\" /><line x1=\"363\" y1=\"15\" x2=\"363\" y2=\"27\" style=\"stroke:#e1e1b6ff;stroke-width:2;\" /><line x1=\"364\" y1=\"15\" x2=\"364\" y2=\"27\" style=\"stroke:#e2e2b7ff;stroke-width:2;\" /><line x1=\"365\" y1=\"15\" x2=\"365\" y2=\"27\" style=\"stroke:#e2e2b7ff;stroke-width:2;\" /><line x1=\"366\" y1=\"15\" x2=\"366\" y2=\"27\" style=\"stroke:#e3e2b7ff;stroke-width:2;\" /><line x1=\"367\" y1=\"15\" x2=\"367\" y2=\"27\" style=\"stroke:#e3e3b7ff;stroke-width:2;\" /><line x1=\"368\" y1=\"15\" x2=\"368\" y2=\"27\" style=\"stroke:#e4e3b7ff;stroke-width:2;\" /><line x1=\"369\" y1=\"15\" x2=\"369\" y2=\"27\" style=\"stroke:#e4e3b7ff;stroke-width:2;\" /><line x1=\"370\" y1=\"15\" x2=\"370\" y2=\"27\" style=\"stroke:#e5e3b8ff;stroke-width:2;\" /><line x1=\"371\" y1=\"15\" x2=\"371\" y2=\"27\" style=\"stroke:#e5e4b8ff;stroke-width:2;\" /><line x1=\"372\" y1=\"15\" x2=\"372\" y2=\"27\" style=\"stroke:#e6e4b8ff;stroke-width:2;\" /><line x1=\"373\" y1=\"15\" x2=\"373\" y2=\"27\" style=\"stroke:#e6e4b8ff;stroke-width:2;\" /><line x1=\"374\" y1=\"15\" x2=\"374\" y2=\"27\" style=\"stroke:#e7e5b8ff;stroke-width:2;\" /><line x1=\"375\" y1=\"15\" x2=\"375\" y2=\"27\" style=\"stroke:#e7e5b8ff;stroke-width:2;\" /><line x1=\"376\" y1=\"15\" x2=\"376\" y2=\"27\" style=\"stroke:#e8e5b8ff;stroke-width:2;\" /><line x1=\"377\" y1=\"15\" x2=\"377\" y2=\"27\" style=\"stroke:#e8e5b9ff;stroke-width:2;\" /><line x1=\"378\" y1=\"15\" x2=\"378\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"379\" y1=\"15\" x2=\"379\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"381\" y1=\"15\" x2=\"381\" y2=\"27\" style=\"stroke:#eae6b9ff;stroke-width:2;\" /><line x1=\"382\" y1=\"15\" x2=\"382\" y2=\"27\" style=\"stroke:#eae7b9ff;stroke-width:2;\" /><line x1=\"383\" y1=\"15\" x2=\"383\" y2=\"27\" style=\"stroke:#ebe7baff;stroke-width:2;\" /><line x1=\"384\" y1=\"15\" x2=\"384\" y2=\"27\" style=\"stroke:#ebe7baff;stroke-width:2;\" /><line x1=\"385\" y1=\"15\" x2=\"385\" y2=\"27\" style=\"stroke:#ece8baff;stroke-width:2;\" /><line x1=\"386\" y1=\"15\" x2=\"386\" y2=\"27\" style=\"stroke:#ece8baff;stroke-width:2;\" /><line x1=\"387\" y1=\"15\" x2=\"387\" y2=\"27\" style=\"stroke:#ede8baff;stroke-width:2;\" /><line x1=\"388\" y1=\"15\" x2=\"388\" y2=\"27\" style=\"stroke:#ede8baff;stroke-width:2;\" /><line x1=\"389\" y1=\"15\" x2=\"389\" y2=\"27\" style=\"stroke:#eee9bbff;stroke-width:2;\" /><line x1=\"390\" y1=\"15\" x2=\"390\" y2=\"27\" style=\"stroke:#eee9bbff;stroke-width:2;\" /><line x1=\"391\" y1=\"15\" x2=\"391\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"392\" y1=\"15\" x2=\"392\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"393\" y1=\"15\" x2=\"393\" y2=\"27\" style=\"stroke:#f0eabbff;stroke-width:2;\" /><line x1=\"394\" y1=\"15\" x2=\"394\" y2=\"27\" style=\"stroke:#f0eabbff;stroke-width:2;\" /><line x1=\"395\" y1=\"15\" x2=\"395\" y2=\"27\" style=\"stroke:#f1eabbff;stroke-width:2;\" /><line x1=\"396\" y1=\"15\" x2=\"396\" y2=\"27\" style=\"stroke:#f1ebbcff;stroke-width:2;\" /><line x1=\"397\" y1=\"15\" x2=\"397\" y2=\"27\" style=\"stroke:#f2ebbcff;stroke-width:2;\" /><line x1=\"398\" y1=\"15\" x2=\"398\" y2=\"27\" style=\"stroke:#f2ebbcff;stroke-width:2;\" /><line x1=\"399\" y1=\"15\" x2=\"399\" y2=\"27\" style=\"stroke:#f3ebbcff;stroke-width:2;\" /><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"27\" style=\"stroke:#f3ecbcff;stroke-width:2;\" /><line x1=\"401\" y1=\"15\" x2=\"401\" y2=\"27\" style=\"stroke:#f4ecbcff;stroke-width:2;\" /><line x1=\"402\" y1=\"15\" x2=\"402\" y2=\"27\" style=\"stroke:#f4ecbdff;stroke-width:2;\" /><line x1=\"403\" y1=\"15\" x2=\"403\" y2=\"27\" style=\"stroke:#f5ecbdff;stroke-width:2;\" /><line x1=\"404\" y1=\"15\" x2=\"404\" y2=\"27\" style=\"stroke:#f5edbdff;stroke-width:2;\" /><line x1=\"405\" y1=\"15\" x2=\"405\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"406\" y1=\"15\" x2=\"406\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"407\" y1=\"15\" x2=\"407\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"408\" y1=\"15\" x2=\"408\" y2=\"27\" style=\"stroke:#f6e8b8ff;stroke-width:2;\" /><line x1=\"409\" y1=\"15\" x2=\"409\" y2=\"27\" style=\"stroke:#f5e5b4ff;stroke-width:2;\" /><line x1=\"410\" y1=\"15\" x2=\"410\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"411\" y1=\"15\" x2=\"411\" y2=\"27\" style=\"stroke:#f4deadff;stroke-width:2;\" /><line x1=\"412\" y1=\"15\" x2=\"412\" y2=\"27\" style=\"stroke:#f3daaaff;stroke-width:2;\" /><line x1=\"413\" y1=\"15\" x2=\"413\" y2=\"27\" style=\"stroke:#f2d7a6ff;stroke-width:2;\" /><line x1=\"414\" y1=\"15\" x2=\"414\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"415\" y1=\"15\" x2=\"415\" y2=\"27\" style=\"stroke:#f1cf9fff;stroke-width:2;\" /><line x1=\"416\" y1=\"15\" x2=\"416\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"417\" y1=\"15\" x2=\"417\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"418\" y1=\"15\" x2=\"418\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"419\" y1=\"15\" x2=\"419\" y2=\"27\" style=\"stroke:#efc190ff;stroke-width:2;\" /><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"421\" y1=\"15\" x2=\"421\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"422\" y1=\"15\" x2=\"422\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"423\" y1=\"15\" x2=\"423\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"424\" y1=\"15\" x2=\"424\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"425\" y1=\"15\" x2=\"425\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"426\" y1=\"15\" x2=\"426\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"427\" y1=\"15\" x2=\"427\" y2=\"27\" style=\"stroke:#e7a575ff;stroke-width:2;\" /><line x1=\"428\" y1=\"15\" x2=\"428\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"429\" y1=\"15\" x2=\"429\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"430\" y1=\"15\" x2=\"430\" y2=\"27\" style=\"stroke:#e49b6aff;stroke-width:2;\" /><line x1=\"431\" y1=\"15\" x2=\"431\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"432\" y1=\"15\" x2=\"432\" y2=\"27\" style=\"stroke:#e19464ff;stroke-width:2;\" /><line x1=\"433\" y1=\"15\" x2=\"433\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"434\" y1=\"15\" x2=\"434\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"435\" y1=\"15\" x2=\"435\" y2=\"27\" style=\"stroke:#de8a59ff;stroke-width:2;\" /><line x1=\"436\" y1=\"15\" x2=\"436\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"437\" y1=\"15\" x2=\"437\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"438\" y1=\"15\" x2=\"438\" y2=\"27\" style=\"stroke:#da7e50ff;stroke-width:2;\" /><line x1=\"439\" y1=\"15\" x2=\"439\" y2=\"27\" style=\"stroke:#d87b4cff;stroke-width:2;\" /><line x1=\"440\" y1=\"15\" x2=\"440\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"441\" y1=\"15\" x2=\"441\" y2=\"27\" style=\"stroke:#d67346ff;stroke-width:2;\" /><line x1=\"442\" y1=\"15\" x2=\"442\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"443\" y1=\"15\" x2=\"443\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"444\" y1=\"15\" x2=\"444\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"445\" y1=\"15\" x2=\"445\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"446\" y1=\"15\" x2=\"446\" y2=\"27\" style=\"stroke:#cf6135ff;stroke-width:2;\" /><line x1=\"447\" y1=\"15\" x2=\"447\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"448\" y1=\"15\" x2=\"448\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"449\" y1=\"15\" x2=\"449\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><text x=\"0\" y=\"38\" style=\"text-anchor:start; font-size:11px; font:Arial\">-48.57</text><text x=\"75\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-39.6</text><text x=\"150\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-30.7</text><text x=\"225\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-21.8</text><text x=\"300\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-12.8</text><text x=\"375\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-3.9</text><text x=\"450\" y=\"38\" style=\"text-anchor:end; font-size:11px; font:Arial\">5.07</text><text x=\"0\" y=\"12\" style=\"font-size:11px; font:Arial\"></text></svg> <br/>\n        <span style=\"font-size: 0.8em\">(Obszary obwod\u00f3w s\u0105 przybli\u017cone z wykorzystaniem diagramu Voronoia)</span><br/>\n        \n<div class=\"dropdown\">\n  <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n    Zmie\u0144 map\u0119\n  </button>\n  <ul class=\"dropdown-menu\" style=\"max-height: 25vw; overflow: auto;\">\n    <li><a class=\"dropdown-item\" href=\"./gda_turnout.html\">Gda\u0144sk - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_RTJ.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs RAKOWSKI Tomasz J\u0119drzej</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_PAL.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs PECKA Andrzej Leszek</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_UMP.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_SA.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_SAA.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_DAM.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_RTJ.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs PECKA Andrzej Leszek</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_UMP.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_SA.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_SAA.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_RTJ.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_UMP.html\">Gda\u0144sk - PECKA Andrzej Leszek vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_SA.html\">Gda\u0144sk - PECKA Andrzej Leszek vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_SAA.html\">Gda\u0144sk - PECKA Andrzej Leszek vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_PAL.html\">Gda\u0144sk - PECKA Andrzej Leszek vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_SA_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_SAA_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_SA_SAA.html\">Gda\u0144sk - SZOSTAK Artur vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_SA.html\">Gda\u0144sk - SZOSTAK Artur vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_SAA.html\">Gda\u0144sk - SZCZEPA\u0143SKI Adam Aleksander vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./kra_turnout.html\">Krak\u00f3w - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs GIBA\u0141A \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KMITA \u0141ukasz Marek</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MAJ_MS.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MAJ_MJS.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_K\u0141M.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KMITA \u0141ukasz Marek</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_KAA.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_G\u0141.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_KRP.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_HAW.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MS.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MJS.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MS.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MJS.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_KAA.html\">Krak\u00f3w - KULIG Andrzej Adam vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_KRP.html\">Krak\u00f3w - KULIG Andrzej Adam vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_KAA.html\">Krak\u00f3w - KULIG Andrzej Adam vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MS.html\">Krak\u00f3w - KULIG Andrzej Adam vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MJS.html\">Krak\u00f3w - KULIG Andrzej Adam vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_KRP.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_HAW.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MS.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MJS.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_KRP.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MS.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MJS.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MS.html\">Krak\u00f3w - HARE\u0143CZYK Adam Wies\u0142aw vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MJS.html\">Krak\u00f3w - HARE\u0143CZYK Adam Wies\u0142aw vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MJS_MS.html\">Krak\u00f3w - MAZUR Stanis\u0142aw vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./poz_turnout.html\">Pozna\u0144 - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_JJ.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs CZERWI\u0143SKI Zbigniew</a></li><li><a class=\"dropdown-item\" href=\"./poz_JJ_PPM.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs PLEWI\u0143SKI Przemys\u0142aw Marcin</a></li><li><a class=\"dropdown-item\" href=\"./poz_JJ_UBK.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_JJ.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_PPM.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs PLEWI\u0143SKI Przemys\u0142aw Marcin</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_UBK.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_G\u0141.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_PPM_UBK.html\">Pozna\u0144 - PLEWI\u0143SKI Przemys\u0142aw Marcin vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_PPM.html\">Pozna\u0144 - PLEWI\u0143SKI Przemys\u0142aw Marcin vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_UBK.html\">Pozna\u0144 - URBA\u0143SKA Beata Kinga vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./waw_turnout.html\">Warszawa - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs BOCHE\u0143SKI Tobiasz Adam</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs BIEJAT Magdalena Agnieszka</a></li><li><a class=\"dropdown-item\" href=\"./waw_TRK_WPJ.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_SRT_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_BTA.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs BIEJAT Magdalena Agnieszka</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_WPJ.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_KJR.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_SRT.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_WPJ.html\">Warszawa - BIEJAT Magdalena Agnieszka vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_KJR.html\">Warszawa - BIEJAT Magdalena Agnieszka vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_SRT.html\">Warszawa - BIEJAT Magdalena Agnieszka vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_WPJ.html\">Warszawa - WIPLER Przemys\u0142aw Janusz vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_SRT_WPJ.html\">Warszawa - WIPLER Przemys\u0142aw Janusz vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_SRT.html\">Warszawa - KORWIN-MIKKE Janusz Ryszard vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./wro_turnout.html\">Wroc\u0142aw - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs BODNAR Izabela Anna</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs KASZTELOWICZ \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_MJA_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_PGT_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_K\u0141.html\">Wroc\u0142aw - BODNAR Izabela Anna vs KASZTELOWICZ \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_MJA.html\">Wroc\u0142aw - BODNAR Izabela Anna vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_GRS.html\">Wroc\u0142aw - BODNAR Izabela Anna vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_PGT.html\">Wroc\u0142aw - BODNAR Izabela Anna vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_MJA.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_K\u0141.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_PGT.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_MJA.html\">Wroc\u0142aw - MICHALAK Jerzy Andrzej vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_MJA_PGT.html\">Wroc\u0142aw - MICHALAK Jerzy Andrzej vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_PGT.html\">Wroc\u0142aw - GRZECHNIK Robert Sebastian vs PRIGAN Grzegorz Tomasz</a></li>\n  </ul>\n</div>\n\n        </div>\n        ",
   "initialViewState": {
     "latitude": 50.05872418082306,
     "longitude": 19.968393729047147,
@@ -22557,7 +22561,7 @@
         128
       ],
       "getLineWidth": 15,
-      "id": "a99d0abc-4af2-4ded-90b6-6d3f216e9420",
+      "id": "cc6ca1e8-e3c2-4402-8a34-d1c9e78d21d2",
       "lineWidthMinPixels": 1,
       "opacity": 0.8,
       "pickable": true,
@@ -22569,7 +22573,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.88",
           "KULIG Andrzej Adam_%": "6.74",
-          "diff_abs_scale": 0.07948523845571537,
+          "diff_abs_scale": 0.0794852384141025,
           "diff_str": "-3.86",
           "geometry": {
             "coordinates": [
@@ -23521,7 +23525,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.28",
           "KULIG Andrzej Adam_%": "6.02",
-          "diff_abs_scale": 0.07691744194564502,
+          "diff_abs_scale": 0.07691744200226228,
           "diff_str": "-3.74",
           "geometry": {
             "coordinates": [
@@ -23565,7 +23569,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.32",
           "KULIG Andrzej Adam_%": "6.82",
-          "diff_abs_scale": 0.09266153718871514,
+          "diff_abs_scale": 0.09266153709096063,
           "diff_str": "-4.50",
           "geometry": {
             "coordinates": [
@@ -23609,7 +23613,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.90",
           "KULIG Andrzej Adam_%": "6.61",
-          "diff_abs_scale": 0.07639073729039128,
+          "diff_abs_scale": 0.07639073729636442,
           "diff_str": "-3.71",
           "geometry": {
             "coordinates": [
@@ -23661,7 +23665,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.38",
           "KULIG Andrzej Adam_%": "12.43",
-          "diff_abs_scale": 0.1658596888843103,
+          "diff_abs_scale": 0.1658596888578194,
           "diff_str": "-8.06",
           "geometry": {
             "coordinates": [
@@ -23717,7 +23721,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.47",
           "KULIG Andrzej Adam_%": "6.45",
-          "diff_abs_scale": 0.06130491898992848,
+          "diff_abs_scale": 0.06130491891356779,
           "diff_str": "-2.98",
           "geometry": {
             "coordinates": [
@@ -23861,7 +23865,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.27",
           "KULIG Andrzej Adam_%": "8.31",
-          "diff_abs_scale": 0.10371906949177656,
+          "diff_abs_scale": 0.10371906959128585,
           "diff_str": "-5.04",
           "geometry": {
             "coordinates": [
@@ -25781,7 +25785,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.51",
           "KULIG Andrzej Adam_%": "8.20",
-          "diff_abs_scale": 0.0759921193357726,
+          "diff_abs_scale": 0.07599211920811741,
           "diff_str": "-3.69",
           "geometry": {
             "coordinates": [
@@ -25829,7 +25833,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.24",
           "KULIG Andrzej Adam_%": "7.75",
-          "diff_abs_scale": 0.09290962951563884,
+          "diff_abs_scale": 0.09290962964979148,
           "diff_str": "-4.51",
           "geometry": {
             "coordinates": [
@@ -25873,7 +25877,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.14",
           "KULIG Andrzej Adam_%": "10.48",
-          "diff_abs_scale": 0.15109573241061133,
+          "diff_abs_scale": 0.15109573253385575,
           "diff_str": "-7.34",
           "geometry": {
             "coordinates": [
@@ -25917,7 +25921,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.25",
           "KULIG Andrzej Adam_%": "7.71",
-          "diff_abs_scale": 0.09177888022678954,
+          "diff_abs_scale": 0.09177888012034643,
           "diff_str": "-4.46",
           "geometry": {
             "coordinates": [
@@ -25961,7 +25965,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.74",
           "KULIG Andrzej Adam_%": "5.44",
-          "diff_abs_scale": 0.034974352141762706,
+          "diff_abs_scale": 0.03497435220691101,
           "diff_str": "-1.70",
           "geometry": {
             "coordinates": [
@@ -26013,7 +26017,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.41",
           "KULIG Andrzej Adam_%": "8.26",
-          "diff_abs_scale": 0.12045818774137615,
+          "diff_abs_scale": 0.12045818770942524,
           "diff_str": "-5.85",
           "geometry": {
             "coordinates": [
@@ -26057,7 +26061,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.72",
           "KULIG Andrzej Adam_%": "8.28",
-          "diff_abs_scale": 0.09389904610492847,
+          "diff_abs_scale": 0.09389904609099703,
           "diff_str": "-4.56",
           "geometry": {
             "coordinates": [
@@ -26101,7 +26105,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.27",
           "KULIG Andrzej Adam_%": "8.17",
-          "diff_abs_scale": 0.12149011343209572,
+          "diff_abs_scale": 0.12149011329769087,
           "diff_str": "-5.90",
           "geometry": {
             "coordinates": [
@@ -26153,7 +26157,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.60",
           "KULIG Andrzej Adam_%": "6.54",
-          "diff_abs_scale": 0.08119481360260401,
+          "diff_abs_scale": 0.08119481362003514,
           "diff_str": "-3.94",
           "geometry": {
             "coordinates": [
@@ -26417,7 +26421,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.03",
           "KULIG Andrzej Adam_%": "5.15",
-          "diff_abs_scale": 0.06423786363219236,
+          "diff_abs_scale": 0.06423786373718346,
           "diff_str": "-3.12",
           "geometry": {
             "coordinates": [
@@ -26469,7 +26473,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.71",
           "KULIG Andrzej Adam_%": "8.40",
-          "diff_abs_scale": 0.13784146137087316,
+          "diff_abs_scale": 0.13784146126876007,
           "diff_str": "-6.70",
           "geometry": {
             "coordinates": [
@@ -26513,7 +26517,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.93",
           "KULIG Andrzej Adam_%": "6.76",
-          "diff_abs_scale": 0.09940671547588995,
+          "diff_abs_scale": 0.09940671547351194,
           "diff_str": "-4.83",
           "geometry": {
             "coordinates": [
@@ -26561,7 +26565,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.87",
           "KULIG Andrzej Adam_%": "5.96",
-          "diff_abs_scale": 0.08417677121956109,
+          "diff_abs_scale": 0.08417677120835813,
           "diff_str": "-4.09",
           "geometry": {
             "coordinates": [
@@ -26609,7 +26613,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.88",
           "KULIG Andrzej Adam_%": "8.56",
-          "diff_abs_scale": 0.13748992747784045,
+          "diff_abs_scale": 0.13748992765110266,
           "diff_str": "-6.68",
           "geometry": {
             "coordinates": [
@@ -26653,7 +26657,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.01",
           "KULIG Andrzej Adam_%": "6.22",
-          "diff_abs_scale": 0.0866740839105624,
+          "diff_abs_scale": 0.08667408379666688,
           "diff_str": "-4.21",
           "geometry": {
             "coordinates": [
@@ -26697,7 +26701,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.05",
           "KULIG Andrzej Adam_%": "7.15",
-          "diff_abs_scale": 0.1050947575682993,
+          "diff_abs_scale": 0.10509475756191454,
           "diff_str": "-5.10",
           "geometry": {
             "coordinates": [
@@ -26741,7 +26745,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.97",
           "KULIG Andrzej Adam_%": "7.39",
-          "diff_abs_scale": 0.11156186612576068,
+          "diff_abs_scale": 0.11156186609151651,
           "diff_str": "-5.42",
           "geometry": {
             "coordinates": [
@@ -26781,7 +26785,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.17",
           "KULIG Andrzej Adam_%": "4.69",
-          "diff_abs_scale": 0.07238051470588236,
+          "diff_abs_scale": 0.07238051470801118,
           "diff_str": "-3.52",
           "geometry": {
             "coordinates": [
@@ -26829,7 +26833,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.68",
           "KULIG Andrzej Adam_%": "6.60",
-          "diff_abs_scale": 0.08065494238932687,
+          "diff_abs_scale": 0.08065494232590163,
           "diff_str": "-3.92",
           "geometry": {
             "coordinates": [
@@ -26881,7 +26885,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.11",
           "KULIG Andrzej Adam_%": "5.94",
-          "diff_abs_scale": 0.07872244714349978,
+          "diff_abs_scale": 0.07872244717878596,
           "diff_str": "-3.82",
           "geometry": {
             "coordinates": [
@@ -26937,7 +26941,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.60",
           "KULIG Andrzej Adam_%": "6.44",
-          "diff_abs_scale": 0.07908739704060062,
+          "diff_abs_scale": 0.07908739711997316,
           "diff_str": "-3.84",
           "geometry": {
             "coordinates": [
@@ -26981,7 +26985,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.62",
           "KULIG Andrzej Adam_%": "5.90",
-          "diff_abs_scale": 0.06750241080038574,
+          "diff_abs_scale": 0.06750241070786771,
           "diff_str": "-3.28",
           "geometry": {
             "coordinates": [
@@ -27029,7 +27033,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.86",
           "KULIG Andrzej Adam_%": "8.36",
-          "diff_abs_scale": 0.1339383336977914,
+          "diff_abs_scale": 0.13393833373923347,
           "diff_str": "-6.51",
           "geometry": {
             "coordinates": [
@@ -27073,7 +27077,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.30",
           "KULIG Andrzej Adam_%": "9.98",
-          "diff_abs_scale": 0.17863978563225727,
+          "diff_abs_scale": 0.1786397856817247,
           "diff_str": "-8.68",
           "geometry": {
             "coordinates": [
@@ -27117,7 +27121,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.14",
           "KULIG Andrzej Adam_%": "5.57",
-          "diff_abs_scale": 0.050215208034433294,
+          "diff_abs_scale": 0.05021520803088867,
           "diff_str": "-2.44",
           "geometry": {
             "coordinates": [
@@ -27157,7 +27161,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.24",
           "KULIG Andrzej Adam_%": "5.42",
-          "diff_abs_scale": 0.08604989983609543,
+          "diff_abs_scale": 0.08604989997311911,
           "diff_str": "-4.18",
           "geometry": {
             "coordinates": [
@@ -27201,7 +27205,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "0.95",
           "KULIG Andrzej Adam_%": "6.23",
-          "diff_abs_scale": 0.10873440285204992,
+          "diff_abs_scale": 0.10873440282672747,
           "diff_str": "-5.28",
           "geometry": {
             "coordinates": [
@@ -27253,7 +27257,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.15",
           "KULIG Andrzej Adam_%": "5.29",
-          "diff_abs_scale": 0.08519269776876269,
+          "diff_abs_scale": 0.08519269767897625,
           "diff_str": "-4.14",
           "geometry": {
             "coordinates": [
@@ -27305,7 +27309,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.48",
           "KULIG Andrzej Adam_%": "11.94",
-          "diff_abs_scale": 0.15364354697102722,
+          "diff_abs_scale": 0.15364354703393066,
           "diff_str": "-7.46",
           "geometry": {
             "coordinates": [
@@ -27353,7 +27357,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.11",
           "KULIG Andrzej Adam_%": "8.08",
-          "diff_abs_scale": 0.12302284710017576,
+          "diff_abs_scale": 0.1230228470918536,
           "diff_str": "-5.98",
           "geometry": {
             "coordinates": [
@@ -27397,7 +27401,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.21",
           "KULIG Andrzej Adam_%": "5.44",
-          "diff_abs_scale": 0.08708014928025591,
+          "diff_abs_scale": 0.08708014947314942,
           "diff_str": "-4.23",
           "geometry": {
             "coordinates": [
@@ -27445,7 +27449,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.23",
           "KULIG Andrzej Adam_%": "7.18",
-          "diff_abs_scale": 0.10179191293742379,
+          "diff_abs_scale": 0.1017919129735821,
           "diff_str": "-4.94",
           "geometry": {
             "coordinates": [
@@ -27493,7 +27497,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.03",
           "KULIG Andrzej Adam_%": "8.14",
-          "diff_abs_scale": 0.12562313060817548,
+          "diff_abs_scale": 0.1256231305036948,
           "diff_str": "-6.10",
           "geometry": {
             "coordinates": [
@@ -27549,7 +27553,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.05",
           "KULIG Andrzej Adam_%": "7.07",
-          "diff_abs_scale": 0.08280982295830953,
+          "diff_abs_scale": 0.08280982314949441,
           "diff_str": "-4.02",
           "geometry": {
             "coordinates": [
@@ -27605,7 +27609,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.87",
           "KULIG Andrzej Adam_%": "8.30",
-          "diff_abs_scale": 0.13229388140798493,
+          "diff_abs_scale": 0.13229388138624393,
           "diff_str": "-6.43",
           "geometry": {
             "coordinates": [
@@ -27661,7 +27665,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.11",
           "KULIG Andrzej Adam_%": "8.10",
-          "diff_abs_scale": 0.08221200630851315,
+          "diff_abs_scale": 0.08221200647300622,
           "diff_str": "-3.99",
           "geometry": {
             "coordinates": [
@@ -27713,7 +27717,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.10",
           "KULIG Andrzej Adam_%": "6.35",
-          "diff_abs_scale": 0.06688563750373246,
+          "diff_abs_scale": 0.06688563741373191,
           "diff_str": "-3.25",
           "geometry": {
             "coordinates": [
@@ -27801,7 +27805,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.88",
           "KULIG Andrzej Adam_%": "8.83",
-          "diff_abs_scale": 0.12244382731633428,
+          "diff_abs_scale": 0.12244382726830717,
           "diff_str": "-5.95",
           "geometry": {
             "coordinates": [
@@ -27853,7 +27857,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.90",
           "KULIG Andrzej Adam_%": "6.13",
-          "diff_abs_scale": 0.06648636466080685,
+          "diff_abs_scale": 0.06648636461960256,
           "diff_str": "-3.23",
           "geometry": {
             "coordinates": [
@@ -27897,7 +27901,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.27",
           "KULIG Andrzej Adam_%": "6.06",
-          "diff_abs_scale": 0.0779267043683484,
+          "diff_abs_scale": 0.07792670447288019,
           "diff_str": "-3.79",
           "geometry": {
             "coordinates": [
@@ -27953,7 +27957,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.86",
           "KULIG Andrzej Adam_%": "5.59",
-          "diff_abs_scale": 0.056222749177694493,
+          "diff_abs_scale": 0.05622274906047714,
           "diff_str": "-2.73",
           "geometry": {
             "coordinates": [
@@ -28001,7 +28005,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.64",
           "KULIG Andrzej Adam_%": "6.73",
-          "diff_abs_scale": 0.08413461538461538,
+          "diff_abs_scale": 0.08413461535541572,
           "diff_str": "-4.09",
           "geometry": {
             "coordinates": [
@@ -28053,7 +28057,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.23",
           "KULIG Andrzej Adam_%": "6.43",
-          "diff_abs_scale": 0.0864597807626988,
+          "diff_abs_scale": 0.08645978064960175,
           "diff_str": "-4.20",
           "geometry": {
             "coordinates": [
@@ -28093,7 +28097,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.31",
           "KULIG Andrzej Adam_%": "8.90",
-          "diff_abs_scale": 0.13554532133137956,
+          "diff_abs_scale": 0.1355453212686925,
           "diff_str": "-6.58",
           "geometry": {
             "coordinates": [
@@ -28149,7 +28153,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.92",
           "KULIG Andrzej Adam_%": "6.69",
-          "diff_abs_scale": 0.07765656779101403,
+          "diff_abs_scale": 0.07765656788463696,
           "diff_str": "-3.77",
           "geometry": {
             "coordinates": [
@@ -28193,7 +28197,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.74",
           "KULIG Andrzej Adam_%": "5.81",
-          "diff_abs_scale": 0.08378932968536254,
+          "diff_abs_scale": 0.08378932964952322,
           "diff_str": "-4.07",
           "geometry": {
             "coordinates": [
@@ -28245,7 +28249,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.85",
           "KULIG Andrzej Adam_%": "25.19",
-          "diff_abs_scale": 0.4803921568627451,
+          "diff_abs_scale": 0.48039215701412924,
           "diff_str": "-23.33",
           "geometry": {
             "coordinates": [
@@ -29565,7 +29569,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.36",
           "KULIG Andrzej Adam_%": "10.02",
-          "diff_abs_scale": 0.13725490196078433,
+          "diff_abs_scale": 0.13725490203344867,
           "diff_str": "-6.67",
           "geometry": {
             "coordinates": [
@@ -29613,7 +29617,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.69",
           "KULIG Andrzej Adam_%": "8.09",
-          "diff_abs_scale": 0.09052982895285777,
+          "diff_abs_scale": 0.0905298289438391,
           "diff_str": "-4.40",
           "geometry": {
             "coordinates": [
@@ -29665,7 +29669,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.71",
           "KULIG Andrzej Adam_%": "7.32",
-          "diff_abs_scale": 0.09507306107156238,
+          "diff_abs_scale": 0.09507306097338451,
           "diff_str": "-4.62",
           "geometry": {
             "coordinates": [
@@ -29705,7 +29709,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.87",
           "KULIG Andrzej Adam_%": "8.72",
-          "diff_abs_scale": 0.14110317024005864,
+          "diff_abs_scale": 0.1411031701512089,
           "diff_str": "-6.85",
           "geometry": {
             "coordinates": [
@@ -29749,7 +29753,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.34",
           "KULIG Andrzej Adam_%": "6.58",
-          "diff_abs_scale": 0.06659571723426212,
+          "diff_abs_scale": 0.06659571717842928,
           "diff_str": "-3.23",
           "geometry": {
             "coordinates": [
@@ -29801,7 +29805,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.47",
           "KULIG Andrzej Adam_%": "6.30",
-          "diff_abs_scale": 0.07879448075526507,
+          "diff_abs_scale": 0.07879448088467045,
           "diff_str": "-3.83",
           "geometry": {
             "coordinates": [
@@ -29849,7 +29853,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.73",
           "KULIG Andrzej Adam_%": "5.85",
-          "diff_abs_scale": 0.0642545704887937,
+          "diff_abs_scale": 0.06425457047247808,
           "diff_str": "-3.12",
           "geometry": {
             "coordinates": [
@@ -29893,7 +29897,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.12",
           "KULIG Andrzej Adam_%": "7.93",
-          "diff_abs_scale": 0.11961879723956624,
+          "diff_abs_scale": 0.11961879712116526,
           "diff_str": "-5.81",
           "geometry": {
             "coordinates": [
@@ -29937,7 +29941,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.55",
           "KULIG Andrzej Adam_%": "7.83",
-          "diff_abs_scale": 0.12942314256456935,
+          "diff_abs_scale": 0.12942314268027716,
           "diff_str": "-6.29",
           "geometry": {
             "coordinates": [
@@ -29989,7 +29993,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.96",
           "KULIG Andrzej Adam_%": "6.73",
-          "diff_abs_scale": 0.03642784127869157,
+          "diff_abs_scale": 0.03642784126577729,
           "diff_str": "-1.77",
           "geometry": {
             "coordinates": [
@@ -30029,7 +30033,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.55",
           "KULIG Andrzej Adam_%": "7.61",
-          "diff_abs_scale": 0.08366533864541834,
+          "diff_abs_scale": 0.08366533864951957,
           "diff_str": "-4.06",
           "geometry": {
             "coordinates": [
@@ -30081,7 +30085,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.06",
           "KULIG Andrzej Adam_%": "8.53",
-          "diff_abs_scale": 0.11263073209975866,
+          "diff_abs_scale": 0.11263073212095974,
           "diff_str": "-5.47",
           "geometry": {
             "coordinates": [
@@ -30133,7 +30137,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "5.90",
           "KULIG Andrzej Adam_%": "8.15",
-          "diff_abs_scale": 0.04638768258981444,
+          "diff_abs_scale": 0.04638768256018786,
           "diff_str": "-2.25",
           "geometry": {
             "coordinates": [
@@ -30181,7 +30185,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.90",
           "KULIG Andrzej Adam_%": "7.80",
-          "diff_abs_scale": 0.08025399065173297,
+          "diff_abs_scale": 0.08025399076706631,
           "diff_str": "-3.90",
           "geometry": {
             "coordinates": [
@@ -30229,7 +30233,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.28",
           "KULIG Andrzej Adam_%": "14.86",
-          "diff_abs_scale": 0.2590755177573037,
+          "diff_abs_scale": 0.2590755176546787,
           "diff_str": "-12.58",
           "geometry": {
             "coordinates": [
@@ -30669,7 +30673,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.09",
           "KULIG Andrzej Adam_%": "19.24",
-          "diff_abs_scale": 0.33252476248231255,
+          "diff_abs_scale": 0.33252476230389777,
           "diff_str": "-16.15",
           "geometry": {
             "coordinates": [
@@ -31253,7 +31257,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.22",
           "KULIG Andrzej Adam_%": "7.68",
-          "diff_abs_scale": 0.07134962544516762,
+          "diff_abs_scale": 0.07134962532562791,
           "diff_str": "-3.47",
           "geometry": {
             "coordinates": [
@@ -31577,7 +31581,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.16",
           "KULIG Andrzej Adam_%": "8.51",
-          "diff_abs_scale": 0.13080200313924806,
+          "diff_abs_scale": 0.1308020030920824,
           "diff_str": "-6.35",
           "geometry": {
             "coordinates": [
@@ -31621,7 +31625,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.77",
           "KULIG Andrzej Adam_%": "7.08",
-          "diff_abs_scale": 0.06809954751131221,
+          "diff_abs_scale": 0.06809954756082645,
           "diff_str": "-3.31",
           "geometry": {
             "coordinates": [
@@ -32769,7 +32773,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.43",
           "KULIG Andrzej Adam_%": "5.95",
-          "diff_abs_scale": 0.05193668670573017,
+          "diff_abs_scale": 0.05193668673682167,
           "diff_str": "-2.52",
           "geometry": {
             "coordinates": [
@@ -32817,7 +32821,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.74",
           "KULIG Andrzej Adam_%": "6.86",
-          "diff_abs_scale": 0.08490768570201805,
+          "diff_abs_scale": 0.08490768567896786,
           "diff_str": "-4.12",
           "geometry": {
             "coordinates": [
@@ -32861,7 +32865,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.58",
           "KULIG Andrzej Adam_%": "7.55",
-          "diff_abs_scale": 0.10235069171071871,
+          "diff_abs_scale": 0.10235069167948091,
           "diff_str": "-4.97",
           "geometry": {
             "coordinates": [
@@ -32905,7 +32909,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.04",
           "KULIG Andrzej Adam_%": "5.78",
-          "diff_abs_scale": 0.05632040050062579,
+          "diff_abs_scale": 0.05632040050165649,
           "diff_str": "-2.74",
           "geometry": {
             "coordinates": [
@@ -32953,7 +32957,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.22",
           "KULIG Andrzej Adam_%": "7.00",
-          "diff_abs_scale": 0.07782101167315175,
+          "diff_abs_scale": 0.07782101167875942,
           "diff_str": "-3.78",
           "geometry": {
             "coordinates": [
@@ -33009,7 +33013,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.50",
           "KULIG Andrzej Adam_%": "4.93",
-          "diff_abs_scale": 0.07053785111474997,
+          "diff_abs_scale": 0.07053785097266288,
           "diff_str": "-3.43",
           "geometry": {
             "coordinates": [
@@ -33057,7 +33061,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.70",
           "KULIG Andrzej Adam_%": "5.59",
-          "diff_abs_scale": 0.059389140271493224,
+          "diff_abs_scale": 0.05938914038409969,
           "diff_str": "-2.88",
           "geometry": {
             "coordinates": [
@@ -33097,7 +33101,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.74",
           "KULIG Andrzej Adam_%": "6.03",
-          "diff_abs_scale": 0.08831414603374864,
+          "diff_abs_scale": 0.08831414591436218,
           "diff_str": "-4.29",
           "geometry": {
             "coordinates": [
@@ -33137,7 +33141,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.11",
           "KULIG Andrzej Adam_%": "7.08",
-          "diff_abs_scale": 0.08178887993553587,
+          "diff_abs_scale": 0.08178887994358203,
           "diff_str": "-3.97",
           "geometry": {
             "coordinates": [
@@ -33185,7 +33189,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.91",
           "KULIG Andrzej Adam_%": "6.68",
-          "diff_abs_scale": 0.09830671695690557,
+          "diff_abs_scale": 0.09830671694406783,
           "diff_str": "-4.77",
           "geometry": {
             "coordinates": [
@@ -33233,7 +33237,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.04",
           "KULIG Andrzej Adam_%": "4.08",
-          "diff_abs_scale": 0.041971724312042415,
+          "diff_abs_scale": 0.04197172432476388,
           "diff_str": "-2.04",
           "geometry": {
             "coordinates": [
@@ -33277,7 +33281,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.37",
           "KULIG Andrzej Adam_%": "4.89",
-          "diff_abs_scale": 0.072522159548751,
+          "diff_abs_scale": 0.07252215970801534,
           "diff_str": "-3.52",
           "geometry": {
             "coordinates": [
@@ -33325,7 +33329,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.03",
           "KULIG Andrzej Adam_%": "7.08",
-          "diff_abs_scale": 0.10390524576115566,
+          "diff_abs_scale": 0.10390524570893837,
           "diff_str": "-5.05",
           "geometry": {
             "coordinates": [
@@ -33381,7 +33385,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.95",
           "KULIG Andrzej Adam_%": "6.30",
-          "diff_abs_scale": 0.06904591104734577,
+          "diff_abs_scale": 0.06904591111967781,
           "diff_str": "-3.35",
           "geometry": {
             "coordinates": [
@@ -33425,7 +33429,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.27",
           "KULIG Andrzej Adam_%": "6.11",
-          "diff_abs_scale": 0.07904732573657737,
+          "diff_abs_scale": 0.07904732561997198,
           "diff_str": "-3.84",
           "geometry": {
             "coordinates": [
@@ -33473,7 +33477,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.06",
           "KULIG Andrzej Adam_%": "6.67",
-          "diff_abs_scale": 0.07419183889772125,
+          "diff_abs_scale": 0.07419183903159388,
           "diff_str": "-3.60",
           "geometry": {
             "coordinates": [
@@ -33521,7 +33525,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.87",
           "KULIG Andrzej Adam_%": "7.74",
-          "diff_abs_scale": 0.07969639468690703,
+          "diff_abs_scale": 0.07969639464940284,
           "diff_str": "-3.87",
           "geometry": {
             "coordinates": [
@@ -33565,7 +33569,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.32",
           "KULIG Andrzej Adam_%": "11.38",
-          "diff_abs_scale": 0.20697167755991286,
+          "diff_abs_scale": 0.20697167771196975,
           "diff_str": "-10.05",
           "geometry": {
             "coordinates": [
@@ -33609,7 +33613,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.52",
           "KULIG Andrzej Adam_%": "11.67",
-          "diff_abs_scale": 0.16775599128540308,
+          "diff_abs_scale": 0.16775599132846342,
           "diff_str": "-8.15",
           "geometry": {
             "coordinates": [
@@ -33669,7 +33673,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.07",
           "KULIG Andrzej Adam_%": "7.56",
-          "diff_abs_scale": 0.11301672403813937,
+          "diff_abs_scale": 0.11301672406214755,
           "diff_str": "-5.49",
           "geometry": {
             "coordinates": [
@@ -33737,7 +33741,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.86",
           "KULIG Andrzej Adam_%": "7.24",
-          "diff_abs_scale": 0.09029006809250983,
+          "diff_abs_scale": 0.0902900682379497,
           "diff_str": "-4.39",
           "geometry": {
             "coordinates": [
@@ -34809,7 +34813,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.35",
           "KULIG Andrzej Adam_%": "5.92",
-          "diff_abs_scale": 0.07365567864237856,
+          "diff_abs_scale": 0.07365567856098988,
           "diff_str": "-3.58",
           "geometry": {
             "coordinates": [
@@ -34861,7 +34865,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.41",
           "KULIG Andrzej Adam_%": "6.72",
-          "diff_abs_scale": 0.0887560566951954,
+          "diff_abs_scale": 0.08875605673790458,
           "diff_str": "-4.31",
           "geometry": {
             "coordinates": [
@@ -34905,7 +34909,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.82",
           "KULIG Andrzej Adam_%": "6.91",
-          "diff_abs_scale": 0.0840072375466194,
+          "diff_abs_scale": 0.0840072375907061,
           "diff_str": "-4.08",
           "geometry": {
             "coordinates": [
@@ -34949,7 +34953,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.91",
           "KULIG Andrzej Adam_%": "7.82",
-          "diff_abs_scale": 0.12166859791425261,
+          "diff_abs_scale": 0.12166859785651968,
           "diff_str": "-5.91",
           "geometry": {
             "coordinates": [
@@ -35009,7 +35013,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.70",
           "KULIG Andrzej Adam_%": "6.57",
-          "diff_abs_scale": 0.07968443903213852,
+          "diff_abs_scale": 0.07968443906116719,
           "diff_str": "-3.87",
           "geometry": {
             "coordinates": [
@@ -35053,7 +35057,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.20",
           "KULIG Andrzej Adam_%": "5.65",
-          "diff_abs_scale": 0.07095279467130033,
+          "diff_abs_scale": 0.0709527947079692,
           "diff_str": "-3.45",
           "geometry": {
             "coordinates": [
@@ -35101,7 +35105,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.93",
           "KULIG Andrzej Adam_%": "5.87",
-          "diff_abs_scale": 0.08108108108108109,
+          "diff_abs_scale": 0.0810810811200318,
           "diff_str": "-3.94",
           "geometry": {
             "coordinates": [
@@ -35145,7 +35149,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.33",
           "KULIG Andrzej Adam_%": "7.69",
-          "diff_abs_scale": 0.11038489469862021,
+          "diff_abs_scale": 0.11038489473854073,
           "diff_str": "-5.36",
           "geometry": {
             "coordinates": [
@@ -35197,7 +35201,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.49",
           "KULIG Andrzej Adam_%": "7.89",
-          "diff_abs_scale": 0.13176470588235295,
+          "diff_abs_scale": 0.13176470588622838,
           "diff_str": "-6.40",
           "geometry": {
             "coordinates": [
@@ -35381,7 +35385,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.39",
           "KULIG Andrzej Adam_%": "6.70",
-          "diff_abs_scale": 0.08884366870856761,
+          "diff_abs_scale": 0.08884366873790717,
           "diff_str": "-4.32",
           "geometry": {
             "coordinates": [
@@ -35425,7 +35429,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.86",
           "KULIG Andrzej Adam_%": "7.15",
-          "diff_abs_scale": 0.08830537775078263,
+          "diff_abs_scale": 0.08830537779671485,
           "diff_str": "-4.29",
           "geometry": {
             "coordinates": [
@@ -35477,7 +35481,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.40",
           "KULIG Andrzej Adam_%": "6.53",
-          "diff_abs_scale": 0.08498934535903661,
+          "diff_abs_scale": 0.08498934541426441,
           "diff_str": "-4.13",
           "geometry": {
             "coordinates": [
@@ -35521,7 +35525,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.78",
           "KULIG Andrzej Adam_%": "8.33",
-          "diff_abs_scale": 0.1347036956046359,
+          "diff_abs_scale": 0.13470369562160894,
           "diff_str": "-6.54",
           "geometry": {
             "coordinates": [
@@ -35561,7 +35565,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.96",
           "KULIG Andrzej Adam_%": "5.88",
-          "diff_abs_scale": 0.06005275423186254,
+          "diff_abs_scale": 0.06005275417823684,
           "diff_str": "-2.92",
           "geometry": {
             "coordinates": [
@@ -36105,7 +36109,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.74",
           "KULIG Andrzej Adam_%": "4.69",
-          "diff_abs_scale": 0.06071597539820217,
+          "diff_abs_scale": 0.06071597535472694,
           "diff_str": "-2.95",
           "geometry": {
             "coordinates": [
@@ -36149,7 +36153,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.56",
           "KULIG Andrzej Adam_%": "17.95",
-          "diff_abs_scale": 0.31674208144796384,
+          "diff_abs_scale": 0.3167420815681395,
           "diff_str": "-15.38",
           "geometry": {
             "coordinates": [
@@ -36193,7 +36197,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.23",
           "KULIG Andrzej Adam_%": "7.72",
-          "diff_abs_scale": 0.11300575118555142,
+          "diff_abs_scale": 0.11300575115038253,
           "diff_str": "-5.49",
           "geometry": {
             "coordinates": [
@@ -36241,7 +36245,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.01",
           "KULIG Andrzej Adam_%": "9.90",
-          "diff_abs_scale": 0.16246096717022537,
+          "diff_abs_scale": 0.16246096712242533,
           "diff_str": "-7.89",
           "geometry": {
             "coordinates": [
@@ -36293,7 +36297,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.68",
           "KULIG Andrzej Adam_%": "9.50",
-          "diff_abs_scale": 0.11989133002598631,
+          "diff_abs_scale": 0.11989132997411445,
           "diff_str": "-5.82",
           "geometry": {
             "coordinates": [
@@ -36337,7 +36341,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.69",
           "KULIG Andrzej Adam_%": "6.86",
-          "diff_abs_scale": 0.08583137039785745,
+          "diff_abs_scale": 0.08583137026723034,
           "diff_str": "-4.17",
           "geometry": {
             "coordinates": [
@@ -36553,7 +36557,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.78",
           "KULIG Andrzej Adam_%": "5.85",
-          "diff_abs_scale": 0.06336753168376585,
+          "diff_abs_scale": 0.0633675317077461,
           "diff_str": "-3.08",
           "geometry": {
             "coordinates": [
@@ -36597,7 +36601,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.89",
           "KULIG Andrzej Adam_%": "6.45",
-          "diff_abs_scale": 0.07321740577419086,
+          "diff_abs_scale": 0.07321740588450641,
           "diff_str": "-3.56",
           "geometry": {
             "coordinates": [
@@ -36641,7 +36645,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.04",
           "KULIG Andrzej Adam_%": "5.26",
-          "diff_abs_scale": 0.0661549916948279,
+          "diff_abs_scale": 0.06615499182547514,
           "diff_str": "-3.21",
           "geometry": {
             "coordinates": [
@@ -36693,7 +36697,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.08",
           "KULIG Andrzej Adam_%": "7.90",
-          "diff_abs_scale": 0.11991067878009239,
+          "diff_abs_scale": 0.11991067879764442,
           "diff_str": "-5.82",
           "geometry": {
             "coordinates": [
@@ -36733,7 +36737,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.45",
           "KULIG Andrzej Adam_%": "8.46",
-          "diff_abs_scale": 0.1238045329490371,
+          "diff_abs_scale": 0.12380453297422955,
           "diff_str": "-6.01",
           "geometry": {
             "coordinates": [
@@ -36777,7 +36781,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.77",
           "KULIG Andrzej Adam_%": "5.76",
-          "diff_abs_scale": 0.04108517020999087,
+          "diff_abs_scale": 0.04108517020709073,
           "diff_str": "-2.00",
           "geometry": {
             "coordinates": [
@@ -36825,7 +36829,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.66",
           "KULIG Andrzej Adam_%": "6.93",
-          "diff_abs_scale": 0.06722450479339948,
+          "diff_abs_scale": 0.06722450494315364,
           "diff_str": "-3.27",
           "geometry": {
             "coordinates": [
@@ -36881,7 +36885,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.56",
           "KULIG Andrzej Adam_%": "6.00",
-          "diff_abs_scale": 0.07080610021786493,
+          "diff_abs_scale": 0.07080610023737666,
           "diff_str": "-3.44",
           "geometry": {
             "coordinates": [
@@ -36929,7 +36933,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.07",
           "KULIG Andrzej Adam_%": "6.27",
-          "diff_abs_scale": 0.06597414305325057,
+          "diff_abs_scale": 0.06597414311958746,
           "diff_str": "-3.20",
           "geometry": {
             "coordinates": [
@@ -37169,7 +37173,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.08",
           "KULIG Andrzej Adam_%": "7.11",
-          "diff_abs_scale": 0.08294766024996086,
+          "diff_abs_scale": 0.08294766014949848,
           "diff_str": "-4.03",
           "geometry": {
             "coordinates": [
@@ -37213,7 +37217,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.37",
           "KULIG Andrzej Adam_%": "7.80",
-          "diff_abs_scale": 0.09115099360244582,
+          "diff_abs_scale": 0.09115099350268091,
           "diff_str": "-4.43",
           "geometry": {
             "coordinates": [
@@ -37261,7 +37265,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.14",
           "KULIG Andrzej Adam_%": "4.99",
-          "diff_abs_scale": 0.03809568879844778,
+          "diff_abs_scale": 0.03809568885406163,
           "diff_str": "-1.85",
           "geometry": {
             "coordinates": [
@@ -37309,7 +37313,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.40",
           "KULIG Andrzej Adam_%": "7.07",
-          "diff_abs_scale": 0.07554586145002613,
+          "diff_abs_scale": 0.07554586138457488,
           "diff_str": "-3.67",
           "geometry": {
             "coordinates": [
@@ -37377,7 +37381,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.24",
           "KULIG Andrzej Adam_%": "7.33",
-          "diff_abs_scale": 0.06359781950333132,
+          "diff_abs_scale": 0.06359781956069406,
           "diff_str": "-3.09",
           "geometry": {
             "coordinates": [
@@ -37433,7 +37437,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.26",
           "KULIG Andrzej Adam_%": "6.91",
-          "diff_abs_scale": 0.09570216644464702,
+          "diff_abs_scale": 0.09570216641457949,
           "diff_str": "-4.65",
           "geometry": {
             "coordinates": [
@@ -37481,7 +37485,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.07",
           "KULIG Andrzej Adam_%": "6.12",
-          "diff_abs_scale": 0.08341784989858013,
+          "diff_abs_scale": 0.08341784994362994,
           "diff_str": "-4.05",
           "geometry": {
             "coordinates": [
@@ -37525,7 +37529,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.96",
           "KULIG Andrzej Adam_%": "6.39",
-          "diff_abs_scale": 0.050022566571385596,
+          "diff_abs_scale": 0.05002256658970656,
           "diff_str": "-2.43",
           "geometry": {
             "coordinates": [
@@ -37569,7 +37573,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.46",
           "KULIG Andrzej Adam_%": "6.93",
-          "diff_abs_scale": 0.07133556021060976,
+          "diff_abs_scale": 0.07133556006092164,
           "diff_str": "-3.46",
           "geometry": {
             "coordinates": [
@@ -37625,7 +37629,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.81",
           "KULIG Andrzej Adam_%": "4.39",
-          "diff_abs_scale": 0.032507739938080496,
+          "diff_abs_scale": 0.032507739971544346,
           "diff_str": "-1.58",
           "geometry": {
             "coordinates": [
@@ -37677,7 +37681,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.45",
           "KULIG Andrzej Adam_%": "7.46",
-          "diff_abs_scale": 0.08254716981132076,
+          "diff_abs_scale": 0.08254716997301609,
           "diff_str": "-4.01",
           "geometry": {
             "coordinates": [
@@ -37721,7 +37725,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.61",
           "KULIG Andrzej Adam_%": "6.60",
-          "diff_abs_scale": 0.04105915870621753,
+          "diff_abs_scale": 0.041059158618854674,
           "diff_str": "-1.99",
           "geometry": {
             "coordinates": [
@@ -37777,7 +37781,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.84",
           "KULIG Andrzej Adam_%": "6.74",
-          "diff_abs_scale": 0.08023156422410443,
+          "diff_abs_scale": 0.0802315642082421,
           "diff_str": "-3.90",
           "geometry": {
             "coordinates": [
@@ -37825,7 +37829,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.14",
           "KULIG Andrzej Adam_%": "4.36",
-          "diff_abs_scale": 0.025107604017216654,
+          "diff_abs_scale": 0.025107604118385522,
           "diff_str": "-1.22",
           "geometry": {
             "coordinates": [
@@ -37869,7 +37873,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.67",
           "KULIG Andrzej Adam_%": "6.53",
-          "diff_abs_scale": 0.07942049223250133,
+          "diff_abs_scale": 0.07942049211998295,
           "diff_str": "-3.86",
           "geometry": {
             "coordinates": [
@@ -38733,7 +38737,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.02",
           "KULIG Andrzej Adam_%": "5.81",
-          "diff_abs_scale": 0.05740576003558324,
+          "diff_abs_scale": 0.05740575997227664,
           "diff_str": "-2.79",
           "geometry": {
             "coordinates": [
@@ -38789,7 +38793,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.70",
           "KULIG Andrzej Adam_%": "6.47",
-          "diff_abs_scale": 0.09820623308948792,
+          "diff_abs_scale": 0.09820623317935902,
           "diff_str": "-4.77",
           "geometry": {
             "coordinates": [
@@ -38841,7 +38845,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "10.77",
           "KULIG Andrzej Adam_%": "8.31",
-          "diff_abs_scale": 0.05067873303167423,
+          "diff_abs_scale": 0.05067873300149055,
           "diff_str": "2.46",
           "geometry": {
             "coordinates": [
@@ -38885,7 +38889,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.17",
           "KULIG Andrzej Adam_%": "5.75",
-          "diff_abs_scale": 0.05314072531667534,
+          "diff_abs_scale": 0.053140725236857075,
           "diff_str": "-2.58",
           "geometry": {
             "coordinates": [
@@ -39645,7 +39649,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.79",
           "KULIG Andrzej Adam_%": "7.22",
-          "diff_abs_scale": 0.09127789046653144,
+          "diff_abs_scale": 0.09127789053209641,
           "diff_str": "-4.43",
           "geometry": {
             "coordinates": [
@@ -40265,7 +40269,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "5.61",
           "KULIG Andrzej Adam_%": "10.40",
-          "diff_abs_scale": 0.09852455833818677,
+          "diff_abs_scale": 0.09852455817936838,
           "diff_str": "-4.79",
           "geometry": {
             "coordinates": [
@@ -41613,7 +41617,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.79",
           "KULIG Andrzej Adam_%": "5.59",
-          "diff_abs_scale": 0.07829977628635347,
+          "diff_abs_scale": 0.07829977626700882,
           "diff_str": "-3.80",
           "geometry": {
             "coordinates": [
@@ -41665,7 +41669,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.13",
           "KULIG Andrzej Adam_%": "7.33",
-          "diff_abs_scale": 0.08646482391369988,
+          "diff_abs_scale": 0.08646482373783718,
           "diff_str": "-4.20",
           "geometry": {
             "coordinates": [
@@ -41701,7 +41705,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.13",
           "KULIG Andrzej Adam_%": "21.28",
-          "diff_abs_scale": 0.3942428035043805,
+          "diff_abs_scale": 0.39424280351159535,
           "diff_str": "-19.15",
           "geometry": {
             "coordinates": [
@@ -41749,7 +41753,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.69",
           "KULIG Andrzej Adam_%": "7.04",
-          "diff_abs_scale": 0.11013833499501499,
+          "diff_abs_scale": 0.11013833517970996,
           "diff_str": "-5.35",
           "geometry": {
             "coordinates": [
@@ -41793,7 +41797,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.40",
           "KULIG Andrzej Adam_%": "9.59",
-          "diff_abs_scale": 0.14801999231064975,
+          "diff_abs_scale": 0.14801999223964762,
           "diff_str": "-7.19",
           "geometry": {
             "coordinates": [
@@ -41845,7 +41849,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.50",
           "KULIG Andrzej Adam_%": "7.50",
-          "diff_abs_scale": 0.10298885649674415,
+          "diff_abs_scale": 0.10298885656185261,
           "diff_str": "-5.00",
           "geometry": {
             "coordinates": [
@@ -41893,7 +41897,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.79",
           "KULIG Andrzej Adam_%": "6.97",
-          "diff_abs_scale": 0.106561536359733,
+          "diff_abs_scale": 0.10656153632666357,
           "diff_str": "-5.18",
           "geometry": {
             "coordinates": [
@@ -41945,7 +41949,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.97",
           "KULIG Andrzej Adam_%": "6.27",
-          "diff_abs_scale": 0.06802586172702393,
+          "diff_abs_scale": 0.06802586164905958,
           "diff_str": "-3.30",
           "geometry": {
             "coordinates": [
@@ -42001,7 +42005,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.63",
           "KULIG Andrzej Adam_%": "7.59",
-          "diff_abs_scale": 0.10198506647240942,
+          "diff_abs_scale": 0.10198506644417603,
           "diff_str": "-4.95",
           "geometry": {
             "coordinates": [
@@ -42045,7 +42049,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.23",
           "KULIG Andrzej Adam_%": "6.98",
-          "diff_abs_scale": 0.09789354077440784,
+          "diff_abs_scale": 0.09789354070876156,
           "diff_str": "-4.75",
           "geometry": {
             "coordinates": [
@@ -42085,7 +42089,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.05",
           "KULIG Andrzej Adam_%": "8.69",
-          "diff_abs_scale": 0.11599005799502903,
+          "diff_abs_scale": 0.115990058062235,
           "diff_str": "-5.63",
           "geometry": {
             "coordinates": [
@@ -42137,7 +42141,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.67",
           "KULIG Andrzej Adam_%": "4.93",
-          "diff_abs_scale": 0.04660231109420324,
+          "diff_abs_scale": 0.04660231120725301,
           "diff_str": "-2.26",
           "geometry": {
             "coordinates": [
@@ -42185,7 +42189,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.64",
           "KULIG Andrzej Adam_%": "7.04",
-          "diff_abs_scale": 0.07013352343885475,
+          "diff_abs_scale": 0.07013352335500392,
           "diff_str": "-3.41",
           "geometry": {
             "coordinates": [
@@ -42241,7 +42245,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "0.72",
           "KULIG Andrzej Adam_%": "6.15",
-          "diff_abs_scale": 0.1116902457185406,
+          "diff_abs_scale": 0.1116902456797556,
           "diff_str": "-5.42",
           "geometry": {
             "coordinates": [
@@ -42281,7 +42285,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.64",
           "KULIG Andrzej Adam_%": "6.56",
-          "diff_abs_scale": 0.08073817762399078,
+          "diff_abs_scale": 0.08073817767884522,
           "diff_str": "-3.92",
           "geometry": {
             "coordinates": [
@@ -42329,7 +42333,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.65",
           "KULIG Andrzej Adam_%": "6.36",
-          "diff_abs_scale": 0.07633349950149552,
+          "diff_abs_scale": 0.07633349953165686,
           "diff_str": "-3.71",
           "geometry": {
             "coordinates": [
@@ -42377,7 +42381,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.54",
           "KULIG Andrzej Adam_%": "9.23",
-          "diff_abs_scale": 0.15837104072398192,
+          "diff_abs_scale": 0.1583710406811286,
           "diff_str": "-7.69",
           "geometry": {
             "coordinates": [
@@ -42425,7 +42429,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.80",
           "KULIG Andrzej Adam_%": "5.86",
-          "diff_abs_scale": 0.08346581875993642,
+          "diff_abs_scale": 0.08346581888480784,
           "diff_str": "-4.05",
           "geometry": {
             "coordinates": [
@@ -42465,7 +42469,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.56",
           "KULIG Andrzej Adam_%": "7.09",
-          "diff_abs_scale": 0.11398330958681052,
+          "diff_abs_scale": 0.11398330959158776,
           "diff_str": "-5.54",
           "geometry": {
             "coordinates": [
@@ -42513,7 +42517,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.50",
           "KULIG Andrzej Adam_%": "6.15",
-          "diff_abs_scale": 0.0957592339261286,
+          "diff_abs_scale": 0.09575923391458116,
           "diff_str": "-4.65",
           "geometry": {
             "coordinates": [
@@ -42557,7 +42561,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.56",
           "KULIG Andrzej Adam_%": "6.10",
-          "diff_abs_scale": 0.07281205164992828,
+          "diff_abs_scale": 0.07281205173743566,
           "diff_str": "-3.54",
           "geometry": {
             "coordinates": [
@@ -42605,7 +42609,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.76",
           "KULIG Andrzej Adam_%": "5.28",
-          "diff_abs_scale": 0.0724512678971882,
+          "diff_abs_scale": 0.07245126803154268,
           "diff_str": "-3.52",
           "geometry": {
             "coordinates": [
@@ -42657,7 +42661,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.89",
           "KULIG Andrzej Adam_%": "7.11",
-          "diff_abs_scale": 0.08692810457516341,
+          "diff_abs_scale": 0.08692810453196846,
           "diff_str": "-4.22",
           "geometry": {
             "coordinates": [
@@ -42713,7 +42717,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.88",
           "KULIG Andrzej Adam_%": "8.04",
-          "diff_abs_scale": 0.12695158492351366,
+          "diff_abs_scale": 0.12695158494491032,
           "diff_str": "-6.17",
           "geometry": {
             "coordinates": [
@@ -42765,7 +42769,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.70",
           "KULIG Andrzej Adam_%": "6.57",
-          "diff_abs_scale": 0.10018605982539003,
+          "diff_abs_scale": 0.10018605985588781,
           "diff_str": "-4.87",
           "geometry": {
             "coordinates": [
@@ -42813,7 +42817,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.60",
           "KULIG Andrzej Adam_%": "7.03",
-          "diff_abs_scale": 0.09114583333333333,
+          "diff_abs_scale": 0.09114583326738664,
           "diff_str": "-4.43",
           "geometry": {
             "coordinates": [
@@ -42857,7 +42861,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.06",
           "KULIG Andrzej Adam_%": "7.52",
-          "diff_abs_scale": 0.09175815172865806,
+          "diff_abs_scale": 0.09175815167916934,
           "diff_str": "-4.46",
           "geometry": {
             "coordinates": [
@@ -42905,7 +42909,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "0.59",
           "KULIG Andrzej Adam_%": "10.36",
-          "diff_abs_scale": 0.20100939784197705,
+          "diff_abs_scale": 0.20100939785885322,
           "diff_str": "-9.76",
           "geometry": {
             "coordinates": [
@@ -42957,7 +42961,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.54",
           "KULIG Andrzej Adam_%": "6.06",
-          "diff_abs_scale": 0.03127869253840976,
+          "diff_abs_scale": 0.031278692530331734,
           "diff_str": "-1.52",
           "geometry": {
             "coordinates": [
@@ -43005,7 +43009,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.25",
           "KULIG Andrzej Adam_%": "7.26",
-          "diff_abs_scale": 0.062046736502820304,
+          "diff_abs_scale": 0.062046736501824906,
           "diff_str": "-3.01",
           "geometry": {
             "coordinates": [
@@ -43049,7 +43053,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.49",
           "KULIG Andrzej Adam_%": "6.66",
-          "diff_abs_scale": 0.0652652992032548,
+          "diff_abs_scale": 0.0652652992372137,
           "diff_str": "-3.17",
           "geometry": {
             "coordinates": [
@@ -43101,7 +43105,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.69",
           "KULIG Andrzej Adam_%": "5.05",
-          "diff_abs_scale": 0.02801120448179272,
+          "diff_abs_scale": 0.02801120453023563,
           "diff_str": "-1.36",
           "geometry": {
             "coordinates": [
@@ -43537,7 +43541,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.86",
           "KULIG Andrzej Adam_%": "5.52",
-          "diff_abs_scale": 0.05479237603224924,
+          "diff_abs_scale": 0.054792376060435063,
           "diff_str": "-2.66",
           "geometry": {
             "coordinates": [
@@ -43581,7 +43585,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.34",
           "KULIG Andrzej Adam_%": "5.29",
-          "diff_abs_scale": 0.060634695645326406,
+          "diff_abs_scale": 0.06063469567825396,
           "diff_str": "-2.95",
           "geometry": {
             "coordinates": [
@@ -43629,7 +43633,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.40",
           "KULIG Andrzej Adam_%": "6.74",
-          "diff_abs_scale": 0.08936070144791214,
+          "diff_abs_scale": 0.08936070150262823,
           "diff_str": "-4.34",
           "geometry": {
             "coordinates": [
@@ -43681,7 +43685,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.91",
           "KULIG Andrzej Adam_%": "7.32",
-          "diff_abs_scale": 0.09065842245989307,
+          "diff_abs_scale": 0.09065842244384288,
           "diff_str": "-4.40",
           "geometry": {
             "coordinates": [
@@ -43725,7 +43729,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "5.23",
           "KULIG Andrzej Adam_%": "5.07",
-          "diff_abs_scale": 0.0033668414217690335,
+          "diff_abs_scale": 0.0033668412648049065,
           "diff_str": "0.16",
           "geometry": {
             "coordinates": [
@@ -43809,7 +43813,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.86",
           "KULIG Andrzej Adam_%": "6.41",
-          "diff_abs_scale": 0.0938198064035741,
+          "diff_abs_scale": 0.09381980650275942,
           "diff_str": "-4.56",
           "geometry": {
             "coordinates": [
@@ -45395,7 +45399,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.26",
           "KULIG Andrzej Adam_%": "7.84",
-          "diff_abs_scale": 0.11492951367264906,
+          "diff_abs_scale": 0.11492951379749793,
           "diff_str": "-5.58",
           "geometry": {
             "coordinates": [
@@ -45435,7 +45439,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.39",
           "KULIG Andrzej Adam_%": "6.67",
-          "diff_abs_scale": 0.06744210489436991,
+          "diff_abs_scale": 0.06744210488433651,
           "diff_str": "-3.28",
           "geometry": {
             "coordinates": [
@@ -45483,7 +45487,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.66",
           "KULIG Andrzej Adam_%": "6.24",
-          "diff_abs_scale": 0.09416656475480006,
+          "diff_abs_scale": 0.09416656488512254,
           "diff_str": "-4.57",
           "geometry": {
             "coordinates": [
@@ -45519,7 +45523,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.69",
           "KULIG Andrzej Adam_%": "5.73",
-          "diff_abs_scale": 0.06260749914000689,
+          "diff_abs_scale": 0.0626074990900767,
           "diff_str": "-3.04",
           "geometry": {
             "coordinates": [
@@ -45563,7 +45567,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "10.44",
           "KULIG Andrzej Adam_%": "5.37",
-          "diff_abs_scale": 0.10436753275152577,
+          "diff_abs_scale": 0.10436753270895201,
           "diff_str": "5.07",
           "geometry": {
             "coordinates": [
@@ -45611,7 +45615,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "7.91",
           "KULIG Andrzej Adam_%": "5.44",
-          "diff_abs_scale": 0.0508889996676637,
+          "diff_abs_scale": 0.0508889996191438,
           "diff_str": "2.47",
           "geometry": {
             "coordinates": [
@@ -48183,7 +48187,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.25",
           "KULIG Andrzej Adam_%": "4.48",
-          "diff_abs_scale": 0.02537406609340073,
+          "diff_abs_scale": 0.025374066118393348,
           "diff_str": "-1.23",
           "geometry": {
             "coordinates": [
@@ -48227,7 +48231,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.73",
           "KULIG Andrzej Adam_%": "14.27",
-          "diff_abs_scale": 0.2375084824458017,
+          "diff_abs_scale": 0.23750848244816203,
           "diff_str": "-11.54",
           "geometry": {
             "coordinates": [
@@ -48959,7 +48963,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "7.24",
           "KULIG Andrzej Adam_%": "5.69",
-          "diff_abs_scale": 0.03193349722482703,
+          "diff_abs_scale": 0.03193349723623332,
           "diff_str": "1.55",
           "geometry": {
             "coordinates": [
@@ -49011,7 +49015,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.72",
           "KULIG Andrzej Adam_%": "16.38",
-          "diff_abs_scale": 0.3017241379310345,
+          "diff_abs_scale": 0.3017241378618154,
           "diff_str": "-14.66",
           "geometry": {
             "coordinates": [
@@ -49199,7 +49203,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.91",
           "KULIG Andrzej Adam_%": "13.54",
-          "diff_abs_scale": 0.23944372792014804,
+          "diff_abs_scale": 0.2394437279776307,
           "diff_str": "-11.63",
           "geometry": {
             "coordinates": [
@@ -49931,7 +49935,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.50",
           "KULIG Andrzej Adam_%": "9.34",
-          "diff_abs_scale": 0.12016479743648434,
+          "diff_abs_scale": 0.12016479732706367,
           "diff_str": "-5.84",
           "geometry": {
             "coordinates": [
@@ -50767,7 +50771,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.85",
           "KULIG Andrzej Adam_%": "6.56",
-          "diff_abs_scale": 0.0763252068888392,
+          "diff_abs_scale": 0.0763252067963625,
           "diff_str": "-3.71",
           "geometry": {
             "coordinates": [
@@ -50811,7 +50815,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.77",
           "KULIG Andrzej Adam_%": "12.77",
-          "diff_abs_scale": 0.22632457238214435,
+          "diff_abs_scale": 0.2263245723595978,
           "diff_str": "-10.99",
           "geometry": {
             "coordinates": [
@@ -50863,7 +50867,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.89",
           "KULIG Andrzej Adam_%": "20.63",
-          "diff_abs_scale": 0.3858267716535434,
+          "diff_abs_scale": 0.3858267716584066,
           "diff_str": "-18.74",
           "geometry": {
             "coordinates": [
@@ -51743,7 +51747,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.79",
           "KULIG Andrzej Adam_%": "9.14",
-          "diff_abs_scale": 0.13080427993651772,
+          "diff_abs_scale": 0.13080427994502367,
           "diff_str": "-6.35",
           "geometry": {
             "coordinates": [
@@ -51787,7 +51791,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.34",
           "KULIG Andrzej Adam_%": "6.36",
-          "diff_abs_scale": 0.08283391228003206,
+          "diff_abs_scale": 0.08283391220831864,
           "diff_str": "-4.02",
           "geometry": {
             "coordinates": [
@@ -51839,7 +51843,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.49",
           "KULIG Andrzej Adam_%": "5.34",
-          "diff_abs_scale": 0.03804807343882113,
+          "diff_abs_scale": 0.03804807341288378,
           "diff_str": "-1.85",
           "geometry": {
             "coordinates": [
@@ -51883,7 +51887,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.53",
           "KULIG Andrzej Adam_%": "6.56",
-          "diff_abs_scale": 0.082921546063765,
+          "diff_abs_scale": 0.08292154603185062,
           "diff_str": "-4.03",
           "geometry": {
             "coordinates": [
@@ -51939,7 +51943,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.41",
           "KULIG Andrzej Adam_%": "6.78",
-          "diff_abs_scale": 0.08992562542258285,
+          "diff_abs_scale": 0.08992562559088017,
           "diff_str": "-4.37",
           "geometry": {
             "coordinates": [
@@ -52383,7 +52387,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.17",
           "KULIG Andrzej Adam_%": "7.86",
-          "diff_abs_scale": 0.11705685618729099,
+          "diff_abs_scale": 0.1170568562093252,
           "diff_str": "-5.69",
           "geometry": {
             "coordinates": [
@@ -52427,7 +52431,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.51",
           "KULIG Andrzej Adam_%": "6.11",
-          "diff_abs_scale": 0.0740730003189053,
+          "diff_abs_scale": 0.07407300044335507,
           "diff_str": "-3.60",
           "geometry": {
             "coordinates": [
@@ -52487,7 +52491,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.09",
           "KULIG Andrzej Adam_%": "7.85",
-          "diff_abs_scale": 0.11857098860486605,
+          "diff_abs_scale": 0.11857098853289916,
           "diff_str": "-5.76",
           "geometry": {
             "coordinates": [
@@ -52531,7 +52535,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.70",
           "KULIG Andrzej Adam_%": "5.11",
-          "diff_abs_scale": 0.07011473319978148,
+          "diff_abs_scale": 0.07011473309029749,
           "diff_str": "-3.41",
           "geometry": {
             "coordinates": [
@@ -52575,7 +52579,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.42",
           "KULIG Andrzej Adam_%": "5.36",
-          "diff_abs_scale": 0.060464714520169306,
+          "diff_abs_scale": 0.06046471447236661,
           "diff_str": "-2.94",
           "geometry": {
             "coordinates": [
@@ -52615,7 +52619,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.69",
           "KULIG Andrzej Adam_%": "8.94",
-          "diff_abs_scale": 0.14919011082693948,
+          "diff_abs_scale": 0.1491901107985056,
           "diff_str": "-7.25",
           "geometry": {
             "coordinates": [
@@ -52675,7 +52679,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.91",
           "KULIG Andrzej Adam_%": "23.26",
-          "diff_abs_scale": 0.43964460784313736,
+          "diff_abs_scale": 0.43964460792469545,
           "diff_str": "-21.35",
           "geometry": {
             "coordinates": [
@@ -54247,7 +54251,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "2.70",
           "KULIG Andrzej Adam_%": "15.23",
-          "diff_abs_scale": 0.257985257985258,
+          "diff_abs_scale": 0.257985257978176,
           "diff_str": "-12.53",
           "geometry": {
             "coordinates": [
@@ -54555,7 +54559,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "3.03",
           "KULIG Andrzej Adam_%": "14.39",
-          "diff_abs_scale": 0.23395721925133695,
+          "diff_abs_scale": 0.2339572191833517,
           "diff_str": "-11.36",
           "geometry": {
             "coordinates": [
@@ -54627,7 +54631,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "4.82",
           "KULIG Andrzej Adam_%": "27.83",
-          "diff_abs_scale": 0.47364400305576787,
+          "diff_abs_scale": 0.47364400301393067,
           "diff_str": "-23.01",
           "geometry": {
             "coordinates": [
@@ -54671,7 +54675,7 @@
         {
           "KOMAREWICZ Rafa\u0142 Pawe\u0142_%": "1.61",
           "KULIG Andrzej Adam_%": "33.73",
-          "diff_abs_scale": 0.6614694070399245,
+          "diff_abs_scale": 0.6614694071371019,
           "diff_str": "-32.13",
           "geometry": {
             "coordinates": [
@@ -55246,7 +55250,7 @@
         25
       ],
       "getLineWidth": 5,
-      "id": "d4672542-71ac-4f76-a0b6-542c3e6a524c",
+      "id": "8811e476-8033-4d1c-980b-dbf03b7f35de",
       "lineWidthMinPixels": 1,
       "opacity": 0.8,
       "pickable": true,
@@ -57409,7 +57413,7 @@
       "getIcon": "@@=icon_data",
       "getPosition": "@@=[lon, lat]",
       "getSize": 1,
-      "id": "124edc0a-c55a-4274-a191-25bf674ec529",
+      "id": "a591d2eb-dab8-416f-a155-86bab403f821",
       "opacity": 0.8,
       "pickable": false,
       "sizeMaxPixels": 120,

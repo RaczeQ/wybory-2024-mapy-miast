@@ -26,10 +26,14 @@
 
                     .deck-json-description-box {
                         z-index: 2 !important;
+                        overflow: visible !important;
                     }
                     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap')
                         </style>
-  </head>
+
+                    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' />
+                    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+                      </head>
   <body>
     <div id="deck-container">
     </div>
@@ -37,7 +41,7 @@
   <script>
     const container = document.getElementById('deck-container');
     const jsonInput = {
-  "description": "\n        <div style='font-family: \"Open Sans\", sans-serif;'>\n        <h3>Krak\u00f3w: GIBA\u0141A \u0141ukasz vs MUZYK Jerzy Stanis\u0142aw</h3>\n        R\u00f3\u017cnica w % <br/>\n        <span style=\"font-size: 0.8em\">\n        Warto\u015bci ujemne - przewaga MUZYK Jerzy Stanis\u0142aw <br/> \n        Warto\u015bci dodatnie - przewaga GIBA\u0141A \u0141ukasz <br/>\n        Obwody z oddanymi mniej ni\u017c 50 g\u0142osami zosta\u0142y pomini\u0119te. <br/>\n        </span> \n        <svg height=\"40\" width=\"450\"><line x1=\"0\" y1=\"15\" x2=\"0\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"1\" y1=\"15\" x2=\"1\" y2=\"27\" style=\"stroke:#218b86ff;stroke-width:2;\" /><line x1=\"2\" y1=\"15\" x2=\"2\" y2=\"27\" style=\"stroke:#42968cff;stroke-width:2;\" /><line x1=\"3\" y1=\"15\" x2=\"3\" y2=\"27\" style=\"stroke:#64a092ff;stroke-width:2;\" /><line x1=\"4\" y1=\"15\" x2=\"4\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"5\" y1=\"15\" x2=\"5\" y2=\"27\" style=\"stroke:#90b59eff;stroke-width:2;\" /><line x1=\"6\" y1=\"15\" x2=\"6\" y2=\"27\" style=\"stroke:#a4c0a3ff;stroke-width:2;\" /><line x1=\"7\" y1=\"15\" x2=\"7\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"8\" y1=\"15\" x2=\"8\" y2=\"27\" style=\"stroke:#ccd5b0ff;stroke-width:2;\" /><line x1=\"9\" y1=\"15\" x2=\"9\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"27\" style=\"stroke:#f3ecbcff;stroke-width:2;\" /><line x1=\"11\" y1=\"15\" x2=\"11\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"13\" y1=\"15\" x2=\"13\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"16\" y1=\"15\" x2=\"16\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"17\" y1=\"15\" x2=\"17\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"18\" y1=\"15\" x2=\"18\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"19\" y1=\"15\" x2=\"19\" y2=\"27\" style=\"stroke:#f6eabaff;stroke-width:2;\" /><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"27\" style=\"stroke:#f6eabaff;stroke-width:2;\" /><line x1=\"21\" y1=\"15\" x2=\"21\" y2=\"27\" style=\"stroke:#f6eab9ff;stroke-width:2;\" /><line x1=\"22\" y1=\"15\" x2=\"22\" y2=\"27\" style=\"stroke:#f6e9b9ff;stroke-width:2;\" /><line x1=\"23\" y1=\"15\" x2=\"23\" y2=\"27\" style=\"stroke:#f6e9b9ff;stroke-width:2;\" /><line x1=\"24\" y1=\"15\" x2=\"24\" y2=\"27\" style=\"stroke:#f6e9b8ff;stroke-width:2;\" /><line x1=\"25\" y1=\"15\" x2=\"25\" y2=\"27\" style=\"stroke:#f6e8b8ff;stroke-width:2;\" /><line x1=\"26\" y1=\"15\" x2=\"26\" y2=\"27\" style=\"stroke:#f5e8b8ff;stroke-width:2;\" /><line x1=\"27\" y1=\"15\" x2=\"27\" y2=\"27\" style=\"stroke:#f5e8b7ff;stroke-width:2;\" /><line x1=\"28\" y1=\"15\" x2=\"28\" y2=\"27\" style=\"stroke:#f5e7b7ff;stroke-width:2;\" /><line x1=\"29\" y1=\"15\" x2=\"29\" y2=\"27\" style=\"stroke:#f5e7b7ff;stroke-width:2;\" /><line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"27\" style=\"stroke:#f5e7b6ff;stroke-width:2;\" /><line x1=\"31\" y1=\"15\" x2=\"31\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"32\" y1=\"15\" x2=\"32\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"33\" y1=\"15\" x2=\"33\" y2=\"27\" style=\"stroke:#f5e6b5ff;stroke-width:2;\" /><line x1=\"34\" y1=\"15\" x2=\"34\" y2=\"27\" style=\"stroke:#f5e5b5ff;stroke-width:2;\" /><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"27\" style=\"stroke:#f5e5b5ff;stroke-width:2;\" /><line x1=\"36\" y1=\"15\" x2=\"36\" y2=\"27\" style=\"stroke:#f5e5b4ff;stroke-width:2;\" /><line x1=\"37\" y1=\"15\" x2=\"37\" y2=\"27\" style=\"stroke:#f5e4b4ff;stroke-width:2;\" /><line x1=\"38\" y1=\"15\" x2=\"38\" y2=\"27\" style=\"stroke:#f5e4b4ff;stroke-width:2;\" /><line x1=\"39\" y1=\"15\" x2=\"39\" y2=\"27\" style=\"stroke:#f5e4b3ff;stroke-width:2;\" /><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"27\" style=\"stroke:#f5e3b3ff;stroke-width:2;\" /><line x1=\"41\" y1=\"15\" x2=\"41\" y2=\"27\" style=\"stroke:#f5e3b2ff;stroke-width:2;\" /><line x1=\"42\" y1=\"15\" x2=\"42\" y2=\"27\" style=\"stroke:#f4e3b2ff;stroke-width:2;\" /><line x1=\"43\" y1=\"15\" x2=\"43\" y2=\"27\" style=\"stroke:#f4e2b2ff;stroke-width:2;\" /><line x1=\"44\" y1=\"15\" x2=\"44\" y2=\"27\" style=\"stroke:#f4e2b1ff;stroke-width:2;\" /><line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"46\" y1=\"15\" x2=\"46\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"47\" y1=\"15\" x2=\"47\" y2=\"27\" style=\"stroke:#f4e1b0ff;stroke-width:2;\" /><line x1=\"48\" y1=\"15\" x2=\"48\" y2=\"27\" style=\"stroke:#f4e0b0ff;stroke-width:2;\" /><line x1=\"49\" y1=\"15\" x2=\"49\" y2=\"27\" style=\"stroke:#f4e0b0ff;stroke-width:2;\" /><line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"27\" style=\"stroke:#f4e0afff;stroke-width:2;\" /><line x1=\"51\" y1=\"15\" x2=\"51\" y2=\"27\" style=\"stroke:#f4dfafff;stroke-width:2;\" /><line x1=\"52\" y1=\"15\" x2=\"52\" y2=\"27\" style=\"stroke:#f4dfafff;stroke-width:2;\" /><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"27\" style=\"stroke:#f4dfaeff;stroke-width:2;\" /><line x1=\"54\" y1=\"15\" x2=\"54\" y2=\"27\" style=\"stroke:#f4deaeff;stroke-width:2;\" /><line x1=\"55\" y1=\"15\" x2=\"55\" y2=\"27\" style=\"stroke:#f4deaeff;stroke-width:2;\" /><line x1=\"56\" y1=\"15\" x2=\"56\" y2=\"27\" style=\"stroke:#f4deadff;stroke-width:2;\" /><line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"27\" style=\"stroke:#f4ddadff;stroke-width:2;\" /><line x1=\"58\" y1=\"15\" x2=\"58\" y2=\"27\" style=\"stroke:#f4ddadff;stroke-width:2;\" /><line x1=\"59\" y1=\"15\" x2=\"59\" y2=\"27\" style=\"stroke:#f3ddacff;stroke-width:2;\" /><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"27\" style=\"stroke:#f3dcacff;stroke-width:2;\" /><line x1=\"61\" y1=\"15\" x2=\"61\" y2=\"27\" style=\"stroke:#f3dcabff;stroke-width:2;\" /><line x1=\"62\" y1=\"15\" x2=\"62\" y2=\"27\" style=\"stroke:#f3dcabff;stroke-width:2;\" /><line x1=\"63\" y1=\"15\" x2=\"63\" y2=\"27\" style=\"stroke:#f3dbabff;stroke-width:2;\" /><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"27\" style=\"stroke:#f3dbaaff;stroke-width:2;\" /><line x1=\"65\" y1=\"15\" x2=\"65\" y2=\"27\" style=\"stroke:#f3dbaaff;stroke-width:2;\" /><line x1=\"66\" y1=\"15\" x2=\"66\" y2=\"27\" style=\"stroke:#f3daaaff;stroke-width:2;\" /><line x1=\"67\" y1=\"15\" x2=\"67\" y2=\"27\" style=\"stroke:#f3daa9ff;stroke-width:2;\" /><line x1=\"68\" y1=\"15\" x2=\"68\" y2=\"27\" style=\"stroke:#f3daa9ff;stroke-width:2;\" /><line x1=\"69\" y1=\"15\" x2=\"69\" y2=\"27\" style=\"stroke:#f3d9a9ff;stroke-width:2;\" /><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"27\" style=\"stroke:#f3d9a8ff;stroke-width:2;\" /><line x1=\"71\" y1=\"15\" x2=\"71\" y2=\"27\" style=\"stroke:#f3d9a8ff;stroke-width:2;\" /><line x1=\"72\" y1=\"15\" x2=\"72\" y2=\"27\" style=\"stroke:#f3d8a8ff;stroke-width:2;\" /><line x1=\"73\" y1=\"15\" x2=\"73\" y2=\"27\" style=\"stroke:#f3d8a7ff;stroke-width:2;\" /><line x1=\"74\" y1=\"15\" x2=\"74\" y2=\"27\" style=\"stroke:#f3d8a7ff;stroke-width:2;\" /><line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"27\" style=\"stroke:#f2d7a7ff;stroke-width:2;\" /><line x1=\"76\" y1=\"15\" x2=\"76\" y2=\"27\" style=\"stroke:#f2d7a6ff;stroke-width:2;\" /><line x1=\"77\" y1=\"15\" x2=\"77\" y2=\"27\" style=\"stroke:#f2d6a6ff;stroke-width:2;\" /><line x1=\"78\" y1=\"15\" x2=\"78\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"79\" y1=\"15\" x2=\"79\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"27\" style=\"stroke:#f2d5a5ff;stroke-width:2;\" /><line x1=\"81\" y1=\"15\" x2=\"81\" y2=\"27\" style=\"stroke:#f2d5a4ff;stroke-width:2;\" /><line x1=\"82\" y1=\"15\" x2=\"82\" y2=\"27\" style=\"stroke:#f2d5a4ff;stroke-width:2;\" /><line x1=\"83\" y1=\"15\" x2=\"83\" y2=\"27\" style=\"stroke:#f2d4a4ff;stroke-width:2;\" /><line x1=\"84\" y1=\"15\" x2=\"84\" y2=\"27\" style=\"stroke:#f2d4a3ff;stroke-width:2;\" /><line x1=\"85\" y1=\"15\" x2=\"85\" y2=\"27\" style=\"stroke:#f2d4a3ff;stroke-width:2;\" /><line x1=\"86\" y1=\"15\" x2=\"86\" y2=\"27\" style=\"stroke:#f2d3a3ff;stroke-width:2;\" /><line x1=\"87\" y1=\"15\" x2=\"87\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"88\" y1=\"15\" x2=\"88\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"89\" y1=\"15\" x2=\"89\" y2=\"27\" style=\"stroke:#f2d2a2ff;stroke-width:2;\" /><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"27\" style=\"stroke:#f2d2a1ff;stroke-width:2;\" /><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"27\" style=\"stroke:#f1d2a1ff;stroke-width:2;\" /><line x1=\"92\" y1=\"15\" x2=\"92\" y2=\"27\" style=\"stroke:#f1d1a1ff;stroke-width:2;\" /><line x1=\"93\" y1=\"15\" x2=\"93\" y2=\"27\" style=\"stroke:#f1d1a0ff;stroke-width:2;\" /><line x1=\"94\" y1=\"15\" x2=\"94\" y2=\"27\" style=\"stroke:#f1d1a0ff;stroke-width:2;\" /><line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"27\" style=\"stroke:#f1d0a0ff;stroke-width:2;\" /><line x1=\"96\" y1=\"15\" x2=\"96\" y2=\"27\" style=\"stroke:#f1d09fff;stroke-width:2;\" /><line x1=\"97\" y1=\"15\" x2=\"97\" y2=\"27\" style=\"stroke:#f1d09fff;stroke-width:2;\" /><line x1=\"98\" y1=\"15\" x2=\"98\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"99\" y1=\"15\" x2=\"99\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"101\" y1=\"15\" x2=\"101\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"102\" y1=\"15\" x2=\"102\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"103\" y1=\"15\" x2=\"103\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"104\" y1=\"15\" x2=\"104\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"106\" y1=\"15\" x2=\"106\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"107\" y1=\"15\" x2=\"107\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"109\" y1=\"15\" x2=\"109\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"27\" style=\"stroke:#f0cb9aff;stroke-width:2;\" /><line x1=\"111\" y1=\"15\" x2=\"111\" y2=\"27\" style=\"stroke:#f0cb9aff;stroke-width:2;\" /><line x1=\"112\" y1=\"15\" x2=\"112\" y2=\"27\" style=\"stroke:#f0ca9aff;stroke-width:2;\" /><line x1=\"113\" y1=\"15\" x2=\"113\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"114\" y1=\"15\" x2=\"114\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"27\" style=\"stroke:#f0c999ff;stroke-width:2;\" /><line x1=\"116\" y1=\"15\" x2=\"116\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"117\" y1=\"15\" x2=\"117\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"118\" y1=\"15\" x2=\"118\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"119\" y1=\"15\" x2=\"119\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"121\" y1=\"15\" x2=\"121\" y2=\"27\" style=\"stroke:#f0c796ff;stroke-width:2;\" /><line x1=\"122\" y1=\"15\" x2=\"122\" y2=\"27\" style=\"stroke:#f0c796ff;stroke-width:2;\" /><line x1=\"123\" y1=\"15\" x2=\"123\" y2=\"27\" style=\"stroke:#efc796ff;stroke-width:2;\" /><line x1=\"124\" y1=\"15\" x2=\"124\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"125\" y1=\"15\" x2=\"125\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"126\" y1=\"15\" x2=\"126\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"127\" y1=\"15\" x2=\"127\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"128\" y1=\"15\" x2=\"128\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"131\" y1=\"15\" x2=\"131\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"132\" y1=\"15\" x2=\"132\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"133\" y1=\"15\" x2=\"133\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"134\" y1=\"15\" x2=\"134\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"135\" y1=\"15\" x2=\"135\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"136\" y1=\"15\" x2=\"136\" y2=\"27\" style=\"stroke:#efc291ff;stroke-width:2;\" /><line x1=\"137\" y1=\"15\" x2=\"137\" y2=\"27\" style=\"stroke:#efc291ff;stroke-width:2;\" /><line x1=\"138\" y1=\"15\" x2=\"138\" y2=\"27\" style=\"stroke:#efc290ff;stroke-width:2;\" /><line x1=\"139\" y1=\"15\" x2=\"139\" y2=\"27\" style=\"stroke:#efc190ff;stroke-width:2;\" /><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"27\" style=\"stroke:#eec190ff;stroke-width:2;\" /><line x1=\"141\" y1=\"15\" x2=\"141\" y2=\"27\" style=\"stroke:#eec18fff;stroke-width:2;\" /><line x1=\"142\" y1=\"15\" x2=\"142\" y2=\"27\" style=\"stroke:#eec08fff;stroke-width:2;\" /><line x1=\"143\" y1=\"15\" x2=\"143\" y2=\"27\" style=\"stroke:#eec08fff;stroke-width:2;\" /><line x1=\"144\" y1=\"15\" x2=\"144\" y2=\"27\" style=\"stroke:#eec08eff;stroke-width:2;\" /><line x1=\"145\" y1=\"15\" x2=\"145\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"146\" y1=\"15\" x2=\"146\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"147\" y1=\"15\" x2=\"147\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"148\" y1=\"15\" x2=\"148\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"149\" y1=\"15\" x2=\"149\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"151\" y1=\"15\" x2=\"151\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"153\" y1=\"15\" x2=\"153\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"154\" y1=\"15\" x2=\"154\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"155\" y1=\"15\" x2=\"155\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"156\" y1=\"15\" x2=\"156\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"157\" y1=\"15\" x2=\"157\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"158\" y1=\"15\" x2=\"158\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"159\" y1=\"15\" x2=\"159\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"161\" y1=\"15\" x2=\"161\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"162\" y1=\"15\" x2=\"162\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"163\" y1=\"15\" x2=\"163\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"164\" y1=\"15\" x2=\"164\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"165\" y1=\"15\" x2=\"165\" y2=\"27\" style=\"stroke:#edb887ff;stroke-width:2;\" /><line x1=\"166\" y1=\"15\" x2=\"166\" y2=\"27\" style=\"stroke:#ecb887ff;stroke-width:2;\" /><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"27\" style=\"stroke:#ecb887ff;stroke-width:2;\" /><line x1=\"168\" y1=\"15\" x2=\"168\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"169\" y1=\"15\" x2=\"169\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"171\" y1=\"15\" x2=\"171\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"172\" y1=\"15\" x2=\"172\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"173\" y1=\"15\" x2=\"173\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"174\" y1=\"15\" x2=\"174\" y2=\"27\" style=\"stroke:#ecb584ff;stroke-width:2;\" /><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"27\" style=\"stroke:#ecb584ff;stroke-width:2;\" /><line x1=\"176\" y1=\"15\" x2=\"176\" y2=\"27\" style=\"stroke:#ebb584ff;stroke-width:2;\" /><line x1=\"177\" y1=\"15\" x2=\"177\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"178\" y1=\"15\" x2=\"178\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"179\" y1=\"15\" x2=\"179\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"181\" y1=\"15\" x2=\"181\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"182\" y1=\"15\" x2=\"182\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"183\" y1=\"15\" x2=\"183\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"184\" y1=\"15\" x2=\"184\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"27\" style=\"stroke:#eab281ff;stroke-width:2;\" /><line x1=\"186\" y1=\"15\" x2=\"186\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"187\" y1=\"15\" x2=\"187\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"188\" y1=\"15\" x2=\"188\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"189\" y1=\"15\" x2=\"189\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"190\" y1=\"15\" x2=\"190\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"191\" y1=\"15\" x2=\"191\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"192\" y1=\"15\" x2=\"192\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"193\" y1=\"15\" x2=\"193\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"194\" y1=\"15\" x2=\"194\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"195\" y1=\"15\" x2=\"195\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"196\" y1=\"15\" x2=\"196\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"197\" y1=\"15\" x2=\"197\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"198\" y1=\"15\" x2=\"198\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"199\" y1=\"15\" x2=\"199\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"201\" y1=\"15\" x2=\"201\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"202\" y1=\"15\" x2=\"202\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"203\" y1=\"15\" x2=\"203\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"204\" y1=\"15\" x2=\"204\" y2=\"27\" style=\"stroke:#e9ab7aff;stroke-width:2;\" /><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"27\" style=\"stroke:#e8ab7aff;stroke-width:2;\" /><line x1=\"206\" y1=\"15\" x2=\"206\" y2=\"27\" style=\"stroke:#e8ab7aff;stroke-width:2;\" /><line x1=\"207\" y1=\"15\" x2=\"207\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"208\" y1=\"15\" x2=\"208\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"209\" y1=\"15\" x2=\"209\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"210\" y1=\"15\" x2=\"210\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"211\" y1=\"15\" x2=\"211\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"212\" y1=\"15\" x2=\"212\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"213\" y1=\"15\" x2=\"213\" y2=\"27\" style=\"stroke:#e8a877ff;stroke-width:2;\" /><line x1=\"214\" y1=\"15\" x2=\"214\" y2=\"27\" style=\"stroke:#e8a877ff;stroke-width:2;\" /><line x1=\"215\" y1=\"15\" x2=\"215\" y2=\"27\" style=\"stroke:#e7a877ff;stroke-width:2;\" /><line x1=\"216\" y1=\"15\" x2=\"216\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"217\" y1=\"15\" x2=\"217\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"218\" y1=\"15\" x2=\"218\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"219\" y1=\"15\" x2=\"219\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"221\" y1=\"15\" x2=\"221\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"222\" y1=\"15\" x2=\"222\" y2=\"27\" style=\"stroke:#e7a574ff;stroke-width:2;\" /><line x1=\"223\" y1=\"15\" x2=\"223\" y2=\"27\" style=\"stroke:#e7a574ff;stroke-width:2;\" /><line x1=\"224\" y1=\"15\" x2=\"224\" y2=\"27\" style=\"stroke:#e6a574ff;stroke-width:2;\" /><line x1=\"225\" y1=\"15\" x2=\"225\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"226\" y1=\"15\" x2=\"226\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"227\" y1=\"15\" x2=\"227\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"228\" y1=\"15\" x2=\"228\" y2=\"27\" style=\"stroke:#e6a372ff;stroke-width:2;\" /><line x1=\"229\" y1=\"15\" x2=\"229\" y2=\"27\" style=\"stroke:#e6a372ff;stroke-width:2;\" /><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"27\" style=\"stroke:#e6a272ff;stroke-width:2;\" /><line x1=\"231\" y1=\"15\" x2=\"231\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"232\" y1=\"15\" x2=\"232\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"233\" y1=\"15\" x2=\"233\" y2=\"27\" style=\"stroke:#e6a171ff;stroke-width:2;\" /><line x1=\"234\" y1=\"15\" x2=\"234\" y2=\"27\" style=\"stroke:#e5a170ff;stroke-width:2;\" /><line x1=\"235\" y1=\"15\" x2=\"235\" y2=\"27\" style=\"stroke:#e5a170ff;stroke-width:2;\" /><line x1=\"236\" y1=\"15\" x2=\"236\" y2=\"27\" style=\"stroke:#e5a070ff;stroke-width:2;\" /><line x1=\"237\" y1=\"15\" x2=\"237\" y2=\"27\" style=\"stroke:#e5a070ff;stroke-width:2;\" /><line x1=\"238\" y1=\"15\" x2=\"238\" y2=\"27\" style=\"stroke:#e5a06fff;stroke-width:2;\" /><line x1=\"239\" y1=\"15\" x2=\"239\" y2=\"27\" style=\"stroke:#e59f6fff;stroke-width:2;\" /><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"27\" style=\"stroke:#e59f6fff;stroke-width:2;\" /><line x1=\"241\" y1=\"15\" x2=\"241\" y2=\"27\" style=\"stroke:#e59f6eff;stroke-width:2;\" /><line x1=\"242\" y1=\"15\" x2=\"242\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"244\" y1=\"15\" x2=\"244\" y2=\"27\" style=\"stroke:#e49e6dff;stroke-width:2;\" /><line x1=\"245\" y1=\"15\" x2=\"245\" y2=\"27\" style=\"stroke:#e49d6dff;stroke-width:2;\" /><line x1=\"246\" y1=\"15\" x2=\"246\" y2=\"27\" style=\"stroke:#e49d6dff;stroke-width:2;\" /><line x1=\"247\" y1=\"15\" x2=\"247\" y2=\"27\" style=\"stroke:#e49d6cff;stroke-width:2;\" /><line x1=\"248\" y1=\"15\" x2=\"248\" y2=\"27\" style=\"stroke:#e49c6cff;stroke-width:2;\" /><line x1=\"249\" y1=\"15\" x2=\"249\" y2=\"27\" style=\"stroke:#e49c6cff;stroke-width:2;\" /><line x1=\"250\" y1=\"15\" x2=\"250\" y2=\"27\" style=\"stroke:#e49c6bff;stroke-width:2;\" /><line x1=\"251\" y1=\"15\" x2=\"251\" y2=\"27\" style=\"stroke:#e49b6bff;stroke-width:2;\" /><line x1=\"252\" y1=\"15\" x2=\"252\" y2=\"27\" style=\"stroke:#e49b6bff;stroke-width:2;\" /><line x1=\"253\" y1=\"15\" x2=\"253\" y2=\"27\" style=\"stroke:#e39b6aff;stroke-width:2;\" /><line x1=\"254\" y1=\"15\" x2=\"254\" y2=\"27\" style=\"stroke:#e39a6aff;stroke-width:2;\" /><line x1=\"255\" y1=\"15\" x2=\"255\" y2=\"27\" style=\"stroke:#e39a6aff;stroke-width:2;\" /><line x1=\"256\" y1=\"15\" x2=\"256\" y2=\"27\" style=\"stroke:#e39a69ff;stroke-width:2;\" /><line x1=\"257\" y1=\"15\" x2=\"257\" y2=\"27\" style=\"stroke:#e39969ff;stroke-width:2;\" /><line x1=\"258\" y1=\"15\" x2=\"258\" y2=\"27\" style=\"stroke:#e39969ff;stroke-width:2;\" /><line x1=\"259\" y1=\"15\" x2=\"259\" y2=\"27\" style=\"stroke:#e39968ff;stroke-width:2;\" /><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"27\" style=\"stroke:#e39868ff;stroke-width:2;\" /><line x1=\"261\" y1=\"15\" x2=\"261\" y2=\"27\" style=\"stroke:#e39868ff;stroke-width:2;\" /><line x1=\"262\" y1=\"15\" x2=\"262\" y2=\"27\" style=\"stroke:#e39867ff;stroke-width:2;\" /><line x1=\"263\" y1=\"15\" x2=\"263\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"264\" y1=\"15\" x2=\"264\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"265\" y1=\"15\" x2=\"265\" y2=\"27\" style=\"stroke:#e29766ff;stroke-width:2;\" /><line x1=\"266\" y1=\"15\" x2=\"266\" y2=\"27\" style=\"stroke:#e29666ff;stroke-width:2;\" /><line x1=\"267\" y1=\"15\" x2=\"267\" y2=\"27\" style=\"stroke:#e29666ff;stroke-width:2;\" /><line x1=\"268\" y1=\"15\" x2=\"268\" y2=\"27\" style=\"stroke:#e29665ff;stroke-width:2;\" /><line x1=\"269\" y1=\"15\" x2=\"269\" y2=\"27\" style=\"stroke:#e29565ff;stroke-width:2;\" /><line x1=\"270\" y1=\"15\" x2=\"270\" y2=\"27\" style=\"stroke:#e29565ff;stroke-width:2;\" /><line x1=\"271\" y1=\"15\" x2=\"271\" y2=\"27\" style=\"stroke:#e29564ff;stroke-width:2;\" /><line x1=\"272\" y1=\"15\" x2=\"272\" y2=\"27\" style=\"stroke:#e29464ff;stroke-width:2;\" /><line x1=\"273\" y1=\"15\" x2=\"273\" y2=\"27\" style=\"stroke:#e19464ff;stroke-width:2;\" /><line x1=\"274\" y1=\"15\" x2=\"274\" y2=\"27\" style=\"stroke:#e19463ff;stroke-width:2;\" /><line x1=\"275\" y1=\"15\" x2=\"275\" y2=\"27\" style=\"stroke:#e19363ff;stroke-width:2;\" /><line x1=\"276\" y1=\"15\" x2=\"276\" y2=\"27\" style=\"stroke:#e19363ff;stroke-width:2;\" /><line x1=\"277\" y1=\"15\" x2=\"277\" y2=\"27\" style=\"stroke:#e19362ff;stroke-width:2;\" /><line x1=\"278\" y1=\"15\" x2=\"278\" y2=\"27\" style=\"stroke:#e19262ff;stroke-width:2;\" /><line x1=\"279\" y1=\"15\" x2=\"279\" y2=\"27\" style=\"stroke:#e19262ff;stroke-width:2;\" /><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"27\" style=\"stroke:#e19261ff;stroke-width:2;\" /><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"27\" style=\"stroke:#e19161ff;stroke-width:2;\" /><line x1=\"282\" y1=\"15\" x2=\"282\" y2=\"27\" style=\"stroke:#e19161ff;stroke-width:2;\" /><line x1=\"283\" y1=\"15\" x2=\"283\" y2=\"27\" style=\"stroke:#e09160ff;stroke-width:2;\" /><line x1=\"284\" y1=\"15\" x2=\"284\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"285\" y1=\"15\" x2=\"285\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"286\" y1=\"15\" x2=\"286\" y2=\"27\" style=\"stroke:#e0905fff;stroke-width:2;\" /><line x1=\"287\" y1=\"15\" x2=\"287\" y2=\"27\" style=\"stroke:#e08f5fff;stroke-width:2;\" /><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"27\" style=\"stroke:#e08f5fff;stroke-width:2;\" /><line x1=\"289\" y1=\"15\" x2=\"289\" y2=\"27\" style=\"stroke:#e08f5eff;stroke-width:2;\" /><line x1=\"290\" y1=\"15\" x2=\"290\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"291\" y1=\"15\" x2=\"291\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"292\" y1=\"15\" x2=\"292\" y2=\"27\" style=\"stroke:#df8e5dff;stroke-width:2;\" /><line x1=\"293\" y1=\"15\" x2=\"293\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"294\" y1=\"15\" x2=\"294\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"295\" y1=\"15\" x2=\"295\" y2=\"27\" style=\"stroke:#df8d5cff;stroke-width:2;\" /><line x1=\"296\" y1=\"15\" x2=\"296\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"297\" y1=\"15\" x2=\"297\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"298\" y1=\"15\" x2=\"298\" y2=\"27\" style=\"stroke:#df8c5bff;stroke-width:2;\" /><line x1=\"299\" y1=\"15\" x2=\"299\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"301\" y1=\"15\" x2=\"301\" y2=\"27\" style=\"stroke:#df8b5aff;stroke-width:2;\" /><line x1=\"302\" y1=\"15\" x2=\"302\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"303\" y1=\"15\" x2=\"303\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"304\" y1=\"15\" x2=\"304\" y2=\"27\" style=\"stroke:#de8a59ff;stroke-width:2;\" /><line x1=\"305\" y1=\"15\" x2=\"305\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"306\" y1=\"15\" x2=\"306\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"307\" y1=\"15\" x2=\"307\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"308\" y1=\"15\" x2=\"308\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"309\" y1=\"15\" x2=\"309\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"310\" y1=\"15\" x2=\"310\" y2=\"27\" style=\"stroke:#dd8758ff;stroke-width:2;\" /><line x1=\"311\" y1=\"15\" x2=\"311\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"312\" y1=\"15\" x2=\"312\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"313\" y1=\"15\" x2=\"313\" y2=\"27\" style=\"stroke:#dd8657ff;stroke-width:2;\" /><line x1=\"314\" y1=\"15\" x2=\"314\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"315\" y1=\"15\" x2=\"315\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"316\" y1=\"15\" x2=\"316\" y2=\"27\" style=\"stroke:#dd8556ff;stroke-width:2;\" /><line x1=\"317\" y1=\"15\" x2=\"317\" y2=\"27\" style=\"stroke:#dc8555ff;stroke-width:2;\" /><line x1=\"318\" y1=\"15\" x2=\"318\" y2=\"27\" style=\"stroke:#dc8555ff;stroke-width:2;\" /><line x1=\"319\" y1=\"15\" x2=\"319\" y2=\"27\" style=\"stroke:#dc8455ff;stroke-width:2;\" /><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"27\" style=\"stroke:#dc8454ff;stroke-width:2;\" /><line x1=\"321\" y1=\"15\" x2=\"321\" y2=\"27\" style=\"stroke:#dc8454ff;stroke-width:2;\" /><line x1=\"322\" y1=\"15\" x2=\"322\" y2=\"27\" style=\"stroke:#dc8354ff;stroke-width:2;\" /><line x1=\"323\" y1=\"15\" x2=\"323\" y2=\"27\" style=\"stroke:#dc8353ff;stroke-width:2;\" /><line x1=\"324\" y1=\"15\" x2=\"324\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"325\" y1=\"15\" x2=\"325\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"326\" y1=\"15\" x2=\"326\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"327\" y1=\"15\" x2=\"327\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"328\" y1=\"15\" x2=\"328\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"329\" y1=\"15\" x2=\"329\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"330\" y1=\"15\" x2=\"330\" y2=\"27\" style=\"stroke:#db8051ff;stroke-width:2;\" /><line x1=\"331\" y1=\"15\" x2=\"331\" y2=\"27\" style=\"stroke:#da8051ff;stroke-width:2;\" /><line x1=\"332\" y1=\"15\" x2=\"332\" y2=\"27\" style=\"stroke:#da8051ff;stroke-width:2;\" /><line x1=\"333\" y1=\"15\" x2=\"333\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"334\" y1=\"15\" x2=\"334\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"335\" y1=\"15\" x2=\"335\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"336\" y1=\"15\" x2=\"336\" y2=\"27\" style=\"stroke:#da7e4fff;stroke-width:2;\" /><line x1=\"337\" y1=\"15\" x2=\"337\" y2=\"27\" style=\"stroke:#da7e4fff;stroke-width:2;\" /><line x1=\"338\" y1=\"15\" x2=\"338\" y2=\"27\" style=\"stroke:#da7d4fff;stroke-width:2;\" /><line x1=\"339\" y1=\"15\" x2=\"339\" y2=\"27\" style=\"stroke:#d97d4eff;stroke-width:2;\" /><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"27\" style=\"stroke:#d97d4eff;stroke-width:2;\" /><line x1=\"341\" y1=\"15\" x2=\"341\" y2=\"27\" style=\"stroke:#d97c4eff;stroke-width:2;\" /><line x1=\"342\" y1=\"15\" x2=\"342\" y2=\"27\" style=\"stroke:#d97c4dff;stroke-width:2;\" /><line x1=\"343\" y1=\"15\" x2=\"343\" y2=\"27\" style=\"stroke:#d97c4dff;stroke-width:2;\" /><line x1=\"344\" y1=\"15\" x2=\"344\" y2=\"27\" style=\"stroke:#d97b4dff;stroke-width:2;\" /><line x1=\"345\" y1=\"15\" x2=\"345\" y2=\"27\" style=\"stroke:#d97b4dff;stroke-width:2;\" /><line x1=\"346\" y1=\"15\" x2=\"346\" y2=\"27\" style=\"stroke:#d87b4cff;stroke-width:2;\" /><line x1=\"347\" y1=\"15\" x2=\"347\" y2=\"27\" style=\"stroke:#d87a4cff;stroke-width:2;\" /><line x1=\"348\" y1=\"15\" x2=\"348\" y2=\"27\" style=\"stroke:#d87a4cff;stroke-width:2;\" /><line x1=\"349\" y1=\"15\" x2=\"349\" y2=\"27\" style=\"stroke:#d87a4bff;stroke-width:2;\" /><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"27\" style=\"stroke:#d8794bff;stroke-width:2;\" /><line x1=\"351\" y1=\"15\" x2=\"351\" y2=\"27\" style=\"stroke:#d8794bff;stroke-width:2;\" /><line x1=\"352\" y1=\"15\" x2=\"352\" y2=\"27\" style=\"stroke:#d8784aff;stroke-width:2;\" /><line x1=\"353\" y1=\"15\" x2=\"353\" y2=\"27\" style=\"stroke:#d7784aff;stroke-width:2;\" /><line x1=\"354\" y1=\"15\" x2=\"354\" y2=\"27\" style=\"stroke:#d7784aff;stroke-width:2;\" /><line x1=\"355\" y1=\"15\" x2=\"355\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"356\" y1=\"15\" x2=\"356\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"357\" y1=\"15\" x2=\"357\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"358\" y1=\"15\" x2=\"358\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"359\" y1=\"15\" x2=\"359\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"361\" y1=\"15\" x2=\"361\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"362\" y1=\"15\" x2=\"362\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"363\" y1=\"15\" x2=\"363\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"364\" y1=\"15\" x2=\"364\" y2=\"27\" style=\"stroke:#d67447ff;stroke-width:2;\" /><line x1=\"365\" y1=\"15\" x2=\"365\" y2=\"27\" style=\"stroke:#d67446ff;stroke-width:2;\" /><line x1=\"366\" y1=\"15\" x2=\"366\" y2=\"27\" style=\"stroke:#d67346ff;stroke-width:2;\" /><line x1=\"367\" y1=\"15\" x2=\"367\" y2=\"27\" style=\"stroke:#d67346ff;stroke-width:2;\" /><line x1=\"368\" y1=\"15\" x2=\"368\" y2=\"27\" style=\"stroke:#d57345ff;stroke-width:2;\" /><line x1=\"369\" y1=\"15\" x2=\"369\" y2=\"27\" style=\"stroke:#d57245ff;stroke-width:2;\" /><line x1=\"370\" y1=\"15\" x2=\"370\" y2=\"27\" style=\"stroke:#d57245ff;stroke-width:2;\" /><line x1=\"371\" y1=\"15\" x2=\"371\" y2=\"27\" style=\"stroke:#d57244ff;stroke-width:2;\" /><line x1=\"372\" y1=\"15\" x2=\"372\" y2=\"27\" style=\"stroke:#d57144ff;stroke-width:2;\" /><line x1=\"373\" y1=\"15\" x2=\"373\" y2=\"27\" style=\"stroke:#d57144ff;stroke-width:2;\" /><line x1=\"374\" y1=\"15\" x2=\"374\" y2=\"27\" style=\"stroke:#d57143ff;stroke-width:2;\" /><line x1=\"375\" y1=\"15\" x2=\"375\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"376\" y1=\"15\" x2=\"376\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"377\" y1=\"15\" x2=\"377\" y2=\"27\" style=\"stroke:#d47042ff;stroke-width:2;\" /><line x1=\"378\" y1=\"15\" x2=\"378\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"379\" y1=\"15\" x2=\"379\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"27\" style=\"stroke:#d46e41ff;stroke-width:2;\" /><line x1=\"381\" y1=\"15\" x2=\"381\" y2=\"27\" style=\"stroke:#d46e41ff;stroke-width:2;\" /><line x1=\"382\" y1=\"15\" x2=\"382\" y2=\"27\" style=\"stroke:#d36e41ff;stroke-width:2;\" /><line x1=\"383\" y1=\"15\" x2=\"383\" y2=\"27\" style=\"stroke:#d36d41ff;stroke-width:2;\" /><line x1=\"384\" y1=\"15\" x2=\"384\" y2=\"27\" style=\"stroke:#d36d40ff;stroke-width:2;\" /><line x1=\"385\" y1=\"15\" x2=\"385\" y2=\"27\" style=\"stroke:#d36d40ff;stroke-width:2;\" /><line x1=\"386\" y1=\"15\" x2=\"386\" y2=\"27\" style=\"stroke:#d36c40ff;stroke-width:2;\" /><line x1=\"387\" y1=\"15\" x2=\"387\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"388\" y1=\"15\" x2=\"388\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"389\" y1=\"15\" x2=\"389\" y2=\"27\" style=\"stroke:#d36b3fff;stroke-width:2;\" /><line x1=\"390\" y1=\"15\" x2=\"390\" y2=\"27\" style=\"stroke:#d26b3eff;stroke-width:2;\" /><line x1=\"391\" y1=\"15\" x2=\"391\" y2=\"27\" style=\"stroke:#d26b3eff;stroke-width:2;\" /><line x1=\"392\" y1=\"15\" x2=\"392\" y2=\"27\" style=\"stroke:#d26a3eff;stroke-width:2;\" /><line x1=\"393\" y1=\"15\" x2=\"393\" y2=\"27\" style=\"stroke:#d26a3dff;stroke-width:2;\" /><line x1=\"394\" y1=\"15\" x2=\"394\" y2=\"27\" style=\"stroke:#d2693dff;stroke-width:2;\" /><line x1=\"395\" y1=\"15\" x2=\"395\" y2=\"27\" style=\"stroke:#d2693dff;stroke-width:2;\" /><line x1=\"396\" y1=\"15\" x2=\"396\" y2=\"27\" style=\"stroke:#d2693cff;stroke-width:2;\" /><line x1=\"397\" y1=\"15\" x2=\"397\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"398\" y1=\"15\" x2=\"398\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"399\" y1=\"15\" x2=\"399\" y2=\"27\" style=\"stroke:#d1683bff;stroke-width:2;\" /><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"401\" y1=\"15\" x2=\"401\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"402\" y1=\"15\" x2=\"402\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"403\" y1=\"15\" x2=\"403\" y2=\"27\" style=\"stroke:#d1663aff;stroke-width:2;\" /><line x1=\"404\" y1=\"15\" x2=\"404\" y2=\"27\" style=\"stroke:#d0663aff;stroke-width:2;\" /><line x1=\"405\" y1=\"15\" x2=\"405\" y2=\"27\" style=\"stroke:#d0663aff;stroke-width:2;\" /><line x1=\"406\" y1=\"15\" x2=\"406\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"407\" y1=\"15\" x2=\"407\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"408\" y1=\"15\" x2=\"408\" y2=\"27\" style=\"stroke:#d06439ff;stroke-width:2;\" /><line x1=\"409\" y1=\"15\" x2=\"409\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"410\" y1=\"15\" x2=\"410\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"411\" y1=\"15\" x2=\"411\" y2=\"27\" style=\"stroke:#d06338ff;stroke-width:2;\" /><line x1=\"412\" y1=\"15\" x2=\"412\" y2=\"27\" style=\"stroke:#cf6337ff;stroke-width:2;\" /><line x1=\"413\" y1=\"15\" x2=\"413\" y2=\"27\" style=\"stroke:#cf6337ff;stroke-width:2;\" /><line x1=\"414\" y1=\"15\" x2=\"414\" y2=\"27\" style=\"stroke:#cf6237ff;stroke-width:2;\" /><line x1=\"415\" y1=\"15\" x2=\"415\" y2=\"27\" style=\"stroke:#cf6236ff;stroke-width:2;\" /><line x1=\"416\" y1=\"15\" x2=\"416\" y2=\"27\" style=\"stroke:#cf6236ff;stroke-width:2;\" /><line x1=\"417\" y1=\"15\" x2=\"417\" y2=\"27\" style=\"stroke:#cf6136ff;stroke-width:2;\" /><line x1=\"418\" y1=\"15\" x2=\"418\" y2=\"27\" style=\"stroke:#cf6135ff;stroke-width:2;\" /><line x1=\"419\" y1=\"15\" x2=\"419\" y2=\"27\" style=\"stroke:#ce6135ff;stroke-width:2;\" /><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"27\" style=\"stroke:#ce6035ff;stroke-width:2;\" /><line x1=\"421\" y1=\"15\" x2=\"421\" y2=\"27\" style=\"stroke:#ce6035ff;stroke-width:2;\" /><line x1=\"422\" y1=\"15\" x2=\"422\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"423\" y1=\"15\" x2=\"423\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"424\" y1=\"15\" x2=\"424\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"425\" y1=\"15\" x2=\"425\" y2=\"27\" style=\"stroke:#ce5e33ff;stroke-width:2;\" /><line x1=\"426\" y1=\"15\" x2=\"426\" y2=\"27\" style=\"stroke:#cd5e33ff;stroke-width:2;\" /><line x1=\"427\" y1=\"15\" x2=\"427\" y2=\"27\" style=\"stroke:#cd5e33ff;stroke-width:2;\" /><line x1=\"428\" y1=\"15\" x2=\"428\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"429\" y1=\"15\" x2=\"429\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"430\" y1=\"15\" x2=\"430\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"431\" y1=\"15\" x2=\"431\" y2=\"27\" style=\"stroke:#cd5c31ff;stroke-width:2;\" /><line x1=\"432\" y1=\"15\" x2=\"432\" y2=\"27\" style=\"stroke:#cd5c31ff;stroke-width:2;\" /><line x1=\"433\" y1=\"15\" x2=\"433\" y2=\"27\" style=\"stroke:#cc5c31ff;stroke-width:2;\" /><line x1=\"434\" y1=\"15\" x2=\"434\" y2=\"27\" style=\"stroke:#cc5b30ff;stroke-width:2;\" /><line x1=\"435\" y1=\"15\" x2=\"435\" y2=\"27\" style=\"stroke:#cc5b30ff;stroke-width:2;\" /><line x1=\"436\" y1=\"15\" x2=\"436\" y2=\"27\" style=\"stroke:#cc5a30ff;stroke-width:2;\" /><line x1=\"437\" y1=\"15\" x2=\"437\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"438\" y1=\"15\" x2=\"438\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"439\" y1=\"15\" x2=\"439\" y2=\"27\" style=\"stroke:#cc592fff;stroke-width:2;\" /><line x1=\"440\" y1=\"15\" x2=\"440\" y2=\"27\" style=\"stroke:#cc592fff;stroke-width:2;\" /><line x1=\"441\" y1=\"15\" x2=\"441\" y2=\"27\" style=\"stroke:#cb592eff;stroke-width:2;\" /><line x1=\"442\" y1=\"15\" x2=\"442\" y2=\"27\" style=\"stroke:#cb582eff;stroke-width:2;\" /><line x1=\"443\" y1=\"15\" x2=\"443\" y2=\"27\" style=\"stroke:#cb582eff;stroke-width:2;\" /><line x1=\"444\" y1=\"15\" x2=\"444\" y2=\"27\" style=\"stroke:#cb582dff;stroke-width:2;\" /><line x1=\"445\" y1=\"15\" x2=\"445\" y2=\"27\" style=\"stroke:#cb572dff;stroke-width:2;\" /><line x1=\"446\" y1=\"15\" x2=\"446\" y2=\"27\" style=\"stroke:#cb572dff;stroke-width:2;\" /><line x1=\"447\" y1=\"15\" x2=\"447\" y2=\"27\" style=\"stroke:#cb572cff;stroke-width:2;\" /><line x1=\"448\" y1=\"15\" x2=\"448\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><line x1=\"449\" y1=\"15\" x2=\"449\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><text x=\"0\" y=\"38\" style=\"text-anchor:start; font-size:11px; font:Arial\">-1.0</text><text x=\"75\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">6.4</text><text x=\"150\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">13.7</text><text x=\"225\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">21.1</text><text x=\"300\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">28.4</text><text x=\"375\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">35.8</text><text x=\"450\" y=\"38\" style=\"text-anchor:end; font-size:11px; font:Arial\">43.14</text><text x=\"0\" y=\"12\" style=\"font-size:11px; font:Arial\"></text></svg> <br/>\n        <span style=\"font-size: 0.8em\">(Obszary obwod\u00f3w s\u0105 przybli\u017cone z wykorzystaniem diagramu Voronoia)</span>\n        </div>\n        ",
+  "description": "\n        <div style='font-family: \"Open Sans\", sans-serif;'>\n        <h3>Krak\u00f3w: GIBA\u0141A \u0141ukasz vs MUZYK Jerzy Stanis\u0142aw</h3>\n        R\u00f3\u017cnica w % <br/>\n        <span style=\"font-size: 0.8em\">\n        Warto\u015bci ujemne - przewaga MUZYK Jerzy Stanis\u0142aw <br/> \n        Warto\u015bci dodatnie - przewaga GIBA\u0141A \u0141ukasz <br/>\n        Obwody z oddanymi mniej ni\u017c 50 g\u0142osami zosta\u0142y pomini\u0119te. <br/>\n        </span> \n        <svg height=\"40\" width=\"450\"><line x1=\"0\" y1=\"15\" x2=\"0\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"1\" y1=\"15\" x2=\"1\" y2=\"27\" style=\"stroke:#218b86ff;stroke-width:2;\" /><line x1=\"2\" y1=\"15\" x2=\"2\" y2=\"27\" style=\"stroke:#42968cff;stroke-width:2;\" /><line x1=\"3\" y1=\"15\" x2=\"3\" y2=\"27\" style=\"stroke:#64a092ff;stroke-width:2;\" /><line x1=\"4\" y1=\"15\" x2=\"4\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"5\" y1=\"15\" x2=\"5\" y2=\"27\" style=\"stroke:#90b59eff;stroke-width:2;\" /><line x1=\"6\" y1=\"15\" x2=\"6\" y2=\"27\" style=\"stroke:#a4c0a3ff;stroke-width:2;\" /><line x1=\"7\" y1=\"15\" x2=\"7\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"8\" y1=\"15\" x2=\"8\" y2=\"27\" style=\"stroke:#ccd5b0ff;stroke-width:2;\" /><line x1=\"9\" y1=\"15\" x2=\"9\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"27\" style=\"stroke:#f3ecbcff;stroke-width:2;\" /><line x1=\"11\" y1=\"15\" x2=\"11\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"13\" y1=\"15\" x2=\"13\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"27\" style=\"stroke:#f6ecbcff;stroke-width:2;\" /><line x1=\"16\" y1=\"15\" x2=\"16\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"17\" y1=\"15\" x2=\"17\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"18\" y1=\"15\" x2=\"18\" y2=\"27\" style=\"stroke:#f6ebbbff;stroke-width:2;\" /><line x1=\"19\" y1=\"15\" x2=\"19\" y2=\"27\" style=\"stroke:#f6eabaff;stroke-width:2;\" /><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"27\" style=\"stroke:#f6eabaff;stroke-width:2;\" /><line x1=\"21\" y1=\"15\" x2=\"21\" y2=\"27\" style=\"stroke:#f6eab9ff;stroke-width:2;\" /><line x1=\"22\" y1=\"15\" x2=\"22\" y2=\"27\" style=\"stroke:#f6e9b9ff;stroke-width:2;\" /><line x1=\"23\" y1=\"15\" x2=\"23\" y2=\"27\" style=\"stroke:#f6e9b9ff;stroke-width:2;\" /><line x1=\"24\" y1=\"15\" x2=\"24\" y2=\"27\" style=\"stroke:#f6e9b8ff;stroke-width:2;\" /><line x1=\"25\" y1=\"15\" x2=\"25\" y2=\"27\" style=\"stroke:#f6e8b8ff;stroke-width:2;\" /><line x1=\"26\" y1=\"15\" x2=\"26\" y2=\"27\" style=\"stroke:#f5e8b8ff;stroke-width:2;\" /><line x1=\"27\" y1=\"15\" x2=\"27\" y2=\"27\" style=\"stroke:#f5e8b7ff;stroke-width:2;\" /><line x1=\"28\" y1=\"15\" x2=\"28\" y2=\"27\" style=\"stroke:#f5e7b7ff;stroke-width:2;\" /><line x1=\"29\" y1=\"15\" x2=\"29\" y2=\"27\" style=\"stroke:#f5e7b7ff;stroke-width:2;\" /><line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"27\" style=\"stroke:#f5e7b6ff;stroke-width:2;\" /><line x1=\"31\" y1=\"15\" x2=\"31\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"32\" y1=\"15\" x2=\"32\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"33\" y1=\"15\" x2=\"33\" y2=\"27\" style=\"stroke:#f5e6b5ff;stroke-width:2;\" /><line x1=\"34\" y1=\"15\" x2=\"34\" y2=\"27\" style=\"stroke:#f5e5b5ff;stroke-width:2;\" /><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"27\" style=\"stroke:#f5e5b5ff;stroke-width:2;\" /><line x1=\"36\" y1=\"15\" x2=\"36\" y2=\"27\" style=\"stroke:#f5e5b4ff;stroke-width:2;\" /><line x1=\"37\" y1=\"15\" x2=\"37\" y2=\"27\" style=\"stroke:#f5e4b4ff;stroke-width:2;\" /><line x1=\"38\" y1=\"15\" x2=\"38\" y2=\"27\" style=\"stroke:#f5e4b4ff;stroke-width:2;\" /><line x1=\"39\" y1=\"15\" x2=\"39\" y2=\"27\" style=\"stroke:#f5e4b3ff;stroke-width:2;\" /><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"27\" style=\"stroke:#f5e3b3ff;stroke-width:2;\" /><line x1=\"41\" y1=\"15\" x2=\"41\" y2=\"27\" style=\"stroke:#f5e3b2ff;stroke-width:2;\" /><line x1=\"42\" y1=\"15\" x2=\"42\" y2=\"27\" style=\"stroke:#f4e3b2ff;stroke-width:2;\" /><line x1=\"43\" y1=\"15\" x2=\"43\" y2=\"27\" style=\"stroke:#f4e2b2ff;stroke-width:2;\" /><line x1=\"44\" y1=\"15\" x2=\"44\" y2=\"27\" style=\"stroke:#f4e2b1ff;stroke-width:2;\" /><line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"46\" y1=\"15\" x2=\"46\" y2=\"27\" style=\"stroke:#f4e1b1ff;stroke-width:2;\" /><line x1=\"47\" y1=\"15\" x2=\"47\" y2=\"27\" style=\"stroke:#f4e1b0ff;stroke-width:2;\" /><line x1=\"48\" y1=\"15\" x2=\"48\" y2=\"27\" style=\"stroke:#f4e0b0ff;stroke-width:2;\" /><line x1=\"49\" y1=\"15\" x2=\"49\" y2=\"27\" style=\"stroke:#f4e0b0ff;stroke-width:2;\" /><line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"27\" style=\"stroke:#f4e0afff;stroke-width:2;\" /><line x1=\"51\" y1=\"15\" x2=\"51\" y2=\"27\" style=\"stroke:#f4dfafff;stroke-width:2;\" /><line x1=\"52\" y1=\"15\" x2=\"52\" y2=\"27\" style=\"stroke:#f4dfafff;stroke-width:2;\" /><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"27\" style=\"stroke:#f4dfaeff;stroke-width:2;\" /><line x1=\"54\" y1=\"15\" x2=\"54\" y2=\"27\" style=\"stroke:#f4deaeff;stroke-width:2;\" /><line x1=\"55\" y1=\"15\" x2=\"55\" y2=\"27\" style=\"stroke:#f4deaeff;stroke-width:2;\" /><line x1=\"56\" y1=\"15\" x2=\"56\" y2=\"27\" style=\"stroke:#f4deadff;stroke-width:2;\" /><line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"27\" style=\"stroke:#f4ddadff;stroke-width:2;\" /><line x1=\"58\" y1=\"15\" x2=\"58\" y2=\"27\" style=\"stroke:#f4ddadff;stroke-width:2;\" /><line x1=\"59\" y1=\"15\" x2=\"59\" y2=\"27\" style=\"stroke:#f3ddacff;stroke-width:2;\" /><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"27\" style=\"stroke:#f3dcacff;stroke-width:2;\" /><line x1=\"61\" y1=\"15\" x2=\"61\" y2=\"27\" style=\"stroke:#f3dcabff;stroke-width:2;\" /><line x1=\"62\" y1=\"15\" x2=\"62\" y2=\"27\" style=\"stroke:#f3dcabff;stroke-width:2;\" /><line x1=\"63\" y1=\"15\" x2=\"63\" y2=\"27\" style=\"stroke:#f3dbabff;stroke-width:2;\" /><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"27\" style=\"stroke:#f3dbaaff;stroke-width:2;\" /><line x1=\"65\" y1=\"15\" x2=\"65\" y2=\"27\" style=\"stroke:#f3dbaaff;stroke-width:2;\" /><line x1=\"66\" y1=\"15\" x2=\"66\" y2=\"27\" style=\"stroke:#f3daaaff;stroke-width:2;\" /><line x1=\"67\" y1=\"15\" x2=\"67\" y2=\"27\" style=\"stroke:#f3daa9ff;stroke-width:2;\" /><line x1=\"68\" y1=\"15\" x2=\"68\" y2=\"27\" style=\"stroke:#f3daa9ff;stroke-width:2;\" /><line x1=\"69\" y1=\"15\" x2=\"69\" y2=\"27\" style=\"stroke:#f3d9a9ff;stroke-width:2;\" /><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"27\" style=\"stroke:#f3d9a8ff;stroke-width:2;\" /><line x1=\"71\" y1=\"15\" x2=\"71\" y2=\"27\" style=\"stroke:#f3d9a8ff;stroke-width:2;\" /><line x1=\"72\" y1=\"15\" x2=\"72\" y2=\"27\" style=\"stroke:#f3d8a8ff;stroke-width:2;\" /><line x1=\"73\" y1=\"15\" x2=\"73\" y2=\"27\" style=\"stroke:#f3d8a7ff;stroke-width:2;\" /><line x1=\"74\" y1=\"15\" x2=\"74\" y2=\"27\" style=\"stroke:#f3d8a7ff;stroke-width:2;\" /><line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"27\" style=\"stroke:#f2d7a7ff;stroke-width:2;\" /><line x1=\"76\" y1=\"15\" x2=\"76\" y2=\"27\" style=\"stroke:#f2d7a6ff;stroke-width:2;\" /><line x1=\"77\" y1=\"15\" x2=\"77\" y2=\"27\" style=\"stroke:#f2d6a6ff;stroke-width:2;\" /><line x1=\"78\" y1=\"15\" x2=\"78\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"79\" y1=\"15\" x2=\"79\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"27\" style=\"stroke:#f2d5a5ff;stroke-width:2;\" /><line x1=\"81\" y1=\"15\" x2=\"81\" y2=\"27\" style=\"stroke:#f2d5a4ff;stroke-width:2;\" /><line x1=\"82\" y1=\"15\" x2=\"82\" y2=\"27\" style=\"stroke:#f2d5a4ff;stroke-width:2;\" /><line x1=\"83\" y1=\"15\" x2=\"83\" y2=\"27\" style=\"stroke:#f2d4a4ff;stroke-width:2;\" /><line x1=\"84\" y1=\"15\" x2=\"84\" y2=\"27\" style=\"stroke:#f2d4a3ff;stroke-width:2;\" /><line x1=\"85\" y1=\"15\" x2=\"85\" y2=\"27\" style=\"stroke:#f2d4a3ff;stroke-width:2;\" /><line x1=\"86\" y1=\"15\" x2=\"86\" y2=\"27\" style=\"stroke:#f2d3a3ff;stroke-width:2;\" /><line x1=\"87\" y1=\"15\" x2=\"87\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"88\" y1=\"15\" x2=\"88\" y2=\"27\" style=\"stroke:#f2d3a2ff;stroke-width:2;\" /><line x1=\"89\" y1=\"15\" x2=\"89\" y2=\"27\" style=\"stroke:#f2d2a2ff;stroke-width:2;\" /><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"27\" style=\"stroke:#f2d2a1ff;stroke-width:2;\" /><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"27\" style=\"stroke:#f1d2a1ff;stroke-width:2;\" /><line x1=\"92\" y1=\"15\" x2=\"92\" y2=\"27\" style=\"stroke:#f1d1a1ff;stroke-width:2;\" /><line x1=\"93\" y1=\"15\" x2=\"93\" y2=\"27\" style=\"stroke:#f1d1a0ff;stroke-width:2;\" /><line x1=\"94\" y1=\"15\" x2=\"94\" y2=\"27\" style=\"stroke:#f1d1a0ff;stroke-width:2;\" /><line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"27\" style=\"stroke:#f1d0a0ff;stroke-width:2;\" /><line x1=\"96\" y1=\"15\" x2=\"96\" y2=\"27\" style=\"stroke:#f1d09fff;stroke-width:2;\" /><line x1=\"97\" y1=\"15\" x2=\"97\" y2=\"27\" style=\"stroke:#f1d09fff;stroke-width:2;\" /><line x1=\"98\" y1=\"15\" x2=\"98\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"99\" y1=\"15\" x2=\"99\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"27\" style=\"stroke:#f1cf9eff;stroke-width:2;\" /><line x1=\"101\" y1=\"15\" x2=\"101\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"102\" y1=\"15\" x2=\"102\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"103\" y1=\"15\" x2=\"103\" y2=\"27\" style=\"stroke:#f1ce9dff;stroke-width:2;\" /><line x1=\"104\" y1=\"15\" x2=\"104\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"106\" y1=\"15\" x2=\"106\" y2=\"27\" style=\"stroke:#f1cd9cff;stroke-width:2;\" /><line x1=\"107\" y1=\"15\" x2=\"107\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"109\" y1=\"15\" x2=\"109\" y2=\"27\" style=\"stroke:#f0cc9bff;stroke-width:2;\" /><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"27\" style=\"stroke:#f0cb9aff;stroke-width:2;\" /><line x1=\"111\" y1=\"15\" x2=\"111\" y2=\"27\" style=\"stroke:#f0cb9aff;stroke-width:2;\" /><line x1=\"112\" y1=\"15\" x2=\"112\" y2=\"27\" style=\"stroke:#f0ca9aff;stroke-width:2;\" /><line x1=\"113\" y1=\"15\" x2=\"113\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"114\" y1=\"15\" x2=\"114\" y2=\"27\" style=\"stroke:#f0ca99ff;stroke-width:2;\" /><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"27\" style=\"stroke:#f0c999ff;stroke-width:2;\" /><line x1=\"116\" y1=\"15\" x2=\"116\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"117\" y1=\"15\" x2=\"117\" y2=\"27\" style=\"stroke:#f0c998ff;stroke-width:2;\" /><line x1=\"118\" y1=\"15\" x2=\"118\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"119\" y1=\"15\" x2=\"119\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"27\" style=\"stroke:#f0c897ff;stroke-width:2;\" /><line x1=\"121\" y1=\"15\" x2=\"121\" y2=\"27\" style=\"stroke:#f0c796ff;stroke-width:2;\" /><line x1=\"122\" y1=\"15\" x2=\"122\" y2=\"27\" style=\"stroke:#f0c796ff;stroke-width:2;\" /><line x1=\"123\" y1=\"15\" x2=\"123\" y2=\"27\" style=\"stroke:#efc796ff;stroke-width:2;\" /><line x1=\"124\" y1=\"15\" x2=\"124\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"125\" y1=\"15\" x2=\"125\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"126\" y1=\"15\" x2=\"126\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"127\" y1=\"15\" x2=\"127\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"128\" y1=\"15\" x2=\"128\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"27\" style=\"stroke:#efc594ff;stroke-width:2;\" /><line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"131\" y1=\"15\" x2=\"131\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"132\" y1=\"15\" x2=\"132\" y2=\"27\" style=\"stroke:#efc493ff;stroke-width:2;\" /><line x1=\"133\" y1=\"15\" x2=\"133\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"134\" y1=\"15\" x2=\"134\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"135\" y1=\"15\" x2=\"135\" y2=\"27\" style=\"stroke:#efc392ff;stroke-width:2;\" /><line x1=\"136\" y1=\"15\" x2=\"136\" y2=\"27\" style=\"stroke:#efc291ff;stroke-width:2;\" /><line x1=\"137\" y1=\"15\" x2=\"137\" y2=\"27\" style=\"stroke:#efc291ff;stroke-width:2;\" /><line x1=\"138\" y1=\"15\" x2=\"138\" y2=\"27\" style=\"stroke:#efc290ff;stroke-width:2;\" /><line x1=\"139\" y1=\"15\" x2=\"139\" y2=\"27\" style=\"stroke:#efc190ff;stroke-width:2;\" /><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"27\" style=\"stroke:#eec190ff;stroke-width:2;\" /><line x1=\"141\" y1=\"15\" x2=\"141\" y2=\"27\" style=\"stroke:#eec18fff;stroke-width:2;\" /><line x1=\"142\" y1=\"15\" x2=\"142\" y2=\"27\" style=\"stroke:#eec08fff;stroke-width:2;\" /><line x1=\"143\" y1=\"15\" x2=\"143\" y2=\"27\" style=\"stroke:#eec08fff;stroke-width:2;\" /><line x1=\"144\" y1=\"15\" x2=\"144\" y2=\"27\" style=\"stroke:#eec08eff;stroke-width:2;\" /><line x1=\"145\" y1=\"15\" x2=\"145\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"146\" y1=\"15\" x2=\"146\" y2=\"27\" style=\"stroke:#eebf8eff;stroke-width:2;\" /><line x1=\"147\" y1=\"15\" x2=\"147\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"148\" y1=\"15\" x2=\"148\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"149\" y1=\"15\" x2=\"149\" y2=\"27\" style=\"stroke:#eebe8dff;stroke-width:2;\" /><line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"151\" y1=\"15\" x2=\"151\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"27\" style=\"stroke:#eebd8cff;stroke-width:2;\" /><line x1=\"153\" y1=\"15\" x2=\"153\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"154\" y1=\"15\" x2=\"154\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"155\" y1=\"15\" x2=\"155\" y2=\"27\" style=\"stroke:#eebc8bff;stroke-width:2;\" /><line x1=\"156\" y1=\"15\" x2=\"156\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"157\" y1=\"15\" x2=\"157\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"158\" y1=\"15\" x2=\"158\" y2=\"27\" style=\"stroke:#edbb8aff;stroke-width:2;\" /><line x1=\"159\" y1=\"15\" x2=\"159\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"161\" y1=\"15\" x2=\"161\" y2=\"27\" style=\"stroke:#edba89ff;stroke-width:2;\" /><line x1=\"162\" y1=\"15\" x2=\"162\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"163\" y1=\"15\" x2=\"163\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"164\" y1=\"15\" x2=\"164\" y2=\"27\" style=\"stroke:#edb988ff;stroke-width:2;\" /><line x1=\"165\" y1=\"15\" x2=\"165\" y2=\"27\" style=\"stroke:#edb887ff;stroke-width:2;\" /><line x1=\"166\" y1=\"15\" x2=\"166\" y2=\"27\" style=\"stroke:#ecb887ff;stroke-width:2;\" /><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"27\" style=\"stroke:#ecb887ff;stroke-width:2;\" /><line x1=\"168\" y1=\"15\" x2=\"168\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"169\" y1=\"15\" x2=\"169\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"27\" style=\"stroke:#ecb786ff;stroke-width:2;\" /><line x1=\"171\" y1=\"15\" x2=\"171\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"172\" y1=\"15\" x2=\"172\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"173\" y1=\"15\" x2=\"173\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"174\" y1=\"15\" x2=\"174\" y2=\"27\" style=\"stroke:#ecb584ff;stroke-width:2;\" /><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"27\" style=\"stroke:#ecb584ff;stroke-width:2;\" /><line x1=\"176\" y1=\"15\" x2=\"176\" y2=\"27\" style=\"stroke:#ebb584ff;stroke-width:2;\" /><line x1=\"177\" y1=\"15\" x2=\"177\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"178\" y1=\"15\" x2=\"178\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"179\" y1=\"15\" x2=\"179\" y2=\"27\" style=\"stroke:#ebb483ff;stroke-width:2;\" /><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"181\" y1=\"15\" x2=\"181\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"182\" y1=\"15\" x2=\"182\" y2=\"27\" style=\"stroke:#ebb382ff;stroke-width:2;\" /><line x1=\"183\" y1=\"15\" x2=\"183\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"184\" y1=\"15\" x2=\"184\" y2=\"27\" style=\"stroke:#ebb281ff;stroke-width:2;\" /><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"27\" style=\"stroke:#eab281ff;stroke-width:2;\" /><line x1=\"186\" y1=\"15\" x2=\"186\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"187\" y1=\"15\" x2=\"187\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"188\" y1=\"15\" x2=\"188\" y2=\"27\" style=\"stroke:#eab180ff;stroke-width:2;\" /><line x1=\"189\" y1=\"15\" x2=\"189\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"190\" y1=\"15\" x2=\"190\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"191\" y1=\"15\" x2=\"191\" y2=\"27\" style=\"stroke:#eab07fff;stroke-width:2;\" /><line x1=\"192\" y1=\"15\" x2=\"192\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"193\" y1=\"15\" x2=\"193\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"194\" y1=\"15\" x2=\"194\" y2=\"27\" style=\"stroke:#eaaf7eff;stroke-width:2;\" /><line x1=\"195\" y1=\"15\" x2=\"195\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"196\" y1=\"15\" x2=\"196\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"197\" y1=\"15\" x2=\"197\" y2=\"27\" style=\"stroke:#e9ae7dff;stroke-width:2;\" /><line x1=\"198\" y1=\"15\" x2=\"198\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"199\" y1=\"15\" x2=\"199\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"27\" style=\"stroke:#e9ad7cff;stroke-width:2;\" /><line x1=\"201\" y1=\"15\" x2=\"201\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"202\" y1=\"15\" x2=\"202\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"203\" y1=\"15\" x2=\"203\" y2=\"27\" style=\"stroke:#e9ac7bff;stroke-width:2;\" /><line x1=\"204\" y1=\"15\" x2=\"204\" y2=\"27\" style=\"stroke:#e9ab7aff;stroke-width:2;\" /><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"27\" style=\"stroke:#e8ab7aff;stroke-width:2;\" /><line x1=\"206\" y1=\"15\" x2=\"206\" y2=\"27\" style=\"stroke:#e8ab7aff;stroke-width:2;\" /><line x1=\"207\" y1=\"15\" x2=\"207\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"208\" y1=\"15\" x2=\"208\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"209\" y1=\"15\" x2=\"209\" y2=\"27\" style=\"stroke:#e8aa79ff;stroke-width:2;\" /><line x1=\"210\" y1=\"15\" x2=\"210\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"211\" y1=\"15\" x2=\"211\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"212\" y1=\"15\" x2=\"212\" y2=\"27\" style=\"stroke:#e8a978ff;stroke-width:2;\" /><line x1=\"213\" y1=\"15\" x2=\"213\" y2=\"27\" style=\"stroke:#e8a877ff;stroke-width:2;\" /><line x1=\"214\" y1=\"15\" x2=\"214\" y2=\"27\" style=\"stroke:#e8a877ff;stroke-width:2;\" /><line x1=\"215\" y1=\"15\" x2=\"215\" y2=\"27\" style=\"stroke:#e7a877ff;stroke-width:2;\" /><line x1=\"216\" y1=\"15\" x2=\"216\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"217\" y1=\"15\" x2=\"217\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"218\" y1=\"15\" x2=\"218\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"219\" y1=\"15\" x2=\"219\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"221\" y1=\"15\" x2=\"221\" y2=\"27\" style=\"stroke:#e7a675ff;stroke-width:2;\" /><line x1=\"222\" y1=\"15\" x2=\"222\" y2=\"27\" style=\"stroke:#e7a574ff;stroke-width:2;\" /><line x1=\"223\" y1=\"15\" x2=\"223\" y2=\"27\" style=\"stroke:#e7a574ff;stroke-width:2;\" /><line x1=\"224\" y1=\"15\" x2=\"224\" y2=\"27\" style=\"stroke:#e6a574ff;stroke-width:2;\" /><line x1=\"225\" y1=\"15\" x2=\"225\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"226\" y1=\"15\" x2=\"226\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"227\" y1=\"15\" x2=\"227\" y2=\"27\" style=\"stroke:#e6a473ff;stroke-width:2;\" /><line x1=\"228\" y1=\"15\" x2=\"228\" y2=\"27\" style=\"stroke:#e6a372ff;stroke-width:2;\" /><line x1=\"229\" y1=\"15\" x2=\"229\" y2=\"27\" style=\"stroke:#e6a372ff;stroke-width:2;\" /><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"27\" style=\"stroke:#e6a272ff;stroke-width:2;\" /><line x1=\"231\" y1=\"15\" x2=\"231\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"232\" y1=\"15\" x2=\"232\" y2=\"27\" style=\"stroke:#e6a271ff;stroke-width:2;\" /><line x1=\"233\" y1=\"15\" x2=\"233\" y2=\"27\" style=\"stroke:#e6a171ff;stroke-width:2;\" /><line x1=\"234\" y1=\"15\" x2=\"234\" y2=\"27\" style=\"stroke:#e5a170ff;stroke-width:2;\" /><line x1=\"235\" y1=\"15\" x2=\"235\" y2=\"27\" style=\"stroke:#e5a170ff;stroke-width:2;\" /><line x1=\"236\" y1=\"15\" x2=\"236\" y2=\"27\" style=\"stroke:#e5a070ff;stroke-width:2;\" /><line x1=\"237\" y1=\"15\" x2=\"237\" y2=\"27\" style=\"stroke:#e5a070ff;stroke-width:2;\" /><line x1=\"238\" y1=\"15\" x2=\"238\" y2=\"27\" style=\"stroke:#e5a06fff;stroke-width:2;\" /><line x1=\"239\" y1=\"15\" x2=\"239\" y2=\"27\" style=\"stroke:#e59f6fff;stroke-width:2;\" /><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"27\" style=\"stroke:#e59f6fff;stroke-width:2;\" /><line x1=\"241\" y1=\"15\" x2=\"241\" y2=\"27\" style=\"stroke:#e59f6eff;stroke-width:2;\" /><line x1=\"242\" y1=\"15\" x2=\"242\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"27\" style=\"stroke:#e59e6eff;stroke-width:2;\" /><line x1=\"244\" y1=\"15\" x2=\"244\" y2=\"27\" style=\"stroke:#e49e6dff;stroke-width:2;\" /><line x1=\"245\" y1=\"15\" x2=\"245\" y2=\"27\" style=\"stroke:#e49d6dff;stroke-width:2;\" /><line x1=\"246\" y1=\"15\" x2=\"246\" y2=\"27\" style=\"stroke:#e49d6dff;stroke-width:2;\" /><line x1=\"247\" y1=\"15\" x2=\"247\" y2=\"27\" style=\"stroke:#e49d6cff;stroke-width:2;\" /><line x1=\"248\" y1=\"15\" x2=\"248\" y2=\"27\" style=\"stroke:#e49c6cff;stroke-width:2;\" /><line x1=\"249\" y1=\"15\" x2=\"249\" y2=\"27\" style=\"stroke:#e49c6cff;stroke-width:2;\" /><line x1=\"250\" y1=\"15\" x2=\"250\" y2=\"27\" style=\"stroke:#e49c6bff;stroke-width:2;\" /><line x1=\"251\" y1=\"15\" x2=\"251\" y2=\"27\" style=\"stroke:#e49b6bff;stroke-width:2;\" /><line x1=\"252\" y1=\"15\" x2=\"252\" y2=\"27\" style=\"stroke:#e49b6bff;stroke-width:2;\" /><line x1=\"253\" y1=\"15\" x2=\"253\" y2=\"27\" style=\"stroke:#e39b6aff;stroke-width:2;\" /><line x1=\"254\" y1=\"15\" x2=\"254\" y2=\"27\" style=\"stroke:#e39a6aff;stroke-width:2;\" /><line x1=\"255\" y1=\"15\" x2=\"255\" y2=\"27\" style=\"stroke:#e39a6aff;stroke-width:2;\" /><line x1=\"256\" y1=\"15\" x2=\"256\" y2=\"27\" style=\"stroke:#e39a69ff;stroke-width:2;\" /><line x1=\"257\" y1=\"15\" x2=\"257\" y2=\"27\" style=\"stroke:#e39969ff;stroke-width:2;\" /><line x1=\"258\" y1=\"15\" x2=\"258\" y2=\"27\" style=\"stroke:#e39969ff;stroke-width:2;\" /><line x1=\"259\" y1=\"15\" x2=\"259\" y2=\"27\" style=\"stroke:#e39968ff;stroke-width:2;\" /><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"27\" style=\"stroke:#e39868ff;stroke-width:2;\" /><line x1=\"261\" y1=\"15\" x2=\"261\" y2=\"27\" style=\"stroke:#e39868ff;stroke-width:2;\" /><line x1=\"262\" y1=\"15\" x2=\"262\" y2=\"27\" style=\"stroke:#e39867ff;stroke-width:2;\" /><line x1=\"263\" y1=\"15\" x2=\"263\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"264\" y1=\"15\" x2=\"264\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"265\" y1=\"15\" x2=\"265\" y2=\"27\" style=\"stroke:#e29766ff;stroke-width:2;\" /><line x1=\"266\" y1=\"15\" x2=\"266\" y2=\"27\" style=\"stroke:#e29666ff;stroke-width:2;\" /><line x1=\"267\" y1=\"15\" x2=\"267\" y2=\"27\" style=\"stroke:#e29666ff;stroke-width:2;\" /><line x1=\"268\" y1=\"15\" x2=\"268\" y2=\"27\" style=\"stroke:#e29665ff;stroke-width:2;\" /><line x1=\"269\" y1=\"15\" x2=\"269\" y2=\"27\" style=\"stroke:#e29565ff;stroke-width:2;\" /><line x1=\"270\" y1=\"15\" x2=\"270\" y2=\"27\" style=\"stroke:#e29565ff;stroke-width:2;\" /><line x1=\"271\" y1=\"15\" x2=\"271\" y2=\"27\" style=\"stroke:#e29564ff;stroke-width:2;\" /><line x1=\"272\" y1=\"15\" x2=\"272\" y2=\"27\" style=\"stroke:#e29464ff;stroke-width:2;\" /><line x1=\"273\" y1=\"15\" x2=\"273\" y2=\"27\" style=\"stroke:#e19464ff;stroke-width:2;\" /><line x1=\"274\" y1=\"15\" x2=\"274\" y2=\"27\" style=\"stroke:#e19463ff;stroke-width:2;\" /><line x1=\"275\" y1=\"15\" x2=\"275\" y2=\"27\" style=\"stroke:#e19363ff;stroke-width:2;\" /><line x1=\"276\" y1=\"15\" x2=\"276\" y2=\"27\" style=\"stroke:#e19363ff;stroke-width:2;\" /><line x1=\"277\" y1=\"15\" x2=\"277\" y2=\"27\" style=\"stroke:#e19362ff;stroke-width:2;\" /><line x1=\"278\" y1=\"15\" x2=\"278\" y2=\"27\" style=\"stroke:#e19262ff;stroke-width:2;\" /><line x1=\"279\" y1=\"15\" x2=\"279\" y2=\"27\" style=\"stroke:#e19262ff;stroke-width:2;\" /><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"27\" style=\"stroke:#e19261ff;stroke-width:2;\" /><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"27\" style=\"stroke:#e19161ff;stroke-width:2;\" /><line x1=\"282\" y1=\"15\" x2=\"282\" y2=\"27\" style=\"stroke:#e19161ff;stroke-width:2;\" /><line x1=\"283\" y1=\"15\" x2=\"283\" y2=\"27\" style=\"stroke:#e09160ff;stroke-width:2;\" /><line x1=\"284\" y1=\"15\" x2=\"284\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"285\" y1=\"15\" x2=\"285\" y2=\"27\" style=\"stroke:#e09060ff;stroke-width:2;\" /><line x1=\"286\" y1=\"15\" x2=\"286\" y2=\"27\" style=\"stroke:#e0905fff;stroke-width:2;\" /><line x1=\"287\" y1=\"15\" x2=\"287\" y2=\"27\" style=\"stroke:#e08f5fff;stroke-width:2;\" /><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"27\" style=\"stroke:#e08f5fff;stroke-width:2;\" /><line x1=\"289\" y1=\"15\" x2=\"289\" y2=\"27\" style=\"stroke:#e08f5eff;stroke-width:2;\" /><line x1=\"290\" y1=\"15\" x2=\"290\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"291\" y1=\"15\" x2=\"291\" y2=\"27\" style=\"stroke:#e08e5eff;stroke-width:2;\" /><line x1=\"292\" y1=\"15\" x2=\"292\" y2=\"27\" style=\"stroke:#df8e5dff;stroke-width:2;\" /><line x1=\"293\" y1=\"15\" x2=\"293\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"294\" y1=\"15\" x2=\"294\" y2=\"27\" style=\"stroke:#df8d5dff;stroke-width:2;\" /><line x1=\"295\" y1=\"15\" x2=\"295\" y2=\"27\" style=\"stroke:#df8d5cff;stroke-width:2;\" /><line x1=\"296\" y1=\"15\" x2=\"296\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"297\" y1=\"15\" x2=\"297\" y2=\"27\" style=\"stroke:#df8c5cff;stroke-width:2;\" /><line x1=\"298\" y1=\"15\" x2=\"298\" y2=\"27\" style=\"stroke:#df8c5bff;stroke-width:2;\" /><line x1=\"299\" y1=\"15\" x2=\"299\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"27\" style=\"stroke:#df8b5bff;stroke-width:2;\" /><line x1=\"301\" y1=\"15\" x2=\"301\" y2=\"27\" style=\"stroke:#df8b5aff;stroke-width:2;\" /><line x1=\"302\" y1=\"15\" x2=\"302\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"303\" y1=\"15\" x2=\"303\" y2=\"27\" style=\"stroke:#de8a5aff;stroke-width:2;\" /><line x1=\"304\" y1=\"15\" x2=\"304\" y2=\"27\" style=\"stroke:#de8a59ff;stroke-width:2;\" /><line x1=\"305\" y1=\"15\" x2=\"305\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"306\" y1=\"15\" x2=\"306\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"307\" y1=\"15\" x2=\"307\" y2=\"27\" style=\"stroke:#de8959ff;stroke-width:2;\" /><line x1=\"308\" y1=\"15\" x2=\"308\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"309\" y1=\"15\" x2=\"309\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"310\" y1=\"15\" x2=\"310\" y2=\"27\" style=\"stroke:#dd8758ff;stroke-width:2;\" /><line x1=\"311\" y1=\"15\" x2=\"311\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"312\" y1=\"15\" x2=\"312\" y2=\"27\" style=\"stroke:#dd8757ff;stroke-width:2;\" /><line x1=\"313\" y1=\"15\" x2=\"313\" y2=\"27\" style=\"stroke:#dd8657ff;stroke-width:2;\" /><line x1=\"314\" y1=\"15\" x2=\"314\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"315\" y1=\"15\" x2=\"315\" y2=\"27\" style=\"stroke:#dd8656ff;stroke-width:2;\" /><line x1=\"316\" y1=\"15\" x2=\"316\" y2=\"27\" style=\"stroke:#dd8556ff;stroke-width:2;\" /><line x1=\"317\" y1=\"15\" x2=\"317\" y2=\"27\" style=\"stroke:#dc8555ff;stroke-width:2;\" /><line x1=\"318\" y1=\"15\" x2=\"318\" y2=\"27\" style=\"stroke:#dc8555ff;stroke-width:2;\" /><line x1=\"319\" y1=\"15\" x2=\"319\" y2=\"27\" style=\"stroke:#dc8455ff;stroke-width:2;\" /><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"27\" style=\"stroke:#dc8454ff;stroke-width:2;\" /><line x1=\"321\" y1=\"15\" x2=\"321\" y2=\"27\" style=\"stroke:#dc8454ff;stroke-width:2;\" /><line x1=\"322\" y1=\"15\" x2=\"322\" y2=\"27\" style=\"stroke:#dc8354ff;stroke-width:2;\" /><line x1=\"323\" y1=\"15\" x2=\"323\" y2=\"27\" style=\"stroke:#dc8353ff;stroke-width:2;\" /><line x1=\"324\" y1=\"15\" x2=\"324\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"325\" y1=\"15\" x2=\"325\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"326\" y1=\"15\" x2=\"326\" y2=\"27\" style=\"stroke:#db8253ff;stroke-width:2;\" /><line x1=\"327\" y1=\"15\" x2=\"327\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"328\" y1=\"15\" x2=\"328\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"329\" y1=\"15\" x2=\"329\" y2=\"27\" style=\"stroke:#db8152ff;stroke-width:2;\" /><line x1=\"330\" y1=\"15\" x2=\"330\" y2=\"27\" style=\"stroke:#db8051ff;stroke-width:2;\" /><line x1=\"331\" y1=\"15\" x2=\"331\" y2=\"27\" style=\"stroke:#da8051ff;stroke-width:2;\" /><line x1=\"332\" y1=\"15\" x2=\"332\" y2=\"27\" style=\"stroke:#da8051ff;stroke-width:2;\" /><line x1=\"333\" y1=\"15\" x2=\"333\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"334\" y1=\"15\" x2=\"334\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"335\" y1=\"15\" x2=\"335\" y2=\"27\" style=\"stroke:#da7f50ff;stroke-width:2;\" /><line x1=\"336\" y1=\"15\" x2=\"336\" y2=\"27\" style=\"stroke:#da7e4fff;stroke-width:2;\" /><line x1=\"337\" y1=\"15\" x2=\"337\" y2=\"27\" style=\"stroke:#da7e4fff;stroke-width:2;\" /><line x1=\"338\" y1=\"15\" x2=\"338\" y2=\"27\" style=\"stroke:#da7d4fff;stroke-width:2;\" /><line x1=\"339\" y1=\"15\" x2=\"339\" y2=\"27\" style=\"stroke:#d97d4eff;stroke-width:2;\" /><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"27\" style=\"stroke:#d97d4eff;stroke-width:2;\" /><line x1=\"341\" y1=\"15\" x2=\"341\" y2=\"27\" style=\"stroke:#d97c4eff;stroke-width:2;\" /><line x1=\"342\" y1=\"15\" x2=\"342\" y2=\"27\" style=\"stroke:#d97c4dff;stroke-width:2;\" /><line x1=\"343\" y1=\"15\" x2=\"343\" y2=\"27\" style=\"stroke:#d97c4dff;stroke-width:2;\" /><line x1=\"344\" y1=\"15\" x2=\"344\" y2=\"27\" style=\"stroke:#d97b4dff;stroke-width:2;\" /><line x1=\"345\" y1=\"15\" x2=\"345\" y2=\"27\" style=\"stroke:#d97b4dff;stroke-width:2;\" /><line x1=\"346\" y1=\"15\" x2=\"346\" y2=\"27\" style=\"stroke:#d87b4cff;stroke-width:2;\" /><line x1=\"347\" y1=\"15\" x2=\"347\" y2=\"27\" style=\"stroke:#d87a4cff;stroke-width:2;\" /><line x1=\"348\" y1=\"15\" x2=\"348\" y2=\"27\" style=\"stroke:#d87a4cff;stroke-width:2;\" /><line x1=\"349\" y1=\"15\" x2=\"349\" y2=\"27\" style=\"stroke:#d87a4bff;stroke-width:2;\" /><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"27\" style=\"stroke:#d8794bff;stroke-width:2;\" /><line x1=\"351\" y1=\"15\" x2=\"351\" y2=\"27\" style=\"stroke:#d8794bff;stroke-width:2;\" /><line x1=\"352\" y1=\"15\" x2=\"352\" y2=\"27\" style=\"stroke:#d8784aff;stroke-width:2;\" /><line x1=\"353\" y1=\"15\" x2=\"353\" y2=\"27\" style=\"stroke:#d7784aff;stroke-width:2;\" /><line x1=\"354\" y1=\"15\" x2=\"354\" y2=\"27\" style=\"stroke:#d7784aff;stroke-width:2;\" /><line x1=\"355\" y1=\"15\" x2=\"355\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"356\" y1=\"15\" x2=\"356\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"357\" y1=\"15\" x2=\"357\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"358\" y1=\"15\" x2=\"358\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"359\" y1=\"15\" x2=\"359\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"27\" style=\"stroke:#d77648ff;stroke-width:2;\" /><line x1=\"361\" y1=\"15\" x2=\"361\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"362\" y1=\"15\" x2=\"362\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"363\" y1=\"15\" x2=\"363\" y2=\"27\" style=\"stroke:#d67547ff;stroke-width:2;\" /><line x1=\"364\" y1=\"15\" x2=\"364\" y2=\"27\" style=\"stroke:#d67447ff;stroke-width:2;\" /><line x1=\"365\" y1=\"15\" x2=\"365\" y2=\"27\" style=\"stroke:#d67446ff;stroke-width:2;\" /><line x1=\"366\" y1=\"15\" x2=\"366\" y2=\"27\" style=\"stroke:#d67346ff;stroke-width:2;\" /><line x1=\"367\" y1=\"15\" x2=\"367\" y2=\"27\" style=\"stroke:#d67346ff;stroke-width:2;\" /><line x1=\"368\" y1=\"15\" x2=\"368\" y2=\"27\" style=\"stroke:#d57345ff;stroke-width:2;\" /><line x1=\"369\" y1=\"15\" x2=\"369\" y2=\"27\" style=\"stroke:#d57245ff;stroke-width:2;\" /><line x1=\"370\" y1=\"15\" x2=\"370\" y2=\"27\" style=\"stroke:#d57245ff;stroke-width:2;\" /><line x1=\"371\" y1=\"15\" x2=\"371\" y2=\"27\" style=\"stroke:#d57244ff;stroke-width:2;\" /><line x1=\"372\" y1=\"15\" x2=\"372\" y2=\"27\" style=\"stroke:#d57144ff;stroke-width:2;\" /><line x1=\"373\" y1=\"15\" x2=\"373\" y2=\"27\" style=\"stroke:#d57144ff;stroke-width:2;\" /><line x1=\"374\" y1=\"15\" x2=\"374\" y2=\"27\" style=\"stroke:#d57143ff;stroke-width:2;\" /><line x1=\"375\" y1=\"15\" x2=\"375\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"376\" y1=\"15\" x2=\"376\" y2=\"27\" style=\"stroke:#d47043ff;stroke-width:2;\" /><line x1=\"377\" y1=\"15\" x2=\"377\" y2=\"27\" style=\"stroke:#d47042ff;stroke-width:2;\" /><line x1=\"378\" y1=\"15\" x2=\"378\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"379\" y1=\"15\" x2=\"379\" y2=\"27\" style=\"stroke:#d46f42ff;stroke-width:2;\" /><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"27\" style=\"stroke:#d46e41ff;stroke-width:2;\" /><line x1=\"381\" y1=\"15\" x2=\"381\" y2=\"27\" style=\"stroke:#d46e41ff;stroke-width:2;\" /><line x1=\"382\" y1=\"15\" x2=\"382\" y2=\"27\" style=\"stroke:#d36e41ff;stroke-width:2;\" /><line x1=\"383\" y1=\"15\" x2=\"383\" y2=\"27\" style=\"stroke:#d36d41ff;stroke-width:2;\" /><line x1=\"384\" y1=\"15\" x2=\"384\" y2=\"27\" style=\"stroke:#d36d40ff;stroke-width:2;\" /><line x1=\"385\" y1=\"15\" x2=\"385\" y2=\"27\" style=\"stroke:#d36d40ff;stroke-width:2;\" /><line x1=\"386\" y1=\"15\" x2=\"386\" y2=\"27\" style=\"stroke:#d36c40ff;stroke-width:2;\" /><line x1=\"387\" y1=\"15\" x2=\"387\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"388\" y1=\"15\" x2=\"388\" y2=\"27\" style=\"stroke:#d36c3fff;stroke-width:2;\" /><line x1=\"389\" y1=\"15\" x2=\"389\" y2=\"27\" style=\"stroke:#d36b3fff;stroke-width:2;\" /><line x1=\"390\" y1=\"15\" x2=\"390\" y2=\"27\" style=\"stroke:#d26b3eff;stroke-width:2;\" /><line x1=\"391\" y1=\"15\" x2=\"391\" y2=\"27\" style=\"stroke:#d26b3eff;stroke-width:2;\" /><line x1=\"392\" y1=\"15\" x2=\"392\" y2=\"27\" style=\"stroke:#d26a3eff;stroke-width:2;\" /><line x1=\"393\" y1=\"15\" x2=\"393\" y2=\"27\" style=\"stroke:#d26a3dff;stroke-width:2;\" /><line x1=\"394\" y1=\"15\" x2=\"394\" y2=\"27\" style=\"stroke:#d2693dff;stroke-width:2;\" /><line x1=\"395\" y1=\"15\" x2=\"395\" y2=\"27\" style=\"stroke:#d2693dff;stroke-width:2;\" /><line x1=\"396\" y1=\"15\" x2=\"396\" y2=\"27\" style=\"stroke:#d2693cff;stroke-width:2;\" /><line x1=\"397\" y1=\"15\" x2=\"397\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"398\" y1=\"15\" x2=\"398\" y2=\"27\" style=\"stroke:#d1683cff;stroke-width:2;\" /><line x1=\"399\" y1=\"15\" x2=\"399\" y2=\"27\" style=\"stroke:#d1683bff;stroke-width:2;\" /><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"401\" y1=\"15\" x2=\"401\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"402\" y1=\"15\" x2=\"402\" y2=\"27\" style=\"stroke:#d1673bff;stroke-width:2;\" /><line x1=\"403\" y1=\"15\" x2=\"403\" y2=\"27\" style=\"stroke:#d1663aff;stroke-width:2;\" /><line x1=\"404\" y1=\"15\" x2=\"404\" y2=\"27\" style=\"stroke:#d0663aff;stroke-width:2;\" /><line x1=\"405\" y1=\"15\" x2=\"405\" y2=\"27\" style=\"stroke:#d0663aff;stroke-width:2;\" /><line x1=\"406\" y1=\"15\" x2=\"406\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"407\" y1=\"15\" x2=\"407\" y2=\"27\" style=\"stroke:#d06539ff;stroke-width:2;\" /><line x1=\"408\" y1=\"15\" x2=\"408\" y2=\"27\" style=\"stroke:#d06439ff;stroke-width:2;\" /><line x1=\"409\" y1=\"15\" x2=\"409\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"410\" y1=\"15\" x2=\"410\" y2=\"27\" style=\"stroke:#d06438ff;stroke-width:2;\" /><line x1=\"411\" y1=\"15\" x2=\"411\" y2=\"27\" style=\"stroke:#d06338ff;stroke-width:2;\" /><line x1=\"412\" y1=\"15\" x2=\"412\" y2=\"27\" style=\"stroke:#cf6337ff;stroke-width:2;\" /><line x1=\"413\" y1=\"15\" x2=\"413\" y2=\"27\" style=\"stroke:#cf6337ff;stroke-width:2;\" /><line x1=\"414\" y1=\"15\" x2=\"414\" y2=\"27\" style=\"stroke:#cf6237ff;stroke-width:2;\" /><line x1=\"415\" y1=\"15\" x2=\"415\" y2=\"27\" style=\"stroke:#cf6236ff;stroke-width:2;\" /><line x1=\"416\" y1=\"15\" x2=\"416\" y2=\"27\" style=\"stroke:#cf6236ff;stroke-width:2;\" /><line x1=\"417\" y1=\"15\" x2=\"417\" y2=\"27\" style=\"stroke:#cf6136ff;stroke-width:2;\" /><line x1=\"418\" y1=\"15\" x2=\"418\" y2=\"27\" style=\"stroke:#cf6135ff;stroke-width:2;\" /><line x1=\"419\" y1=\"15\" x2=\"419\" y2=\"27\" style=\"stroke:#ce6135ff;stroke-width:2;\" /><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"27\" style=\"stroke:#ce6035ff;stroke-width:2;\" /><line x1=\"421\" y1=\"15\" x2=\"421\" y2=\"27\" style=\"stroke:#ce6035ff;stroke-width:2;\" /><line x1=\"422\" y1=\"15\" x2=\"422\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"423\" y1=\"15\" x2=\"423\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"424\" y1=\"15\" x2=\"424\" y2=\"27\" style=\"stroke:#ce5f34ff;stroke-width:2;\" /><line x1=\"425\" y1=\"15\" x2=\"425\" y2=\"27\" style=\"stroke:#ce5e33ff;stroke-width:2;\" /><line x1=\"426\" y1=\"15\" x2=\"426\" y2=\"27\" style=\"stroke:#cd5e33ff;stroke-width:2;\" /><line x1=\"427\" y1=\"15\" x2=\"427\" y2=\"27\" style=\"stroke:#cd5e33ff;stroke-width:2;\" /><line x1=\"428\" y1=\"15\" x2=\"428\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"429\" y1=\"15\" x2=\"429\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"430\" y1=\"15\" x2=\"430\" y2=\"27\" style=\"stroke:#cd5d32ff;stroke-width:2;\" /><line x1=\"431\" y1=\"15\" x2=\"431\" y2=\"27\" style=\"stroke:#cd5c31ff;stroke-width:2;\" /><line x1=\"432\" y1=\"15\" x2=\"432\" y2=\"27\" style=\"stroke:#cd5c31ff;stroke-width:2;\" /><line x1=\"433\" y1=\"15\" x2=\"433\" y2=\"27\" style=\"stroke:#cc5c31ff;stroke-width:2;\" /><line x1=\"434\" y1=\"15\" x2=\"434\" y2=\"27\" style=\"stroke:#cc5b30ff;stroke-width:2;\" /><line x1=\"435\" y1=\"15\" x2=\"435\" y2=\"27\" style=\"stroke:#cc5b30ff;stroke-width:2;\" /><line x1=\"436\" y1=\"15\" x2=\"436\" y2=\"27\" style=\"stroke:#cc5a30ff;stroke-width:2;\" /><line x1=\"437\" y1=\"15\" x2=\"437\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"438\" y1=\"15\" x2=\"438\" y2=\"27\" style=\"stroke:#cc5a2fff;stroke-width:2;\" /><line x1=\"439\" y1=\"15\" x2=\"439\" y2=\"27\" style=\"stroke:#cc592fff;stroke-width:2;\" /><line x1=\"440\" y1=\"15\" x2=\"440\" y2=\"27\" style=\"stroke:#cc592fff;stroke-width:2;\" /><line x1=\"441\" y1=\"15\" x2=\"441\" y2=\"27\" style=\"stroke:#cb592eff;stroke-width:2;\" /><line x1=\"442\" y1=\"15\" x2=\"442\" y2=\"27\" style=\"stroke:#cb582eff;stroke-width:2;\" /><line x1=\"443\" y1=\"15\" x2=\"443\" y2=\"27\" style=\"stroke:#cb582eff;stroke-width:2;\" /><line x1=\"444\" y1=\"15\" x2=\"444\" y2=\"27\" style=\"stroke:#cb582dff;stroke-width:2;\" /><line x1=\"445\" y1=\"15\" x2=\"445\" y2=\"27\" style=\"stroke:#cb572dff;stroke-width:2;\" /><line x1=\"446\" y1=\"15\" x2=\"446\" y2=\"27\" style=\"stroke:#cb572dff;stroke-width:2;\" /><line x1=\"447\" y1=\"15\" x2=\"447\" y2=\"27\" style=\"stroke:#cb572cff;stroke-width:2;\" /><line x1=\"448\" y1=\"15\" x2=\"448\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><line x1=\"449\" y1=\"15\" x2=\"449\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><text x=\"0\" y=\"38\" style=\"text-anchor:start; font-size:11px; font:Arial\">-1.0</text><text x=\"75\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">6.4</text><text x=\"150\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">13.7</text><text x=\"225\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">21.1</text><text x=\"300\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">28.4</text><text x=\"375\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">35.8</text><text x=\"450\" y=\"38\" style=\"text-anchor:end; font-size:11px; font:Arial\">43.14</text><text x=\"0\" y=\"12\" style=\"font-size:11px; font:Arial\"></text></svg> <br/>\n        <span style=\"font-size: 0.8em\">(Obszary obwod\u00f3w s\u0105 przybli\u017cone z wykorzystaniem diagramu Voronoia)</span><br/>\n        \n<div class=\"dropdown\">\n  <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n    Zmie\u0144 map\u0119\n  </button>\n  <ul class=\"dropdown-menu\" style=\"max-height: 25vw; overflow: auto;\">\n    <li><a class=\"dropdown-item\" href=\"./gda_turnout.html\">Gda\u0144sk - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_RTJ.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs RAKOWSKI Tomasz J\u0119drzej</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_PAL.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs PECKA Andrzej Leszek</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_UMP.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_SA.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_SAA.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_DAM.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_RTJ.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs PECKA Andrzej Leszek</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_UMP.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_SA.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_SAA.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_RTJ.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_UMP.html\">Gda\u0144sk - PECKA Andrzej Leszek vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_SA.html\">Gda\u0144sk - PECKA Andrzej Leszek vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_SAA.html\">Gda\u0144sk - PECKA Andrzej Leszek vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_PAL.html\">Gda\u0144sk - PECKA Andrzej Leszek vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_SA_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_SAA_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_SA_SAA.html\">Gda\u0144sk - SZOSTAK Artur vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_SA.html\">Gda\u0144sk - SZOSTAK Artur vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_SAA.html\">Gda\u0144sk - SZCZEPA\u0143SKI Adam Aleksander vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./kra_turnout.html\">Krak\u00f3w - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs GIBA\u0141A \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KMITA \u0141ukasz Marek</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MAJ_MS.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MAJ_MJS.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_K\u0141M.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KMITA \u0141ukasz Marek</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_KAA.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_G\u0141.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_KRP.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_HAW.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MS.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MJS.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MS.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MJS.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_KAA.html\">Krak\u00f3w - KULIG Andrzej Adam vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_KRP.html\">Krak\u00f3w - KULIG Andrzej Adam vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_KAA.html\">Krak\u00f3w - KULIG Andrzej Adam vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MS.html\">Krak\u00f3w - KULIG Andrzej Adam vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MJS.html\">Krak\u00f3w - KULIG Andrzej Adam vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_KRP.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_HAW.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MS.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MJS.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_KRP.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MS.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MJS.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MS.html\">Krak\u00f3w - HARE\u0143CZYK Adam Wies\u0142aw vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MJS.html\">Krak\u00f3w - HARE\u0143CZYK Adam Wies\u0142aw vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MJS_MS.html\">Krak\u00f3w - MAZUR Stanis\u0142aw vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./poz_turnout.html\">Pozna\u0144 - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_JJ.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs CZERWI\u0143SKI Zbigniew</a></li><li><a class=\"dropdown-item\" href=\"./poz_JJ_PPM.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs PLEWI\u0143SKI Przemys\u0142aw Marcin</a></li><li><a class=\"dropdown-item\" href=\"./poz_JJ_UBK.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_JJ.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_PPM.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs PLEWI\u0143SKI Przemys\u0142aw Marcin</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_UBK.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_G\u0141.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_PPM_UBK.html\">Pozna\u0144 - PLEWI\u0143SKI Przemys\u0142aw Marcin vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_PPM.html\">Pozna\u0144 - PLEWI\u0143SKI Przemys\u0142aw Marcin vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_UBK.html\">Pozna\u0144 - URBA\u0143SKA Beata Kinga vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./waw_turnout.html\">Warszawa - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs BOCHE\u0143SKI Tobiasz Adam</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs BIEJAT Magdalena Agnieszka</a></li><li><a class=\"dropdown-item\" href=\"./waw_TRK_WPJ.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_SRT_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_BTA.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs BIEJAT Magdalena Agnieszka</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_WPJ.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_KJR.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_SRT.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_WPJ.html\">Warszawa - BIEJAT Magdalena Agnieszka vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_KJR.html\">Warszawa - BIEJAT Magdalena Agnieszka vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_SRT.html\">Warszawa - BIEJAT Magdalena Agnieszka vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_WPJ.html\">Warszawa - WIPLER Przemys\u0142aw Janusz vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_SRT_WPJ.html\">Warszawa - WIPLER Przemys\u0142aw Janusz vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_SRT.html\">Warszawa - KORWIN-MIKKE Janusz Ryszard vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./wro_turnout.html\">Wroc\u0142aw - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs BODNAR Izabela Anna</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs KASZTELOWICZ \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_MJA_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_PGT_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_K\u0141.html\">Wroc\u0142aw - BODNAR Izabela Anna vs KASZTELOWICZ \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_MJA.html\">Wroc\u0142aw - BODNAR Izabela Anna vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_GRS.html\">Wroc\u0142aw - BODNAR Izabela Anna vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_PGT.html\">Wroc\u0142aw - BODNAR Izabela Anna vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_MJA.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_K\u0141.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_PGT.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_MJA.html\">Wroc\u0142aw - MICHALAK Jerzy Andrzej vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_MJA_PGT.html\">Wroc\u0142aw - MICHALAK Jerzy Andrzej vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_PGT.html\">Wroc\u0142aw - GRZECHNIK Robert Sebastian vs PRIGAN Grzegorz Tomasz</a></li>\n  </ul>\n</div>\n\n        </div>\n        ",
   "initialViewState": {
     "latitude": 50.05872418082306,
     "longitude": 19.968393729047147,
@@ -22557,7 +22561,7 @@
         128
       ],
       "getLineWidth": 15,
-      "id": "5429691d-9432-4905-81ae-1cb38204baca",
+      "id": "b8961d2a-fe4f-4f14-acbf-af4f88f678a1",
       "lineWidthMinPixels": 1,
       "opacity": 0.8,
       "pickable": true,
@@ -22569,7 +22573,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.67",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.687908609180373,
+          "diff_abs_scale": 0.6879086091312685,
           "diff_str": "29.67",
           "geometry": {
             "coordinates": [
@@ -23521,7 +23525,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.53",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5918147854636024,
+          "diff_abs_scale": 0.5918147855996279,
           "diff_str": "25.53",
           "geometry": {
             "coordinates": [
@@ -23565,7 +23569,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.05",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5575373993095512,
+          "diff_abs_scale": 0.5575373993026153,
           "diff_str": "24.05",
           "geometry": {
             "coordinates": [
@@ -23609,7 +23613,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.61",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6167832167832168,
+          "diff_abs_scale": 0.6167832167734901,
           "diff_str": "26.61",
           "geometry": {
             "coordinates": [
@@ -23661,7 +23665,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.85",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6455182295812769,
+          "diff_abs_scale": 0.645518229533887,
           "diff_str": "27.85",
           "geometry": {
             "coordinates": [
@@ -23717,7 +23721,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.84",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5062034739454094,
+          "diff_abs_scale": 0.5062034740184638,
           "diff_str": "21.84",
           "geometry": {
             "coordinates": [
@@ -23861,7 +23865,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.97",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6948706205633157,
+          "diff_abs_scale": 0.694870620522494,
           "diff_str": "29.97",
           "geometry": {
             "coordinates": [
@@ -25781,7 +25785,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.31",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6330236748897036,
+          "diff_abs_scale": 0.6330236748560465,
           "diff_str": "27.31",
           "geometry": {
             "coordinates": [
@@ -25829,7 +25833,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.54",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.592053629823414,
+          "diff_abs_scale": 0.5920536299587297,
           "diff_str": "25.54",
           "geometry": {
             "coordinates": [
@@ -25873,7 +25877,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.87",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5766233766233766,
+          "diff_abs_scale": 0.5766233766534828,
           "diff_str": "24.87",
           "geometry": {
             "coordinates": [
@@ -25917,7 +25921,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.92",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6703176341730558,
+          "diff_abs_scale": 0.6703176341895598,
           "diff_str": "28.92",
           "geometry": {
             "coordinates": [
@@ -25961,7 +25965,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.82",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5985792237207865,
+          "diff_abs_scale": 0.598579223686299,
           "diff_str": "25.82",
           "geometry": {
             "coordinates": [
@@ -26013,7 +26017,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.00",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.649173738276016,
+          "diff_abs_scale": 0.6491737382204169,
           "diff_str": "28.00",
           "geometry": {
             "coordinates": [
@@ -26057,7 +26061,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.87",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5766085687960688,
+          "diff_abs_scale": 0.5766085688034822,
           "diff_str": "24.87",
           "geometry": {
             "coordinates": [
@@ -26101,7 +26105,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.56",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7316074336622281,
+          "diff_abs_scale": 0.7316074336014367,
           "diff_str": "31.56",
           "geometry": {
             "coordinates": [
@@ -26153,7 +26157,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.06",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6272060254022956,
+          "diff_abs_scale": 0.6272060253421458,
           "diff_str": "27.06",
           "geometry": {
             "coordinates": [
@@ -26417,7 +26421,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.07",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5117359239824139,
+          "diff_abs_scale": 0.5117359241141698,
           "diff_str": "22.07",
           "geometry": {
             "coordinates": [
@@ -26469,7 +26473,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.37",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.47222222222222215,
+          "diff_abs_scale": 0.472222222235101,
           "diff_str": "20.37",
           "geometry": {
             "coordinates": [
@@ -26513,7 +26517,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.47",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6367538041357783,
+          "diff_abs_scale": 0.6367538041925797,
           "diff_str": "27.47",
           "geometry": {
             "coordinates": [
@@ -26561,7 +26565,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.92",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6239739817252593,
+          "diff_abs_scale": 0.6239739817101806,
           "diff_str": "26.92",
           "geometry": {
             "coordinates": [
@@ -26609,7 +26613,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.89",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4842777085927771,
+          "diff_abs_scale": 0.48427770864019437,
           "diff_str": "20.89",
           "geometry": {
             "coordinates": [
@@ -26653,7 +26657,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.13",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6520328359864662,
+          "diff_abs_scale": 0.6520328360069105,
           "diff_str": "28.13",
           "geometry": {
             "coordinates": [
@@ -26697,7 +26701,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.12",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6518067706352225,
+          "diff_abs_scale": 0.6518067706250821,
           "diff_str": "28.12",
           "geometry": {
             "coordinates": [
@@ -26741,7 +26745,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.87",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.715629198387819,
+          "diff_abs_scale": 0.7156291985098013,
           "diff_str": "30.87",
           "geometry": {
             "coordinates": [
@@ -26781,7 +26785,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.86",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7153764204545454,
+          "diff_abs_scale": 0.7153764204870625,
           "diff_str": "30.86",
           "geometry": {
             "coordinates": [
@@ -26829,7 +26833,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.52",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7074039362699157,
+          "diff_abs_scale": 0.7074039363594274,
           "diff_str": "30.52",
           "geometry": {
             "coordinates": [
@@ -26881,7 +26885,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "34.95",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.8102686786897313,
+          "diff_abs_scale": 0.8102686786868303,
           "diff_str": "34.95",
           "geometry": {
             "coordinates": [
@@ -26937,7 +26941,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.48",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7066576546130449,
+          "diff_abs_scale": 0.7066576547503025,
           "diff_str": "30.48",
           "geometry": {
             "coordinates": [
@@ -26981,7 +26985,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.80",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5054396423248882,
+          "diff_abs_scale": 0.5054396423820654,
           "diff_str": "21.80",
           "geometry": {
             "coordinates": [
@@ -27029,7 +27033,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.00",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6721865495099695,
+          "diff_abs_scale": 0.6721865495896447,
           "diff_str": "29.00",
           "geometry": {
             "coordinates": [
@@ -27073,7 +27077,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.86",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5531453362255965,
+          "diff_abs_scale": 0.5531453363296883,
           "diff_str": "23.86",
           "geometry": {
             "coordinates": [
@@ -27117,7 +27121,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.13",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6057966423820083,
+          "diff_abs_scale": 0.6057966423820816,
           "diff_str": "26.13",
           "geometry": {
             "coordinates": [
@@ -27157,7 +27161,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.46",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5669856459330143,
+          "diff_abs_scale": 0.5669856458575901,
           "diff_str": "24.46",
           "geometry": {
             "coordinates": [
@@ -27201,7 +27205,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "18.10",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.41948051948051945,
+          "diff_abs_scale": 0.4194805196099764,
           "diff_str": "18.10",
           "geometry": {
             "coordinates": [
@@ -27253,7 +27257,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.72",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.735423197492163,
+          "diff_abs_scale": 0.7354231975016101,
           "diff_str": "31.72",
           "geometry": {
             "coordinates": [
@@ -27305,7 +27309,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "37.31",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.8649932157394844,
+          "diff_abs_scale": 0.8649932158756813,
           "diff_str": "37.31",
           "geometry": {
             "coordinates": [
@@ -27353,7 +27357,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.56",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.47667359003035625,
+          "diff_abs_scale": 0.47667359009439425,
           "diff_str": "20.56",
           "geometry": {
             "coordinates": [
@@ -27397,7 +27401,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.60",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6630046690469651,
+          "diff_abs_scale": 0.6630046690801366,
           "diff_str": "28.60",
           "geometry": {
             "coordinates": [
@@ -27445,7 +27449,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.36",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5878642888212265,
+          "diff_abs_scale": 0.5878642887403573,
           "diff_str": "25.36",
           "geometry": {
             "coordinates": [
@@ -27493,7 +27497,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.81",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6679506933744221,
+          "diff_abs_scale": 0.667950693357634,
           "diff_str": "28.81",
           "geometry": {
             "coordinates": [
@@ -27549,7 +27553,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.66",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5948178035556676,
+          "diff_abs_scale": 0.5948178035315825,
           "diff_str": "25.66",
           "geometry": {
             "coordinates": [
@@ -27605,7 +27609,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.70",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5958378970427163,
+          "diff_abs_scale": 0.5958378969543562,
           "diff_str": "25.70",
           "geometry": {
             "coordinates": [
@@ -27661,7 +27665,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.67",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6413680443914328,
+          "diff_abs_scale": 0.6413680444927894,
           "diff_str": "27.67",
           "geometry": {
             "coordinates": [
@@ -27713,7 +27717,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "34.72",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.8048915551453623,
+          "diff_abs_scale": 0.804891555118404,
           "diff_str": "34.72",
           "geometry": {
             "coordinates": [
@@ -27757,7 +27761,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "12.86",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.298051948051948,
+          "diff_abs_scale": 0.29805194813172964,
           "diff_str": "12.86",
           "geometry": {
             "coordinates": [
@@ -27801,7 +27805,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.78",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7135053787414303,
+          "diff_abs_scale": 0.7135053788506138,
           "diff_str": "30.78",
           "geometry": {
             "coordinates": [
@@ -27853,7 +27857,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.50",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6839080459770115,
+          "diff_abs_scale": 0.683908046035632,
           "diff_str": "29.50",
           "geometry": {
             "coordinates": [
@@ -27897,7 +27901,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.80",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6212235909435001,
+          "diff_abs_scale": 0.6212235908873283,
           "diff_str": "26.80",
           "geometry": {
             "coordinates": [
@@ -27953,7 +27957,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.37",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6345608227922922,
+          "diff_abs_scale": 0.6345608227379345,
           "diff_str": "27.37",
           "geometry": {
             "coordinates": [
@@ -28001,7 +28005,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.91",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7397563374125874,
+          "diff_abs_scale": 0.7397563373927161,
           "diff_str": "31.91",
           "geometry": {
             "coordinates": [
@@ -28053,7 +28057,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.48",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6601646385110951,
+          "diff_abs_scale": 0.6601646385709166,
           "diff_str": "28.48",
           "geometry": {
             "coordinates": [
@@ -28093,7 +28097,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.78",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7136040116467163,
+          "diff_abs_scale": 0.7136040116915273,
           "diff_str": "30.78",
           "geometry": {
             "coordinates": [
@@ -28149,7 +28153,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.61",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.732824427480916,
+          "diff_abs_scale": 0.732824427592401,
           "diff_str": "31.61",
           "geometry": {
             "coordinates": [
@@ -28193,7 +28197,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.97",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6020084566596194,
+          "diff_abs_scale": 0.6020084567319094,
           "diff_str": "25.97",
           "geometry": {
             "coordinates": [
@@ -28245,7 +28249,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "19.26",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.44646464646464645,
+          "diff_abs_scale": 0.446464646502112,
           "diff_str": "19.26",
           "geometry": {
             "coordinates": [
@@ -29565,7 +29569,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.49",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.47508417508417505,
+          "diff_abs_scale": 0.47508417509432194,
           "diff_str": "20.49",
           "geometry": {
             "coordinates": [
@@ -29613,7 +29617,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.69",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5491295938104449,
+          "diff_abs_scale": 0.5491295937795058,
           "diff_str": "23.69",
           "geometry": {
             "coordinates": [
@@ -29665,7 +29669,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.97",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5094093804284887,
+          "diff_abs_scale": 0.5094093803822458,
           "diff_str": "21.97",
           "geometry": {
             "coordinates": [
@@ -29705,7 +29709,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.22",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7005097706032285,
+          "diff_abs_scale": 0.7005097707318414,
           "diff_str": "30.22",
           "geometry": {
             "coordinates": [
@@ -29749,7 +29753,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.25",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7244318181818181,
+          "diff_abs_scale": 0.7244318182147468,
           "diff_str": "31.25",
           "geometry": {
             "coordinates": [
@@ -29801,7 +29805,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.22",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.631060606060606,
+          "diff_abs_scale": 0.6310606060377755,
           "diff_str": "27.22",
           "geometry": {
             "coordinates": [
@@ -29849,7 +29853,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.45",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5436221775623595,
+          "diff_abs_scale": 0.5436221774974374,
           "diff_str": "23.45",
           "geometry": {
             "coordinates": [
@@ -29893,7 +29897,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.51",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7304215337734891,
+          "diff_abs_scale": 0.7304215338468373,
           "diff_str": "31.51",
           "geometry": {
             "coordinates": [
@@ -29937,7 +29941,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.66",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5021979954281695,
+          "diff_abs_scale": 0.5021979954500998,
           "diff_str": "21.66",
           "geometry": {
             "coordinates": [
@@ -29989,7 +29993,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.19",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5376130978026712,
+          "diff_abs_scale": 0.5376130978608006,
           "diff_str": "23.19",
           "geometry": {
             "coordinates": [
@@ -30029,7 +30033,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.62",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5707714596160811,
+          "diff_abs_scale": 0.5707714595441259,
           "diff_str": "24.62",
           "geometry": {
             "coordinates": [
@@ -30081,7 +30085,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.49",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5445769033862357,
+          "diff_abs_scale": 0.5445769035247534,
           "diff_str": "23.49",
           "geometry": {
             "coordinates": [
@@ -30133,7 +30137,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.58",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5928811121764141,
+          "diff_abs_scale": 0.592881112145131,
           "diff_str": "25.58",
           "geometry": {
             "coordinates": [
@@ -30181,7 +30185,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.39",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6812048521193949,
+          "diff_abs_scale": 0.6812048522355092,
           "diff_str": "29.39",
           "geometry": {
             "coordinates": [
@@ -30229,7 +30233,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.29",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.49342825848849947,
+          "diff_abs_scale": 0.4934282584587922,
           "diff_str": "21.29",
           "geometry": {
             "coordinates": [
@@ -30669,7 +30673,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.87",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6691658856607309,
+          "diff_abs_scale": 0.6691658856576893,
           "diff_str": "28.87",
           "geometry": {
             "coordinates": [
@@ -31253,7 +31257,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "40.54",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.9398557601062819,
+          "diff_abs_scale": 0.9398557600381752,
           "diff_str": "40.54",
           "geometry": {
             "coordinates": [
@@ -31577,7 +31581,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.02",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5567171075430287,
+          "diff_abs_scale": 0.556717107652578,
           "diff_str": "24.02",
           "geometry": {
             "coordinates": [
@@ -31621,7 +31625,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.65",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5483391608391608,
+          "diff_abs_scale": 0.5483391607749245,
           "diff_str": "23.65",
           "geometry": {
             "coordinates": [
@@ -32769,7 +32773,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.79",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7137480889097965,
+          "diff_abs_scale": 0.7137480890097158,
           "diff_str": "30.79",
           "geometry": {
             "coordinates": [
@@ -32817,7 +32821,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.52",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6379230258792302,
+          "diff_abs_scale": 0.6379230260199055,
           "diff_str": "27.52",
           "geometry": {
             "coordinates": [
@@ -32861,7 +32865,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.53",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5917347470884756,
+          "diff_abs_scale": 0.591734747126897,
           "diff_str": "25.53",
           "geometry": {
             "coordinates": [
@@ -32905,7 +32909,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.82",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5754352030947776,
+          "diff_abs_scale": 0.575435203226156,
           "diff_str": "24.82",
           "geometry": {
             "coordinates": [
@@ -32953,7 +32957,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "35.33",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.8189019152054171,
+          "diff_abs_scale": 0.8189019153372227,
           "diff_str": "35.33",
           "geometry": {
             "coordinates": [
@@ -33009,7 +33013,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.12",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6751021997274673,
+          "diff_abs_scale": 0.6751021996534137,
           "diff_str": "29.12",
           "geometry": {
             "coordinates": [
@@ -33057,7 +33061,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.02",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6496003996003996,
+          "diff_abs_scale": 0.6496003995840727,
           "diff_str": "28.02",
           "geometry": {
             "coordinates": [
@@ -33097,7 +33101,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.95",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6712161832805265,
+          "diff_abs_scale": 0.6712161832532371,
           "diff_str": "28.95",
           "geometry": {
             "coordinates": [
@@ -33137,7 +33141,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.72",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6425280199252802,
+          "diff_abs_scale": 0.6425280200201149,
           "diff_str": "27.72",
           "geometry": {
             "coordinates": [
@@ -33185,7 +33189,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.65",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5945677787424035,
+          "diff_abs_scale": 0.5945677788133894,
           "diff_str": "25.65",
           "geometry": {
             "coordinates": [
@@ -33233,7 +33237,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.76",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7362465860319937,
+          "diff_abs_scale": 0.7362465860107384,
           "diff_str": "31.76",
           "geometry": {
             "coordinates": [
@@ -33277,7 +33281,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.81",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6215086283579434,
+          "diff_abs_scale": 0.6215086284964322,
           "diff_str": "26.81",
           "geometry": {
             "coordinates": [
@@ -33325,7 +33329,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.98",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6718143978809952,
+          "diff_abs_scale": 0.6718143979532643,
           "diff_str": "28.98",
           "geometry": {
             "coordinates": [
@@ -33381,7 +33385,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.70",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5724778270509977,
+          "diff_abs_scale": 0.5724778270487489,
           "diff_str": "24.70",
           "geometry": {
             "coordinates": [
@@ -33425,7 +33429,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "33.68",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7808186577820085,
+          "diff_abs_scale": 0.780818657749128,
           "diff_str": "33.68",
           "geometry": {
             "coordinates": [
@@ -33473,7 +33477,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.05",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5805896805896805,
+          "diff_abs_scale": 0.5805896807309359,
           "diff_str": "25.05",
           "geometry": {
             "coordinates": [
@@ -33521,7 +33525,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.58",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5234604105571847,
+          "diff_abs_scale": 0.5234604105510664,
           "diff_str": "22.58",
           "geometry": {
             "coordinates": [
@@ -33565,7 +33569,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.31",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6562049062049062,
+          "diff_abs_scale": 0.6562049063071002,
           "diff_str": "28.31",
           "geometry": {
             "coordinates": [
@@ -33609,7 +33613,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.85",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5065656565656566,
+          "diff_abs_scale": 0.5065656565457529,
           "diff_str": "21.85",
           "geometry": {
             "coordinates": [
@@ -33669,7 +33673,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.74",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.666282190104044,
+          "diff_abs_scale": 0.6662821901075583,
           "diff_str": "28.74",
           "geometry": {
             "coordinates": [
@@ -33737,7 +33741,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "32.18",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7459320383848684,
+          "diff_abs_scale": 0.745932038433906,
           "diff_str": "32.18",
           "geometry": {
             "coordinates": [
@@ -34809,7 +34813,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.34",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6800619243378259,
+          "diff_abs_scale": 0.6800619243854573,
           "diff_str": "29.34",
           "geometry": {
             "coordinates": [
@@ -34861,7 +34865,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.69",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6186577087269928,
+          "diff_abs_scale": 0.6186577087917572,
           "diff_str": "26.69",
           "geometry": {
             "coordinates": [
@@ -34905,7 +34909,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.06",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6737716144495804,
+          "diff_abs_scale": 0.673771614521535,
           "diff_str": "29.06",
           "geometry": {
             "coordinates": [
@@ -34949,7 +34953,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.07",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6043927104182029,
+          "diff_abs_scale": 0.6043927104411088,
           "diff_str": "26.07",
           "geometry": {
             "coordinates": [
@@ -35009,7 +35013,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.90",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6468374110138285,
+          "diff_abs_scale": 0.6468374110657653,
           "diff_str": "27.90",
           "geometry": {
             "coordinates": [
@@ -35053,7 +35057,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.82",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6679962088302661,
+          "diff_abs_scale": 0.6679962087712724,
           "diff_str": "28.82",
           "geometry": {
             "coordinates": [
@@ -35101,7 +35105,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.42",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.682028782028782,
+          "diff_abs_scale": 0.6820287820400921,
           "diff_str": "29.42",
           "geometry": {
             "coordinates": [
@@ -35145,7 +35149,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.67",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6181818181818182,
+          "diff_abs_scale": 0.61818181828719,
           "diff_str": "26.67",
           "geometry": {
             "coordinates": [
@@ -35197,7 +35201,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.66",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6411428571428571,
+          "diff_abs_scale": 0.6411428572382337,
           "diff_str": "27.66",
           "geometry": {
             "coordinates": [
@@ -35381,7 +35385,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.89",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6465114771106212,
+          "diff_abs_scale": 0.6465114772521141,
           "diff_str": "27.89",
           "geometry": {
             "coordinates": [
@@ -35425,7 +35429,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.45",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6131489638241028,
+          "diff_abs_scale": 0.6131489639596885,
           "diff_str": "26.45",
           "geometry": {
             "coordinates": [
@@ -35477,7 +35481,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.49",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5214444359347477,
+          "diff_abs_scale": 0.5214444359555201,
           "diff_str": "22.49",
           "geometry": {
             "coordinates": [
@@ -35521,7 +35525,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.68",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.572220344711051,
+          "diff_abs_scale": 0.5722203447396463,
           "diff_str": "24.68",
           "geometry": {
             "coordinates": [
@@ -35561,7 +35565,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "32.30",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.748842363557209,
+          "diff_abs_scale": 0.7488423636340382,
           "diff_str": "32.30",
           "geometry": {
             "coordinates": [
@@ -36105,7 +36109,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.38",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.47233731416037045,
+          "diff_abs_scale": 0.4723373141669244,
           "diff_str": "20.38",
           "geometry": {
             "coordinates": [
@@ -36149,7 +36153,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "17.95",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.41608391608391604,
+          "diff_abs_scale": 0.41608391613254925,
           "diff_str": "17.95",
           "geometry": {
             "coordinates": [
@@ -36193,7 +36197,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "18.70",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.43341649773896773,
+          "diff_abs_scale": 0.4334164977197007,
           "diff_str": "18.70",
           "geometry": {
             "coordinates": [
@@ -36241,7 +36245,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.85",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7383592017738358,
+          "diff_abs_scale": 0.7383592018971982,
           "diff_str": "31.85",
           "geometry": {
             "coordinates": [
@@ -36293,7 +36297,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.77",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5741146403797006,
+          "diff_abs_scale": 0.5741146405215506,
           "diff_str": "24.77",
           "geometry": {
             "coordinates": [
@@ -36337,7 +36341,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.48",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.544257717049818,
+          "diff_abs_scale": 0.5442577170111026,
           "diff_str": "23.48",
           "geometry": {
             "coordinates": [
@@ -36553,7 +36557,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.17",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5833927689691117,
+          "diff_abs_scale": 0.5833927689265178,
           "diff_str": "25.17",
           "geometry": {
             "coordinates": [
@@ -36597,7 +36601,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.97",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6946582413343375,
+          "diff_abs_scale": 0.6946582414543027,
           "diff_str": "29.97",
           "geometry": {
             "coordinates": [
@@ -36641,7 +36645,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.32",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4943347791449057,
+          "diff_abs_scale": 0.4943347790542879,
           "diff_str": "21.32",
           "geometry": {
             "coordinates": [
@@ -36693,7 +36697,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.04",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6268614380938874,
+          "diff_abs_scale": 0.6268614380466755,
           "diff_str": "27.04",
           "geometry": {
             "coordinates": [
@@ -36733,7 +36737,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.49",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4749949382466086,
+          "diff_abs_scale": 0.47499493830795425,
           "diff_str": "20.49",
           "geometry": {
             "coordinates": [
@@ -36777,7 +36781,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.50",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5679802459181617,
+          "diff_abs_scale": 0.5679802460030899,
           "diff_str": "24.50",
           "geometry": {
             "coordinates": [
@@ -36825,7 +36829,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.04",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5805327551494501,
+          "diff_abs_scale": 0.5805327552263878,
           "diff_str": "25.04",
           "geometry": {
             "coordinates": [
@@ -36881,7 +36885,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.37",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5417267917267917,
+          "diff_abs_scale": 0.5417267917064421,
           "diff_str": "23.37",
           "geometry": {
             "coordinates": [
@@ -36929,7 +36933,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.74",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5967037142585732,
+          "diff_abs_scale": 0.5967037142180319,
           "diff_str": "25.74",
           "geometry": {
             "coordinates": [
@@ -37169,7 +37173,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.25",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7013579351093603,
+          "diff_abs_scale": 0.7013579350409708,
           "diff_str": "30.25",
           "geometry": {
             "coordinates": [
@@ -37213,7 +37217,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.39",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5421734184968063,
+          "diff_abs_scale": 0.5421734184110079,
           "diff_str": "23.39",
           "geometry": {
             "coordinates": [
@@ -37261,7 +37265,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.23",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6079865428216192,
+          "diff_abs_scale": 0.6079865427412721,
           "diff_str": "26.23",
           "geometry": {
             "coordinates": [
@@ -37309,7 +37313,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.75",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5273886021278836,
+          "diff_abs_scale": 0.5273886020966995,
           "diff_str": "22.75",
           "geometry": {
             "coordinates": [
@@ -37377,7 +37381,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.65",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6641429436705026,
+          "diff_abs_scale": 0.6641429436438246,
           "diff_str": "28.65",
           "geometry": {
             "coordinates": [
@@ -37433,7 +37437,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.39",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5885253006826309,
+          "diff_abs_scale": 0.5885253006676602,
           "diff_str": "25.39",
           "geometry": {
             "coordinates": [
@@ -37481,7 +37485,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.72",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.619514106583072,
+          "diff_abs_scale": 0.6195141065872506,
           "diff_str": "26.72",
           "geometry": {
             "coordinates": [
@@ -37525,7 +37529,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.70",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5958498023715414,
+          "diff_abs_scale": 0.5958498024407204,
           "diff_str": "25.70",
           "geometry": {
             "coordinates": [
@@ -37569,7 +37573,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.80",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7139732260040248,
+          "diff_abs_scale": 0.713973225959726,
           "diff_str": "30.80",
           "geometry": {
             "coordinates": [
@@ -37625,7 +37629,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "33.68",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7808612440191387,
+          "diff_abs_scale": 0.7808612441400391,
           "diff_str": "33.68",
           "geometry": {
             "coordinates": [
@@ -37677,7 +37681,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.68",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5720277658662093,
+          "diff_abs_scale": 0.5720277659578193,
           "diff_str": "24.68",
           "geometry": {
             "coordinates": [
@@ -37721,7 +37725,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.80",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6444897694897695,
+          "diff_abs_scale": 0.6444897695611131,
           "diff_str": "27.80",
           "geometry": {
             "coordinates": [
@@ -37777,7 +37781,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.60",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5006905247988471,
+          "diff_abs_scale": 0.5006905249318495,
           "diff_str": "21.60",
           "geometry": {
             "coordinates": [
@@ -37825,7 +37829,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.30",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5169464681659803,
+          "diff_abs_scale": 0.5169464682371339,
           "diff_str": "22.30",
           "geometry": {
             "coordinates": [
@@ -37869,7 +37873,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.27",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.49298624224440246,
+          "diff_abs_scale": 0.4929862421542266,
           "diff_str": "21.27",
           "geometry": {
             "coordinates": [
@@ -38733,7 +38737,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "18.62",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4316463309847053,
+          "diff_abs_scale": 0.43164633106962025,
           "diff_str": "18.62",
           "geometry": {
             "coordinates": [
@@ -38789,7 +38793,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.29",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4936503019978318,
+          "diff_abs_scale": 0.49365030202698407,
           "diff_str": "21.29",
           "geometry": {
             "coordinates": [
@@ -38841,7 +38845,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.64",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5016783216783216,
+          "diff_abs_scale": 0.5016783216773489,
           "diff_str": "21.64",
           "geometry": {
             "coordinates": [
@@ -38885,7 +38889,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.24",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6547666934835077,
+          "diff_abs_scale": 0.6547666935570349,
           "diff_str": "28.24",
           "geometry": {
             "coordinates": [
@@ -39645,7 +39649,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "19.38",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4491715181370354,
+          "diff_abs_scale": 0.4491715180976896,
           "diff_str": "19.38",
           "geometry": {
             "coordinates": [
@@ -40265,7 +40269,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "18.40",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4265301530153015,
+          "diff_abs_scale": 0.42653015294211494,
           "diff_str": "18.40",
           "geometry": {
             "coordinates": [
@@ -41613,7 +41617,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.16",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5600976205003051,
+          "diff_abs_scale": 0.5600976206300045,
           "diff_str": "24.16",
           "geometry": {
             "coordinates": [
@@ -41665,7 +41669,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.82",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5289738259873584,
+          "diff_abs_scale": 0.5289738260558624,
           "diff_str": "22.82",
           "geometry": {
             "coordinates": [
@@ -41701,7 +41705,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.28",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.49323017408123787,
+          "diff_abs_scale": 0.4932301739951468,
           "diff_str": "21.28",
           "geometry": {
             "coordinates": [
@@ -41749,7 +41753,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.15",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5365706856702619,
+          "diff_abs_scale": 0.536570685678935,
           "diff_str": "23.15",
           "geometry": {
             "coordinates": [
@@ -41793,7 +41797,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.20",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5378787878787878,
+          "diff_abs_scale": 0.537878787924449,
           "diff_str": "23.20",
           "geometry": {
             "coordinates": [
@@ -41845,7 +41849,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.22",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.60773085182534,
+          "diff_abs_scale": 0.6077308519230786,
           "diff_str": "26.22",
           "geometry": {
             "coordinates": [
@@ -41893,7 +41897,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.82",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.552241056886047,
+          "diff_abs_scale": 0.5522410569523746,
           "diff_str": "23.82",
           "geometry": {
             "coordinates": [
@@ -41945,7 +41949,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.38",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.49552504137804204,
+          "diff_abs_scale": 0.4955250413952511,
           "diff_str": "21.38",
           "geometry": {
             "coordinates": [
@@ -42001,7 +42005,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.30",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5633971291866029,
+          "diff_abs_scale": 0.5633971291483362,
           "diff_str": "24.30",
           "geometry": {
             "coordinates": [
@@ -42045,7 +42049,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.48",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.544238822099149,
+          "diff_abs_scale": 0.5442388222065563,
           "diff_str": "23.48",
           "geometry": {
             "coordinates": [
@@ -42085,7 +42089,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.30",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5169654289372599,
+          "diff_abs_scale": 0.5169654288780439,
           "diff_str": "22.30",
           "geometry": {
             "coordinates": [
@@ -42137,7 +42141,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.87",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5996913353421034,
+          "diff_abs_scale": 0.5996913354818041,
           "diff_str": "25.87",
           "geometry": {
             "coordinates": [
@@ -42185,7 +42189,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.76",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5740404371259268,
+          "diff_abs_scale": 0.5740404371442746,
           "diff_str": "24.76",
           "geometry": {
             "coordinates": [
@@ -42241,7 +42245,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.24",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5156172940983067,
+          "diff_abs_scale": 0.515617294182528,
           "diff_str": "22.24",
           "geometry": {
             "coordinates": [
@@ -42281,7 +42285,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.09",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6976284584980237,
+          "diff_abs_scale": 0.6976284585044377,
           "diff_str": "30.09",
           "geometry": {
             "coordinates": [
@@ -42329,7 +42333,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "35.81",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.8300269645608628,
+          "diff_abs_scale": 0.8300269646968192,
           "diff_str": "35.81",
           "geometry": {
             "coordinates": [
@@ -42377,7 +42381,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.69",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.526048951048951,
+          "diff_abs_scale": 0.5260489510193659,
           "diff_str": "22.69",
           "geometry": {
             "coordinates": [
@@ -42425,7 +42429,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "14.86",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.34459459459459457,
+          "diff_abs_scale": 0.3445945944974816,
           "diff_str": "14.86",
           "geometry": {
             "coordinates": [
@@ -42465,7 +42469,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.70",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5494652406417112,
+          "diff_abs_scale": 0.5494652407749757,
           "diff_str": "23.70",
           "geometry": {
             "coordinates": [
@@ -42513,7 +42517,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.24",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6315312594382362,
+          "diff_abs_scale": 0.6315312595377968,
           "diff_str": "27.24",
           "geometry": {
             "coordinates": [
@@ -42557,7 +42561,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.61",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.593680709534368,
+          "diff_abs_scale": 0.5936807096178945,
           "diff_str": "25.61",
           "geometry": {
             "coordinates": [
@@ -42605,7 +42609,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.33",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6798187150093309,
+          "diff_abs_scale": 0.6798187151218099,
           "diff_str": "29.33",
           "geometry": {
             "coordinates": [
@@ -42657,7 +42661,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.22",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6078787878787879,
+          "diff_abs_scale": 0.6078787878549036,
           "diff_str": "26.22",
           "geometry": {
             "coordinates": [
@@ -42713,7 +42717,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.20",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5842066780404582,
+          "diff_abs_scale": 0.584206678158373,
           "diff_str": "25.20",
           "geometry": {
             "coordinates": [
@@ -42765,7 +42769,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.68",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.47942932979429326,
+          "diff_abs_scale": 0.479429329889974,
           "diff_str": "20.68",
           "geometry": {
             "coordinates": [
@@ -42813,7 +42817,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.44",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5433238636363636,
+          "diff_abs_scale": 0.5433238636610601,
           "diff_str": "23.44",
           "geometry": {
             "coordinates": [
@@ -42857,7 +42861,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.86",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6457330969865789,
+          "diff_abs_scale": 0.6457330969384423,
           "diff_str": "27.86",
           "geometry": {
             "coordinates": [
@@ -42905,7 +42909,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "19.82",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.45952124798278643,
+          "diff_abs_scale": 0.4595212480708873,
           "diff_str": "19.82",
           "geometry": {
             "coordinates": [
@@ -42957,7 +42961,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.72",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6657837479897833,
+          "diff_abs_scale": 0.6657837480984446,
           "diff_str": "28.72",
           "geometry": {
             "coordinates": [
@@ -43005,7 +43009,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.64",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5017434620174346,
+          "diff_abs_scale": 0.5017434621228065,
           "diff_str": "21.64",
           "geometry": {
             "coordinates": [
@@ -43049,7 +43053,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.18",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.58372085407388,
+          "diff_abs_scale": 0.5837208540128964,
           "diff_str": "25.18",
           "geometry": {
             "coordinates": [
@@ -43101,7 +43105,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.16",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6296713490591042,
+          "diff_abs_scale": 0.629671349114985,
           "diff_str": "27.16",
           "geometry": {
             "coordinates": [
@@ -43537,7 +43541,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "32.80",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7603883142805298,
+          "diff_abs_scale": 0.7603883143709267,
           "diff_str": "32.80",
           "geometry": {
             "coordinates": [
@@ -43581,7 +43585,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.38",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6811792625045636,
+          "diff_abs_scale": 0.6811792625218717,
           "diff_str": "29.38",
           "geometry": {
             "coordinates": [
@@ -43629,7 +43633,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.21",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5613415710503089,
+          "diff_abs_scale": 0.5613415711346064,
           "diff_str": "24.21",
           "geometry": {
             "coordinates": [
@@ -43681,7 +43685,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.85",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6223527892561984,
+          "diff_abs_scale": 0.6223527893055615,
           "diff_str": "26.85",
           "geometry": {
             "coordinates": [
@@ -43725,7 +43729,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.25",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6084516464729056,
+          "diff_abs_scale": 0.6084516465140205,
           "diff_str": "26.25",
           "geometry": {
             "coordinates": [
@@ -43809,7 +43813,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.73",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5731875719217491,
+          "diff_abs_scale": 0.573187572026054,
           "diff_str": "24.73",
           "geometry": {
             "coordinates": [
@@ -45395,7 +45399,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.47",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5209773383498119,
+          "diff_abs_scale": 0.5209773383145899,
           "diff_str": "22.47",
           "geometry": {
             "coordinates": [
@@ -45435,7 +45439,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.75",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5274243326655477,
+          "diff_abs_scale": 0.5274243326967011,
           "diff_str": "22.75",
           "geometry": {
             "coordinates": [
@@ -45483,7 +45487,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "21.21",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4915894915894916,
+          "diff_abs_scale": 0.4915894917087086,
           "diff_str": "21.21",
           "geometry": {
             "coordinates": [
@@ -45519,7 +45523,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.24",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6778309409888357,
+          "diff_abs_scale": 0.677830940976265,
           "diff_str": "29.24",
           "geometry": {
             "coordinates": [
@@ -45563,7 +45567,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.70",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6189130234415803,
+          "diff_abs_scale": 0.6189130233690414,
           "diff_str": "26.70",
           "geometry": {
             "coordinates": [
@@ -45611,7 +45615,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.40",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6352080123266562,
+          "diff_abs_scale": 0.6352080122743277,
           "diff_str": "27.40",
           "geometry": {
             "coordinates": [
@@ -48183,7 +48187,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "36.29",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.8412436587719024,
+          "diff_abs_scale": 0.8412436587382383,
           "diff_str": "36.29",
           "geometry": {
             "coordinates": [
@@ -48227,7 +48231,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.44",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5433018711707236,
+          "diff_abs_scale": 0.5433018713019682,
           "diff_str": "23.44",
           "geometry": {
             "coordinates": [
@@ -48959,7 +48963,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.97",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6716834436567309,
+          "diff_abs_scale": 0.671683443630531,
           "diff_str": "28.97",
           "geometry": {
             "coordinates": [
@@ -49011,7 +49015,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.01",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6261755485893417,
+          "diff_abs_scale": 0.6261755485511897,
           "diff_str": "27.01",
           "geometry": {
             "coordinates": [
@@ -49199,7 +49203,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.40",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5657335990987087,
+          "diff_abs_scale": 0.5657335991029878,
           "diff_str": "24.40",
           "geometry": {
             "coordinates": [
@@ -49931,7 +49935,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.51",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5682702511496285,
+          "diff_abs_scale": 0.5682702512440122,
           "diff_str": "24.51",
           "geometry": {
             "coordinates": [
@@ -50767,7 +50771,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "30.70",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7117611475976494,
+          "diff_abs_scale": 0.71176114755508,
           "diff_str": "30.70",
           "geometry": {
             "coordinates": [
@@ -50811,7 +50815,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.92",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4850096711798839,
+          "diff_abs_scale": 0.485009671303864,
           "diff_str": "20.92",
           "geometry": {
             "coordinates": [
@@ -50863,7 +50867,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.82",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6680744452397995,
+          "diff_abs_scale": 0.668074445321276,
           "diff_str": "28.82",
           "geometry": {
             "coordinates": [
@@ -51743,7 +51747,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "24.11",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5588654165677664,
+          "diff_abs_scale": 0.5588654165844938,
           "diff_str": "24.11",
           "geometry": {
             "coordinates": [
@@ -51787,7 +51791,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.54",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6152734351955637,
+          "diff_abs_scale": 0.6152734352597851,
           "diff_str": "26.54",
           "geometry": {
             "coordinates": [
@@ -51839,7 +51843,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "31.62",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.7330595482546202,
+          "diff_abs_scale": 0.7330595482560481,
           "diff_str": "31.62",
           "geometry": {
             "coordinates": [
@@ -51883,7 +51887,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "23.59",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5468668270739617,
+          "diff_abs_scale": 0.5468668271703121,
           "diff_str": "23.59",
           "geometry": {
             "coordinates": [
@@ -51939,7 +51943,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "27.13",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6288401253918495,
+          "diff_abs_scale": 0.6288401253831291,
           "diff_str": "27.13",
           "geometry": {
             "coordinates": [
@@ -52383,7 +52387,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "19.23",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4458041958041958,
+          "diff_abs_scale": 0.4458041958066274,
           "diff_str": "19.23",
           "geometry": {
             "coordinates": [
@@ -52427,7 +52431,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.97",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6021103096016847,
+          "diff_abs_scale": 0.6021103095273687,
           "diff_str": "25.97",
           "geometry": {
             "coordinates": [
@@ -52487,7 +52491,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.53",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6614707282246549,
+          "diff_abs_scale": 0.6614707281709759,
           "diff_str": "28.53",
           "geometry": {
             "coordinates": [
@@ -52531,7 +52535,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "28.02",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6495215311004785,
+          "diff_abs_scale": 0.6495215310977054,
           "diff_str": "28.02",
           "geometry": {
             "coordinates": [
@@ -52575,7 +52579,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "29.22",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6774128954745694,
+          "diff_abs_scale": 0.6774128955989732,
           "diff_str": "29.22",
           "geometry": {
             "coordinates": [
@@ -52615,7 +52619,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.95",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5319499341238472,
+          "diff_abs_scale": 0.5319499340696341,
           "diff_str": "22.95",
           "geometry": {
             "coordinates": [
@@ -52675,7 +52679,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "22.57",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5232007575757576,
+          "diff_abs_scale": 0.5232007574965091,
           "diff_str": "22.57",
           "geometry": {
             "coordinates": [
@@ -54247,7 +54251,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "26.78",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.6208398481125753,
+          "diff_abs_scale": 0.6208398481100382,
           "diff_str": "26.78",
           "geometry": {
             "coordinates": [
@@ -54555,7 +54559,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "25.00",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.5795454545454545,
+          "diff_abs_scale": 0.5795454545717974,
           "diff_str": "25.00",
           "geometry": {
             "coordinates": [
@@ -54627,7 +54631,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "18.37",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.42578849721706863,
+          "diff_abs_scale": 0.42578849726480855,
           "diff_str": "18.37",
           "geometry": {
             "coordinates": [
@@ -54671,7 +54675,7 @@
         {
           "GIBA\u0141A \u0141ukasz_%": "20.08",
           "MUZYK Jerzy Stanis\u0142aw_%": "0.00",
-          "diff_abs_scale": 0.4654983570646221,
+          "diff_abs_scale": 0.4654983571984317,
           "diff_str": "20.08",
           "geometry": {
             "coordinates": [
@@ -55246,7 +55250,7 @@
         25
       ],
       "getLineWidth": 5,
-      "id": "f3677541-2b36-439f-8379-e6398ad753ba",
+      "id": "bef4ea7c-f862-4a31-9fa5-4477d7f7ed74",
       "lineWidthMinPixels": 1,
       "opacity": 0.8,
       "pickable": true,
@@ -57409,7 +57413,7 @@
       "getIcon": "@@=icon_data",
       "getPosition": "@@=[lon, lat]",
       "getSize": 1,
-      "id": "d51253a2-4a93-43d0-9a4f-cc6762c44985",
+      "id": "0b6cfb22-3dec-4967-8ed3-0feaf5a898ab",
       "opacity": 0.8,
       "pickable": false,
       "sizeMaxPixels": 120,

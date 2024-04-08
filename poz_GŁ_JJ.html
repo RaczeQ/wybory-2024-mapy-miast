@@ -26,10 +26,14 @@
 
                     .deck-json-description-box {
                         z-index: 2 !important;
+                        overflow: visible !important;
                     }
                     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap')
                         </style>
-  </head>
+
+                    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' />
+                    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+                      </head>
   <body>
     <div id="deck-container">
     </div>
@@ -37,7 +41,7 @@
   <script>
     const container = document.getElementById('deck-container');
     const jsonInput = {
-  "description": "\n        <div style='font-family: \"Open Sans\", sans-serif;'>\n        <h3>Pozna\u0144: GARCZEWSKI \u0141ukasz vs JA\u015aKOWIAK Jacek</h3>\n        R\u00f3\u017cnica w % <br/>\n        <span style=\"font-size: 0.8em\">\n        Warto\u015bci ujemne - przewaga JA\u015aKOWIAK Jacek <br/> \n        Warto\u015bci dodatnie - przewaga GARCZEWSKI \u0141ukasz <br/>\n        Obwody z oddanymi mniej ni\u017c 50 g\u0142osami zosta\u0142y pomini\u0119te. <br/>\n        </span> \n        <svg height=\"40\" width=\"450\"><line x1=\"0\" y1=\"15\" x2=\"0\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"1\" y1=\"15\" x2=\"1\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"2\" y1=\"15\" x2=\"2\" y2=\"27\" style=\"stroke:#018080ff;stroke-width:2;\" /><line x1=\"3\" y1=\"15\" x2=\"3\" y2=\"27\" style=\"stroke:#028180ff;stroke-width:2;\" /><line x1=\"4\" y1=\"15\" x2=\"4\" y2=\"27\" style=\"stroke:#038181ff;stroke-width:2;\" /><line x1=\"5\" y1=\"15\" x2=\"5\" y2=\"27\" style=\"stroke:#038181ff;stroke-width:2;\" /><line x1=\"6\" y1=\"15\" x2=\"6\" y2=\"27\" style=\"stroke:#048181ff;stroke-width:2;\" /><line x1=\"7\" y1=\"15\" x2=\"7\" y2=\"27\" style=\"stroke:#058281ff;stroke-width:2;\" /><line x1=\"8\" y1=\"15\" x2=\"8\" y2=\"27\" style=\"stroke:#068281ff;stroke-width:2;\" /><line x1=\"9\" y1=\"15\" x2=\"9\" y2=\"27\" style=\"stroke:#068281ff;stroke-width:2;\" /><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"27\" style=\"stroke:#078281ff;stroke-width:2;\" /><line x1=\"11\" y1=\"15\" x2=\"11\" y2=\"27\" style=\"stroke:#088382ff;stroke-width:2;\" /><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"27\" style=\"stroke:#098382ff;stroke-width:2;\" /><line x1=\"13\" y1=\"15\" x2=\"13\" y2=\"27\" style=\"stroke:#098382ff;stroke-width:2;\" /><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"27\" style=\"stroke:#0a8382ff;stroke-width:2;\" /><line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"27\" style=\"stroke:#0b8482ff;stroke-width:2;\" /><line x1=\"16\" y1=\"15\" x2=\"16\" y2=\"27\" style=\"stroke:#0c8482ff;stroke-width:2;\" /><line x1=\"17\" y1=\"15\" x2=\"17\" y2=\"27\" style=\"stroke:#0d8482ff;stroke-width:2;\" /><line x1=\"18\" y1=\"15\" x2=\"18\" y2=\"27\" style=\"stroke:#0d8482ff;stroke-width:2;\" /><line x1=\"19\" y1=\"15\" x2=\"19\" y2=\"27\" style=\"stroke:#0e8583ff;stroke-width:2;\" /><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"27\" style=\"stroke:#0f8583ff;stroke-width:2;\" /><line x1=\"21\" y1=\"15\" x2=\"21\" y2=\"27\" style=\"stroke:#108583ff;stroke-width:2;\" /><line x1=\"22\" y1=\"15\" x2=\"22\" y2=\"27\" style=\"stroke:#108583ff;stroke-width:2;\" /><line x1=\"23\" y1=\"15\" x2=\"23\" y2=\"27\" style=\"stroke:#118683ff;stroke-width:2;\" /><line x1=\"24\" y1=\"15\" x2=\"24\" y2=\"27\" style=\"stroke:#128683ff;stroke-width:2;\" /><line x1=\"25\" y1=\"15\" x2=\"25\" y2=\"27\" style=\"stroke:#138683ff;stroke-width:2;\" /><line x1=\"26\" y1=\"15\" x2=\"26\" y2=\"27\" style=\"stroke:#138684ff;stroke-width:2;\" /><line x1=\"27\" y1=\"15\" x2=\"27\" y2=\"27\" style=\"stroke:#148784ff;stroke-width:2;\" /><line x1=\"28\" y1=\"15\" x2=\"28\" y2=\"27\" style=\"stroke:#158784ff;stroke-width:2;\" /><line x1=\"29\" y1=\"15\" x2=\"29\" y2=\"27\" style=\"stroke:#168784ff;stroke-width:2;\" /><line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"27\" style=\"stroke:#178784ff;stroke-width:2;\" /><line x1=\"31\" y1=\"15\" x2=\"31\" y2=\"27\" style=\"stroke:#178884ff;stroke-width:2;\" /><line x1=\"32\" y1=\"15\" x2=\"32\" y2=\"27\" style=\"stroke:#188884ff;stroke-width:2;\" /><line x1=\"33\" y1=\"15\" x2=\"33\" y2=\"27\" style=\"stroke:#198885ff;stroke-width:2;\" /><line x1=\"34\" y1=\"15\" x2=\"34\" y2=\"27\" style=\"stroke:#1a8885ff;stroke-width:2;\" /><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"27\" style=\"stroke:#1a8985ff;stroke-width:2;\" /><line x1=\"36\" y1=\"15\" x2=\"36\" y2=\"27\" style=\"stroke:#1b8985ff;stroke-width:2;\" /><line x1=\"37\" y1=\"15\" x2=\"37\" y2=\"27\" style=\"stroke:#1c8985ff;stroke-width:2;\" /><line x1=\"38\" y1=\"15\" x2=\"38\" y2=\"27\" style=\"stroke:#1d8985ff;stroke-width:2;\" /><line x1=\"39\" y1=\"15\" x2=\"39\" y2=\"27\" style=\"stroke:#1d8a85ff;stroke-width:2;\" /><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"27\" style=\"stroke:#1e8a85ff;stroke-width:2;\" /><line x1=\"41\" y1=\"15\" x2=\"41\" y2=\"27\" style=\"stroke:#1f8a86ff;stroke-width:2;\" /><line x1=\"42\" y1=\"15\" x2=\"42\" y2=\"27\" style=\"stroke:#208a86ff;stroke-width:2;\" /><line x1=\"43\" y1=\"15\" x2=\"43\" y2=\"27\" style=\"stroke:#208b86ff;stroke-width:2;\" /><line x1=\"44\" y1=\"15\" x2=\"44\" y2=\"27\" style=\"stroke:#218b86ff;stroke-width:2;\" /><line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"27\" style=\"stroke:#228b86ff;stroke-width:2;\" /><line x1=\"46\" y1=\"15\" x2=\"46\" y2=\"27\" style=\"stroke:#238b86ff;stroke-width:2;\" /><line x1=\"47\" y1=\"15\" x2=\"47\" y2=\"27\" style=\"stroke:#248c86ff;stroke-width:2;\" /><line x1=\"48\" y1=\"15\" x2=\"48\" y2=\"27\" style=\"stroke:#248c87ff;stroke-width:2;\" /><line x1=\"49\" y1=\"15\" x2=\"49\" y2=\"27\" style=\"stroke:#258c87ff;stroke-width:2;\" /><line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"27\" style=\"stroke:#268c87ff;stroke-width:2;\" /><line x1=\"51\" y1=\"15\" x2=\"51\" y2=\"27\" style=\"stroke:#278d87ff;stroke-width:2;\" /><line x1=\"52\" y1=\"15\" x2=\"52\" y2=\"27\" style=\"stroke:#278d87ff;stroke-width:2;\" /><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"27\" style=\"stroke:#288d87ff;stroke-width:2;\" /><line x1=\"54\" y1=\"15\" x2=\"54\" y2=\"27\" style=\"stroke:#298d87ff;stroke-width:2;\" /><line x1=\"55\" y1=\"15\" x2=\"55\" y2=\"27\" style=\"stroke:#2a8e88ff;stroke-width:2;\" /><line x1=\"56\" y1=\"15\" x2=\"56\" y2=\"27\" style=\"stroke:#2a8e88ff;stroke-width:2;\" /><line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"27\" style=\"stroke:#2b8e88ff;stroke-width:2;\" /><line x1=\"58\" y1=\"15\" x2=\"58\" y2=\"27\" style=\"stroke:#2c8e88ff;stroke-width:2;\" /><line x1=\"59\" y1=\"15\" x2=\"59\" y2=\"27\" style=\"stroke:#2d8f88ff;stroke-width:2;\" /><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"27\" style=\"stroke:#2e8f88ff;stroke-width:2;\" /><line x1=\"61\" y1=\"15\" x2=\"61\" y2=\"27\" style=\"stroke:#2e8f88ff;stroke-width:2;\" /><line x1=\"62\" y1=\"15\" x2=\"62\" y2=\"27\" style=\"stroke:#2f8f88ff;stroke-width:2;\" /><line x1=\"63\" y1=\"15\" x2=\"63\" y2=\"27\" style=\"stroke:#309089ff;stroke-width:2;\" /><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"27\" style=\"stroke:#319089ff;stroke-width:2;\" /><line x1=\"65\" y1=\"15\" x2=\"65\" y2=\"27\" style=\"stroke:#319089ff;stroke-width:2;\" /><line x1=\"66\" y1=\"15\" x2=\"66\" y2=\"27\" style=\"stroke:#329089ff;stroke-width:2;\" /><line x1=\"67\" y1=\"15\" x2=\"67\" y2=\"27\" style=\"stroke:#339189ff;stroke-width:2;\" /><line x1=\"68\" y1=\"15\" x2=\"68\" y2=\"27\" style=\"stroke:#349189ff;stroke-width:2;\" /><line x1=\"69\" y1=\"15\" x2=\"69\" y2=\"27\" style=\"stroke:#349189ff;stroke-width:2;\" /><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"27\" style=\"stroke:#35918aff;stroke-width:2;\" /><line x1=\"71\" y1=\"15\" x2=\"71\" y2=\"27\" style=\"stroke:#36928aff;stroke-width:2;\" /><line x1=\"72\" y1=\"15\" x2=\"72\" y2=\"27\" style=\"stroke:#37928aff;stroke-width:2;\" /><line x1=\"73\" y1=\"15\" x2=\"73\" y2=\"27\" style=\"stroke:#38928aff;stroke-width:2;\" /><line x1=\"74\" y1=\"15\" x2=\"74\" y2=\"27\" style=\"stroke:#38928aff;stroke-width:2;\" /><line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"27\" style=\"stroke:#39938aff;stroke-width:2;\" /><line x1=\"76\" y1=\"15\" x2=\"76\" y2=\"27\" style=\"stroke:#3a938aff;stroke-width:2;\" /><line x1=\"77\" y1=\"15\" x2=\"77\" y2=\"27\" style=\"stroke:#3b938bff;stroke-width:2;\" /><line x1=\"78\" y1=\"15\" x2=\"78\" y2=\"27\" style=\"stroke:#3b938bff;stroke-width:2;\" /><line x1=\"79\" y1=\"15\" x2=\"79\" y2=\"27\" style=\"stroke:#3c938bff;stroke-width:2;\" /><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"27\" style=\"stroke:#3d948bff;stroke-width:2;\" /><line x1=\"81\" y1=\"15\" x2=\"81\" y2=\"27\" style=\"stroke:#3e948bff;stroke-width:2;\" /><line x1=\"82\" y1=\"15\" x2=\"82\" y2=\"27\" style=\"stroke:#3e948bff;stroke-width:2;\" /><line x1=\"83\" y1=\"15\" x2=\"83\" y2=\"27\" style=\"stroke:#3f948bff;stroke-width:2;\" /><line x1=\"84\" y1=\"15\" x2=\"84\" y2=\"27\" style=\"stroke:#40958cff;stroke-width:2;\" /><line x1=\"85\" y1=\"15\" x2=\"85\" y2=\"27\" style=\"stroke:#41958cff;stroke-width:2;\" /><line x1=\"86\" y1=\"15\" x2=\"86\" y2=\"27\" style=\"stroke:#41958cff;stroke-width:2;\" /><line x1=\"87\" y1=\"15\" x2=\"87\" y2=\"27\" style=\"stroke:#42958cff;stroke-width:2;\" /><line x1=\"88\" y1=\"15\" x2=\"88\" y2=\"27\" style=\"stroke:#43968cff;stroke-width:2;\" /><line x1=\"89\" y1=\"15\" x2=\"89\" y2=\"27\" style=\"stroke:#44968cff;stroke-width:2;\" /><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"27\" style=\"stroke:#45968cff;stroke-width:2;\" /><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"27\" style=\"stroke:#45968cff;stroke-width:2;\" /><line x1=\"92\" y1=\"15\" x2=\"92\" y2=\"27\" style=\"stroke:#46978dff;stroke-width:2;\" /><line x1=\"93\" y1=\"15\" x2=\"93\" y2=\"27\" style=\"stroke:#47978dff;stroke-width:2;\" /><line x1=\"94\" y1=\"15\" x2=\"94\" y2=\"27\" style=\"stroke:#48978dff;stroke-width:2;\" /><line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"27\" style=\"stroke:#48978dff;stroke-width:2;\" /><line x1=\"96\" y1=\"15\" x2=\"96\" y2=\"27\" style=\"stroke:#49988dff;stroke-width:2;\" /><line x1=\"97\" y1=\"15\" x2=\"97\" y2=\"27\" style=\"stroke:#4a988dff;stroke-width:2;\" /><line x1=\"98\" y1=\"15\" x2=\"98\" y2=\"27\" style=\"stroke:#4b988dff;stroke-width:2;\" /><line x1=\"99\" y1=\"15\" x2=\"99\" y2=\"27\" style=\"stroke:#4b988eff;stroke-width:2;\" /><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"27\" style=\"stroke:#4c998eff;stroke-width:2;\" /><line x1=\"101\" y1=\"15\" x2=\"101\" y2=\"27\" style=\"stroke:#4d998eff;stroke-width:2;\" /><line x1=\"102\" y1=\"15\" x2=\"102\" y2=\"27\" style=\"stroke:#4e998eff;stroke-width:2;\" /><line x1=\"103\" y1=\"15\" x2=\"103\" y2=\"27\" style=\"stroke:#4f998eff;stroke-width:2;\" /><line x1=\"104\" y1=\"15\" x2=\"104\" y2=\"27\" style=\"stroke:#4f9a8eff;stroke-width:2;\" /><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"27\" style=\"stroke:#509a8eff;stroke-width:2;\" /><line x1=\"106\" y1=\"15\" x2=\"106\" y2=\"27\" style=\"stroke:#519a8fff;stroke-width:2;\" /><line x1=\"107\" y1=\"15\" x2=\"107\" y2=\"27\" style=\"stroke:#529a8fff;stroke-width:2;\" /><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"27\" style=\"stroke:#529b8fff;stroke-width:2;\" /><line x1=\"109\" y1=\"15\" x2=\"109\" y2=\"27\" style=\"stroke:#539b8fff;stroke-width:2;\" /><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"27\" style=\"stroke:#549b8fff;stroke-width:2;\" /><line x1=\"111\" y1=\"15\" x2=\"111\" y2=\"27\" style=\"stroke:#559b8fff;stroke-width:2;\" /><line x1=\"112\" y1=\"15\" x2=\"112\" y2=\"27\" style=\"stroke:#559c8fff;stroke-width:2;\" /><line x1=\"113\" y1=\"15\" x2=\"113\" y2=\"27\" style=\"stroke:#569c8fff;stroke-width:2;\" /><line x1=\"114\" y1=\"15\" x2=\"114\" y2=\"27\" style=\"stroke:#579c90ff;stroke-width:2;\" /><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"27\" style=\"stroke:#589c90ff;stroke-width:2;\" /><line x1=\"116\" y1=\"15\" x2=\"116\" y2=\"27\" style=\"stroke:#599d90ff;stroke-width:2;\" /><line x1=\"117\" y1=\"15\" x2=\"117\" y2=\"27\" style=\"stroke:#599d90ff;stroke-width:2;\" /><line x1=\"118\" y1=\"15\" x2=\"118\" y2=\"27\" style=\"stroke:#5a9d90ff;stroke-width:2;\" /><line x1=\"119\" y1=\"15\" x2=\"119\" y2=\"27\" style=\"stroke:#5b9d90ff;stroke-width:2;\" /><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"27\" style=\"stroke:#5c9e90ff;stroke-width:2;\" /><line x1=\"121\" y1=\"15\" x2=\"121\" y2=\"27\" style=\"stroke:#5c9e91ff;stroke-width:2;\" /><line x1=\"122\" y1=\"15\" x2=\"122\" y2=\"27\" style=\"stroke:#5d9e91ff;stroke-width:2;\" /><line x1=\"123\" y1=\"15\" x2=\"123\" y2=\"27\" style=\"stroke:#5e9e91ff;stroke-width:2;\" /><line x1=\"124\" y1=\"15\" x2=\"124\" y2=\"27\" style=\"stroke:#5f9f91ff;stroke-width:2;\" /><line x1=\"125\" y1=\"15\" x2=\"125\" y2=\"27\" style=\"stroke:#5f9f91ff;stroke-width:2;\" /><line x1=\"126\" y1=\"15\" x2=\"126\" y2=\"27\" style=\"stroke:#609f91ff;stroke-width:2;\" /><line x1=\"127\" y1=\"15\" x2=\"127\" y2=\"27\" style=\"stroke:#619f91ff;stroke-width:2;\" /><line x1=\"128\" y1=\"15\" x2=\"128\" y2=\"27\" style=\"stroke:#62a092ff;stroke-width:2;\" /><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"27\" style=\"stroke:#62a092ff;stroke-width:2;\" /><line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"27\" style=\"stroke:#63a092ff;stroke-width:2;\" /><line x1=\"131\" y1=\"15\" x2=\"131\" y2=\"27\" style=\"stroke:#64a092ff;stroke-width:2;\" /><line x1=\"132\" y1=\"15\" x2=\"132\" y2=\"27\" style=\"stroke:#65a192ff;stroke-width:2;\" /><line x1=\"133\" y1=\"15\" x2=\"133\" y2=\"27\" style=\"stroke:#66a192ff;stroke-width:2;\" /><line x1=\"134\" y1=\"15\" x2=\"134\" y2=\"27\" style=\"stroke:#66a192ff;stroke-width:2;\" /><line x1=\"135\" y1=\"15\" x2=\"135\" y2=\"27\" style=\"stroke:#67a193ff;stroke-width:2;\" /><line x1=\"136\" y1=\"15\" x2=\"136\" y2=\"27\" style=\"stroke:#68a293ff;stroke-width:2;\" /><line x1=\"137\" y1=\"15\" x2=\"137\" y2=\"27\" style=\"stroke:#69a293ff;stroke-width:2;\" /><line x1=\"138\" y1=\"15\" x2=\"138\" y2=\"27\" style=\"stroke:#69a293ff;stroke-width:2;\" /><line x1=\"139\" y1=\"15\" x2=\"139\" y2=\"27\" style=\"stroke:#6aa293ff;stroke-width:2;\" /><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"27\" style=\"stroke:#6ba393ff;stroke-width:2;\" /><line x1=\"141\" y1=\"15\" x2=\"141\" y2=\"27\" style=\"stroke:#6ca393ff;stroke-width:2;\" /><line x1=\"142\" y1=\"15\" x2=\"142\" y2=\"27\" style=\"stroke:#6ca393ff;stroke-width:2;\" /><line x1=\"143\" y1=\"15\" x2=\"143\" y2=\"27\" style=\"stroke:#6da394ff;stroke-width:2;\" /><line x1=\"144\" y1=\"15\" x2=\"144\" y2=\"27\" style=\"stroke:#6ea494ff;stroke-width:2;\" /><line x1=\"145\" y1=\"15\" x2=\"145\" y2=\"27\" style=\"stroke:#6fa494ff;stroke-width:2;\" /><line x1=\"146\" y1=\"15\" x2=\"146\" y2=\"27\" style=\"stroke:#70a494ff;stroke-width:2;\" /><line x1=\"147\" y1=\"15\" x2=\"147\" y2=\"27\" style=\"stroke:#70a494ff;stroke-width:2;\" /><line x1=\"148\" y1=\"15\" x2=\"148\" y2=\"27\" style=\"stroke:#71a594ff;stroke-width:2;\" /><line x1=\"149\" y1=\"15\" x2=\"149\" y2=\"27\" style=\"stroke:#71a594ff;stroke-width:2;\" /><line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"151\" y1=\"15\" x2=\"151\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"153\" y1=\"15\" x2=\"153\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"154\" y1=\"15\" x2=\"154\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"155\" y1=\"15\" x2=\"155\" y2=\"27\" style=\"stroke:#74a695ff;stroke-width:2;\" /><line x1=\"156\" y1=\"15\" x2=\"156\" y2=\"27\" style=\"stroke:#74a695ff;stroke-width:2;\" /><line x1=\"157\" y1=\"15\" x2=\"157\" y2=\"27\" style=\"stroke:#75a796ff;stroke-width:2;\" /><line x1=\"158\" y1=\"15\" x2=\"158\" y2=\"27\" style=\"stroke:#75a796ff;stroke-width:2;\" /><line x1=\"159\" y1=\"15\" x2=\"159\" y2=\"27\" style=\"stroke:#76a796ff;stroke-width:2;\" /><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"27\" style=\"stroke:#76a796ff;stroke-width:2;\" /><line x1=\"161\" y1=\"15\" x2=\"161\" y2=\"27\" style=\"stroke:#77a896ff;stroke-width:2;\" /><line x1=\"162\" y1=\"15\" x2=\"162\" y2=\"27\" style=\"stroke:#77a896ff;stroke-width:2;\" /><line x1=\"163\" y1=\"15\" x2=\"163\" y2=\"27\" style=\"stroke:#78a896ff;stroke-width:2;\" /><line x1=\"164\" y1=\"15\" x2=\"164\" y2=\"27\" style=\"stroke:#78a896ff;stroke-width:2;\" /><line x1=\"165\" y1=\"15\" x2=\"165\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"166\" y1=\"15\" x2=\"166\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"168\" y1=\"15\" x2=\"168\" y2=\"27\" style=\"stroke:#7aa997ff;stroke-width:2;\" /><line x1=\"169\" y1=\"15\" x2=\"169\" y2=\"27\" style=\"stroke:#7aaa97ff;stroke-width:2;\" /><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"27\" style=\"stroke:#7baa97ff;stroke-width:2;\" /><line x1=\"171\" y1=\"15\" x2=\"171\" y2=\"27\" style=\"stroke:#7baa97ff;stroke-width:2;\" /><line x1=\"172\" y1=\"15\" x2=\"172\" y2=\"27\" style=\"stroke:#7caa98ff;stroke-width:2;\" /><line x1=\"173\" y1=\"15\" x2=\"173\" y2=\"27\" style=\"stroke:#7cab98ff;stroke-width:2;\" /><line x1=\"174\" y1=\"15\" x2=\"174\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"176\" y1=\"15\" x2=\"176\" y2=\"27\" style=\"stroke:#7eab98ff;stroke-width:2;\" /><line x1=\"177\" y1=\"15\" x2=\"177\" y2=\"27\" style=\"stroke:#7eac98ff;stroke-width:2;\" /><line x1=\"178\" y1=\"15\" x2=\"178\" y2=\"27\" style=\"stroke:#7fac98ff;stroke-width:2;\" /><line x1=\"179\" y1=\"15\" x2=\"179\" y2=\"27\" style=\"stroke:#7fac99ff;stroke-width:2;\" /><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"27\" style=\"stroke:#80ac99ff;stroke-width:2;\" /><line x1=\"181\" y1=\"15\" x2=\"181\" y2=\"27\" style=\"stroke:#80ad99ff;stroke-width:2;\" /><line x1=\"182\" y1=\"15\" x2=\"182\" y2=\"27\" style=\"stroke:#80ad99ff;stroke-width:2;\" /><line x1=\"183\" y1=\"15\" x2=\"183\" y2=\"27\" style=\"stroke:#81ad99ff;stroke-width:2;\" /><line x1=\"184\" y1=\"15\" x2=\"184\" y2=\"27\" style=\"stroke:#81ad99ff;stroke-width:2;\" /><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"27\" style=\"stroke:#82ae99ff;stroke-width:2;\" /><line x1=\"186\" y1=\"15\" x2=\"186\" y2=\"27\" style=\"stroke:#82ae99ff;stroke-width:2;\" /><line x1=\"187\" y1=\"15\" x2=\"187\" y2=\"27\" style=\"stroke:#83ae9aff;stroke-width:2;\" /><line x1=\"188\" y1=\"15\" x2=\"188\" y2=\"27\" style=\"stroke:#83ae9aff;stroke-width:2;\" /><line x1=\"189\" y1=\"15\" x2=\"189\" y2=\"27\" style=\"stroke:#84af9aff;stroke-width:2;\" /><line x1=\"190\" y1=\"15\" x2=\"190\" y2=\"27\" style=\"stroke:#84af9aff;stroke-width:2;\" /><line x1=\"191\" y1=\"15\" x2=\"191\" y2=\"27\" style=\"stroke:#85af9aff;stroke-width:2;\" /><line x1=\"192\" y1=\"15\" x2=\"192\" y2=\"27\" style=\"stroke:#85af9aff;stroke-width:2;\" /><line x1=\"193\" y1=\"15\" x2=\"193\" y2=\"27\" style=\"stroke:#86b09aff;stroke-width:2;\" /><line x1=\"194\" y1=\"15\" x2=\"194\" y2=\"27\" style=\"stroke:#86b09bff;stroke-width:2;\" /><line x1=\"195\" y1=\"15\" x2=\"195\" y2=\"27\" style=\"stroke:#87b09bff;stroke-width:2;\" /><line x1=\"196\" y1=\"15\" x2=\"196\" y2=\"27\" style=\"stroke:#87b09bff;stroke-width:2;\" /><line x1=\"197\" y1=\"15\" x2=\"197\" y2=\"27\" style=\"stroke:#87b19bff;stroke-width:2;\" /><line x1=\"198\" y1=\"15\" x2=\"198\" y2=\"27\" style=\"stroke:#88b19bff;stroke-width:2;\" /><line x1=\"199\" y1=\"15\" x2=\"199\" y2=\"27\" style=\"stroke:#88b19bff;stroke-width:2;\" /><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"27\" style=\"stroke:#89b19bff;stroke-width:2;\" /><line x1=\"201\" y1=\"15\" x2=\"201\" y2=\"27\" style=\"stroke:#89b29cff;stroke-width:2;\" /><line x1=\"202\" y1=\"15\" x2=\"202\" y2=\"27\" style=\"stroke:#8ab29cff;stroke-width:2;\" /><line x1=\"203\" y1=\"15\" x2=\"203\" y2=\"27\" style=\"stroke:#8ab29cff;stroke-width:2;\" /><line x1=\"204\" y1=\"15\" x2=\"204\" y2=\"27\" style=\"stroke:#8bb29cff;stroke-width:2;\" /><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"27\" style=\"stroke:#8bb39cff;stroke-width:2;\" /><line x1=\"206\" y1=\"15\" x2=\"206\" y2=\"27\" style=\"stroke:#8cb39cff;stroke-width:2;\" /><line x1=\"207\" y1=\"15\" x2=\"207\" y2=\"27\" style=\"stroke:#8cb39cff;stroke-width:2;\" /><line x1=\"208\" y1=\"15\" x2=\"208\" y2=\"27\" style=\"stroke:#8db39dff;stroke-width:2;\" /><line x1=\"209\" y1=\"15\" x2=\"209\" y2=\"27\" style=\"stroke:#8db49dff;stroke-width:2;\" /><line x1=\"210\" y1=\"15\" x2=\"210\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"211\" y1=\"15\" x2=\"211\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"212\" y1=\"15\" x2=\"212\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"213\" y1=\"15\" x2=\"213\" y2=\"27\" style=\"stroke:#8fb59dff;stroke-width:2;\" /><line x1=\"214\" y1=\"15\" x2=\"214\" y2=\"27\" style=\"stroke:#8fb59dff;stroke-width:2;\" /><line x1=\"215\" y1=\"15\" x2=\"215\" y2=\"27\" style=\"stroke:#90b59dff;stroke-width:2;\" /><line x1=\"216\" y1=\"15\" x2=\"216\" y2=\"27\" style=\"stroke:#90b59eff;stroke-width:2;\" /><line x1=\"217\" y1=\"15\" x2=\"217\" y2=\"27\" style=\"stroke:#91b69eff;stroke-width:2;\" /><line x1=\"218\" y1=\"15\" x2=\"218\" y2=\"27\" style=\"stroke:#91b69eff;stroke-width:2;\" /><line x1=\"219\" y1=\"15\" x2=\"219\" y2=\"27\" style=\"stroke:#92b69eff;stroke-width:2;\" /><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"27\" style=\"stroke:#92b69eff;stroke-width:2;\" /><line x1=\"221\" y1=\"15\" x2=\"221\" y2=\"27\" style=\"stroke:#93b79eff;stroke-width:2;\" /><line x1=\"222\" y1=\"15\" x2=\"222\" y2=\"27\" style=\"stroke:#93b79eff;stroke-width:2;\" /><line x1=\"223\" y1=\"15\" x2=\"223\" y2=\"27\" style=\"stroke:#94b79fff;stroke-width:2;\" /><line x1=\"224\" y1=\"15\" x2=\"224\" y2=\"27\" style=\"stroke:#94b79fff;stroke-width:2;\" /><line x1=\"225\" y1=\"15\" x2=\"225\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"226\" y1=\"15\" x2=\"226\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"227\" y1=\"15\" x2=\"227\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"228\" y1=\"15\" x2=\"228\" y2=\"27\" style=\"stroke:#96b89fff;stroke-width:2;\" /><line x1=\"229\" y1=\"15\" x2=\"229\" y2=\"27\" style=\"stroke:#96b89fff;stroke-width:2;\" /><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"27\" style=\"stroke:#97b9a0ff;stroke-width:2;\" /><line x1=\"231\" y1=\"15\" x2=\"231\" y2=\"27\" style=\"stroke:#97b9a0ff;stroke-width:2;\" /><line x1=\"232\" y1=\"15\" x2=\"232\" y2=\"27\" style=\"stroke:#98b9a0ff;stroke-width:2;\" /><line x1=\"233\" y1=\"15\" x2=\"233\" y2=\"27\" style=\"stroke:#98b9a0ff;stroke-width:2;\" /><line x1=\"234\" y1=\"15\" x2=\"234\" y2=\"27\" style=\"stroke:#99baa0ff;stroke-width:2;\" /><line x1=\"235\" y1=\"15\" x2=\"235\" y2=\"27\" style=\"stroke:#99baa0ff;stroke-width:2;\" /><line x1=\"236\" y1=\"15\" x2=\"236\" y2=\"27\" style=\"stroke:#9abaa0ff;stroke-width:2;\" /><line x1=\"237\" y1=\"15\" x2=\"237\" y2=\"27\" style=\"stroke:#9abaa0ff;stroke-width:2;\" /><line x1=\"238\" y1=\"15\" x2=\"238\" y2=\"27\" style=\"stroke:#9bbba1ff;stroke-width:2;\" /><line x1=\"239\" y1=\"15\" x2=\"239\" y2=\"27\" style=\"stroke:#9bbba1ff;stroke-width:2;\" /><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"27\" style=\"stroke:#9bbba1ff;stroke-width:2;\" /><line x1=\"241\" y1=\"15\" x2=\"241\" y2=\"27\" style=\"stroke:#9cbba1ff;stroke-width:2;\" /><line x1=\"242\" y1=\"15\" x2=\"242\" y2=\"27\" style=\"stroke:#9cbca1ff;stroke-width:2;\" /><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"27\" style=\"stroke:#9dbca1ff;stroke-width:2;\" /><line x1=\"244\" y1=\"15\" x2=\"244\" y2=\"27\" style=\"stroke:#9dbca1ff;stroke-width:2;\" /><line x1=\"245\" y1=\"15\" x2=\"245\" y2=\"27\" style=\"stroke:#9ebca2ff;stroke-width:2;\" /><line x1=\"246\" y1=\"15\" x2=\"246\" y2=\"27\" style=\"stroke:#9ebda2ff;stroke-width:2;\" /><line x1=\"247\" y1=\"15\" x2=\"247\" y2=\"27\" style=\"stroke:#9fbda2ff;stroke-width:2;\" /><line x1=\"248\" y1=\"15\" x2=\"248\" y2=\"27\" style=\"stroke:#9fbda2ff;stroke-width:2;\" /><line x1=\"249\" y1=\"15\" x2=\"249\" y2=\"27\" style=\"stroke:#a0bda2ff;stroke-width:2;\" /><line x1=\"250\" y1=\"15\" x2=\"250\" y2=\"27\" style=\"stroke:#a0bea2ff;stroke-width:2;\" /><line x1=\"251\" y1=\"15\" x2=\"251\" y2=\"27\" style=\"stroke:#a1bea2ff;stroke-width:2;\" /><line x1=\"252\" y1=\"15\" x2=\"252\" y2=\"27\" style=\"stroke:#a1bea3ff;stroke-width:2;\" /><line x1=\"253\" y1=\"15\" x2=\"253\" y2=\"27\" style=\"stroke:#a2bea3ff;stroke-width:2;\" /><line x1=\"254\" y1=\"15\" x2=\"254\" y2=\"27\" style=\"stroke:#a2bfa3ff;stroke-width:2;\" /><line x1=\"255\" y1=\"15\" x2=\"255\" y2=\"27\" style=\"stroke:#a2bfa3ff;stroke-width:2;\" /><line x1=\"256\" y1=\"15\" x2=\"256\" y2=\"27\" style=\"stroke:#a3bfa3ff;stroke-width:2;\" /><line x1=\"257\" y1=\"15\" x2=\"257\" y2=\"27\" style=\"stroke:#a3bfa3ff;stroke-width:2;\" /><line x1=\"258\" y1=\"15\" x2=\"258\" y2=\"27\" style=\"stroke:#a4c0a3ff;stroke-width:2;\" /><line x1=\"259\" y1=\"15\" x2=\"259\" y2=\"27\" style=\"stroke:#a4c0a3ff;stroke-width:2;\" /><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"27\" style=\"stroke:#a5c0a4ff;stroke-width:2;\" /><line x1=\"261\" y1=\"15\" x2=\"261\" y2=\"27\" style=\"stroke:#a5c0a4ff;stroke-width:2;\" /><line x1=\"262\" y1=\"15\" x2=\"262\" y2=\"27\" style=\"stroke:#a6c1a4ff;stroke-width:2;\" /><line x1=\"263\" y1=\"15\" x2=\"263\" y2=\"27\" style=\"stroke:#a6c1a4ff;stroke-width:2;\" /><line x1=\"264\" y1=\"15\" x2=\"264\" y2=\"27\" style=\"stroke:#a7c1a4ff;stroke-width:2;\" /><line x1=\"265\" y1=\"15\" x2=\"265\" y2=\"27\" style=\"stroke:#a7c1a4ff;stroke-width:2;\" /><line x1=\"266\" y1=\"15\" x2=\"266\" y2=\"27\" style=\"stroke:#a8c2a4ff;stroke-width:2;\" /><line x1=\"267\" y1=\"15\" x2=\"267\" y2=\"27\" style=\"stroke:#a8c2a5ff;stroke-width:2;\" /><line x1=\"268\" y1=\"15\" x2=\"268\" y2=\"27\" style=\"stroke:#a9c2a5ff;stroke-width:2;\" /><line x1=\"269\" y1=\"15\" x2=\"269\" y2=\"27\" style=\"stroke:#a9c2a5ff;stroke-width:2;\" /><line x1=\"270\" y1=\"15\" x2=\"270\" y2=\"27\" style=\"stroke:#a9c3a5ff;stroke-width:2;\" /><line x1=\"271\" y1=\"15\" x2=\"271\" y2=\"27\" style=\"stroke:#aac3a5ff;stroke-width:2;\" /><line x1=\"272\" y1=\"15\" x2=\"272\" y2=\"27\" style=\"stroke:#aac3a5ff;stroke-width:2;\" /><line x1=\"273\" y1=\"15\" x2=\"273\" y2=\"27\" style=\"stroke:#abc3a5ff;stroke-width:2;\" /><line x1=\"274\" y1=\"15\" x2=\"274\" y2=\"27\" style=\"stroke:#abc4a6ff;stroke-width:2;\" /><line x1=\"275\" y1=\"15\" x2=\"275\" y2=\"27\" style=\"stroke:#acc4a6ff;stroke-width:2;\" /><line x1=\"276\" y1=\"15\" x2=\"276\" y2=\"27\" style=\"stroke:#acc4a6ff;stroke-width:2;\" /><line x1=\"277\" y1=\"15\" x2=\"277\" y2=\"27\" style=\"stroke:#adc4a6ff;stroke-width:2;\" /><line x1=\"278\" y1=\"15\" x2=\"278\" y2=\"27\" style=\"stroke:#adc5a6ff;stroke-width:2;\" /><line x1=\"279\" y1=\"15\" x2=\"279\" y2=\"27\" style=\"stroke:#aec5a6ff;stroke-width:2;\" /><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"27\" style=\"stroke:#aec5a6ff;stroke-width:2;\" /><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"27\" style=\"stroke:#afc5a7ff;stroke-width:2;\" /><line x1=\"282\" y1=\"15\" x2=\"282\" y2=\"27\" style=\"stroke:#afc6a7ff;stroke-width:2;\" /><line x1=\"283\" y1=\"15\" x2=\"283\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"284\" y1=\"15\" x2=\"284\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"285\" y1=\"15\" x2=\"285\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"286\" y1=\"15\" x2=\"286\" y2=\"27\" style=\"stroke:#b1c7a7ff;stroke-width:2;\" /><line x1=\"287\" y1=\"15\" x2=\"287\" y2=\"27\" style=\"stroke:#b1c7a7ff;stroke-width:2;\" /><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"27\" style=\"stroke:#b2c7a7ff;stroke-width:2;\" /><line x1=\"289\" y1=\"15\" x2=\"289\" y2=\"27\" style=\"stroke:#b2c7a8ff;stroke-width:2;\" /><line x1=\"290\" y1=\"15\" x2=\"290\" y2=\"27\" style=\"stroke:#b3c8a8ff;stroke-width:2;\" /><line x1=\"291\" y1=\"15\" x2=\"291\" y2=\"27\" style=\"stroke:#b3c8a8ff;stroke-width:2;\" /><line x1=\"292\" y1=\"15\" x2=\"292\" y2=\"27\" style=\"stroke:#b4c8a8ff;stroke-width:2;\" /><line x1=\"293\" y1=\"15\" x2=\"293\" y2=\"27\" style=\"stroke:#b4c8a8ff;stroke-width:2;\" /><line x1=\"294\" y1=\"15\" x2=\"294\" y2=\"27\" style=\"stroke:#b5c9a8ff;stroke-width:2;\" /><line x1=\"295\" y1=\"15\" x2=\"295\" y2=\"27\" style=\"stroke:#b5c9a8ff;stroke-width:2;\" /><line x1=\"296\" y1=\"15\" x2=\"296\" y2=\"27\" style=\"stroke:#b6c9a9ff;stroke-width:2;\" /><line x1=\"297\" y1=\"15\" x2=\"297\" y2=\"27\" style=\"stroke:#b6c9a9ff;stroke-width:2;\" /><line x1=\"298\" y1=\"15\" x2=\"298\" y2=\"27\" style=\"stroke:#b6caa9ff;stroke-width:2;\" /><line x1=\"299\" y1=\"15\" x2=\"299\" y2=\"27\" style=\"stroke:#b7caa9ff;stroke-width:2;\" /><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"27\" style=\"stroke:#b7caa9ff;stroke-width:2;\" /><line x1=\"301\" y1=\"15\" x2=\"301\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"302\" y1=\"15\" x2=\"302\" y2=\"27\" style=\"stroke:#b8cba9ff;stroke-width:2;\" /><line x1=\"303\" y1=\"15\" x2=\"303\" y2=\"27\" style=\"stroke:#b9cbaaff;stroke-width:2;\" /><line x1=\"304\" y1=\"15\" x2=\"304\" y2=\"27\" style=\"stroke:#b9cbaaff;stroke-width:2;\" /><line x1=\"305\" y1=\"15\" x2=\"305\" y2=\"27\" style=\"stroke:#bacbaaff;stroke-width:2;\" /><line x1=\"306\" y1=\"15\" x2=\"306\" y2=\"27\" style=\"stroke:#baccaaff;stroke-width:2;\" /><line x1=\"307\" y1=\"15\" x2=\"307\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"308\" y1=\"15\" x2=\"308\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"309\" y1=\"15\" x2=\"309\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"310\" y1=\"15\" x2=\"310\" y2=\"27\" style=\"stroke:#bccdabff;stroke-width:2;\" /><line x1=\"311\" y1=\"15\" x2=\"311\" y2=\"27\" style=\"stroke:#bccdabff;stroke-width:2;\" /><line x1=\"312\" y1=\"15\" x2=\"312\" y2=\"27\" style=\"stroke:#bdcdabff;stroke-width:2;\" /><line x1=\"313\" y1=\"15\" x2=\"313\" y2=\"27\" style=\"stroke:#bdcdabff;stroke-width:2;\" /><line x1=\"314\" y1=\"15\" x2=\"314\" y2=\"27\" style=\"stroke:#beceabff;stroke-width:2;\" /><line x1=\"315\" y1=\"15\" x2=\"315\" y2=\"27\" style=\"stroke:#beceabff;stroke-width:2;\" /><line x1=\"316\" y1=\"15\" x2=\"316\" y2=\"27\" style=\"stroke:#bfceabff;stroke-width:2;\" /><line x1=\"317\" y1=\"15\" x2=\"317\" y2=\"27\" style=\"stroke:#bfceacff;stroke-width:2;\" /><line x1=\"318\" y1=\"15\" x2=\"318\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"319\" y1=\"15\" x2=\"319\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"321\" y1=\"15\" x2=\"321\" y2=\"27\" style=\"stroke:#c1cfacff;stroke-width:2;\" /><line x1=\"322\" y1=\"15\" x2=\"322\" y2=\"27\" style=\"stroke:#c1d0acff;stroke-width:2;\" /><line x1=\"323\" y1=\"15\" x2=\"323\" y2=\"27\" style=\"stroke:#c2d0acff;stroke-width:2;\" /><line x1=\"324\" y1=\"15\" x2=\"324\" y2=\"27\" style=\"stroke:#c2d0adff;stroke-width:2;\" /><line x1=\"325\" y1=\"15\" x2=\"325\" y2=\"27\" style=\"stroke:#c3d0adff;stroke-width:2;\" /><line x1=\"326\" y1=\"15\" x2=\"326\" y2=\"27\" style=\"stroke:#c3d1adff;stroke-width:2;\" /><line x1=\"327\" y1=\"15\" x2=\"327\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"328\" y1=\"15\" x2=\"328\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"329\" y1=\"15\" x2=\"329\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"330\" y1=\"15\" x2=\"330\" y2=\"27\" style=\"stroke:#c5d2adff;stroke-width:2;\" /><line x1=\"331\" y1=\"15\" x2=\"331\" y2=\"27\" style=\"stroke:#c5d2aeff;stroke-width:2;\" /><line x1=\"332\" y1=\"15\" x2=\"332\" y2=\"27\" style=\"stroke:#c6d2aeff;stroke-width:2;\" /><line x1=\"333\" y1=\"15\" x2=\"333\" y2=\"27\" style=\"stroke:#c6d2aeff;stroke-width:2;\" /><line x1=\"334\" y1=\"15\" x2=\"334\" y2=\"27\" style=\"stroke:#c7d3aeff;stroke-width:2;\" /><line x1=\"335\" y1=\"15\" x2=\"335\" y2=\"27\" style=\"stroke:#c7d3aeff;stroke-width:2;\" /><line x1=\"336\" y1=\"15\" x2=\"336\" y2=\"27\" style=\"stroke:#c8d3aeff;stroke-width:2;\" /><line x1=\"337\" y1=\"15\" x2=\"337\" y2=\"27\" style=\"stroke:#c8d3aeff;stroke-width:2;\" /><line x1=\"338\" y1=\"15\" x2=\"338\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"339\" y1=\"15\" x2=\"339\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"341\" y1=\"15\" x2=\"341\" y2=\"27\" style=\"stroke:#cad4afff;stroke-width:2;\" /><line x1=\"342\" y1=\"15\" x2=\"342\" y2=\"27\" style=\"stroke:#cad5afff;stroke-width:2;\" /><line x1=\"343\" y1=\"15\" x2=\"343\" y2=\"27\" style=\"stroke:#cbd5afff;stroke-width:2;\" /><line x1=\"344\" y1=\"15\" x2=\"344\" y2=\"27\" style=\"stroke:#cbd5afff;stroke-width:2;\" /><line x1=\"345\" y1=\"15\" x2=\"345\" y2=\"27\" style=\"stroke:#ccd5b0ff;stroke-width:2;\" /><line x1=\"346\" y1=\"15\" x2=\"346\" y2=\"27\" style=\"stroke:#ccd6b0ff;stroke-width:2;\" /><line x1=\"347\" y1=\"15\" x2=\"347\" y2=\"27\" style=\"stroke:#cdd6b0ff;stroke-width:2;\" /><line x1=\"348\" y1=\"15\" x2=\"348\" y2=\"27\" style=\"stroke:#cdd6b0ff;stroke-width:2;\" /><line x1=\"349\" y1=\"15\" x2=\"349\" y2=\"27\" style=\"stroke:#ced6b0ff;stroke-width:2;\" /><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"27\" style=\"stroke:#ced7b0ff;stroke-width:2;\" /><line x1=\"351\" y1=\"15\" x2=\"351\" y2=\"27\" style=\"stroke:#ced7b1ff;stroke-width:2;\" /><line x1=\"352\" y1=\"15\" x2=\"352\" y2=\"27\" style=\"stroke:#cfd7b1ff;stroke-width:2;\" /><line x1=\"353\" y1=\"15\" x2=\"353\" y2=\"27\" style=\"stroke:#cfd7b1ff;stroke-width:2;\" /><line x1=\"354\" y1=\"15\" x2=\"354\" y2=\"27\" style=\"stroke:#d0d8b1ff;stroke-width:2;\" /><line x1=\"355\" y1=\"15\" x2=\"355\" y2=\"27\" style=\"stroke:#d0d8b1ff;stroke-width:2;\" /><line x1=\"356\" y1=\"15\" x2=\"356\" y2=\"27\" style=\"stroke:#d1d8b1ff;stroke-width:2;\" /><line x1=\"357\" y1=\"15\" x2=\"357\" y2=\"27\" style=\"stroke:#d1d9b1ff;stroke-width:2;\" /><line x1=\"358\" y1=\"15\" x2=\"358\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"359\" y1=\"15\" x2=\"359\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"361\" y1=\"15\" x2=\"361\" y2=\"27\" style=\"stroke:#d3dab2ff;stroke-width:2;\" /><line x1=\"362\" y1=\"15\" x2=\"362\" y2=\"27\" style=\"stroke:#d3dab2ff;stroke-width:2;\" /><line x1=\"363\" y1=\"15\" x2=\"363\" y2=\"27\" style=\"stroke:#d4dab2ff;stroke-width:2;\" /><line x1=\"364\" y1=\"15\" x2=\"364\" y2=\"27\" style=\"stroke:#d4dab2ff;stroke-width:2;\" /><line x1=\"365\" y1=\"15\" x2=\"365\" y2=\"27\" style=\"stroke:#d5dbb3ff;stroke-width:2;\" /><line x1=\"366\" y1=\"15\" x2=\"366\" y2=\"27\" style=\"stroke:#d5dbb3ff;stroke-width:2;\" /><line x1=\"367\" y1=\"15\" x2=\"367\" y2=\"27\" style=\"stroke:#d6dbb3ff;stroke-width:2;\" /><line x1=\"368\" y1=\"15\" x2=\"368\" y2=\"27\" style=\"stroke:#d6dbb3ff;stroke-width:2;\" /><line x1=\"369\" y1=\"15\" x2=\"369\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"370\" y1=\"15\" x2=\"370\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"371\" y1=\"15\" x2=\"371\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"372\" y1=\"15\" x2=\"372\" y2=\"27\" style=\"stroke:#d8dcb4ff;stroke-width:2;\" /><line x1=\"373\" y1=\"15\" x2=\"373\" y2=\"27\" style=\"stroke:#d8ddb4ff;stroke-width:2;\" /><line x1=\"374\" y1=\"15\" x2=\"374\" y2=\"27\" style=\"stroke:#d9ddb4ff;stroke-width:2;\" /><line x1=\"375\" y1=\"15\" x2=\"375\" y2=\"27\" style=\"stroke:#d9ddb4ff;stroke-width:2;\" /><line x1=\"376\" y1=\"15\" x2=\"376\" y2=\"27\" style=\"stroke:#daddb4ff;stroke-width:2;\" /><line x1=\"377\" y1=\"15\" x2=\"377\" y2=\"27\" style=\"stroke:#dadeb4ff;stroke-width:2;\" /><line x1=\"378\" y1=\"15\" x2=\"378\" y2=\"27\" style=\"stroke:#dbdeb4ff;stroke-width:2;\" /><line x1=\"379\" y1=\"15\" x2=\"379\" y2=\"27\" style=\"stroke:#dbdeb5ff;stroke-width:2;\" /><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"27\" style=\"stroke:#dcdeb5ff;stroke-width:2;\" /><line x1=\"381\" y1=\"15\" x2=\"381\" y2=\"27\" style=\"stroke:#dcdfb5ff;stroke-width:2;\" /><line x1=\"382\" y1=\"15\" x2=\"382\" y2=\"27\" style=\"stroke:#dcdfb5ff;stroke-width:2;\" /><line x1=\"383\" y1=\"15\" x2=\"383\" y2=\"27\" style=\"stroke:#dddfb5ff;stroke-width:2;\" /><line x1=\"384\" y1=\"15\" x2=\"384\" y2=\"27\" style=\"stroke:#dddfb5ff;stroke-width:2;\" /><line x1=\"385\" y1=\"15\" x2=\"385\" y2=\"27\" style=\"stroke:#dee0b5ff;stroke-width:2;\" /><line x1=\"386\" y1=\"15\" x2=\"386\" y2=\"27\" style=\"stroke:#dee0b6ff;stroke-width:2;\" /><line x1=\"387\" y1=\"15\" x2=\"387\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"388\" y1=\"15\" x2=\"388\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"389\" y1=\"15\" x2=\"389\" y2=\"27\" style=\"stroke:#e0e1b6ff;stroke-width:2;\" /><line x1=\"390\" y1=\"15\" x2=\"390\" y2=\"27\" style=\"stroke:#e0e1b6ff;stroke-width:2;\" /><line x1=\"391\" y1=\"15\" x2=\"391\" y2=\"27\" style=\"stroke:#e1e1b6ff;stroke-width:2;\" /><line x1=\"392\" y1=\"15\" x2=\"392\" y2=\"27\" style=\"stroke:#e1e1b6ff;stroke-width:2;\" /><line x1=\"393\" y1=\"15\" x2=\"393\" y2=\"27\" style=\"stroke:#e1e2b7ff;stroke-width:2;\" /><line x1=\"394\" y1=\"15\" x2=\"394\" y2=\"27\" style=\"stroke:#e2e2b7ff;stroke-width:2;\" /><line x1=\"395\" y1=\"15\" x2=\"395\" y2=\"27\" style=\"stroke:#e2e2b7ff;stroke-width:2;\" /><line x1=\"396\" y1=\"15\" x2=\"396\" y2=\"27\" style=\"stroke:#e3e2b7ff;stroke-width:2;\" /><line x1=\"397\" y1=\"15\" x2=\"397\" y2=\"27\" style=\"stroke:#e3e3b7ff;stroke-width:2;\" /><line x1=\"398\" y1=\"15\" x2=\"398\" y2=\"27\" style=\"stroke:#e4e3b7ff;stroke-width:2;\" /><line x1=\"399\" y1=\"15\" x2=\"399\" y2=\"27\" style=\"stroke:#e4e3b7ff;stroke-width:2;\" /><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"27\" style=\"stroke:#e5e3b8ff;stroke-width:2;\" /><line x1=\"401\" y1=\"15\" x2=\"401\" y2=\"27\" style=\"stroke:#e5e4b8ff;stroke-width:2;\" /><line x1=\"402\" y1=\"15\" x2=\"402\" y2=\"27\" style=\"stroke:#e5e4b8ff;stroke-width:2;\" /><line x1=\"403\" y1=\"15\" x2=\"403\" y2=\"27\" style=\"stroke:#e6e4b8ff;stroke-width:2;\" /><line x1=\"404\" y1=\"15\" x2=\"404\" y2=\"27\" style=\"stroke:#e6e4b8ff;stroke-width:2;\" /><line x1=\"405\" y1=\"15\" x2=\"405\" y2=\"27\" style=\"stroke:#e7e5b8ff;stroke-width:2;\" /><line x1=\"406\" y1=\"15\" x2=\"406\" y2=\"27\" style=\"stroke:#e7e5b8ff;stroke-width:2;\" /><line x1=\"407\" y1=\"15\" x2=\"407\" y2=\"27\" style=\"stroke:#e8e5b9ff;stroke-width:2;\" /><line x1=\"408\" y1=\"15\" x2=\"408\" y2=\"27\" style=\"stroke:#e8e5b9ff;stroke-width:2;\" /><line x1=\"409\" y1=\"15\" x2=\"409\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"410\" y1=\"15\" x2=\"410\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"411\" y1=\"15\" x2=\"411\" y2=\"27\" style=\"stroke:#eae6b9ff;stroke-width:2;\" /><line x1=\"412\" y1=\"15\" x2=\"412\" y2=\"27\" style=\"stroke:#eae6b9ff;stroke-width:2;\" /><line x1=\"413\" y1=\"15\" x2=\"413\" y2=\"27\" style=\"stroke:#eae7b9ff;stroke-width:2;\" /><line x1=\"414\" y1=\"15\" x2=\"414\" y2=\"27\" style=\"stroke:#ebe7baff;stroke-width:2;\" /><line x1=\"415\" y1=\"15\" x2=\"415\" y2=\"27\" style=\"stroke:#ebe7baff;stroke-width:2;\" /><line x1=\"416\" y1=\"15\" x2=\"416\" y2=\"27\" style=\"stroke:#ece7baff;stroke-width:2;\" /><line x1=\"417\" y1=\"15\" x2=\"417\" y2=\"27\" style=\"stroke:#ece8baff;stroke-width:2;\" /><line x1=\"418\" y1=\"15\" x2=\"418\" y2=\"27\" style=\"stroke:#ede8baff;stroke-width:2;\" /><line x1=\"419\" y1=\"15\" x2=\"419\" y2=\"27\" style=\"stroke:#ede8baff;stroke-width:2;\" /><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"27\" style=\"stroke:#eee8baff;stroke-width:2;\" /><line x1=\"421\" y1=\"15\" x2=\"421\" y2=\"27\" style=\"stroke:#eee9bbff;stroke-width:2;\" /><line x1=\"422\" y1=\"15\" x2=\"422\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"423\" y1=\"15\" x2=\"423\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"424\" y1=\"15\" x2=\"424\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"425\" y1=\"15\" x2=\"425\" y2=\"27\" style=\"stroke:#f0eabbff;stroke-width:2;\" /><line x1=\"426\" y1=\"15\" x2=\"426\" y2=\"27\" style=\"stroke:#f0eabbff;stroke-width:2;\" /><line x1=\"427\" y1=\"15\" x2=\"427\" y2=\"27\" style=\"stroke:#f1eabbff;stroke-width:2;\" /><line x1=\"428\" y1=\"15\" x2=\"428\" y2=\"27\" style=\"stroke:#f1ebbcff;stroke-width:2;\" /><line x1=\"429\" y1=\"15\" x2=\"429\" y2=\"27\" style=\"stroke:#f2ebbcff;stroke-width:2;\" /><line x1=\"430\" y1=\"15\" x2=\"430\" y2=\"27\" style=\"stroke:#f2ebbcff;stroke-width:2;\" /><line x1=\"431\" y1=\"15\" x2=\"431\" y2=\"27\" style=\"stroke:#f3ebbcff;stroke-width:2;\" /><line x1=\"432\" y1=\"15\" x2=\"432\" y2=\"27\" style=\"stroke:#f3ecbcff;stroke-width:2;\" /><line x1=\"433\" y1=\"15\" x2=\"433\" y2=\"27\" style=\"stroke:#f4ecbcff;stroke-width:2;\" /><line x1=\"434\" y1=\"15\" x2=\"434\" y2=\"27\" style=\"stroke:#f4ecbcff;stroke-width:2;\" /><line x1=\"435\" y1=\"15\" x2=\"435\" y2=\"27\" style=\"stroke:#f4ecbdff;stroke-width:2;\" /><line x1=\"436\" y1=\"15\" x2=\"436\" y2=\"27\" style=\"stroke:#f5edbdff;stroke-width:2;\" /><line x1=\"437\" y1=\"15\" x2=\"437\" y2=\"27\" style=\"stroke:#f5edbdff;stroke-width:2;\" /><line x1=\"438\" y1=\"15\" x2=\"438\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"439\" y1=\"15\" x2=\"439\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"440\" y1=\"15\" x2=\"440\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"441\" y1=\"15\" x2=\"441\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"442\" y1=\"15\" x2=\"442\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"443\" y1=\"15\" x2=\"443\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"444\" y1=\"15\" x2=\"444\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"445\" y1=\"15\" x2=\"445\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"446\" y1=\"15\" x2=\"446\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"447\" y1=\"15\" x2=\"447\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"448\" y1=\"15\" x2=\"448\" y2=\"27\" style=\"stroke:#d1673aff;stroke-width:2;\" /><line x1=\"449\" y1=\"15\" x2=\"449\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><text x=\"0\" y=\"38\" style=\"text-anchor:start; font-size:11px; font:Arial\">-46.44</text><text x=\"75\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-38.5</text><text x=\"150\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-30.6</text><text x=\"225\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-22.7</text><text x=\"300\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-14.8</text><text x=\"375\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-6.9</text><text x=\"450\" y=\"38\" style=\"text-anchor:end; font-size:11px; font:Arial\">1.0</text><text x=\"0\" y=\"12\" style=\"font-size:11px; font:Arial\"></text></svg> <br/>\n        <span style=\"font-size: 0.8em\">(Obszary obwod\u00f3w s\u0105 przybli\u017cone z wykorzystaniem diagramu Voronoia)</span>\n        </div>\n        ",
+  "description": "\n        <div style='font-family: \"Open Sans\", sans-serif;'>\n        <h3>Pozna\u0144: GARCZEWSKI \u0141ukasz vs JA\u015aKOWIAK Jacek</h3>\n        R\u00f3\u017cnica w % <br/>\n        <span style=\"font-size: 0.8em\">\n        Warto\u015bci ujemne - przewaga JA\u015aKOWIAK Jacek <br/> \n        Warto\u015bci dodatnie - przewaga GARCZEWSKI \u0141ukasz <br/>\n        Obwody z oddanymi mniej ni\u017c 50 g\u0142osami zosta\u0142y pomini\u0119te. <br/>\n        </span> \n        <svg height=\"40\" width=\"450\"><line x1=\"0\" y1=\"15\" x2=\"0\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"1\" y1=\"15\" x2=\"1\" y2=\"27\" style=\"stroke:#008080ff;stroke-width:2;\" /><line x1=\"2\" y1=\"15\" x2=\"2\" y2=\"27\" style=\"stroke:#018080ff;stroke-width:2;\" /><line x1=\"3\" y1=\"15\" x2=\"3\" y2=\"27\" style=\"stroke:#028180ff;stroke-width:2;\" /><line x1=\"4\" y1=\"15\" x2=\"4\" y2=\"27\" style=\"stroke:#038181ff;stroke-width:2;\" /><line x1=\"5\" y1=\"15\" x2=\"5\" y2=\"27\" style=\"stroke:#038181ff;stroke-width:2;\" /><line x1=\"6\" y1=\"15\" x2=\"6\" y2=\"27\" style=\"stroke:#048181ff;stroke-width:2;\" /><line x1=\"7\" y1=\"15\" x2=\"7\" y2=\"27\" style=\"stroke:#058281ff;stroke-width:2;\" /><line x1=\"8\" y1=\"15\" x2=\"8\" y2=\"27\" style=\"stroke:#068281ff;stroke-width:2;\" /><line x1=\"9\" y1=\"15\" x2=\"9\" y2=\"27\" style=\"stroke:#068281ff;stroke-width:2;\" /><line x1=\"10\" y1=\"15\" x2=\"10\" y2=\"27\" style=\"stroke:#078281ff;stroke-width:2;\" /><line x1=\"11\" y1=\"15\" x2=\"11\" y2=\"27\" style=\"stroke:#088382ff;stroke-width:2;\" /><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"27\" style=\"stroke:#098382ff;stroke-width:2;\" /><line x1=\"13\" y1=\"15\" x2=\"13\" y2=\"27\" style=\"stroke:#098382ff;stroke-width:2;\" /><line x1=\"14\" y1=\"15\" x2=\"14\" y2=\"27\" style=\"stroke:#0a8382ff;stroke-width:2;\" /><line x1=\"15\" y1=\"15\" x2=\"15\" y2=\"27\" style=\"stroke:#0b8482ff;stroke-width:2;\" /><line x1=\"16\" y1=\"15\" x2=\"16\" y2=\"27\" style=\"stroke:#0c8482ff;stroke-width:2;\" /><line x1=\"17\" y1=\"15\" x2=\"17\" y2=\"27\" style=\"stroke:#0d8482ff;stroke-width:2;\" /><line x1=\"18\" y1=\"15\" x2=\"18\" y2=\"27\" style=\"stroke:#0d8482ff;stroke-width:2;\" /><line x1=\"19\" y1=\"15\" x2=\"19\" y2=\"27\" style=\"stroke:#0e8583ff;stroke-width:2;\" /><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"27\" style=\"stroke:#0f8583ff;stroke-width:2;\" /><line x1=\"21\" y1=\"15\" x2=\"21\" y2=\"27\" style=\"stroke:#108583ff;stroke-width:2;\" /><line x1=\"22\" y1=\"15\" x2=\"22\" y2=\"27\" style=\"stroke:#108583ff;stroke-width:2;\" /><line x1=\"23\" y1=\"15\" x2=\"23\" y2=\"27\" style=\"stroke:#118683ff;stroke-width:2;\" /><line x1=\"24\" y1=\"15\" x2=\"24\" y2=\"27\" style=\"stroke:#128683ff;stroke-width:2;\" /><line x1=\"25\" y1=\"15\" x2=\"25\" y2=\"27\" style=\"stroke:#138683ff;stroke-width:2;\" /><line x1=\"26\" y1=\"15\" x2=\"26\" y2=\"27\" style=\"stroke:#138684ff;stroke-width:2;\" /><line x1=\"27\" y1=\"15\" x2=\"27\" y2=\"27\" style=\"stroke:#148784ff;stroke-width:2;\" /><line x1=\"28\" y1=\"15\" x2=\"28\" y2=\"27\" style=\"stroke:#158784ff;stroke-width:2;\" /><line x1=\"29\" y1=\"15\" x2=\"29\" y2=\"27\" style=\"stroke:#168784ff;stroke-width:2;\" /><line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"27\" style=\"stroke:#178784ff;stroke-width:2;\" /><line x1=\"31\" y1=\"15\" x2=\"31\" y2=\"27\" style=\"stroke:#178884ff;stroke-width:2;\" /><line x1=\"32\" y1=\"15\" x2=\"32\" y2=\"27\" style=\"stroke:#188884ff;stroke-width:2;\" /><line x1=\"33\" y1=\"15\" x2=\"33\" y2=\"27\" style=\"stroke:#198885ff;stroke-width:2;\" /><line x1=\"34\" y1=\"15\" x2=\"34\" y2=\"27\" style=\"stroke:#1a8885ff;stroke-width:2;\" /><line x1=\"35\" y1=\"15\" x2=\"35\" y2=\"27\" style=\"stroke:#1a8985ff;stroke-width:2;\" /><line x1=\"36\" y1=\"15\" x2=\"36\" y2=\"27\" style=\"stroke:#1b8985ff;stroke-width:2;\" /><line x1=\"37\" y1=\"15\" x2=\"37\" y2=\"27\" style=\"stroke:#1c8985ff;stroke-width:2;\" /><line x1=\"38\" y1=\"15\" x2=\"38\" y2=\"27\" style=\"stroke:#1d8985ff;stroke-width:2;\" /><line x1=\"39\" y1=\"15\" x2=\"39\" y2=\"27\" style=\"stroke:#1d8a85ff;stroke-width:2;\" /><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"27\" style=\"stroke:#1e8a85ff;stroke-width:2;\" /><line x1=\"41\" y1=\"15\" x2=\"41\" y2=\"27\" style=\"stroke:#1f8a86ff;stroke-width:2;\" /><line x1=\"42\" y1=\"15\" x2=\"42\" y2=\"27\" style=\"stroke:#208a86ff;stroke-width:2;\" /><line x1=\"43\" y1=\"15\" x2=\"43\" y2=\"27\" style=\"stroke:#208b86ff;stroke-width:2;\" /><line x1=\"44\" y1=\"15\" x2=\"44\" y2=\"27\" style=\"stroke:#218b86ff;stroke-width:2;\" /><line x1=\"45\" y1=\"15\" x2=\"45\" y2=\"27\" style=\"stroke:#228b86ff;stroke-width:2;\" /><line x1=\"46\" y1=\"15\" x2=\"46\" y2=\"27\" style=\"stroke:#238b86ff;stroke-width:2;\" /><line x1=\"47\" y1=\"15\" x2=\"47\" y2=\"27\" style=\"stroke:#248c86ff;stroke-width:2;\" /><line x1=\"48\" y1=\"15\" x2=\"48\" y2=\"27\" style=\"stroke:#248c87ff;stroke-width:2;\" /><line x1=\"49\" y1=\"15\" x2=\"49\" y2=\"27\" style=\"stroke:#258c87ff;stroke-width:2;\" /><line x1=\"50\" y1=\"15\" x2=\"50\" y2=\"27\" style=\"stroke:#268c87ff;stroke-width:2;\" /><line x1=\"51\" y1=\"15\" x2=\"51\" y2=\"27\" style=\"stroke:#278d87ff;stroke-width:2;\" /><line x1=\"52\" y1=\"15\" x2=\"52\" y2=\"27\" style=\"stroke:#278d87ff;stroke-width:2;\" /><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"27\" style=\"stroke:#288d87ff;stroke-width:2;\" /><line x1=\"54\" y1=\"15\" x2=\"54\" y2=\"27\" style=\"stroke:#298d87ff;stroke-width:2;\" /><line x1=\"55\" y1=\"15\" x2=\"55\" y2=\"27\" style=\"stroke:#2a8e88ff;stroke-width:2;\" /><line x1=\"56\" y1=\"15\" x2=\"56\" y2=\"27\" style=\"stroke:#2a8e88ff;stroke-width:2;\" /><line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"27\" style=\"stroke:#2b8e88ff;stroke-width:2;\" /><line x1=\"58\" y1=\"15\" x2=\"58\" y2=\"27\" style=\"stroke:#2c8e88ff;stroke-width:2;\" /><line x1=\"59\" y1=\"15\" x2=\"59\" y2=\"27\" style=\"stroke:#2d8f88ff;stroke-width:2;\" /><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"27\" style=\"stroke:#2e8f88ff;stroke-width:2;\" /><line x1=\"61\" y1=\"15\" x2=\"61\" y2=\"27\" style=\"stroke:#2e8f88ff;stroke-width:2;\" /><line x1=\"62\" y1=\"15\" x2=\"62\" y2=\"27\" style=\"stroke:#2f8f88ff;stroke-width:2;\" /><line x1=\"63\" y1=\"15\" x2=\"63\" y2=\"27\" style=\"stroke:#309089ff;stroke-width:2;\" /><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"27\" style=\"stroke:#319089ff;stroke-width:2;\" /><line x1=\"65\" y1=\"15\" x2=\"65\" y2=\"27\" style=\"stroke:#319089ff;stroke-width:2;\" /><line x1=\"66\" y1=\"15\" x2=\"66\" y2=\"27\" style=\"stroke:#329089ff;stroke-width:2;\" /><line x1=\"67\" y1=\"15\" x2=\"67\" y2=\"27\" style=\"stroke:#339189ff;stroke-width:2;\" /><line x1=\"68\" y1=\"15\" x2=\"68\" y2=\"27\" style=\"stroke:#349189ff;stroke-width:2;\" /><line x1=\"69\" y1=\"15\" x2=\"69\" y2=\"27\" style=\"stroke:#349189ff;stroke-width:2;\" /><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"27\" style=\"stroke:#35918aff;stroke-width:2;\" /><line x1=\"71\" y1=\"15\" x2=\"71\" y2=\"27\" style=\"stroke:#36928aff;stroke-width:2;\" /><line x1=\"72\" y1=\"15\" x2=\"72\" y2=\"27\" style=\"stroke:#37928aff;stroke-width:2;\" /><line x1=\"73\" y1=\"15\" x2=\"73\" y2=\"27\" style=\"stroke:#38928aff;stroke-width:2;\" /><line x1=\"74\" y1=\"15\" x2=\"74\" y2=\"27\" style=\"stroke:#38928aff;stroke-width:2;\" /><line x1=\"75\" y1=\"15\" x2=\"75\" y2=\"27\" style=\"stroke:#39938aff;stroke-width:2;\" /><line x1=\"76\" y1=\"15\" x2=\"76\" y2=\"27\" style=\"stroke:#3a938aff;stroke-width:2;\" /><line x1=\"77\" y1=\"15\" x2=\"77\" y2=\"27\" style=\"stroke:#3b938bff;stroke-width:2;\" /><line x1=\"78\" y1=\"15\" x2=\"78\" y2=\"27\" style=\"stroke:#3b938bff;stroke-width:2;\" /><line x1=\"79\" y1=\"15\" x2=\"79\" y2=\"27\" style=\"stroke:#3c938bff;stroke-width:2;\" /><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"27\" style=\"stroke:#3d948bff;stroke-width:2;\" /><line x1=\"81\" y1=\"15\" x2=\"81\" y2=\"27\" style=\"stroke:#3e948bff;stroke-width:2;\" /><line x1=\"82\" y1=\"15\" x2=\"82\" y2=\"27\" style=\"stroke:#3e948bff;stroke-width:2;\" /><line x1=\"83\" y1=\"15\" x2=\"83\" y2=\"27\" style=\"stroke:#3f948bff;stroke-width:2;\" /><line x1=\"84\" y1=\"15\" x2=\"84\" y2=\"27\" style=\"stroke:#40958cff;stroke-width:2;\" /><line x1=\"85\" y1=\"15\" x2=\"85\" y2=\"27\" style=\"stroke:#41958cff;stroke-width:2;\" /><line x1=\"86\" y1=\"15\" x2=\"86\" y2=\"27\" style=\"stroke:#41958cff;stroke-width:2;\" /><line x1=\"87\" y1=\"15\" x2=\"87\" y2=\"27\" style=\"stroke:#42958cff;stroke-width:2;\" /><line x1=\"88\" y1=\"15\" x2=\"88\" y2=\"27\" style=\"stroke:#43968cff;stroke-width:2;\" /><line x1=\"89\" y1=\"15\" x2=\"89\" y2=\"27\" style=\"stroke:#44968cff;stroke-width:2;\" /><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"27\" style=\"stroke:#45968cff;stroke-width:2;\" /><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"27\" style=\"stroke:#45968cff;stroke-width:2;\" /><line x1=\"92\" y1=\"15\" x2=\"92\" y2=\"27\" style=\"stroke:#46978dff;stroke-width:2;\" /><line x1=\"93\" y1=\"15\" x2=\"93\" y2=\"27\" style=\"stroke:#47978dff;stroke-width:2;\" /><line x1=\"94\" y1=\"15\" x2=\"94\" y2=\"27\" style=\"stroke:#48978dff;stroke-width:2;\" /><line x1=\"95\" y1=\"15\" x2=\"95\" y2=\"27\" style=\"stroke:#48978dff;stroke-width:2;\" /><line x1=\"96\" y1=\"15\" x2=\"96\" y2=\"27\" style=\"stroke:#49988dff;stroke-width:2;\" /><line x1=\"97\" y1=\"15\" x2=\"97\" y2=\"27\" style=\"stroke:#4a988dff;stroke-width:2;\" /><line x1=\"98\" y1=\"15\" x2=\"98\" y2=\"27\" style=\"stroke:#4b988dff;stroke-width:2;\" /><line x1=\"99\" y1=\"15\" x2=\"99\" y2=\"27\" style=\"stroke:#4b988eff;stroke-width:2;\" /><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"27\" style=\"stroke:#4c998eff;stroke-width:2;\" /><line x1=\"101\" y1=\"15\" x2=\"101\" y2=\"27\" style=\"stroke:#4d998eff;stroke-width:2;\" /><line x1=\"102\" y1=\"15\" x2=\"102\" y2=\"27\" style=\"stroke:#4e998eff;stroke-width:2;\" /><line x1=\"103\" y1=\"15\" x2=\"103\" y2=\"27\" style=\"stroke:#4f998eff;stroke-width:2;\" /><line x1=\"104\" y1=\"15\" x2=\"104\" y2=\"27\" style=\"stroke:#4f9a8eff;stroke-width:2;\" /><line x1=\"105\" y1=\"15\" x2=\"105\" y2=\"27\" style=\"stroke:#509a8eff;stroke-width:2;\" /><line x1=\"106\" y1=\"15\" x2=\"106\" y2=\"27\" style=\"stroke:#519a8fff;stroke-width:2;\" /><line x1=\"107\" y1=\"15\" x2=\"107\" y2=\"27\" style=\"stroke:#529a8fff;stroke-width:2;\" /><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"27\" style=\"stroke:#529b8fff;stroke-width:2;\" /><line x1=\"109\" y1=\"15\" x2=\"109\" y2=\"27\" style=\"stroke:#539b8fff;stroke-width:2;\" /><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"27\" style=\"stroke:#549b8fff;stroke-width:2;\" /><line x1=\"111\" y1=\"15\" x2=\"111\" y2=\"27\" style=\"stroke:#559b8fff;stroke-width:2;\" /><line x1=\"112\" y1=\"15\" x2=\"112\" y2=\"27\" style=\"stroke:#559c8fff;stroke-width:2;\" /><line x1=\"113\" y1=\"15\" x2=\"113\" y2=\"27\" style=\"stroke:#569c8fff;stroke-width:2;\" /><line x1=\"114\" y1=\"15\" x2=\"114\" y2=\"27\" style=\"stroke:#579c90ff;stroke-width:2;\" /><line x1=\"115\" y1=\"15\" x2=\"115\" y2=\"27\" style=\"stroke:#589c90ff;stroke-width:2;\" /><line x1=\"116\" y1=\"15\" x2=\"116\" y2=\"27\" style=\"stroke:#599d90ff;stroke-width:2;\" /><line x1=\"117\" y1=\"15\" x2=\"117\" y2=\"27\" style=\"stroke:#599d90ff;stroke-width:2;\" /><line x1=\"118\" y1=\"15\" x2=\"118\" y2=\"27\" style=\"stroke:#5a9d90ff;stroke-width:2;\" /><line x1=\"119\" y1=\"15\" x2=\"119\" y2=\"27\" style=\"stroke:#5b9d90ff;stroke-width:2;\" /><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"27\" style=\"stroke:#5c9e90ff;stroke-width:2;\" /><line x1=\"121\" y1=\"15\" x2=\"121\" y2=\"27\" style=\"stroke:#5c9e91ff;stroke-width:2;\" /><line x1=\"122\" y1=\"15\" x2=\"122\" y2=\"27\" style=\"stroke:#5d9e91ff;stroke-width:2;\" /><line x1=\"123\" y1=\"15\" x2=\"123\" y2=\"27\" style=\"stroke:#5e9e91ff;stroke-width:2;\" /><line x1=\"124\" y1=\"15\" x2=\"124\" y2=\"27\" style=\"stroke:#5f9f91ff;stroke-width:2;\" /><line x1=\"125\" y1=\"15\" x2=\"125\" y2=\"27\" style=\"stroke:#5f9f91ff;stroke-width:2;\" /><line x1=\"126\" y1=\"15\" x2=\"126\" y2=\"27\" style=\"stroke:#609f91ff;stroke-width:2;\" /><line x1=\"127\" y1=\"15\" x2=\"127\" y2=\"27\" style=\"stroke:#619f91ff;stroke-width:2;\" /><line x1=\"128\" y1=\"15\" x2=\"128\" y2=\"27\" style=\"stroke:#62a092ff;stroke-width:2;\" /><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"27\" style=\"stroke:#62a092ff;stroke-width:2;\" /><line x1=\"130\" y1=\"15\" x2=\"130\" y2=\"27\" style=\"stroke:#63a092ff;stroke-width:2;\" /><line x1=\"131\" y1=\"15\" x2=\"131\" y2=\"27\" style=\"stroke:#64a092ff;stroke-width:2;\" /><line x1=\"132\" y1=\"15\" x2=\"132\" y2=\"27\" style=\"stroke:#65a192ff;stroke-width:2;\" /><line x1=\"133\" y1=\"15\" x2=\"133\" y2=\"27\" style=\"stroke:#66a192ff;stroke-width:2;\" /><line x1=\"134\" y1=\"15\" x2=\"134\" y2=\"27\" style=\"stroke:#66a192ff;stroke-width:2;\" /><line x1=\"135\" y1=\"15\" x2=\"135\" y2=\"27\" style=\"stroke:#67a193ff;stroke-width:2;\" /><line x1=\"136\" y1=\"15\" x2=\"136\" y2=\"27\" style=\"stroke:#68a293ff;stroke-width:2;\" /><line x1=\"137\" y1=\"15\" x2=\"137\" y2=\"27\" style=\"stroke:#69a293ff;stroke-width:2;\" /><line x1=\"138\" y1=\"15\" x2=\"138\" y2=\"27\" style=\"stroke:#69a293ff;stroke-width:2;\" /><line x1=\"139\" y1=\"15\" x2=\"139\" y2=\"27\" style=\"stroke:#6aa293ff;stroke-width:2;\" /><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"27\" style=\"stroke:#6ba393ff;stroke-width:2;\" /><line x1=\"141\" y1=\"15\" x2=\"141\" y2=\"27\" style=\"stroke:#6ca393ff;stroke-width:2;\" /><line x1=\"142\" y1=\"15\" x2=\"142\" y2=\"27\" style=\"stroke:#6ca393ff;stroke-width:2;\" /><line x1=\"143\" y1=\"15\" x2=\"143\" y2=\"27\" style=\"stroke:#6da394ff;stroke-width:2;\" /><line x1=\"144\" y1=\"15\" x2=\"144\" y2=\"27\" style=\"stroke:#6ea494ff;stroke-width:2;\" /><line x1=\"145\" y1=\"15\" x2=\"145\" y2=\"27\" style=\"stroke:#6fa494ff;stroke-width:2;\" /><line x1=\"146\" y1=\"15\" x2=\"146\" y2=\"27\" style=\"stroke:#70a494ff;stroke-width:2;\" /><line x1=\"147\" y1=\"15\" x2=\"147\" y2=\"27\" style=\"stroke:#70a494ff;stroke-width:2;\" /><line x1=\"148\" y1=\"15\" x2=\"148\" y2=\"27\" style=\"stroke:#71a594ff;stroke-width:2;\" /><line x1=\"149\" y1=\"15\" x2=\"149\" y2=\"27\" style=\"stroke:#71a594ff;stroke-width:2;\" /><line x1=\"150\" y1=\"15\" x2=\"150\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"151\" y1=\"15\" x2=\"151\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"27\" style=\"stroke:#72a595ff;stroke-width:2;\" /><line x1=\"153\" y1=\"15\" x2=\"153\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"154\" y1=\"15\" x2=\"154\" y2=\"27\" style=\"stroke:#73a695ff;stroke-width:2;\" /><line x1=\"155\" y1=\"15\" x2=\"155\" y2=\"27\" style=\"stroke:#74a695ff;stroke-width:2;\" /><line x1=\"156\" y1=\"15\" x2=\"156\" y2=\"27\" style=\"stroke:#74a695ff;stroke-width:2;\" /><line x1=\"157\" y1=\"15\" x2=\"157\" y2=\"27\" style=\"stroke:#75a796ff;stroke-width:2;\" /><line x1=\"158\" y1=\"15\" x2=\"158\" y2=\"27\" style=\"stroke:#75a796ff;stroke-width:2;\" /><line x1=\"159\" y1=\"15\" x2=\"159\" y2=\"27\" style=\"stroke:#76a796ff;stroke-width:2;\" /><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"27\" style=\"stroke:#76a796ff;stroke-width:2;\" /><line x1=\"161\" y1=\"15\" x2=\"161\" y2=\"27\" style=\"stroke:#77a896ff;stroke-width:2;\" /><line x1=\"162\" y1=\"15\" x2=\"162\" y2=\"27\" style=\"stroke:#77a896ff;stroke-width:2;\" /><line x1=\"163\" y1=\"15\" x2=\"163\" y2=\"27\" style=\"stroke:#78a896ff;stroke-width:2;\" /><line x1=\"164\" y1=\"15\" x2=\"164\" y2=\"27\" style=\"stroke:#78a896ff;stroke-width:2;\" /><line x1=\"165\" y1=\"15\" x2=\"165\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"166\" y1=\"15\" x2=\"166\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"27\" style=\"stroke:#79a997ff;stroke-width:2;\" /><line x1=\"168\" y1=\"15\" x2=\"168\" y2=\"27\" style=\"stroke:#7aa997ff;stroke-width:2;\" /><line x1=\"169\" y1=\"15\" x2=\"169\" y2=\"27\" style=\"stroke:#7aaa97ff;stroke-width:2;\" /><line x1=\"170\" y1=\"15\" x2=\"170\" y2=\"27\" style=\"stroke:#7baa97ff;stroke-width:2;\" /><line x1=\"171\" y1=\"15\" x2=\"171\" y2=\"27\" style=\"stroke:#7baa97ff;stroke-width:2;\" /><line x1=\"172\" y1=\"15\" x2=\"172\" y2=\"27\" style=\"stroke:#7caa98ff;stroke-width:2;\" /><line x1=\"173\" y1=\"15\" x2=\"173\" y2=\"27\" style=\"stroke:#7cab98ff;stroke-width:2;\" /><line x1=\"174\" y1=\"15\" x2=\"174\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"175\" y1=\"15\" x2=\"175\" y2=\"27\" style=\"stroke:#7dab98ff;stroke-width:2;\" /><line x1=\"176\" y1=\"15\" x2=\"176\" y2=\"27\" style=\"stroke:#7eab98ff;stroke-width:2;\" /><line x1=\"177\" y1=\"15\" x2=\"177\" y2=\"27\" style=\"stroke:#7eac98ff;stroke-width:2;\" /><line x1=\"178\" y1=\"15\" x2=\"178\" y2=\"27\" style=\"stroke:#7fac98ff;stroke-width:2;\" /><line x1=\"179\" y1=\"15\" x2=\"179\" y2=\"27\" style=\"stroke:#7fac99ff;stroke-width:2;\" /><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"27\" style=\"stroke:#80ac99ff;stroke-width:2;\" /><line x1=\"181\" y1=\"15\" x2=\"181\" y2=\"27\" style=\"stroke:#80ad99ff;stroke-width:2;\" /><line x1=\"182\" y1=\"15\" x2=\"182\" y2=\"27\" style=\"stroke:#80ad99ff;stroke-width:2;\" /><line x1=\"183\" y1=\"15\" x2=\"183\" y2=\"27\" style=\"stroke:#81ad99ff;stroke-width:2;\" /><line x1=\"184\" y1=\"15\" x2=\"184\" y2=\"27\" style=\"stroke:#81ad99ff;stroke-width:2;\" /><line x1=\"185\" y1=\"15\" x2=\"185\" y2=\"27\" style=\"stroke:#82ae99ff;stroke-width:2;\" /><line x1=\"186\" y1=\"15\" x2=\"186\" y2=\"27\" style=\"stroke:#82ae99ff;stroke-width:2;\" /><line x1=\"187\" y1=\"15\" x2=\"187\" y2=\"27\" style=\"stroke:#83ae9aff;stroke-width:2;\" /><line x1=\"188\" y1=\"15\" x2=\"188\" y2=\"27\" style=\"stroke:#83ae9aff;stroke-width:2;\" /><line x1=\"189\" y1=\"15\" x2=\"189\" y2=\"27\" style=\"stroke:#84af9aff;stroke-width:2;\" /><line x1=\"190\" y1=\"15\" x2=\"190\" y2=\"27\" style=\"stroke:#84af9aff;stroke-width:2;\" /><line x1=\"191\" y1=\"15\" x2=\"191\" y2=\"27\" style=\"stroke:#85af9aff;stroke-width:2;\" /><line x1=\"192\" y1=\"15\" x2=\"192\" y2=\"27\" style=\"stroke:#85af9aff;stroke-width:2;\" /><line x1=\"193\" y1=\"15\" x2=\"193\" y2=\"27\" style=\"stroke:#86b09aff;stroke-width:2;\" /><line x1=\"194\" y1=\"15\" x2=\"194\" y2=\"27\" style=\"stroke:#86b09bff;stroke-width:2;\" /><line x1=\"195\" y1=\"15\" x2=\"195\" y2=\"27\" style=\"stroke:#87b09bff;stroke-width:2;\" /><line x1=\"196\" y1=\"15\" x2=\"196\" y2=\"27\" style=\"stroke:#87b09bff;stroke-width:2;\" /><line x1=\"197\" y1=\"15\" x2=\"197\" y2=\"27\" style=\"stroke:#87b19bff;stroke-width:2;\" /><line x1=\"198\" y1=\"15\" x2=\"198\" y2=\"27\" style=\"stroke:#88b19bff;stroke-width:2;\" /><line x1=\"199\" y1=\"15\" x2=\"199\" y2=\"27\" style=\"stroke:#88b19bff;stroke-width:2;\" /><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"27\" style=\"stroke:#89b19bff;stroke-width:2;\" /><line x1=\"201\" y1=\"15\" x2=\"201\" y2=\"27\" style=\"stroke:#89b29cff;stroke-width:2;\" /><line x1=\"202\" y1=\"15\" x2=\"202\" y2=\"27\" style=\"stroke:#8ab29cff;stroke-width:2;\" /><line x1=\"203\" y1=\"15\" x2=\"203\" y2=\"27\" style=\"stroke:#8ab29cff;stroke-width:2;\" /><line x1=\"204\" y1=\"15\" x2=\"204\" y2=\"27\" style=\"stroke:#8bb29cff;stroke-width:2;\" /><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"27\" style=\"stroke:#8bb39cff;stroke-width:2;\" /><line x1=\"206\" y1=\"15\" x2=\"206\" y2=\"27\" style=\"stroke:#8cb39cff;stroke-width:2;\" /><line x1=\"207\" y1=\"15\" x2=\"207\" y2=\"27\" style=\"stroke:#8cb39cff;stroke-width:2;\" /><line x1=\"208\" y1=\"15\" x2=\"208\" y2=\"27\" style=\"stroke:#8db39dff;stroke-width:2;\" /><line x1=\"209\" y1=\"15\" x2=\"209\" y2=\"27\" style=\"stroke:#8db49dff;stroke-width:2;\" /><line x1=\"210\" y1=\"15\" x2=\"210\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"211\" y1=\"15\" x2=\"211\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"212\" y1=\"15\" x2=\"212\" y2=\"27\" style=\"stroke:#8eb49dff;stroke-width:2;\" /><line x1=\"213\" y1=\"15\" x2=\"213\" y2=\"27\" style=\"stroke:#8fb59dff;stroke-width:2;\" /><line x1=\"214\" y1=\"15\" x2=\"214\" y2=\"27\" style=\"stroke:#8fb59dff;stroke-width:2;\" /><line x1=\"215\" y1=\"15\" x2=\"215\" y2=\"27\" style=\"stroke:#90b59dff;stroke-width:2;\" /><line x1=\"216\" y1=\"15\" x2=\"216\" y2=\"27\" style=\"stroke:#90b59eff;stroke-width:2;\" /><line x1=\"217\" y1=\"15\" x2=\"217\" y2=\"27\" style=\"stroke:#91b69eff;stroke-width:2;\" /><line x1=\"218\" y1=\"15\" x2=\"218\" y2=\"27\" style=\"stroke:#91b69eff;stroke-width:2;\" /><line x1=\"219\" y1=\"15\" x2=\"219\" y2=\"27\" style=\"stroke:#92b69eff;stroke-width:2;\" /><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"27\" style=\"stroke:#92b69eff;stroke-width:2;\" /><line x1=\"221\" y1=\"15\" x2=\"221\" y2=\"27\" style=\"stroke:#93b79eff;stroke-width:2;\" /><line x1=\"222\" y1=\"15\" x2=\"222\" y2=\"27\" style=\"stroke:#93b79eff;stroke-width:2;\" /><line x1=\"223\" y1=\"15\" x2=\"223\" y2=\"27\" style=\"stroke:#94b79fff;stroke-width:2;\" /><line x1=\"224\" y1=\"15\" x2=\"224\" y2=\"27\" style=\"stroke:#94b79fff;stroke-width:2;\" /><line x1=\"225\" y1=\"15\" x2=\"225\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"226\" y1=\"15\" x2=\"226\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"227\" y1=\"15\" x2=\"227\" y2=\"27\" style=\"stroke:#95b89fff;stroke-width:2;\" /><line x1=\"228\" y1=\"15\" x2=\"228\" y2=\"27\" style=\"stroke:#96b89fff;stroke-width:2;\" /><line x1=\"229\" y1=\"15\" x2=\"229\" y2=\"27\" style=\"stroke:#96b89fff;stroke-width:2;\" /><line x1=\"230\" y1=\"15\" x2=\"230\" y2=\"27\" style=\"stroke:#97b9a0ff;stroke-width:2;\" /><line x1=\"231\" y1=\"15\" x2=\"231\" y2=\"27\" style=\"stroke:#97b9a0ff;stroke-width:2;\" /><line x1=\"232\" y1=\"15\" x2=\"232\" y2=\"27\" style=\"stroke:#98b9a0ff;stroke-width:2;\" /><line x1=\"233\" y1=\"15\" x2=\"233\" y2=\"27\" style=\"stroke:#98b9a0ff;stroke-width:2;\" /><line x1=\"234\" y1=\"15\" x2=\"234\" y2=\"27\" style=\"stroke:#99baa0ff;stroke-width:2;\" /><line x1=\"235\" y1=\"15\" x2=\"235\" y2=\"27\" style=\"stroke:#99baa0ff;stroke-width:2;\" /><line x1=\"236\" y1=\"15\" x2=\"236\" y2=\"27\" style=\"stroke:#9abaa0ff;stroke-width:2;\" /><line x1=\"237\" y1=\"15\" x2=\"237\" y2=\"27\" style=\"stroke:#9abaa0ff;stroke-width:2;\" /><line x1=\"238\" y1=\"15\" x2=\"238\" y2=\"27\" style=\"stroke:#9bbba1ff;stroke-width:2;\" /><line x1=\"239\" y1=\"15\" x2=\"239\" y2=\"27\" style=\"stroke:#9bbba1ff;stroke-width:2;\" /><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"27\" style=\"stroke:#9bbba1ff;stroke-width:2;\" /><line x1=\"241\" y1=\"15\" x2=\"241\" y2=\"27\" style=\"stroke:#9cbba1ff;stroke-width:2;\" /><line x1=\"242\" y1=\"15\" x2=\"242\" y2=\"27\" style=\"stroke:#9cbca1ff;stroke-width:2;\" /><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"27\" style=\"stroke:#9dbca1ff;stroke-width:2;\" /><line x1=\"244\" y1=\"15\" x2=\"244\" y2=\"27\" style=\"stroke:#9dbca1ff;stroke-width:2;\" /><line x1=\"245\" y1=\"15\" x2=\"245\" y2=\"27\" style=\"stroke:#9ebca2ff;stroke-width:2;\" /><line x1=\"246\" y1=\"15\" x2=\"246\" y2=\"27\" style=\"stroke:#9ebda2ff;stroke-width:2;\" /><line x1=\"247\" y1=\"15\" x2=\"247\" y2=\"27\" style=\"stroke:#9fbda2ff;stroke-width:2;\" /><line x1=\"248\" y1=\"15\" x2=\"248\" y2=\"27\" style=\"stroke:#9fbda2ff;stroke-width:2;\" /><line x1=\"249\" y1=\"15\" x2=\"249\" y2=\"27\" style=\"stroke:#a0bda2ff;stroke-width:2;\" /><line x1=\"250\" y1=\"15\" x2=\"250\" y2=\"27\" style=\"stroke:#a0bea2ff;stroke-width:2;\" /><line x1=\"251\" y1=\"15\" x2=\"251\" y2=\"27\" style=\"stroke:#a1bea2ff;stroke-width:2;\" /><line x1=\"252\" y1=\"15\" x2=\"252\" y2=\"27\" style=\"stroke:#a1bea3ff;stroke-width:2;\" /><line x1=\"253\" y1=\"15\" x2=\"253\" y2=\"27\" style=\"stroke:#a2bea3ff;stroke-width:2;\" /><line x1=\"254\" y1=\"15\" x2=\"254\" y2=\"27\" style=\"stroke:#a2bfa3ff;stroke-width:2;\" /><line x1=\"255\" y1=\"15\" x2=\"255\" y2=\"27\" style=\"stroke:#a2bfa3ff;stroke-width:2;\" /><line x1=\"256\" y1=\"15\" x2=\"256\" y2=\"27\" style=\"stroke:#a3bfa3ff;stroke-width:2;\" /><line x1=\"257\" y1=\"15\" x2=\"257\" y2=\"27\" style=\"stroke:#a3bfa3ff;stroke-width:2;\" /><line x1=\"258\" y1=\"15\" x2=\"258\" y2=\"27\" style=\"stroke:#a4c0a3ff;stroke-width:2;\" /><line x1=\"259\" y1=\"15\" x2=\"259\" y2=\"27\" style=\"stroke:#a4c0a3ff;stroke-width:2;\" /><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"27\" style=\"stroke:#a5c0a4ff;stroke-width:2;\" /><line x1=\"261\" y1=\"15\" x2=\"261\" y2=\"27\" style=\"stroke:#a5c0a4ff;stroke-width:2;\" /><line x1=\"262\" y1=\"15\" x2=\"262\" y2=\"27\" style=\"stroke:#a6c1a4ff;stroke-width:2;\" /><line x1=\"263\" y1=\"15\" x2=\"263\" y2=\"27\" style=\"stroke:#a6c1a4ff;stroke-width:2;\" /><line x1=\"264\" y1=\"15\" x2=\"264\" y2=\"27\" style=\"stroke:#a7c1a4ff;stroke-width:2;\" /><line x1=\"265\" y1=\"15\" x2=\"265\" y2=\"27\" style=\"stroke:#a7c1a4ff;stroke-width:2;\" /><line x1=\"266\" y1=\"15\" x2=\"266\" y2=\"27\" style=\"stroke:#a8c2a4ff;stroke-width:2;\" /><line x1=\"267\" y1=\"15\" x2=\"267\" y2=\"27\" style=\"stroke:#a8c2a5ff;stroke-width:2;\" /><line x1=\"268\" y1=\"15\" x2=\"268\" y2=\"27\" style=\"stroke:#a9c2a5ff;stroke-width:2;\" /><line x1=\"269\" y1=\"15\" x2=\"269\" y2=\"27\" style=\"stroke:#a9c2a5ff;stroke-width:2;\" /><line x1=\"270\" y1=\"15\" x2=\"270\" y2=\"27\" style=\"stroke:#a9c3a5ff;stroke-width:2;\" /><line x1=\"271\" y1=\"15\" x2=\"271\" y2=\"27\" style=\"stroke:#aac3a5ff;stroke-width:2;\" /><line x1=\"272\" y1=\"15\" x2=\"272\" y2=\"27\" style=\"stroke:#aac3a5ff;stroke-width:2;\" /><line x1=\"273\" y1=\"15\" x2=\"273\" y2=\"27\" style=\"stroke:#abc3a5ff;stroke-width:2;\" /><line x1=\"274\" y1=\"15\" x2=\"274\" y2=\"27\" style=\"stroke:#abc4a6ff;stroke-width:2;\" /><line x1=\"275\" y1=\"15\" x2=\"275\" y2=\"27\" style=\"stroke:#acc4a6ff;stroke-width:2;\" /><line x1=\"276\" y1=\"15\" x2=\"276\" y2=\"27\" style=\"stroke:#acc4a6ff;stroke-width:2;\" /><line x1=\"277\" y1=\"15\" x2=\"277\" y2=\"27\" style=\"stroke:#adc4a6ff;stroke-width:2;\" /><line x1=\"278\" y1=\"15\" x2=\"278\" y2=\"27\" style=\"stroke:#adc5a6ff;stroke-width:2;\" /><line x1=\"279\" y1=\"15\" x2=\"279\" y2=\"27\" style=\"stroke:#aec5a6ff;stroke-width:2;\" /><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"27\" style=\"stroke:#aec5a6ff;stroke-width:2;\" /><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"27\" style=\"stroke:#afc5a7ff;stroke-width:2;\" /><line x1=\"282\" y1=\"15\" x2=\"282\" y2=\"27\" style=\"stroke:#afc6a7ff;stroke-width:2;\" /><line x1=\"283\" y1=\"15\" x2=\"283\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"284\" y1=\"15\" x2=\"284\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"285\" y1=\"15\" x2=\"285\" y2=\"27\" style=\"stroke:#b0c6a7ff;stroke-width:2;\" /><line x1=\"286\" y1=\"15\" x2=\"286\" y2=\"27\" style=\"stroke:#b1c7a7ff;stroke-width:2;\" /><line x1=\"287\" y1=\"15\" x2=\"287\" y2=\"27\" style=\"stroke:#b1c7a7ff;stroke-width:2;\" /><line x1=\"288\" y1=\"15\" x2=\"288\" y2=\"27\" style=\"stroke:#b2c7a7ff;stroke-width:2;\" /><line x1=\"289\" y1=\"15\" x2=\"289\" y2=\"27\" style=\"stroke:#b2c7a8ff;stroke-width:2;\" /><line x1=\"290\" y1=\"15\" x2=\"290\" y2=\"27\" style=\"stroke:#b3c8a8ff;stroke-width:2;\" /><line x1=\"291\" y1=\"15\" x2=\"291\" y2=\"27\" style=\"stroke:#b3c8a8ff;stroke-width:2;\" /><line x1=\"292\" y1=\"15\" x2=\"292\" y2=\"27\" style=\"stroke:#b4c8a8ff;stroke-width:2;\" /><line x1=\"293\" y1=\"15\" x2=\"293\" y2=\"27\" style=\"stroke:#b4c8a8ff;stroke-width:2;\" /><line x1=\"294\" y1=\"15\" x2=\"294\" y2=\"27\" style=\"stroke:#b5c9a8ff;stroke-width:2;\" /><line x1=\"295\" y1=\"15\" x2=\"295\" y2=\"27\" style=\"stroke:#b5c9a8ff;stroke-width:2;\" /><line x1=\"296\" y1=\"15\" x2=\"296\" y2=\"27\" style=\"stroke:#b6c9a9ff;stroke-width:2;\" /><line x1=\"297\" y1=\"15\" x2=\"297\" y2=\"27\" style=\"stroke:#b6c9a9ff;stroke-width:2;\" /><line x1=\"298\" y1=\"15\" x2=\"298\" y2=\"27\" style=\"stroke:#b6caa9ff;stroke-width:2;\" /><line x1=\"299\" y1=\"15\" x2=\"299\" y2=\"27\" style=\"stroke:#b7caa9ff;stroke-width:2;\" /><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"27\" style=\"stroke:#b7caa9ff;stroke-width:2;\" /><line x1=\"301\" y1=\"15\" x2=\"301\" y2=\"27\" style=\"stroke:#b8caa9ff;stroke-width:2;\" /><line x1=\"302\" y1=\"15\" x2=\"302\" y2=\"27\" style=\"stroke:#b8cba9ff;stroke-width:2;\" /><line x1=\"303\" y1=\"15\" x2=\"303\" y2=\"27\" style=\"stroke:#b9cbaaff;stroke-width:2;\" /><line x1=\"304\" y1=\"15\" x2=\"304\" y2=\"27\" style=\"stroke:#b9cbaaff;stroke-width:2;\" /><line x1=\"305\" y1=\"15\" x2=\"305\" y2=\"27\" style=\"stroke:#bacbaaff;stroke-width:2;\" /><line x1=\"306\" y1=\"15\" x2=\"306\" y2=\"27\" style=\"stroke:#baccaaff;stroke-width:2;\" /><line x1=\"307\" y1=\"15\" x2=\"307\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"308\" y1=\"15\" x2=\"308\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"309\" y1=\"15\" x2=\"309\" y2=\"27\" style=\"stroke:#bbccaaff;stroke-width:2;\" /><line x1=\"310\" y1=\"15\" x2=\"310\" y2=\"27\" style=\"stroke:#bccdabff;stroke-width:2;\" /><line x1=\"311\" y1=\"15\" x2=\"311\" y2=\"27\" style=\"stroke:#bccdabff;stroke-width:2;\" /><line x1=\"312\" y1=\"15\" x2=\"312\" y2=\"27\" style=\"stroke:#bdcdabff;stroke-width:2;\" /><line x1=\"313\" y1=\"15\" x2=\"313\" y2=\"27\" style=\"stroke:#bdcdabff;stroke-width:2;\" /><line x1=\"314\" y1=\"15\" x2=\"314\" y2=\"27\" style=\"stroke:#beceabff;stroke-width:2;\" /><line x1=\"315\" y1=\"15\" x2=\"315\" y2=\"27\" style=\"stroke:#beceabff;stroke-width:2;\" /><line x1=\"316\" y1=\"15\" x2=\"316\" y2=\"27\" style=\"stroke:#bfceabff;stroke-width:2;\" /><line x1=\"317\" y1=\"15\" x2=\"317\" y2=\"27\" style=\"stroke:#bfceacff;stroke-width:2;\" /><line x1=\"318\" y1=\"15\" x2=\"318\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"319\" y1=\"15\" x2=\"319\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"27\" style=\"stroke:#c0cfacff;stroke-width:2;\" /><line x1=\"321\" y1=\"15\" x2=\"321\" y2=\"27\" style=\"stroke:#c1cfacff;stroke-width:2;\" /><line x1=\"322\" y1=\"15\" x2=\"322\" y2=\"27\" style=\"stroke:#c1d0acff;stroke-width:2;\" /><line x1=\"323\" y1=\"15\" x2=\"323\" y2=\"27\" style=\"stroke:#c2d0acff;stroke-width:2;\" /><line x1=\"324\" y1=\"15\" x2=\"324\" y2=\"27\" style=\"stroke:#c2d0adff;stroke-width:2;\" /><line x1=\"325\" y1=\"15\" x2=\"325\" y2=\"27\" style=\"stroke:#c3d0adff;stroke-width:2;\" /><line x1=\"326\" y1=\"15\" x2=\"326\" y2=\"27\" style=\"stroke:#c3d1adff;stroke-width:2;\" /><line x1=\"327\" y1=\"15\" x2=\"327\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"328\" y1=\"15\" x2=\"328\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"329\" y1=\"15\" x2=\"329\" y2=\"27\" style=\"stroke:#c4d1adff;stroke-width:2;\" /><line x1=\"330\" y1=\"15\" x2=\"330\" y2=\"27\" style=\"stroke:#c5d2adff;stroke-width:2;\" /><line x1=\"331\" y1=\"15\" x2=\"331\" y2=\"27\" style=\"stroke:#c5d2aeff;stroke-width:2;\" /><line x1=\"332\" y1=\"15\" x2=\"332\" y2=\"27\" style=\"stroke:#c6d2aeff;stroke-width:2;\" /><line x1=\"333\" y1=\"15\" x2=\"333\" y2=\"27\" style=\"stroke:#c6d2aeff;stroke-width:2;\" /><line x1=\"334\" y1=\"15\" x2=\"334\" y2=\"27\" style=\"stroke:#c7d3aeff;stroke-width:2;\" /><line x1=\"335\" y1=\"15\" x2=\"335\" y2=\"27\" style=\"stroke:#c7d3aeff;stroke-width:2;\" /><line x1=\"336\" y1=\"15\" x2=\"336\" y2=\"27\" style=\"stroke:#c8d3aeff;stroke-width:2;\" /><line x1=\"337\" y1=\"15\" x2=\"337\" y2=\"27\" style=\"stroke:#c8d3aeff;stroke-width:2;\" /><line x1=\"338\" y1=\"15\" x2=\"338\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"339\" y1=\"15\" x2=\"339\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"27\" style=\"stroke:#c9d4afff;stroke-width:2;\" /><line x1=\"341\" y1=\"15\" x2=\"341\" y2=\"27\" style=\"stroke:#cad4afff;stroke-width:2;\" /><line x1=\"342\" y1=\"15\" x2=\"342\" y2=\"27\" style=\"stroke:#cad5afff;stroke-width:2;\" /><line x1=\"343\" y1=\"15\" x2=\"343\" y2=\"27\" style=\"stroke:#cbd5afff;stroke-width:2;\" /><line x1=\"344\" y1=\"15\" x2=\"344\" y2=\"27\" style=\"stroke:#cbd5afff;stroke-width:2;\" /><line x1=\"345\" y1=\"15\" x2=\"345\" y2=\"27\" style=\"stroke:#ccd5b0ff;stroke-width:2;\" /><line x1=\"346\" y1=\"15\" x2=\"346\" y2=\"27\" style=\"stroke:#ccd6b0ff;stroke-width:2;\" /><line x1=\"347\" y1=\"15\" x2=\"347\" y2=\"27\" style=\"stroke:#cdd6b0ff;stroke-width:2;\" /><line x1=\"348\" y1=\"15\" x2=\"348\" y2=\"27\" style=\"stroke:#cdd6b0ff;stroke-width:2;\" /><line x1=\"349\" y1=\"15\" x2=\"349\" y2=\"27\" style=\"stroke:#ced6b0ff;stroke-width:2;\" /><line x1=\"350\" y1=\"15\" x2=\"350\" y2=\"27\" style=\"stroke:#ced7b0ff;stroke-width:2;\" /><line x1=\"351\" y1=\"15\" x2=\"351\" y2=\"27\" style=\"stroke:#ced7b1ff;stroke-width:2;\" /><line x1=\"352\" y1=\"15\" x2=\"352\" y2=\"27\" style=\"stroke:#cfd7b1ff;stroke-width:2;\" /><line x1=\"353\" y1=\"15\" x2=\"353\" y2=\"27\" style=\"stroke:#cfd7b1ff;stroke-width:2;\" /><line x1=\"354\" y1=\"15\" x2=\"354\" y2=\"27\" style=\"stroke:#d0d8b1ff;stroke-width:2;\" /><line x1=\"355\" y1=\"15\" x2=\"355\" y2=\"27\" style=\"stroke:#d0d8b1ff;stroke-width:2;\" /><line x1=\"356\" y1=\"15\" x2=\"356\" y2=\"27\" style=\"stroke:#d1d8b1ff;stroke-width:2;\" /><line x1=\"357\" y1=\"15\" x2=\"357\" y2=\"27\" style=\"stroke:#d1d9b1ff;stroke-width:2;\" /><line x1=\"358\" y1=\"15\" x2=\"358\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"359\" y1=\"15\" x2=\"359\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"27\" style=\"stroke:#d2d9b2ff;stroke-width:2;\" /><line x1=\"361\" y1=\"15\" x2=\"361\" y2=\"27\" style=\"stroke:#d3dab2ff;stroke-width:2;\" /><line x1=\"362\" y1=\"15\" x2=\"362\" y2=\"27\" style=\"stroke:#d3dab2ff;stroke-width:2;\" /><line x1=\"363\" y1=\"15\" x2=\"363\" y2=\"27\" style=\"stroke:#d4dab2ff;stroke-width:2;\" /><line x1=\"364\" y1=\"15\" x2=\"364\" y2=\"27\" style=\"stroke:#d4dab2ff;stroke-width:2;\" /><line x1=\"365\" y1=\"15\" x2=\"365\" y2=\"27\" style=\"stroke:#d5dbb3ff;stroke-width:2;\" /><line x1=\"366\" y1=\"15\" x2=\"366\" y2=\"27\" style=\"stroke:#d5dbb3ff;stroke-width:2;\" /><line x1=\"367\" y1=\"15\" x2=\"367\" y2=\"27\" style=\"stroke:#d6dbb3ff;stroke-width:2;\" /><line x1=\"368\" y1=\"15\" x2=\"368\" y2=\"27\" style=\"stroke:#d6dbb3ff;stroke-width:2;\" /><line x1=\"369\" y1=\"15\" x2=\"369\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"370\" y1=\"15\" x2=\"370\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"371\" y1=\"15\" x2=\"371\" y2=\"27\" style=\"stroke:#d7dcb3ff;stroke-width:2;\" /><line x1=\"372\" y1=\"15\" x2=\"372\" y2=\"27\" style=\"stroke:#d8dcb4ff;stroke-width:2;\" /><line x1=\"373\" y1=\"15\" x2=\"373\" y2=\"27\" style=\"stroke:#d8ddb4ff;stroke-width:2;\" /><line x1=\"374\" y1=\"15\" x2=\"374\" y2=\"27\" style=\"stroke:#d9ddb4ff;stroke-width:2;\" /><line x1=\"375\" y1=\"15\" x2=\"375\" y2=\"27\" style=\"stroke:#d9ddb4ff;stroke-width:2;\" /><line x1=\"376\" y1=\"15\" x2=\"376\" y2=\"27\" style=\"stroke:#daddb4ff;stroke-width:2;\" /><line x1=\"377\" y1=\"15\" x2=\"377\" y2=\"27\" style=\"stroke:#dadeb4ff;stroke-width:2;\" /><line x1=\"378\" y1=\"15\" x2=\"378\" y2=\"27\" style=\"stroke:#dbdeb4ff;stroke-width:2;\" /><line x1=\"379\" y1=\"15\" x2=\"379\" y2=\"27\" style=\"stroke:#dbdeb5ff;stroke-width:2;\" /><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"27\" style=\"stroke:#dcdeb5ff;stroke-width:2;\" /><line x1=\"381\" y1=\"15\" x2=\"381\" y2=\"27\" style=\"stroke:#dcdfb5ff;stroke-width:2;\" /><line x1=\"382\" y1=\"15\" x2=\"382\" y2=\"27\" style=\"stroke:#dcdfb5ff;stroke-width:2;\" /><line x1=\"383\" y1=\"15\" x2=\"383\" y2=\"27\" style=\"stroke:#dddfb5ff;stroke-width:2;\" /><line x1=\"384\" y1=\"15\" x2=\"384\" y2=\"27\" style=\"stroke:#dddfb5ff;stroke-width:2;\" /><line x1=\"385\" y1=\"15\" x2=\"385\" y2=\"27\" style=\"stroke:#dee0b5ff;stroke-width:2;\" /><line x1=\"386\" y1=\"15\" x2=\"386\" y2=\"27\" style=\"stroke:#dee0b6ff;stroke-width:2;\" /><line x1=\"387\" y1=\"15\" x2=\"387\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"388\" y1=\"15\" x2=\"388\" y2=\"27\" style=\"stroke:#dfe0b6ff;stroke-width:2;\" /><line x1=\"389\" y1=\"15\" x2=\"389\" y2=\"27\" style=\"stroke:#e0e1b6ff;stroke-width:2;\" /><line x1=\"390\" y1=\"15\" x2=\"390\" y2=\"27\" style=\"stroke:#e0e1b6ff;stroke-width:2;\" /><line x1=\"391\" y1=\"15\" x2=\"391\" y2=\"27\" style=\"stroke:#e1e1b6ff;stroke-width:2;\" /><line x1=\"392\" y1=\"15\" x2=\"392\" y2=\"27\" style=\"stroke:#e1e1b6ff;stroke-width:2;\" /><line x1=\"393\" y1=\"15\" x2=\"393\" y2=\"27\" style=\"stroke:#e1e2b7ff;stroke-width:2;\" /><line x1=\"394\" y1=\"15\" x2=\"394\" y2=\"27\" style=\"stroke:#e2e2b7ff;stroke-width:2;\" /><line x1=\"395\" y1=\"15\" x2=\"395\" y2=\"27\" style=\"stroke:#e2e2b7ff;stroke-width:2;\" /><line x1=\"396\" y1=\"15\" x2=\"396\" y2=\"27\" style=\"stroke:#e3e2b7ff;stroke-width:2;\" /><line x1=\"397\" y1=\"15\" x2=\"397\" y2=\"27\" style=\"stroke:#e3e3b7ff;stroke-width:2;\" /><line x1=\"398\" y1=\"15\" x2=\"398\" y2=\"27\" style=\"stroke:#e4e3b7ff;stroke-width:2;\" /><line x1=\"399\" y1=\"15\" x2=\"399\" y2=\"27\" style=\"stroke:#e4e3b7ff;stroke-width:2;\" /><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"27\" style=\"stroke:#e5e3b8ff;stroke-width:2;\" /><line x1=\"401\" y1=\"15\" x2=\"401\" y2=\"27\" style=\"stroke:#e5e4b8ff;stroke-width:2;\" /><line x1=\"402\" y1=\"15\" x2=\"402\" y2=\"27\" style=\"stroke:#e5e4b8ff;stroke-width:2;\" /><line x1=\"403\" y1=\"15\" x2=\"403\" y2=\"27\" style=\"stroke:#e6e4b8ff;stroke-width:2;\" /><line x1=\"404\" y1=\"15\" x2=\"404\" y2=\"27\" style=\"stroke:#e6e4b8ff;stroke-width:2;\" /><line x1=\"405\" y1=\"15\" x2=\"405\" y2=\"27\" style=\"stroke:#e7e5b8ff;stroke-width:2;\" /><line x1=\"406\" y1=\"15\" x2=\"406\" y2=\"27\" style=\"stroke:#e7e5b8ff;stroke-width:2;\" /><line x1=\"407\" y1=\"15\" x2=\"407\" y2=\"27\" style=\"stroke:#e8e5b9ff;stroke-width:2;\" /><line x1=\"408\" y1=\"15\" x2=\"408\" y2=\"27\" style=\"stroke:#e8e5b9ff;stroke-width:2;\" /><line x1=\"409\" y1=\"15\" x2=\"409\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"410\" y1=\"15\" x2=\"410\" y2=\"27\" style=\"stroke:#e9e6b9ff;stroke-width:2;\" /><line x1=\"411\" y1=\"15\" x2=\"411\" y2=\"27\" style=\"stroke:#eae6b9ff;stroke-width:2;\" /><line x1=\"412\" y1=\"15\" x2=\"412\" y2=\"27\" style=\"stroke:#eae6b9ff;stroke-width:2;\" /><line x1=\"413\" y1=\"15\" x2=\"413\" y2=\"27\" style=\"stroke:#eae7b9ff;stroke-width:2;\" /><line x1=\"414\" y1=\"15\" x2=\"414\" y2=\"27\" style=\"stroke:#ebe7baff;stroke-width:2;\" /><line x1=\"415\" y1=\"15\" x2=\"415\" y2=\"27\" style=\"stroke:#ebe7baff;stroke-width:2;\" /><line x1=\"416\" y1=\"15\" x2=\"416\" y2=\"27\" style=\"stroke:#ece7baff;stroke-width:2;\" /><line x1=\"417\" y1=\"15\" x2=\"417\" y2=\"27\" style=\"stroke:#ece8baff;stroke-width:2;\" /><line x1=\"418\" y1=\"15\" x2=\"418\" y2=\"27\" style=\"stroke:#ede8baff;stroke-width:2;\" /><line x1=\"419\" y1=\"15\" x2=\"419\" y2=\"27\" style=\"stroke:#ede8baff;stroke-width:2;\" /><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"27\" style=\"stroke:#eee8baff;stroke-width:2;\" /><line x1=\"421\" y1=\"15\" x2=\"421\" y2=\"27\" style=\"stroke:#eee9bbff;stroke-width:2;\" /><line x1=\"422\" y1=\"15\" x2=\"422\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"423\" y1=\"15\" x2=\"423\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"424\" y1=\"15\" x2=\"424\" y2=\"27\" style=\"stroke:#efe9bbff;stroke-width:2;\" /><line x1=\"425\" y1=\"15\" x2=\"425\" y2=\"27\" style=\"stroke:#f0eabbff;stroke-width:2;\" /><line x1=\"426\" y1=\"15\" x2=\"426\" y2=\"27\" style=\"stroke:#f0eabbff;stroke-width:2;\" /><line x1=\"427\" y1=\"15\" x2=\"427\" y2=\"27\" style=\"stroke:#f1eabbff;stroke-width:2;\" /><line x1=\"428\" y1=\"15\" x2=\"428\" y2=\"27\" style=\"stroke:#f1ebbcff;stroke-width:2;\" /><line x1=\"429\" y1=\"15\" x2=\"429\" y2=\"27\" style=\"stroke:#f2ebbcff;stroke-width:2;\" /><line x1=\"430\" y1=\"15\" x2=\"430\" y2=\"27\" style=\"stroke:#f2ebbcff;stroke-width:2;\" /><line x1=\"431\" y1=\"15\" x2=\"431\" y2=\"27\" style=\"stroke:#f3ebbcff;stroke-width:2;\" /><line x1=\"432\" y1=\"15\" x2=\"432\" y2=\"27\" style=\"stroke:#f3ecbcff;stroke-width:2;\" /><line x1=\"433\" y1=\"15\" x2=\"433\" y2=\"27\" style=\"stroke:#f4ecbcff;stroke-width:2;\" /><line x1=\"434\" y1=\"15\" x2=\"434\" y2=\"27\" style=\"stroke:#f4ecbcff;stroke-width:2;\" /><line x1=\"435\" y1=\"15\" x2=\"435\" y2=\"27\" style=\"stroke:#f4ecbdff;stroke-width:2;\" /><line x1=\"436\" y1=\"15\" x2=\"436\" y2=\"27\" style=\"stroke:#f5edbdff;stroke-width:2;\" /><line x1=\"437\" y1=\"15\" x2=\"437\" y2=\"27\" style=\"stroke:#f5edbdff;stroke-width:2;\" /><line x1=\"438\" y1=\"15\" x2=\"438\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"439\" y1=\"15\" x2=\"439\" y2=\"27\" style=\"stroke:#f6edbdff;stroke-width:2;\" /><line x1=\"440\" y1=\"15\" x2=\"440\" y2=\"27\" style=\"stroke:#f5e6b6ff;stroke-width:2;\" /><line x1=\"441\" y1=\"15\" x2=\"441\" y2=\"27\" style=\"stroke:#f2d6a5ff;stroke-width:2;\" /><line x1=\"442\" y1=\"15\" x2=\"442\" y2=\"27\" style=\"stroke:#efc695ff;stroke-width:2;\" /><line x1=\"443\" y1=\"15\" x2=\"443\" y2=\"27\" style=\"stroke:#ecb685ff;stroke-width:2;\" /><line x1=\"444\" y1=\"15\" x2=\"444\" y2=\"27\" style=\"stroke:#e7a776ff;stroke-width:2;\" /><line x1=\"445\" y1=\"15\" x2=\"445\" y2=\"27\" style=\"stroke:#e29767ff;stroke-width:2;\" /><line x1=\"446\" y1=\"15\" x2=\"446\" y2=\"27\" style=\"stroke:#de8858ff;stroke-width:2;\" /><line x1=\"447\" y1=\"15\" x2=\"447\" y2=\"27\" style=\"stroke:#d77749ff;stroke-width:2;\" /><line x1=\"448\" y1=\"15\" x2=\"448\" y2=\"27\" style=\"stroke:#d1673aff;stroke-width:2;\" /><line x1=\"449\" y1=\"15\" x2=\"449\" y2=\"27\" style=\"stroke:#ca562cff;stroke-width:2;\" /><text x=\"0\" y=\"38\" style=\"text-anchor:start; font-size:11px; font:Arial\">-46.44</text><text x=\"75\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-38.5</text><text x=\"150\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-30.6</text><text x=\"225\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-22.7</text><text x=\"300\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-14.8</text><text x=\"375\" y=\"38\"; style=\"text-anchor:middle; font-size:11px; font:Arial\">-6.9</text><text x=\"450\" y=\"38\" style=\"text-anchor:end; font-size:11px; font:Arial\">1.0</text><text x=\"0\" y=\"12\" style=\"font-size:11px; font:Arial\"></text></svg> <br/>\n        <span style=\"font-size: 0.8em\">(Obszary obwod\u00f3w s\u0105 przybli\u017cone z wykorzystaniem diagramu Voronoia)</span><br/>\n        \n<div class=\"dropdown\">\n  <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n    Zmie\u0144 map\u0119\n  </button>\n  <ul class=\"dropdown-menu\" style=\"max-height: 25vw; overflow: auto;\">\n    <li><a class=\"dropdown-item\" href=\"./gda_turnout.html\">Gda\u0144sk - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_RTJ.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs RAKOWSKI Tomasz J\u0119drzej</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_PAL.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs PECKA Andrzej Leszek</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_UMP.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_SA.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_DAM_SAA.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_DAM.html\">Gda\u0144sk - DULKIEWICZ Aleksandra Maria vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_RTJ.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs PECKA Andrzej Leszek</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_UMP.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_SA.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_RTJ_SAA.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_RTJ.html\">Gda\u0144sk - RAKOWSKI Tomasz J\u0119drzej vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_UMP.html\">Gda\u0144sk - PECKA Andrzej Leszek vs URBANIAK Micha\u0142 Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_SA.html\">Gda\u0144sk - PECKA Andrzej Leszek vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_PAL_SAA.html\">Gda\u0144sk - PECKA Andrzej Leszek vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_PAL.html\">Gda\u0144sk - PECKA Andrzej Leszek vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_SA_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs SZOSTAK Artur</a></li><li><a class=\"dropdown-item\" href=\"./gda_SAA_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_UMP.html\">Gda\u0144sk - URBANIAK Micha\u0142 Piotr vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_SA_SAA.html\">Gda\u0144sk - SZOSTAK Artur vs SZCZEPA\u0143SKI Adam Aleksander</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_SA.html\">Gda\u0144sk - SZOSTAK Artur vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./gda_AMP_SAA.html\">Gda\u0144sk - SZCZEPA\u0143SKI Adam Aleksander vs ANDRZEJCZAK Mariusz Piotr</a></li><li><a class=\"dropdown-item\" href=\"./kra_turnout.html\">Krak\u00f3w - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs GIBA\u0141A \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KMITA \u0141ukasz Marek</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MAJ.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MAJ_MS.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MAJ_MJS.html\">Krak\u00f3w - MISZALSKI Aleksander Jan vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_K\u0141M.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KMITA \u0141ukasz Marek</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_KAA.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_G\u0141.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_KRP.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_HAW.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MS.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_G\u0141_MJS.html\">Krak\u00f3w - GIBA\u0141A \u0141ukasz vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs KULIG Andrzej Adam</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_K\u0141M.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MS.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_K\u0141M_MJS.html\">Krak\u00f3w - KMITA \u0141ukasz Marek vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_KAA.html\">Krak\u00f3w - KULIG Andrzej Adam vs BERKOWICZ Konrad Szczepan</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_KRP.html\">Krak\u00f3w - KULIG Andrzej Adam vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_KAA.html\">Krak\u00f3w - KULIG Andrzej Adam vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MS.html\">Krak\u00f3w - KULIG Andrzej Adam vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KAA_MJS.html\">Krak\u00f3w - KULIG Andrzej Adam vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_KRP.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs KOMAREWICZ Rafa\u0142 Pawe\u0142</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_HAW.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MS.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_BKS_MJS.html\">Krak\u00f3w - BERKOWICZ Konrad Szczepan vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_KRP.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs HARE\u0143CZYK Adam Wies\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MS.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_KRP_MJS.html\">Krak\u00f3w - KOMAREWICZ Rafa\u0142 Pawe\u0142 vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MS.html\">Krak\u00f3w - HARE\u0143CZYK Adam Wies\u0142aw vs MAZUR Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_HAW_MJS.html\">Krak\u00f3w - HARE\u0143CZYK Adam Wies\u0142aw vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./kra_MJS_MS.html\">Krak\u00f3w - MAZUR Stanis\u0142aw vs MUZYK Jerzy Stanis\u0142aw</a></li><li><a class=\"dropdown-item\" href=\"./poz_turnout.html\">Pozna\u0144 - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_JJ.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs CZERWI\u0143SKI Zbigniew</a></li><li><a class=\"dropdown-item\" href=\"./poz_JJ_PPM.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs PLEWI\u0143SKI Przemys\u0142aw Marcin</a></li><li><a class=\"dropdown-item\" href=\"./poz_JJ_UBK.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_JJ.html\">Pozna\u0144 - JA\u015aKOWIAK Jacek vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_PPM.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs PLEWI\u0143SKI Przemys\u0142aw Marcin</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_UBK.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_CZ_G\u0141.html\">Pozna\u0144 - CZERWI\u0143SKI Zbigniew vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_PPM_UBK.html\">Pozna\u0144 - PLEWI\u0143SKI Przemys\u0142aw Marcin vs URBA\u0143SKA Beata Kinga</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_PPM.html\">Pozna\u0144 - PLEWI\u0143SKI Przemys\u0142aw Marcin vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./poz_G\u0141_UBK.html\">Pozna\u0144 - URBA\u0143SKA Beata Kinga vs GARCZEWSKI \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./waw_turnout.html\">Warszawa - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs BOCHE\u0143SKI Tobiasz Adam</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs BIEJAT Magdalena Agnieszka</a></li><li><a class=\"dropdown-item\" href=\"./waw_TRK_WPJ.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_SRT_TRK.html\">Warszawa - TRZASKOWSKI Rafa\u0142 Kazimierz vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_BTA.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs BIEJAT Magdalena Agnieszka</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_WPJ.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_KJR.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_BTA_SRT.html\">Warszawa - BOCHE\u0143SKI Tobiasz Adam vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_WPJ.html\">Warszawa - BIEJAT Magdalena Agnieszka vs WIPLER Przemys\u0142aw Janusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_KJR.html\">Warszawa - BIEJAT Magdalena Agnieszka vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_BMA_SRT.html\">Warszawa - BIEJAT Magdalena Agnieszka vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_WPJ.html\">Warszawa - WIPLER Przemys\u0142aw Janusz vs KORWIN-MIKKE Janusz Ryszard</a></li><li><a class=\"dropdown-item\" href=\"./waw_SRT_WPJ.html\">Warszawa - WIPLER Przemys\u0142aw Janusz vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./waw_KJR_SRT.html\">Warszawa - KORWIN-MIKKE Janusz Ryszard vs STAROSIELEC Romuald Tadeusz</a></li><li><a class=\"dropdown-item\" href=\"./wro_turnout.html\">Wroc\u0142aw - Frekwencja</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs BODNAR Izabela Anna</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs KASZTELOWICZ \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_MJA_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_PGT_SJZ.html\">Wroc\u0142aw - SUTRYK Jacek Zbigniew vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_K\u0141.html\">Wroc\u0142aw - BODNAR Izabela Anna vs KASZTELOWICZ \u0141ukasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_MJA.html\">Wroc\u0142aw - BODNAR Izabela Anna vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_GRS.html\">Wroc\u0142aw - BODNAR Izabela Anna vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_BIA_PGT.html\">Wroc\u0142aw - BODNAR Izabela Anna vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_MJA.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs MICHALAK Jerzy Andrzej</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_K\u0141.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_K\u0141_PGT.html\">Wroc\u0142aw - KASZTELOWICZ \u0141ukasz vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_MJA.html\">Wroc\u0142aw - MICHALAK Jerzy Andrzej vs GRZECHNIK Robert Sebastian</a></li><li><a class=\"dropdown-item\" href=\"./wro_MJA_PGT.html\">Wroc\u0142aw - MICHALAK Jerzy Andrzej vs PRIGAN Grzegorz Tomasz</a></li><li><a class=\"dropdown-item\" href=\"./wro_GRS_PGT.html\">Wroc\u0142aw - GRZECHNIK Robert Sebastian vs PRIGAN Grzegorz Tomasz</a></li>\n  </ul>\n</div>\n\n        </div>\n        ",
   "initialViewState": {
     "latitude": 52.40688803168956,
     "longitude": 16.91444926259106,
@@ -9513,7 +9517,7 @@
         128
       ],
       "getLineWidth": 15,
-      "id": "e2dcdcfd-43ab-48b9-815c-a89fc22002fc",
+      "id": "ea9bd535-5265-4c67-9b35-c317a0de8b6f",
       "lineWidthMinPixels": 1,
       "opacity": 0.8,
       "pickable": true,
@@ -9525,7 +9529,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.45",
           "JA\u015aKOWIAK Jacek_%": "42.39",
-          "diff_abs_scale": 0.7952595173705013,
+          "diff_abs_scale": 0.7952595175814405,
           "diff_str": "-36.93",
           "geometry": {
             "coordinates": [
@@ -11233,7 +11237,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.70",
           "JA\u015aKOWIAK Jacek_%": "45.97",
-          "diff_abs_scale": 0.8671655735969839,
+          "diff_abs_scale": 0.8671655734971692,
           "diff_str": "-40.27",
           "geometry": {
             "coordinates": [
@@ -11277,7 +11281,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.16",
           "JA\u015aKOWIAK Jacek_%": "44.43",
-          "diff_abs_scale": 0.8240806481538747,
+          "diff_abs_scale": 0.8240806481840732,
           "diff_str": "-38.27",
           "geometry": {
             "coordinates": [
@@ -11325,7 +11329,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.92",
           "JA\u015aKOWIAK Jacek_%": "34.83",
-          "diff_abs_scale": 0.6223462652610415,
+          "diff_abs_scale": 0.6223462654164459,
           "diff_str": "-28.90",
           "geometry": {
             "coordinates": [
@@ -11369,7 +11373,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.66",
           "JA\u015aKOWIAK Jacek_%": "43.55",
-          "diff_abs_scale": 0.8374014747012458,
+          "diff_abs_scale": 0.8374014747617721,
           "diff_str": "-38.89",
           "geometry": {
             "coordinates": [
@@ -11421,7 +11425,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.42",
           "JA\u015aKOWIAK Jacek_%": "36.70",
-          "diff_abs_scale": 0.6305752427326516,
+          "diff_abs_scale": 0.6305752425872861,
           "diff_str": "-29.28",
           "geometry": {
             "coordinates": [
@@ -11573,7 +11577,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.00",
           "JA\u015aKOWIAK Jacek_%": "46.13",
-          "diff_abs_scale": 0.8426027260969058,
+          "diff_abs_scale": 0.8426027262928919,
           "diff_str": "-39.13",
           "geometry": {
             "coordinates": [
@@ -11621,7 +11625,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.06",
           "JA\u015aKOWIAK Jacek_%": "45.80",
-          "diff_abs_scale": 0.8341030348450875,
+          "diff_abs_scale": 0.8341030348346257,
           "diff_str": "-38.74",
           "geometry": {
             "coordinates": [
@@ -11669,7 +11673,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.64",
           "JA\u015aKOWIAK Jacek_%": "44.11",
-          "diff_abs_scale": 0.8068196807808996,
+          "diff_abs_scale": 0.8068196808334331,
           "diff_str": "-37.47",
           "geometry": {
             "coordinates": [
@@ -11717,7 +11721,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.58",
           "JA\u015aKOWIAK Jacek_%": "48.02",
-          "diff_abs_scale": 0.9138163355141349,
+          "diff_abs_scale": 0.9138163356230067,
           "diff_str": "-42.44",
           "geometry": {
             "coordinates": [
@@ -11757,7 +11761,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.27",
           "JA\u015aKOWIAK Jacek_%": "36.89",
-          "diff_abs_scale": 0.7024543729418987,
+          "diff_abs_scale": 0.7024543729831051,
           "diff_str": "-32.62",
           "geometry": {
             "coordinates": [
@@ -12205,7 +12209,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.27",
           "JA\u015aKOWIAK Jacek_%": "42.21",
-          "diff_abs_scale": 0.7739067272150675,
+          "diff_abs_scale": 0.7739067271484708,
           "diff_str": "-35.94",
           "geometry": {
             "coordinates": [
@@ -12253,7 +12257,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.11",
           "JA\u015aKOWIAK Jacek_%": "48.55",
-          "diff_abs_scale": 0.9354755212878781,
+          "diff_abs_scale": 0.9354755212546171,
           "diff_str": "-43.44",
           "geometry": {
             "coordinates": [
@@ -12301,7 +12305,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.13",
           "JA\u015aKOWIAK Jacek_%": "47.24",
-          "diff_abs_scale": 0.885124007722341,
+          "diff_abs_scale": 0.8851240078945216,
           "diff_str": "-41.11",
           "geometry": {
             "coordinates": [
@@ -12341,7 +12345,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.62",
           "JA\u015aKOWIAK Jacek_%": "44.29",
-          "diff_abs_scale": 0.8324881497221313,
+          "diff_abs_scale": 0.8324881498508022,
           "diff_str": "-38.66",
           "geometry": {
             "coordinates": [
@@ -12397,7 +12401,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.65",
           "JA\u015aKOWIAK Jacek_%": "41.36",
-          "diff_abs_scale": 0.7473555150726954,
+          "diff_abs_scale": 0.747355515074999,
           "diff_str": "-34.71",
           "geometry": {
             "coordinates": [
@@ -12445,7 +12449,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.88",
           "JA\u015aKOWIAK Jacek_%": "38.75",
-          "diff_abs_scale": 0.6862071630985352,
+          "diff_abs_scale": 0.686207163235713,
           "diff_str": "-31.87",
           "geometry": {
             "coordinates": [
@@ -12497,7 +12501,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.12",
           "JA\u015aKOWIAK Jacek_%": "35.83",
-          "diff_abs_scale": 0.6396968695484837,
+          "diff_abs_scale": 0.63969686958471,
           "diff_str": "-29.71",
           "geometry": {
             "coordinates": [
@@ -12557,7 +12561,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.52",
           "JA\u015aKOWIAK Jacek_%": "26.33",
-          "diff_abs_scale": 0.40496902889943515,
+          "diff_abs_scale": 0.40496902875179613,
           "diff_str": "-18.81",
           "geometry": {
             "coordinates": [
@@ -12981,7 +12985,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.31",
           "JA\u015aKOWIAK Jacek_%": "38.68",
-          "diff_abs_scale": 0.6540615985509731,
+          "diff_abs_scale": 0.654061598496093,
           "diff_str": "-30.37",
           "geometry": {
             "coordinates": [
@@ -13029,7 +13033,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.67",
           "JA\u015aKOWIAK Jacek_%": "41.34",
-          "diff_abs_scale": 0.7251093811114705,
+          "diff_abs_scale": 0.7251093810163608,
           "diff_str": "-33.67",
           "geometry": {
             "coordinates": [
@@ -13069,7 +13073,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.27",
           "JA\u015aKOWIAK Jacek_%": "37.89",
-          "diff_abs_scale": 0.637867753577633,
+          "diff_abs_scale": 0.6378677535692983,
           "diff_str": "-29.62",
           "geometry": {
             "coordinates": [
@@ -13125,7 +13129,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.52",
           "JA\u015aKOWIAK Jacek_%": "38.24",
-          "diff_abs_scale": 0.6615209141840562,
+          "diff_abs_scale": 0.6615209143250231,
           "diff_str": "-30.72",
           "geometry": {
             "coordinates": [
@@ -13165,7 +13169,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.55",
           "JA\u015aKOWIAK Jacek_%": "41.99",
-          "diff_abs_scale": 0.7201031234212011,
+          "diff_abs_scale": 0.7201031234191168,
           "diff_str": "-33.44",
           "geometry": {
             "coordinates": [
@@ -13221,7 +13225,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.04",
           "JA\u015aKOWIAK Jacek_%": "40.32",
-          "diff_abs_scale": 0.6950120636171155,
+          "diff_abs_scale": 0.6950120636296905,
           "diff_str": "-32.28",
           "geometry": {
             "coordinates": [
@@ -13273,7 +13277,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.60",
           "JA\u015aKOWIAK Jacek_%": "38.32",
-          "diff_abs_scale": 0.6832274827967383,
+          "diff_abs_scale": 0.6832274828596102,
           "diff_str": "-31.73",
           "geometry": {
             "coordinates": [
@@ -13325,7 +13329,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.81",
           "JA\u015aKOWIAK Jacek_%": "38.29",
-          "diff_abs_scale": 0.6564017932336902,
+          "diff_abs_scale": 0.6564017933600396,
           "diff_str": "-30.48",
           "geometry": {
             "coordinates": [
@@ -13369,7 +13373,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "10.46",
           "JA\u015aKOWIAK Jacek_%": "36.69",
-          "diff_abs_scale": 0.5649389633780267,
+          "diff_abs_scale": 0.5649389635132502,
           "diff_str": "-26.24",
           "geometry": {
             "coordinates": [
@@ -13417,7 +13421,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "9.38",
           "JA\u015aKOWIAK Jacek_%": "35.49",
-          "diff_abs_scale": 0.562362087283426,
+          "diff_abs_scale": 0.5623620873387669,
           "diff_str": "-26.12",
           "geometry": {
             "coordinates": [
@@ -13473,7 +13477,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.22",
           "JA\u015aKOWIAK Jacek_%": "39.12",
-          "diff_abs_scale": 0.686855824584491,
+          "diff_abs_scale": 0.6868558246821945,
           "diff_str": "-31.90",
           "geometry": {
             "coordinates": [
@@ -13513,7 +13517,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.41",
           "JA\u015aKOWIAK Jacek_%": "42.74",
-          "diff_abs_scale": 0.8039432929001405,
+          "diff_abs_scale": 0.8039432927568774,
           "diff_str": "-37.34",
           "geometry": {
             "coordinates": [
@@ -13557,7 +13561,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.47",
           "JA\u015aKOWIAK Jacek_%": "40.89",
-          "diff_abs_scale": 0.7627279296639768,
+          "diff_abs_scale": 0.7627279296633138,
           "diff_str": "-35.42",
           "geometry": {
             "coordinates": [
@@ -13705,7 +13709,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.37",
           "JA\u015aKOWIAK Jacek_%": "40.81",
-          "diff_abs_scale": 0.7630263124498217,
+          "diff_abs_scale": 0.7630263123653864,
           "diff_str": "-35.43",
           "geometry": {
             "coordinates": [
@@ -13753,7 +13757,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.80",
           "JA\u015aKOWIAK Jacek_%": "40.61",
-          "diff_abs_scale": 0.7496832839212715,
+          "diff_abs_scale": 0.7496832840016453,
           "diff_str": "-34.82",
           "geometry": {
             "coordinates": [
@@ -13937,7 +13941,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.69",
           "JA\u015aKOWIAK Jacek_%": "41.14",
-          "diff_abs_scale": 0.74178739235352,
+          "diff_abs_scale": 0.7417873924070211,
           "diff_str": "-34.45",
           "geometry": {
             "coordinates": [
@@ -13989,7 +13993,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.15",
           "JA\u015aKOWIAK Jacek_%": "43.26",
-          "diff_abs_scale": 0.77751696127009,
+          "diff_abs_scale": 0.7775169612886742,
           "diff_str": "-36.11",
           "geometry": {
             "coordinates": [
@@ -14033,7 +14037,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.33",
           "JA\u015aKOWIAK Jacek_%": "45.43",
-          "diff_abs_scale": 0.8635133408449395,
+          "diff_abs_scale": 0.8635133408258425,
           "diff_str": "-40.10",
           "geometry": {
             "coordinates": [
@@ -14073,7 +14077,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.48",
           "JA\u015aKOWIAK Jacek_%": "40.14",
-          "diff_abs_scale": 0.7031242703030869,
+          "diff_abs_scale": 0.703124270237139,
           "diff_str": "-32.65",
           "geometry": {
             "coordinates": [
@@ -14121,7 +14125,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.61",
           "JA\u015aKOWIAK Jacek_%": "41.65",
-          "diff_abs_scale": 0.7546490878172695,
+          "diff_abs_scale": 0.7546490878581553,
           "diff_str": "-35.05",
           "geometry": {
             "coordinates": [
@@ -14165,7 +14169,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.98",
           "JA\u015aKOWIAK Jacek_%": "48.52",
-          "diff_abs_scale": 0.9376071335084059,
+          "diff_abs_scale": 0.9376071334556255,
           "diff_str": "-43.54",
           "geometry": {
             "coordinates": [
@@ -14209,7 +14213,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.34",
           "JA\u015aKOWIAK Jacek_%": "38.50",
-          "diff_abs_scale": 0.6492621511454665,
+          "diff_abs_scale": 0.6492621511656773,
           "diff_str": "-30.15",
           "geometry": {
             "coordinates": [
@@ -14253,7 +14257,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.15",
           "JA\u015aKOWIAK Jacek_%": "40.00",
-          "diff_abs_scale": 0.7073469439934547,
+          "diff_abs_scale": 0.7073469439991084,
           "diff_str": "-32.85",
           "geometry": {
             "coordinates": [
@@ -14309,7 +14313,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.73",
           "JA\u015aKOWIAK Jacek_%": "38.02",
-          "diff_abs_scale": 0.6737113985998141,
+          "diff_abs_scale": 0.6737113985674323,
           "diff_str": "-31.29",
           "geometry": {
             "coordinates": [
@@ -14369,7 +14373,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.46",
           "JA\u015aKOWIAK Jacek_%": "41.09",
-          "diff_abs_scale": 0.767215467150785,
+          "diff_abs_scale": 0.7672154671474917,
           "diff_str": "-35.63",
           "geometry": {
             "coordinates": [
@@ -14409,7 +14413,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.98",
           "JA\u015aKOWIAK Jacek_%": "43.17",
-          "diff_abs_scale": 0.7363129466534939,
+          "diff_abs_scale": 0.7363129466120449,
           "diff_str": "-34.19",
           "geometry": {
             "coordinates": [
@@ -14453,7 +14457,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.25",
           "JA\u015aKOWIAK Jacek_%": "39.17",
-          "diff_abs_scale": 0.7303312996048551,
+          "diff_abs_scale": 0.7303312996637286,
           "diff_str": "-33.92",
           "geometry": {
             "coordinates": [
@@ -14501,7 +14505,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "9.29",
           "JA\u015aKOWIAK Jacek_%": "34.05",
-          "diff_abs_scale": 0.5332025716465075,
+          "diff_abs_scale": 0.5332025716287967,
           "diff_str": "-24.76",
           "geometry": {
             "coordinates": [
@@ -14549,7 +14553,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "9.15",
           "JA\u015aKOWIAK Jacek_%": "40.51",
-          "diff_abs_scale": 0.6751929565993096,
+          "diff_abs_scale": 0.6751929567711584,
           "diff_str": "-31.36",
           "geometry": {
             "coordinates": [
@@ -14593,7 +14597,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "10.28",
           "JA\u015aKOWIAK Jacek_%": "37.55",
-          "diff_abs_scale": 0.587268566673601,
+          "diff_abs_scale": 0.587268566640542,
           "diff_str": "-27.27",
           "geometry": {
             "coordinates": [
@@ -14629,7 +14633,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.54",
           "JA\u015aKOWIAK Jacek_%": "35.62",
-          "diff_abs_scale": 0.5831903127383676,
+          "diff_abs_scale": 0.5831903126920801,
           "diff_str": "-27.08",
           "geometry": {
             "coordinates": [
@@ -14677,7 +14681,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.75",
           "JA\u015aKOWIAK Jacek_%": "37.06",
-          "diff_abs_scale": 0.6095053032143145,
+          "diff_abs_scale": 0.6095053031884247,
           "diff_str": "-28.31",
           "geometry": {
             "coordinates": [
@@ -14721,7 +14725,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.27",
           "JA\u015aKOWIAK Jacek_%": "42.68",
-          "diff_abs_scale": 0.7839878856454467,
+          "diff_abs_scale": 0.7839878856013139,
           "diff_str": "-36.41",
           "geometry": {
             "coordinates": [
@@ -14769,7 +14773,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.44",
           "JA\u015aKOWIAK Jacek_%": "35.38",
-          "diff_abs_scale": 0.6230971533929515,
+          "diff_abs_scale": 0.6230971534853574,
           "diff_str": "-28.94",
           "geometry": {
             "coordinates": [
@@ -14813,7 +14817,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.31",
           "JA\u015aKOWIAK Jacek_%": "46.16",
-          "diff_abs_scale": 0.8796833852271448,
+          "diff_abs_scale": 0.8796833853432541,
           "diff_str": "-40.85",
           "geometry": {
             "coordinates": [
@@ -15277,7 +15281,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.69",
           "JA\u015aKOWIAK Jacek_%": "46.81",
-          "diff_abs_scale": 0.9070648217073735,
+          "diff_abs_scale": 0.907064821690904,
           "diff_str": "-42.12",
           "geometry": {
             "coordinates": [
@@ -15329,7 +15333,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.71",
           "JA\u015aKOWIAK Jacek_%": "51.03",
-          "diff_abs_scale": 0.9975235582860102,
+          "diff_abs_scale": 0.9975235582413107,
           "diff_str": "-46.32",
           "geometry": {
             "coordinates": [
@@ -15693,7 +15697,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.61",
           "JA\u015aKOWIAK Jacek_%": "43.28",
-          "diff_abs_scale": 0.8112687927903001,
+          "diff_abs_scale": 0.8112687927871746,
           "diff_str": "-37.68",
           "geometry": {
             "coordinates": [
@@ -16217,7 +16221,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.89",
           "JA\u015aKOWIAK Jacek_%": "45.38",
-          "diff_abs_scale": 0.8287560333057706,
+          "diff_abs_scale": 0.8287560333854217,
           "diff_str": "-38.49",
           "geometry": {
             "coordinates": [
@@ -16261,7 +16265,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.34",
           "JA\u015aKOWIAK Jacek_%": "47.47",
-          "diff_abs_scale": 0.8641106034897695,
+          "diff_abs_scale": 0.8641106036464635,
           "diff_str": "-40.13",
           "geometry": {
             "coordinates": [
@@ -16305,7 +16309,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.34",
           "JA\u015aKOWIAK Jacek_%": "49.79",
-          "diff_abs_scale": 0.9571579289274645,
+          "diff_abs_scale": 0.9571579289143748,
           "diff_str": "-44.45",
           "geometry": {
             "coordinates": [
@@ -16621,7 +16625,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.33",
           "JA\u015aKOWIAK Jacek_%": "48.02",
-          "diff_abs_scale": 0.9191820767051907,
+          "diff_abs_scale": 0.9191820767534472,
           "diff_str": "-42.69",
           "geometry": {
             "coordinates": [
@@ -16669,7 +16673,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.53",
           "JA\u015aKOWIAK Jacek_%": "49.89",
-          "diff_abs_scale": 0.9553775743707092,
+          "diff_abs_scale": 0.9553775743561734,
           "diff_str": "-44.37",
           "geometry": {
             "coordinates": [
@@ -16713,7 +16717,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.19",
           "JA\u015aKOWIAK Jacek_%": "45.88",
-          "diff_abs_scale": 0.8977436397900119,
+          "diff_abs_scale": 0.8977436398165834,
           "diff_str": "-41.69",
           "geometry": {
             "coordinates": [
@@ -17309,7 +17313,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.97",
           "JA\u015aKOWIAK Jacek_%": "46.61",
-          "diff_abs_scale": 0.8751998629820694,
+          "diff_abs_scale": 0.8751998629359642,
           "diff_str": "-40.64",
           "geometry": {
             "coordinates": [
@@ -17729,7 +17733,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.07",
           "JA\u015aKOWIAK Jacek_%": "49.51",
-          "diff_abs_scale": 0.9354578534718835,
+          "diff_abs_scale": 0.9354578534951198,
           "diff_str": "-43.44",
           "geometry": {
             "coordinates": [
@@ -17773,7 +17777,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.64",
           "JA\u015aKOWIAK Jacek_%": "45.59",
-          "diff_abs_scale": 0.8388755734380252,
+          "diff_abs_scale": 0.8388755734410127,
           "diff_str": "-38.96",
           "geometry": {
             "coordinates": [
@@ -17817,7 +17821,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.19",
           "JA\u015aKOWIAK Jacek_%": "47.91",
-          "diff_abs_scale": 0.8983640816020532,
+          "diff_abs_scale": 0.8983640815989905,
           "diff_str": "-41.72",
           "geometry": {
             "coordinates": [
@@ -17865,7 +17869,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.98",
           "JA\u015aKOWIAK Jacek_%": "49.39",
-          "diff_abs_scale": 0.9561011012122962,
+          "diff_abs_scale": 0.9561011012889282,
           "diff_str": "-44.40",
           "geometry": {
             "coordinates": [
@@ -17909,7 +17913,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.52",
           "JA\u015aKOWIAK Jacek_%": "44.13",
-          "diff_abs_scale": 0.8312614423433919,
+          "diff_abs_scale": 0.8312614424402223,
           "diff_str": "-38.60",
           "geometry": {
             "coordinates": [
@@ -18029,7 +18033,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.23",
           "JA\u015aKOWIAK Jacek_%": "43.11",
-          "diff_abs_scale": 0.7941208026608034,
+          "diff_abs_scale": 0.7941208027148003,
           "diff_str": "-36.88",
           "geometry": {
             "coordinates": [
@@ -18077,7 +18081,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.14",
           "JA\u015aKOWIAK Jacek_%": "47.44",
-          "diff_abs_scale": 0.8892542232566131,
+          "diff_abs_scale": 0.8892542233461895,
           "diff_str": "-41.30",
           "geometry": {
             "coordinates": [
@@ -18125,7 +18129,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.14",
           "JA\u015aKOWIAK Jacek_%": "44.95",
-          "diff_abs_scale": 0.8140015590816505,
+          "diff_abs_scale": 0.8140015592852345,
           "diff_str": "-37.80",
           "geometry": {
             "coordinates": [
@@ -18169,7 +18173,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.16",
           "JA\u015aKOWIAK Jacek_%": "44.26",
-          "diff_abs_scale": 0.8203896250793953,
+          "diff_abs_scale": 0.8203896249948959,
           "diff_str": "-38.10",
           "geometry": {
             "coordinates": [
@@ -18205,7 +18209,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.38",
           "JA\u015aKOWIAK Jacek_%": "39.85",
-          "diff_abs_scale": 0.7420665375814117,
+          "diff_abs_scale": 0.7420665377960491,
           "diff_str": "-34.46",
           "geometry": {
             "coordinates": [
@@ -18249,7 +18253,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.31",
           "JA\u015aKOWIAK Jacek_%": "43.96",
-          "diff_abs_scale": 0.8108173009012063,
+          "diff_abs_scale": 0.8108173009871549,
           "diff_str": "-37.65",
           "geometry": {
             "coordinates": [
@@ -18301,7 +18305,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.33",
           "JA\u015aKOWIAK Jacek_%": "47.12",
-          "diff_abs_scale": 0.8568176644661961,
+          "diff_abs_scale": 0.8568176645848175,
           "diff_str": "-39.79",
           "geometry": {
             "coordinates": [
@@ -18357,7 +18361,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.77",
           "JA\u015aKOWIAK Jacek_%": "42.86",
-          "diff_abs_scale": 0.7555502027379661,
+          "diff_abs_scale": 0.7555502028087667,
           "diff_str": "-35.09",
           "geometry": {
             "coordinates": [
@@ -18405,7 +18409,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.86",
           "JA\u015aKOWIAK Jacek_%": "39.81",
-          "diff_abs_scale": 0.7310647795010876,
+          "diff_abs_scale": 0.7310647794479711,
           "diff_str": "-33.95",
           "geometry": {
             "coordinates": [
@@ -18445,7 +18449,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.36",
           "JA\u015aKOWIAK Jacek_%": "41.25",
-          "diff_abs_scale": 0.7728873814972212,
+          "diff_abs_scale": 0.7728873814694787,
           "diff_str": "-35.89",
           "geometry": {
             "coordinates": [
@@ -18501,7 +18505,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.76",
           "JA\u015aKOWIAK Jacek_%": "43.10",
-          "diff_abs_scale": 0.7823682227904316,
+          "diff_abs_scale": 0.7823682228353395,
           "diff_str": "-36.33",
           "geometry": {
             "coordinates": [
@@ -18545,7 +18549,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.82",
           "JA\u015aKOWIAK Jacek_%": "45.78",
-          "diff_abs_scale": 0.8389725844098784,
+          "diff_abs_scale": 0.8389725842963945,
           "diff_str": "-38.96",
           "geometry": {
             "coordinates": [
@@ -18597,7 +18601,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.74",
           "JA\u015aKOWIAK Jacek_%": "44.61",
-          "diff_abs_scale": 0.8154108897563602,
+          "diff_abs_scale": 0.8154108898173328,
           "diff_str": "-37.87",
           "geometry": {
             "coordinates": [
@@ -18649,7 +18653,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.67",
           "JA\u015aKOWIAK Jacek_%": "41.83",
-          "diff_abs_scale": 0.7140023829879302,
+          "diff_abs_scale": 0.714002382907866,
           "diff_str": "-33.16",
           "geometry": {
             "coordinates": [
@@ -18689,7 +18693,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.71",
           "JA\u015aKOWIAK Jacek_%": "50.00",
-          "diff_abs_scale": 0.9321959273527791,
+          "diff_abs_scale": 0.93219592738262,
           "diff_str": "-43.29",
           "geometry": {
             "coordinates": [
@@ -18741,7 +18745,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.72",
           "JA\u015aKOWIAK Jacek_%": "45.64",
-          "diff_abs_scale": 0.8596471389929564,
+          "diff_abs_scale": 0.8596471391817375,
           "diff_str": "-39.92",
           "geometry": {
             "coordinates": [
@@ -18789,7 +18793,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.68",
           "JA\u015aKOWIAK Jacek_%": "46.89",
-          "diff_abs_scale": 0.9090064612868608,
+          "diff_abs_scale": 0.9090064612804624,
           "diff_str": "-42.21",
           "geometry": {
             "coordinates": [
@@ -18841,7 +18845,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "10.80",
           "JA\u015aKOWIAK Jacek_%": "40.64",
-          "diff_abs_scale": 0.6426225425925471,
+          "diff_abs_scale": 0.642622542590101,
           "diff_str": "-29.84",
           "geometry": {
             "coordinates": [
@@ -18893,7 +18897,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.56",
           "JA\u015aKOWIAK Jacek_%": "39.69",
-          "diff_abs_scale": 0.6704580831308713,
+          "diff_abs_scale": 0.6704580831432627,
           "diff_str": "-31.14",
           "geometry": {
             "coordinates": [
@@ -18941,7 +18945,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.10",
           "JA\u015aKOWIAK Jacek_%": "40.91",
-          "diff_abs_scale": 0.7065223369176655,
+          "diff_abs_scale": 0.7065223368704683,
           "diff_str": "-32.81",
           "geometry": {
             "coordinates": [
@@ -18989,7 +18993,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "9.74",
           "JA\u015aKOWIAK Jacek_%": "42.66",
-          "diff_abs_scale": 0.7088976052118738,
+          "diff_abs_scale": 0.7088976051945995,
           "diff_str": "-32.92",
           "geometry": {
             "coordinates": [
@@ -19041,7 +19045,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.51",
           "JA\u015aKOWIAK Jacek_%": "40.10",
-          "diff_abs_scale": 0.6802705956607934,
+          "diff_abs_scale": 0.6802705957860258,
           "diff_str": "-31.59",
           "geometry": {
             "coordinates": [
@@ -19085,7 +19089,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.73",
           "JA\u015aKOWIAK Jacek_%": "37.72",
-          "diff_abs_scale": 0.6458412846095507,
+          "diff_abs_scale": 0.6458412845545437,
           "diff_str": "-29.99",
           "geometry": {
             "coordinates": [
@@ -19133,7 +19137,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.14",
           "JA\u015aKOWIAK Jacek_%": "37.25",
-          "diff_abs_scale": 0.6269153897401731,
+          "diff_abs_scale": 0.6269153897539453,
           "diff_str": "-29.11",
           "geometry": {
             "coordinates": [
@@ -19181,7 +19185,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "9.33",
           "JA\u015aKOWIAK Jacek_%": "41.30",
-          "diff_abs_scale": 0.6885517465662353,
+          "diff_abs_scale": 0.6885517465619025,
           "diff_str": "-31.98",
           "geometry": {
             "coordinates": [
@@ -19229,7 +19233,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.83",
           "JA\u015aKOWIAK Jacek_%": "44.42",
-          "diff_abs_scale": 0.8310135300259937,
+          "diff_abs_scale": 0.8310135300685867,
           "diff_str": "-38.59",
           "geometry": {
             "coordinates": [
@@ -19397,7 +19401,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.02",
           "JA\u015aKOWIAK Jacek_%": "44.78",
-          "diff_abs_scale": 0.8345188534458199,
+          "diff_abs_scale": 0.8345188534753761,
           "diff_str": "-38.76",
           "geometry": {
             "coordinates": [
@@ -19625,7 +19629,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.48",
           "JA\u015aKOWIAK Jacek_%": "45.37",
-          "diff_abs_scale": 0.8806074432867225,
+          "diff_abs_scale": 0.88060744325199,
           "diff_str": "-40.90",
           "geometry": {
             "coordinates": [
@@ -19673,7 +19677,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.04",
           "JA\u015aKOWIAK Jacek_%": "37.21",
-          "diff_abs_scale": 0.6926399989135527,
+          "diff_abs_scale": 0.6926399987968638,
           "diff_str": "-32.17",
           "geometry": {
             "coordinates": [
@@ -19945,7 +19949,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.18",
           "JA\u015aKOWIAK Jacek_%": "32.44",
-          "diff_abs_scale": 0.5868628543650182,
+          "diff_abs_scale": 0.5868628543828583,
           "diff_str": "-27.25",
           "geometry": {
             "coordinates": [
@@ -20457,7 +20461,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.36",
           "JA\u015aKOWIAK Jacek_%": "37.71",
-          "diff_abs_scale": 0.6752190258254331,
+          "diff_abs_scale": 0.6752190257011366,
           "diff_str": "-31.36",
           "geometry": {
             "coordinates": [
@@ -21713,7 +21717,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.20",
           "JA\u015aKOWIAK Jacek_%": "42.64",
-          "diff_abs_scale": 0.8061683443992289,
+          "diff_abs_scale": 0.8061683445352353,
           "diff_str": "-37.44",
           "geometry": {
             "coordinates": [
@@ -21757,7 +21761,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.80",
           "JA\u015aKOWIAK Jacek_%": "46.10",
-          "diff_abs_scale": 0.8893203661327231,
+          "diff_abs_scale": 0.8893203661715929,
           "diff_str": "-41.30",
           "geometry": {
             "coordinates": [
@@ -21805,7 +21809,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.28",
           "JA\u015aKOWIAK Jacek_%": "47.39",
-          "diff_abs_scale": 0.906923544882929,
+          "diff_abs_scale": 0.906923544860463,
           "diff_str": "-42.12",
           "geometry": {
             "coordinates": [
@@ -21849,7 +21853,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.74",
           "JA\u015aKOWIAK Jacek_%": "49.08",
-          "diff_abs_scale": 0.9548352332766499,
+          "diff_abs_scale": 0.9548352334204516,
           "diff_str": "-44.34",
           "geometry": {
             "coordinates": [
@@ -21893,7 +21897,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.16",
           "JA\u015aKOWIAK Jacek_%": "46.21",
-          "diff_abs_scale": 0.8839708185926194,
+          "diff_abs_scale": 0.8839708186390937,
           "diff_str": "-41.05",
           "geometry": {
             "coordinates": [
@@ -21941,7 +21945,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.14",
           "JA\u015aKOWIAK Jacek_%": "42.88",
-          "diff_abs_scale": 0.8126646756907006,
+          "diff_abs_scale": 0.8126646756325445,
           "diff_str": "-37.74",
           "geometry": {
             "coordinates": [
@@ -21985,7 +21989,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.65",
           "JA\u015aKOWIAK Jacek_%": "45.06",
-          "diff_abs_scale": 0.8701889983485581,
+          "diff_abs_scale": 0.8701889983146927,
           "diff_str": "-40.41",
           "geometry": {
             "coordinates": [
@@ -22033,7 +22037,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.06",
           "JA\u015aKOWIAK Jacek_%": "46.79",
-          "diff_abs_scale": 0.8985961978524907,
+          "diff_abs_scale": 0.898596197875202,
           "diff_str": "-41.73",
           "geometry": {
             "coordinates": [
@@ -22081,7 +22085,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.61",
           "JA\u015aKOWIAK Jacek_%": "41.01",
-          "diff_abs_scale": 0.7193784480654998,
+          "diff_abs_scale": 0.719378448121831,
           "diff_str": "-33.41",
           "geometry": {
             "coordinates": [
@@ -22137,7 +22141,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.25",
           "JA\u015aKOWIAK Jacek_%": "45.74",
-          "diff_abs_scale": 0.8718562759859123,
+          "diff_abs_scale": 0.871856276111333,
           "diff_str": "-40.49",
           "geometry": {
             "coordinates": [
@@ -22181,7 +22185,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.89",
           "JA\u015aKOWIAK Jacek_%": "45.72",
-          "diff_abs_scale": 0.8792048409369957,
+          "diff_abs_scale": 0.879204840977558,
           "diff_str": "-40.83",
           "geometry": {
             "coordinates": [
@@ -22229,7 +22233,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.78",
           "JA\u015aKOWIAK Jacek_%": "44.67",
-          "diff_abs_scale": 0.7943183818469859,
+          "diff_abs_scale": 0.7943183819223604,
           "diff_str": "-36.89",
           "geometry": {
             "coordinates": [
@@ -22277,7 +22281,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.34",
           "JA\u015aKOWIAK Jacek_%": "40.65",
-          "diff_abs_scale": 0.7389951164583327,
+          "diff_abs_scale": 0.7389951165952285,
           "diff_str": "-34.32",
           "geometry": {
             "coordinates": [
@@ -22329,7 +22333,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.26",
           "JA\u015aKOWIAK Jacek_%": "37.42",
-          "diff_abs_scale": 0.6709406527376159,
+          "diff_abs_scale": 0.6709406527064418,
           "diff_str": "-31.16",
           "geometry": {
             "coordinates": [
@@ -22481,7 +22485,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.81",
           "JA\u015aKOWIAK Jacek_%": "43.85",
-          "diff_abs_scale": 0.8406271042303245,
+          "diff_abs_scale": 0.8406271043294188,
           "diff_str": "-39.04",
           "geometry": {
             "coordinates": [
@@ -22581,7 +22585,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.83",
           "JA\u015aKOWIAK Jacek_%": "46.34",
-          "diff_abs_scale": 0.8938004027191921,
+          "diff_abs_scale": 0.8938004027875782,
           "diff_str": "-41.51",
           "geometry": {
             "coordinates": [
@@ -22621,7 +22625,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.06",
           "JA\u015aKOWIAK Jacek_%": "45.75",
-          "diff_abs_scale": 0.8546056139330439,
+          "diff_abs_scale": 0.8546056138950183,
           "diff_str": "-39.69",
           "geometry": {
             "coordinates": [
@@ -22665,7 +22669,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.70",
           "JA\u015aKOWIAK Jacek_%": "47.76",
-          "diff_abs_scale": 0.9057170147994268,
+          "diff_abs_scale": 0.9057170149016002,
           "diff_str": "-42.06",
           "geometry": {
             "coordinates": [
@@ -22717,7 +22721,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "9.43",
           "JA\u015aKOWIAK Jacek_%": "37.74",
-          "diff_abs_scale": 0.6094296446612841,
+          "diff_abs_scale": 0.6094296448504352,
           "diff_str": "-28.30",
           "geometry": {
             "coordinates": [
@@ -22809,7 +22813,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.84",
           "JA\u015aKOWIAK Jacek_%": "51.52",
-          "diff_abs_scale": 0.9835612196851302,
+          "diff_abs_scale": 0.9835612196638126,
           "diff_str": "-45.68",
           "geometry": {
             "coordinates": [
@@ -23093,7 +23097,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.78",
           "JA\u015aKOWIAK Jacek_%": "41.63",
-          "diff_abs_scale": 0.7721060836744554,
+          "diff_abs_scale": 0.7721060838120075,
           "diff_str": "-35.86",
           "geometry": {
             "coordinates": [
@@ -23149,7 +23153,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "8.00",
           "JA\u015aKOWIAK Jacek_%": "43.27",
-          "diff_abs_scale": 0.7595340128978572,
+          "diff_abs_scale": 0.7595340128723275,
           "diff_str": "-35.27",
           "geometry": {
             "coordinates": [
@@ -23209,7 +23213,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.50",
           "JA\u015aKOWIAK Jacek_%": "49.00",
-          "diff_abs_scale": 0.9366933638443935,
+          "diff_abs_scale": 0.9366933638853339,
           "diff_str": "-43.50",
           "geometry": {
             "coordinates": [
@@ -23253,7 +23257,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.15",
           "JA\u015aKOWIAK Jacek_%": "48.57",
-          "diff_abs_scale": 0.9348867802050025,
+          "diff_abs_scale": 0.9348867801902894,
           "diff_str": "-43.42",
           "geometry": {
             "coordinates": [
@@ -23305,7 +23309,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.75",
           "JA\u015aKOWIAK Jacek_%": "42.09",
-          "diff_abs_scale": 0.7824320040465842,
+          "diff_abs_scale": 0.7824320041168066,
           "diff_str": "-36.34",
           "geometry": {
             "coordinates": [
@@ -23357,7 +23361,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.96",
           "JA\u015aKOWIAK Jacek_%": "51.72",
-          "diff_abs_scale": 0.9855311578660431,
+          "diff_abs_scale": 0.9855311579442191,
           "diff_str": "-45.77",
           "geometry": {
             "coordinates": [
@@ -23401,7 +23405,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "4.85",
           "JA\u015aKOWIAK Jacek_%": "49.44",
-          "diff_abs_scale": 0.9602225978967937,
+          "diff_abs_scale": 0.9602225979556986,
           "diff_str": "-44.59",
           "geometry": {
             "coordinates": [
@@ -23437,7 +23441,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.24",
           "JA\u015aKOWIAK Jacek_%": "45.14",
-          "diff_abs_scale": 0.8376752247747016,
+          "diff_abs_scale": 0.8376752247970243,
           "diff_str": "-38.90",
           "geometry": {
             "coordinates": [
@@ -23485,7 +23489,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.64",
           "JA\u015aKOWIAK Jacek_%": "43.32",
-          "diff_abs_scale": 0.789833666482756,
+          "diff_abs_scale": 0.7898336663615236,
           "diff_str": "-36.68",
           "geometry": {
             "coordinates": [
@@ -23843,7 +23847,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "6.10",
           "JA\u015aKOWIAK Jacek_%": "37.45",
-          "diff_abs_scale": 0.6750117662333447,
+          "diff_abs_scale": 0.6750117662521574,
           "diff_str": "-31.35",
           "geometry": {
             "coordinates": [
@@ -23891,7 +23895,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "7.61",
           "JA\u015aKOWIAK Jacek_%": "34.38",
-          "diff_abs_scale": 0.5764788554748733,
+          "diff_abs_scale": 0.5764788554288578,
           "diff_str": "-26.77",
           "geometry": {
             "coordinates": [
@@ -23939,7 +23943,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.56",
           "JA\u015aKOWIAK Jacek_%": "41.95",
-          "diff_abs_scale": 0.783774779277028,
+          "diff_abs_scale": 0.7837747792477578,
           "diff_str": "-36.40",
           "geometry": {
             "coordinates": [
@@ -25165,7 +25169,7 @@
         {
           "GARCZEWSKI \u0141ukasz_%": "5.84",
           "JA\u015aKOWIAK Jacek_%": "36.87",
-          "diff_abs_scale": 0.6681026594205062,
+          "diff_abs_scale": 0.6681026593678736,
           "diff_str": "-31.03",
           "geometry": {
             "coordinates": [
@@ -25340,7 +25344,7 @@
         25
       ],
       "getLineWidth": 5,
-      "id": "34f4739f-e997-4e02-8140-be0a649ee690",
+      "id": "68c432fa-0155-4ad6-a66f-5f43c71760f4",
       "lineWidthMinPixels": 1,
       "opacity": 0.8,
       "pickable": true,
@@ -26693,7 +26697,7 @@
       "getIcon": "@@=icon_data",
       "getPosition": "@@=[lon, lat]",
       "getSize": 1,
-      "id": "443729ea-0885-4ef7-ba57-6d6b8a93bd38",
+      "id": "b93bba16-cad3-4d94-a1f2-85c2f2edc3c9",
       "opacity": 0.8,
       "pickable": false,
       "sizeMaxPixels": 120,
